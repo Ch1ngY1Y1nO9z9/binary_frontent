@@ -241,6 +241,7 @@ button.burger {
     left: -100vw;
     transition: .5s;
     opacity: 0;
+    overflow: hidden;
 }
 
 .menu.on {
@@ -325,7 +326,7 @@ button.menu-link-button {
     //  Menu Burger 2
     &.burger-style {
 
-        &:after, 
+        &:after,
         &:before,
         span {
             width: 50%;

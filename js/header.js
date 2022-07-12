@@ -33,5 +33,5 @@ menu_botton.forEach(e => {
 })
 
 menu_link_button.addEventListener('click', () => {
-    menu_modal.classList.remove('active');
+    removeActive();
 })

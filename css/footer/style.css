@@ -2,6 +2,7 @@ footer {
   width: 100%;
   padding-top: 250px;
   position: relative;
+  z-index: 2;
   background-image: url("../../images/footer_block.svg");
   background-repeat: no-repeat;
   background-size: cover;

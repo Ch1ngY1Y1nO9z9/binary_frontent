@@ -250,6 +250,7 @@ button.burger.burger-style.on span:before {
   -webkit-transition: .5s;
   transition: .5s;
   opacity: 0;
+  overflow: hidden;
 }
 
 .menu.on {

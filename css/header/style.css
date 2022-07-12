@@ -283,13 +283,29 @@ button.burger.burger-style.on span:before {
   letter-spacing: 0.05em;
 }
 
+.menu-modal {
+  width: 0;
+  opacity: 0;
+  left: 300px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu-modal.active {
+  width: 732px;
+  opacity: 1;
+  left: 0;
+}
+
 .menu-botton.active,
-.menu-links.active {
+.menu-links:hover,
+.menu-botton:hover {
   background: #fcbd1f;
   color: #0046ae;
 }
 
 .menu-links {
+  width: 200px;
   border: 2px #FCBD1F solid;
   border-radius: 5px;
   color: #fcbd1f;
@@ -299,7 +315,7 @@ button.burger.burger-style.on span:before {
   transition: 0.3s;
   -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
           box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
-  margin-bottom: 10px;
+  margin: 15px;
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 700;
@@ -307,14 +323,6 @@ button.burger.burger-style.on span:before {
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.3em;
-}
-
-.menu-links:nth-child(even) {
-  margin-left: 10px;
-}
-
-.menu-links:nth-child(odd) {
-  margin-right: 10px;
 }
 
 button.menu-link-button {

@@ -16,7 +16,7 @@ footer {
         bottom: -155px;
         width: 100%;
         max-width: 657px;
-        fill:#004ec2;
+        fill: $tiger-blue;
         z-index: 1;
     }
 
@@ -26,7 +26,7 @@ footer {
         bottom: -12px;
         width: 100%;
         max-width: 657px;
-        fill:#fcbd1f;
+        fill: $yellow-5;
         z-index: 1;
     }
 
@@ -34,36 +34,23 @@ footer {
     .join-us {
         max-width: 1045px;
         padding: 50px 100px;
-        box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+        @include box-shadow;
         position: relative;
         z-index: 2;
 
         .title {
             width: 200px;
 
-            font-family: 'Noto Serif TC';
-            font-weight: 900;
-            font-size: 80px;
-            line-height: 100px;
-            /* or 125% */
-
-            letter-spacing: 0.1em;
-            color: #FF621F;
+            @include Serif(80px, 100px, .1em);
+            color: $orange-5;
         }
 
         .content {
             padding-top: 50px;
 
-            font-family: 'Noto Sans TC';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 34px;
-            /* or 189% */
-
+            @include Sans(500, 18px, 34px, .1em);
+            color: $gray-5;
             text-align: justify;
-            letter-spacing: 0.1em;
-            color: #393939;
 
             overflow: hidden;
             display: -webkit-box;
@@ -80,7 +67,7 @@ footer {
 
             &:hover {
                 svg {
-                    fill: #FCBD1F;
+                    fill: $yellow-5;
                 }
             }
 
@@ -90,7 +77,7 @@ footer {
                 position: absolute;
                 left: 0;
                 top: 0;
-                fill: #FF621F;
+                fill: $orange-5;
             }
 
             a {
@@ -99,15 +86,9 @@ footer {
                 position: relative;
                 top: 50px;
 
-                font-family: 'Noto Serif TC';
-                font-weight: 900;
-                font-size: 30px;
-                line-height: 43px;
+                @include Serif(30px, 43px, .2em);
                 text-align: center;
-                letter-spacing: 0.2em;
-
-                color: #FFFFFF;
-
+                color: $white-1;
                 transform: rotate(-6deg);
             }
         }
@@ -128,7 +109,7 @@ footer {
                 left: 0;
                 top: 0;
                 height: 40px;
-                border: 2px solid #C4C4C4;
+                border: 2px solid $gray-3;
             }
 
             &:last-child::after {
@@ -137,19 +118,13 @@ footer {
                 right: 0;
                 top: 0;
                 height: 40px;
-                border: 2px solid #C4C4C4;
+                border: 2px solid $gray-3;
             }
 
             a {
-                font-family: 'Noto Sans TC';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
+                @include Sans(700, 18px, 26px, .3em);
                 text-align: center;
-                letter-spacing: 0.3em;
-
-                color: #FFFFFF;
+                color: $white-1;
             }
         }
     }
@@ -160,13 +135,10 @@ footer {
 
         width:100%;
         padding: 120px 0;
-        text-align: center;        
-        color: #FFFFFF;
-        font-size: 135px;
-        letter-spacing: 0;
-        line-height: 0.8;
-        
-        font-family: 'Noto Sans TC';
+
+        @include Sans(400, 135px, .8, 0);
+        text-align: center;
+        color: $white-1;
     }
 
     .site-rights {
@@ -175,24 +147,15 @@ footer {
 
         padding-bottom: 22px;
 
-        font-family: 'Noto Sans TC';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
-
+        @include Sans(500, 14, 24, .1em);
         text-align: center;
-        letter-spacing: 0.1em;
-
-        /* Y */
-
-        color: #FCBD1F;
+        color: $yellow-5;
     }
 
     .bottom-line {
         position: relative;
         z-index: 2;
         height: 24px;
+        background: $yellow-5;
     }
 }

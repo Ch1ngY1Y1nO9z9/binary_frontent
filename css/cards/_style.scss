@@ -15,7 +15,7 @@ section.cards {
         }
 
         .cls-2 {
-            fill: #fcbd1f;
+            fill: $yellow-5;
         }
     }
 
@@ -28,7 +28,7 @@ section.cards {
         max-width: 560px;
 
         .cls-1 {
-            fill: #fcbd1f;
+            fill: $yellow-5;
         }
     }
 
@@ -41,7 +41,7 @@ section.cards {
 
         &:hover {
             svg {
-                fill: #FCBD1F;
+                fill: $yellow-5;
             }
         }
 
@@ -51,7 +51,7 @@ section.cards {
             position: absolute;
             left: 0;
             top: 0;
-            fill: #FF621F;
+            fill: $orange-5;
         }
 
         .detail {
@@ -60,26 +60,15 @@ section.cards {
             position: relative;
             top: 75px;
 
-            font-family: 'Trade Winds';
-            font-weight: 400;
-            font-size: 72px;
-            line-height: 60%;
+            @include Trade(72px, 60%, .1em);
             text-align: center;
-
-            letter-spacing: 0.1em;
-
-            color: #FFFFFF;
+            color: $white-1;
 
             transform: rotate(-6deg);
 
             span {
                 position: relative;
-                font-family: 'Noto Serif TC';
-                font-weight: 900;
-                font-size: 24px;
-                line-height: 35px;
-
-                letter-spacing: 0.1em;
+                @include Sans(900, 24px, 35px, .1em);
 
                 &::before {
                     content: '';
@@ -87,7 +76,7 @@ section.cards {
                     left: -100%;
                     bottom: calc(50% - 2px);
                     width: 80px;
-                    border-top: 2px solid #FFFFFF;
+                    border-top: 2px solid $white-1;
                 }
 
                 &::after {
@@ -96,7 +85,7 @@ section.cards {
                     right: -100%;
                     bottom: calc(50% - 2px);
                     width: 80px;
-                    border-top: 2px solid #FFFFFF;
+                    border-top: 2px solid $white-1;
                 }
             }
         }

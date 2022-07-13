@@ -1,0 +1,314 @@
+header {
+    .header-l {
+        .logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 65px
+            }
+
+            .site-name {
+                @include Serif(30px, 117.52%, initial);
+            }
+        }
+    }
+
+    .header-r {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        .register-btn {
+            background: $orange-5;
+            padding: 15px 51px;
+
+            @include Sans(700, 18px, 19px, .1em);
+            text-align: center;
+            color: $white-1;
+        }
+
+        .account {
+            color: $blue-5;
+            font-size: 30px;
+            padding: 0 40px;
+        }
+
+        .burger-menu {
+
+            button.burger {
+                width: 40px;
+                height: 30px;
+                border: none;
+                background: transparent;
+                position: relative;
+                z-index: 50;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &.burger-style {
+
+                    &:after,
+                    &:before,
+                    span {
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 100px;
+                        position: absolute;
+                        display: block;
+                        background: $blue-5;
+
+                    }
+
+                    &:after,
+                    &:before {
+                        content: "";
+                        transition: 0.3s width 0.4s;
+                    }
+
+                    &:after {
+                        top: 0px;
+                        left: 0px;
+                        margin-top: 0px;
+                    }
+
+                    &:before {
+                        bottom: 0px;
+                        right: 0px;
+                        margin-bottom: 0px;
+                    }
+
+                    span {
+                        top: 50%;
+                        margin-top: -2px;
+                        transition: transform 0.3s;
+
+                        &:before {
+                            content: "";
+                            background: $blue-5;
+                            width: 100%;
+                            height: 4px;
+                            border-radius: 100px;
+                            position: absolute;
+                            left: 0px;
+                            transition: transform 0.3s;
+                        }
+                    }
+
+                    &.on {
+
+
+                        &:after {
+                            transition: all 0.2s;
+                            width: 0%;
+                            left: 0px;
+                        }
+
+                        &:before {
+                            transition: all 0.2s;
+                            width: 0%;
+                            right: 0px;
+                        }
+
+                        span {
+                            transform: rotate(45deg);
+                            transition: 0.3s transform 0.4s;
+                            background: $yellow-5;
+
+                            &:before {
+                                transform: rotate(-90deg);
+                                transition: 0.3s transform 0.4s;
+                                background: $yellow-5;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu {
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                left: -100vw;
+                transition: .5s;
+                opacity: 0;
+                overflow: hidden;
+
+                &.on {
+                    left: 0;
+                    transition: .5s;
+                    opacity: .95;
+                }
+
+                .main-menu {
+                    display: flex;
+                    flex: 1 1 0%;
+                    height: 100%;
+                    background: $blue-5;
+
+                    .menu-botton {
+                        border: 2px $yellow-5 solid;
+                        border-radius: 5px;
+                        padding: 48px 55px;
+                        margin: 10px;
+                        background: rgba(252, 189, 31, 0);
+                        transition: 0.3s;
+                        @include box-shadow;
+
+                        color: $yellow-5;
+                        font-size: 45px;
+
+                        &.active {
+                            background: $yellow-5;
+                            color: $blue-5;
+                        }
+
+                        div {
+                            @include Sans(700, 24px, 25px, .05em);
+                        }
+                    }
+                }
+            }
+
+            .menu-modal {
+                width: 0;
+                height: 100%;
+                background: $blue-3;
+                opacity: 0;
+                position: relative;
+                left: 300px;
+                transition: 1s;
+
+                &.active,
+                &:hover {
+                    width: 732px;
+                    opacity: 1;
+                    left: 0;
+                }
+
+                .close-btn {
+                    background: $blue-3;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -40px;
+                    top: 50%;
+
+                    button.menu-link-button {
+                        width: 80px;
+                        height: 80px;
+                        border: none;
+                        background: transparent;
+                        position: relative;
+                        cursor: pointer;
+
+                        position: relative;
+                        z-index: 50;
+
+                        &.burger-style {
+
+                            &:after,
+                            &:before,
+                            span {
+                                width: 50%;
+                                height: 4px;
+                                border-radius: 100px;
+                                display: block;
+                                background: $blue-5;
+
+                            }
+
+                            &:after,
+                            &:before {
+                                content: "";
+                                transition: 0.3s width 0.4s;
+                            }
+
+                            &:after {
+                                top: 0px;
+                                width: 0%;
+                                left: 0px;
+                                margin-top: 0px;
+                            }
+
+                            &:before {
+                                bottom: 0px;
+                                width: 0%;
+                                right: 0px;
+                                margin-bottom: 0px;
+                            }
+
+                            span {
+                                margin-top: -2px;
+                                transition: transform 0.3s;
+                                transform: rotate(45deg);
+                                background: $white-1;
+                                position: absolute;
+                                left: 20px;
+
+                                &:before {
+                                    content: "";
+                                    transform: rotate(-90deg);
+                                    background: $white-1;
+                                    width: 100%;
+                                    height: 4px;
+                                    border-radius: 100px;
+                                    position: absolute;
+                                    left: 0px;
+                                    transition: transform 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .link-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+
+                    width: 75%;
+                    height: 100%;
+
+                    .menu-links {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 460px;
+
+                        .menu-link {
+                            width: 200px;
+                            border: 2px $yellow-5 solid;
+                            border-radius: 5px;
+                            color: $yellow-5;
+                            padding: 15px 50px;
+                            background: rgba(252, 189, 31, 0);
+                            transition: 0.3s;
+                            @include box-shadow;
+                            margin: 15px;
+
+                            @include Sans(700, 24px, 35px, .3em);
+                            text-align: center;
+
+                            &:hover {
+                                background: $yellow-5;
+                                color: $blue-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

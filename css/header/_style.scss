@@ -9,6 +9,7 @@ header {
             }
 
             .site-name {
+                padding-left: 15px;
                 @include Serif(30px, 117.52%, initial);
             }
         }

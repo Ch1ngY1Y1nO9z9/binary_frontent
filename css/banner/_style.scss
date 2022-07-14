@@ -2,28 +2,117 @@
     width: 100%;
     height: 929px;
     position: relative;
-}
 
-.banner-outline {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('../../images/banner_outline.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .banner-outline {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        object-fit: contain;
+    }
 
-.swiper {
+    .banner-texture {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -20px;
+        left: -65px;
+        z-index: 1;
+        object-fit: contain;
+    }
 
-}
+    .custom-container {
+        width: 100%;
+        height: 100%;
+        padding: 150px 0;
+        padding-top: 100px;
 
-.swiper-slide {
+        position: relative;
+        z-index: 3;
 
-}
+        .bannerSwiper {
+            width: 100%;
+            height: 100%;
+            padding: 150px;
 
-.swiper-slide img {
+            .swiper-slide {
+                display: flex;
+
+                .left {
+                    width: 100%;
+                    
+                    .title {
+                        @include Serif(72px, 130%, .1em);
+                        color: $white-1;
+                    }
+
+                    .banner-link {
+                        display: block;
+                        margin-top: 110px;
+                        background: $orange-5;
+                        width: 180px;
+                        text-align: center;
+                        padding: 15px 0;
+
+                        @include Sans(700, 18px, 19px, .1em);
+                        color: $white-1;
+
+                        @include box-shadow;
+                    }
+                }
+            }
+        }
+
+        .bottom-left-buttons {
+            width: 807px;
+            height: 250px;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+
+            .buttons-outline {
+                width: 100%;
+                height: 100%;
+                mask: url('../../images/banner_outline_left_bottom.svg') no-repeat center / contain;
+                background: $yellow-5;
+                position: absolute;
+                top: 33px;
+                right: 45px;
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+
+                position: absolute;
+                left: calc(50% - 50px);
+                top: calc(50% - 10px);
+
+
+                .banner-swiper-button-prev,
+                .banner-swiper-button-next {
+                    position: relative;
+                    z-index: 2;
+                    font-size: 50px;
+                    color: $white-1;
+                }
+
+                .banner-swiper-pagination {
+                    width: auto;
+                    position: relative;
+                    z-index: 2;
+                    bottom: auto;
+
+                    @include Sans(700, 18px, 19px, .1em);
+                    padding: 0 32px;
+                    color: $white-1;
+                }
+            }
+        }
+    }
 
 }

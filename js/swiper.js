@@ -1,18 +1,23 @@
-var swiper = new Swiper(".mySwiper", {
+var bannerSwiper = new Swiper(".bannerSwiper", {
     pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
+        el: ".banner-swiper-pagination",
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+            return ('0'+current) + '/' + ('0'+ total); 
+        }
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".banner-swiper-button-next",
+        prevEl: ".banner-swiper-button-prev",
     },
 });
-var swiper2 = new Swiper(".mySwiper2", {
+
+var cardsSwiper = new Swiper(".cardsSwiper", {
     slidesPerView: 3,
     centeredSlides: true,
     direction: "vertical",
 });
+
 var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 3,
     centeredSlides: true,

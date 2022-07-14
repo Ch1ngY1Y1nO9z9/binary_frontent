@@ -13,6 +13,7 @@ header .header-l .logo img {
 }
 
 header .header-l .logo .site-name {
+  padding-left: 15px;
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
   font-size: 30px;
@@ -384,16 +385,131 @@ header .header-r .burger-menu .menu-modal .link-list .menu-links .menu-link:hove
   position: relative;
 }
 
-.banner-outline {
+.banner .banner-outline {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../../images/banner_outline.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: 2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.banner .banner-texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: -65px;
+  z-index: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.banner .custom-container {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0;
+  padding-top: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.banner .custom-container .bannerSwiper {
+  width: 100%;
+  height: 100%;
+  padding: 150px;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide .left {
+  width: 100%;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide .left .title {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide .left .banner-link {
+  display: block;
+  margin-top: 110px;
+  background: #ff621f;
+  width: 180px;
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: white;
+  -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+}
+
+.banner .custom-container .bottom-left-buttons {
+  width: 807px;
+  height: 250px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.banner .custom-container .bottom-left-buttons .buttons-outline {
+  width: 100%;
+  height: 100%;
+  -webkit-mask: url("../../images/banner_outline_left_bottom.svg") no-repeat center/contain;
+          mask: url("../../images/banner_outline_left_bottom.svg") no-repeat center/contain;
+  background: #fcbd1f;
+  position: absolute;
+  top: 33px;
+  right: 45px;
+}
+
+.banner .custom-container .bottom-left-buttons .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 10px);
+}
+
+.banner .custom-container .bottom-left-buttons .buttons .banner-swiper-button-prev,
+.banner .custom-container .bottom-left-buttons .buttons .banner-swiper-button-next {
+  position: relative;
+  z-index: 2;
+  font-size: 50px;
+  color: white;
+}
+
+.banner .custom-container .bottom-left-buttons .buttons .banner-swiper-pagination {
+  width: auto;
+  position: relative;
+  z-index: 2;
+  bottom: auto;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  padding: 0 32px;
+  color: white;
 }
 
 section.popular-competition {
@@ -443,7 +559,7 @@ section.popular-competition .custom-container .intro {
 section.popular-competition .custom-container .intro .icon {
   font-size: 230px;
   position: absolute;
-  right: 150px;
+  right: 90px;
   top: 23%;
   z-index: 1;
   color: #F0F0F0;

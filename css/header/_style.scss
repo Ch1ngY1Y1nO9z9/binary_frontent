@@ -27,12 +27,20 @@ header {
             @include Sans(700, 18px, 19px, .1em);
             text-align: center;
             color: $white-1;
+
+            &:hover {
+                background: $yellow-5;
+            }
         }
 
         .account {
             color: $blue-5;
             font-size: 30px;
             padding: 0 40px;
+
+            &:hover {
+                color: $yellow-5;
+            }
         }
 
         .burger-menu {
@@ -50,6 +58,22 @@ header {
                     outline: none;
                 }
 
+                &:hover {
+
+                    &.burger-style{
+                        &:after,
+                        &:before,
+                        span {
+                            background: $yellow-5;
+                        }
+
+                        span:before {
+                            background: $yellow-5;
+                        }
+                    }
+
+                }
+
                 &.burger-style {
 
                     &:after,
@@ -61,7 +85,6 @@ header {
                         position: absolute;
                         display: block;
                         background: $blue-5;
-
                     }
 
                     &:after,

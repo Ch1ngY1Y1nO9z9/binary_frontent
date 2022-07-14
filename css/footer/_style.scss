@@ -1,14 +1,10 @@
 footer {
     width: 100%;
-    padding-top: 250px;
     position: relative;
     z-index: 2;
-
-    background-image: url('../../images/footer_block.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background: $blue-5;
     overflow: hidden;
+    padding-top: 25px;
 
     .tiger-blue {
         position: absolute;
@@ -66,14 +62,16 @@ footer {
             bottom: -60px;
 
             &:hover {
-                svg {
-                    fill: $yellow-5;
+                .outline {
+                    background: $yellow-5;
                 }
             }
 
-            svg {
+            .outline {
                 width: 100%;
                 height: 100%;
+                mask: url('../../images/normal_outline.svg') no-repeat center / contain;
+                background: $orange-5;
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -97,7 +95,7 @@ footer {
     nav {
         padding-top: 200px;
         position: relative;
-        z-index: 2;
+        z-index: 1;
 
         .links {
             padding: 6px 25px;
@@ -147,7 +145,7 @@ footer {
 
         padding-bottom: 22px;
 
-        @include Sans(500, 14, 24, .1em);
+        @include Sans(500, 14px, 24px, .1em);
         text-align: center;
         color: $yellow-5;
     }

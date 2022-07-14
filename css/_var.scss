@@ -53,6 +53,11 @@ $tiger-blue: rgba(0, 78, 194, 1); //004EC2
 
 $white-1: rgba(255, 255, 255, 1); //FFFFFF
 
+$disable-gray: #A4A4A4;
+$icon-gray: #F0F0F0;
+$avatar-gray: #717171;
+$border-gray: #E9E9E9;
+
 @mixin bg-gardient-blue {
     background: linear-gradient($blue-5, #00CAE7);
     color: $white-1;

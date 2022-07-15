@@ -12,12 +12,6 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
     },
 });
 
-var cardsSwiper = new Swiper(".cardsSwiper", {
-    slidesPerView: 3,
-    centeredSlides: true,
-    direction: "vertical",
-});
-
 var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 3,
     centeredSlides: true,

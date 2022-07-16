@@ -1,15 +1,15 @@
-section.popular-competition {
+section.follow {
     position: relative;
     padding-bottom: 200px;
-
+    z-index: 2;
 
     .section-title {
         position: relative;
-        margin: auto;
         margin-bottom: 120px;
 
         @include Serif(48px, 69px, .05em);
         color: $white-1;
+        text-align: center;
 
         &::after {
             content: '';

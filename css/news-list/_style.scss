@@ -1,0 +1,118 @@
+section.news-list {
+    position: relative;
+    background-image: url(../../images/swiper_texture.jpg);
+
+    .news-background {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 300px;
+        z-index: 1;
+    }
+
+    .custom-container {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
+        .swiper-wrapper {
+            align-items: center;
+        }
+
+        .topnews-swiper-button-prev {
+            left: 15%;
+        }
+
+        .topnews-swiper-button-next {
+            right: 15%;
+        }
+
+        .swiper-button-prev,.swiper-button-next {
+            color: $orange-5;
+            font-size: 50px;
+
+            &::after {
+                content: ''
+            }
+        }
+
+        .popular-section,.news-section {
+            .title {
+                @include Serif(48px, 69px, .05em);
+                text-align: center;
+                position: relative;
+                margin-bottom: 96px;
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: calc(50% - 78px);
+                    width: 136px;
+                    height: 8px;
+                    background: $yellow-5;
+                }
+            }
+
+            .newsSwiper,.popularSwiper {
+                .swiper-slide {
+                    width: 550px;
+        
+                    .link {
+                        width: 100%;
+                        height: 100%;
+        
+                        .pic {
+                            width: 100%;
+                            height: 350px;
+                            mask: url('../../images/swiper_outline-1.svg') no-repeat center / contain;
+                            background: $yellow-5;
+                        }
+        
+        
+                        .tag {
+                            display: inline-block;
+                            padding: 0 41px;
+                            padding-top: 5px;
+                            padding-bottom: 10px;
+                            margin-top: 25px;
+                            margin-left: 16px;
+        
+                            @include Sans(500, 18px, 26px, .1em);
+                            color: $white-1;
+                            border: 2px solid #FF621F;
+                        }
+        
+                        .description {
+                            width: 472px;
+                            margin-top: 25px;
+                            margin-left: 16px;
+                            @include Sans(700, 18px, 23px, .1em);
+                            color: $white-1;
+                            text-align: justify;
+        
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }    
+        }
+
+        .popular-section {
+            padding-bottom: 150px;
+            .title {
+                color: $gray-5;
+            }
+        }
+
+        .news-section {
+            padding-bottom: 200px;
+            .title {
+                color: $white-1;
+            }
+        }
+    }
+}

@@ -862,7 +862,7 @@ header .header-r .burger-menu .menu-modal .link-list .menu-links .menu-link:hove
 section.top-news {
   width: 100%;
   height: 100vh;
-  margin: -100px 0;
+  margin-top: -100px;
   background-image: url("../../images/swiper_texture.jpg");
   position: relative;
   display: -webkit-box;
@@ -895,17 +895,17 @@ section.top-news .custom-container .topNewsSwiper {
   height: 100%;
 }
 
-section.top-news .custom-container .topNewsSwiper .topnews-swiper-button-prev, section.top-news .custom-container .topNewsSwiper .topnews-swiper-button-next {
-  color: #ff621f;
-  font-size: 50px;
-}
-
 section.top-news .custom-container .topNewsSwiper .topnews-swiper-button-prev {
   left: 15%;
 }
 
 section.top-news .custom-container .topNewsSwiper .topnews-swiper-button-next {
   right: 15%;
+}
+
+section.top-news .custom-container .topNewsSwiper .swiper-button-prev, section.top-news .custom-container .topNewsSwiper .swiper-button-next {
+  color: #ff621f;
+  font-size: 50px;
 }
 
 section.top-news .custom-container .topNewsSwiper .swiper-button-prev::after, section.top-news .custom-container .topNewsSwiper .swiper-button-next::after {
@@ -918,7 +918,7 @@ section.top-news .custom-container .topNewsSwiper .swiper-slide.swiper-slide-act
 
 section.top-news .custom-container .topNewsSwiper .swiper-slide {
   width: 900px;
-  opacity: .4;
+  opacity: .8;
 }
 
 section.top-news .custom-container .topNewsSwiper .swiper-slide .news-picture {
@@ -967,14 +967,145 @@ section.top-news .custom-container .topNewsSwiper .swiper-slide .news-picture .d
   white-space: nowrap;
 }
 
-section.popular-competition {
+section.news-list {
   position: relative;
+  background-image: url(../../images/swiper_texture.jpg);
+}
+
+section.news-list .news-background {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+}
+
+section.news-list .custom-container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+section.news-list .custom-container .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.news-list .custom-container .topnews-swiper-button-prev {
+  left: 15%;
+}
+
+section.news-list .custom-container .topnews-swiper-button-next {
+  right: 15%;
+}
+
+section.news-list .custom-container .swiper-button-prev, section.news-list .custom-container .swiper-button-next {
+  color: #ff621f;
+  font-size: 50px;
+}
+
+section.news-list .custom-container .swiper-button-prev::after, section.news-list .custom-container .swiper-button-next::after {
+  content: '';
+}
+
+section.news-list .custom-container .popular-section .title, section.news-list .custom-container .news-section .title {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 96px;
+}
+
+section.news-list .custom-container .popular-section .title::after, section.news-list .custom-container .news-section .title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 78px);
+  width: 136px;
+  height: 8px;
+  background: #fcbd1f;
+}
+
+section.news-list .custom-container .popular-section .newsSwiper .swiper-slide, section.news-list .custom-container .popular-section .popularSwiper .swiper-slide, section.news-list .custom-container .news-section .newsSwiper .swiper-slide, section.news-list .custom-container .news-section .popularSwiper .swiper-slide {
+  width: 550px;
+}
+
+section.news-list .custom-container .popular-section .newsSwiper .swiper-slide .link, section.news-list .custom-container .popular-section .popularSwiper .swiper-slide .link, section.news-list .custom-container .news-section .newsSwiper .swiper-slide .link, section.news-list .custom-container .news-section .popularSwiper .swiper-slide .link {
+  width: 100%;
+  height: 100%;
+}
+
+section.news-list .custom-container .popular-section .newsSwiper .swiper-slide .link .pic, section.news-list .custom-container .popular-section .popularSwiper .swiper-slide .link .pic, section.news-list .custom-container .news-section .newsSwiper .swiper-slide .link .pic, section.news-list .custom-container .news-section .popularSwiper .swiper-slide .link .pic {
+  width: 100%;
+  height: 350px;
+  -webkit-mask: url("../../images/swiper_outline-1.svg") no-repeat center/contain;
+          mask: url("../../images/swiper_outline-1.svg") no-repeat center/contain;
+  background: #fcbd1f;
+}
+
+section.news-list .custom-container .popular-section .newsSwiper .swiper-slide .link .tag, section.news-list .custom-container .popular-section .popularSwiper .swiper-slide .link .tag, section.news-list .custom-container .news-section .newsSwiper .swiper-slide .link .tag, section.news-list .custom-container .news-section .popularSwiper .swiper-slide .link .tag {
+  display: inline-block;
+  padding: 0 41px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-left: 16px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: white;
+  border: 2px solid #FF621F;
+}
+
+section.news-list .custom-container .popular-section .newsSwiper .swiper-slide .link .description, section.news-list .custom-container .popular-section .popularSwiper .swiper-slide .link .description, section.news-list .custom-container .news-section .newsSwiper .swiper-slide .link .description, section.news-list .custom-container .news-section .popularSwiper .swiper-slide .link .description {
+  width: 472px;
+  margin-top: 25px;
+  margin-left: 16px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: white;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section.news-list .custom-container .popular-section {
+  padding-bottom: 150px;
+}
+
+section.news-list .custom-container .popular-section .title {
+  color: #393939;
+}
+
+section.news-list .custom-container .news-section {
   padding-bottom: 200px;
 }
 
-section.popular-competition .section-title {
+section.news-list .custom-container .news-section .title {
+  color: white;
+}
+
+section.follow {
   position: relative;
-  margin: auto;
+  padding-bottom: 200px;
+  z-index: 2;
+}
+
+section.follow .section-title {
+  position: relative;
   margin-bottom: 120px;
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
@@ -982,9 +1113,10 @@ section.popular-competition .section-title {
   line-height: 69px;
   letter-spacing: 0.05em;
   color: white;
+  text-align: center;
 }
 
-section.popular-competition .section-title::after {
+section.follow .section-title::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -994,7 +1126,7 @@ section.popular-competition .section-title::after {
   background: #fcbd1f;
 }
 
-section.popular-competition .custom-container {
+section.follow .custom-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,12 +1138,12 @@ section.popular-competition .custom-container {
   margin: 0 auto;
 }
 
-section.popular-competition .custom-container .intro {
+section.follow .custom-container .intro {
   position: relative;
   padding-left: 60px;
 }
 
-section.popular-competition .custom-container .intro .icon {
+section.follow .custom-container .intro .icon {
   font-size: 230px;
   position: absolute;
   right: 90px;
@@ -1020,7 +1152,7 @@ section.popular-competition .custom-container .intro .icon {
   color: #F0F0F0;
 }
 
-section.popular-competition .custom-container .intro .title {
+section.follow .custom-container .intro .title {
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
   font-size: 48px;
@@ -1030,7 +1162,7 @@ section.popular-competition .custom-container .intro .title {
   padding-bottom: 60px;
 }
 
-section.popular-competition .custom-container .intro .context {
+section.follow .custom-container .intro .context {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 24px;
@@ -1042,7 +1174,7 @@ section.popular-competition .custom-container .intro .context {
   z-index: 2;
 }
 
-section.popular-competition .custom-container .intro .number {
+section.follow .custom-container .intro .number {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 900;
   font-size: 150px;
@@ -1054,11 +1186,11 @@ section.popular-competition .custom-container .intro .number {
   z-index: 2;
 }
 
-section.popular-competition .custom-container .intro .number span {
+section.follow .custom-container .intro .number span {
   font-size: 30px;
 }
 
-section.popular-competition .custom-container .intro .notice {
+section.follow .custom-container .intro .notice {
   width: 400px;
   height: 80px;
   position: relative;
@@ -1067,14 +1199,14 @@ section.popular-competition .custom-container .intro .notice {
   padding-bottom: 115px;
 }
 
-section.popular-competition .custom-container .intro .notice .noticeSwiper {
+section.follow .custom-container .intro .notice .noticeSwiper {
   width: 100%;
   height: 100%;
   margin: initial;
   border: 1px solid #A4A4A4;
 }
 
-section.popular-competition .custom-container .intro .notice .noticeSwiper .swiper-slide {
+section.follow .custom-container .intro .notice .noticeSwiper .swiper-slide {
   padding: 16px 25px;
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
@@ -1085,7 +1217,7 @@ section.popular-competition .custom-container .intro .notice .noticeSwiper .swip
   color: #A4A4A4;
 }
 
-section.popular-competition .custom-container .intro .notice .buttons {
+section.follow .custom-container .intro .notice .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1096,7 +1228,7 @@ section.popular-competition .custom-container .intro .notice .buttons {
   bottom: 0;
 }
 
-section.popular-competition .custom-container .intro .notice .buttons .notice-swiper-pagination {
+section.follow .custom-container .intro .notice .buttons .notice-swiper-pagination {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -1106,24 +1238,24 @@ section.popular-competition .custom-container .intro .notice .buttons .notice-sw
   margin: 0 16px;
 }
 
-section.popular-competition .custom-container .intro .notice .buttons .notice-swiper-button-next, section.popular-competition .custom-container .intro .notice .buttons .notice-swiper-button-prev {
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next, section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev {
   color: #A4A4A4;
   font-size: 30px;
 }
 
-section.popular-competition .custom-container .intro .notice .buttons .notice-swiper-button-next::after, section.popular-competition .custom-container .intro .notice .buttons .notice-swiper-button-prev::after {
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next::after, section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev::after {
   content: initial;
 }
 
-section.popular-competition .custom-container .feature {
+section.follow .custom-container .feature {
   position: relative;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper {
+section.follow .custom-container .feature .featureSwiper {
   height: 100%;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card {
   width: 100%;
   max-width: 280px;
   -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
@@ -1131,7 +1263,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   padding: 20px 30px;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .head {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .head {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -1140,37 +1272,37 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   color: #0046ae;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card hr {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card hr {
   border-top: 1px solid #0046ae;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 25px 0;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .avatar {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .avatar {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   background: #717171;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .avatar img {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .avatar img {
   width: 100%;
   height: 100%;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail {
   padding-left: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .name {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .name {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -1179,7 +1311,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   color: #393939;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .skill {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .skill {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 14px;
@@ -1190,7 +1322,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   padding-bottom: 13px;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .follow-btn {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .follow-btn {
   width: 100%;
   border: 1px solid #0046ae;
   border-radius: 5px;
@@ -1204,13 +1336,13 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   color: #0046ae;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
@@ -1219,7 +1351,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   position: relative;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate:first-child::after {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate:first-child::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -1228,7 +1360,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   top: 0;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .wins {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .wins {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 900;
   font-size: 48px;
@@ -1236,7 +1368,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   letter-spacing: 1;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .per {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .per {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 900;
   font-size: 18px;
@@ -1244,7 +1376,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   letter-spacing: 1;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .total {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .total {
   width: 100%;
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
@@ -1254,7 +1386,7 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   color: #A4A4A4;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .title {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .total-rate .title {
   width: 100%;
   padding-top: 16px;
   font-family: 'Noto Sans TC', 'sans-serif';
@@ -1265,20 +1397,20 @@ section.popular-competition .custom-container .feature .featureSwiper .swiper-sl
   color: #393939;
 }
 
-section.popular-competition .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .border {
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate .border {
   height: 100%;
   border-left: 1px solid #E9E9E9;
   padding: 0 30px;
 }
 
-section.popular-competition .custom-container .feature .swiper-button-prev, section.popular-competition .custom-container .feature .swiper-button-next {
+section.follow .custom-container .feature .swiper-button-prev, section.follow .custom-container .feature .swiper-button-next {
   width: initial;
   height: initial;
   color: #ff621f;
   font-size: 40px;
 }
 
-section.popular-competition .custom-container .feature .swiper-button-prev::after, section.popular-competition .custom-container .feature .swiper-button-next::after {
+section.follow .custom-container .feature .swiper-button-prev::after, section.follow .custom-container .feature .swiper-button-next::after {
   content: initial;
 }
 

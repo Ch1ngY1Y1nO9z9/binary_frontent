@@ -1,0 +1,97 @@
+section.top-news {
+    width: 100%;
+    height: 100vh;
+    margin: -100px 0;
+
+    background-image: url('../../images/swiper_texture.jpg');
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pine-yellow {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        width: 522px;
+        height: 330px;
+    }
+
+    .custom-container {
+        width: 1575px;
+        height: 600px;
+        position: relative;
+
+        .topNewsSwiper {
+            width: 100%;
+            height: 100%;
+
+            .topnews-swiper-button-prev,.topnews-swiper-button-next {
+                color: $orange-5;
+                font-size: 50px;
+            }
+
+            .topnews-swiper-button-prev {
+                left: 15%;
+            }
+
+            .topnews-swiper-button-next {
+                right: 15%;
+            }
+
+            .swiper-button-prev,.swiper-button-next {
+                &::after {
+                    content: ''
+                }
+            }
+
+            .swiper-slide.swiper-slide-active{
+                opacity: 1;
+            }
+
+            .swiper-slide {
+                width: 900px;
+                opacity: .4;
+
+                .news-picture {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 100%;
+                    padding: 75px 65px;
+
+                    mask: url('../../images/swiper_outline-1.svg') no-repeat center / contain;
+                    background: $yellow-5;
+
+                    .title {
+
+                        span {
+                            display: inline-block;
+                            background: $orange-5;
+                            padding: 0 29px;
+                            padding-bottom: 10px;
+    
+                            @include Sans(500, 18px, 26px, .1em);
+                            color: $white-1;
+                        }
+                    }
+
+                    .description {
+                        width: 616px;
+                        padding-top: 16px;
+                        @include Sans(700, 18px, 25px, .1em);
+                        color: $white-1;
+
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

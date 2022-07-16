@@ -3,7 +3,7 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
         el: ".banner-swiper-pagination",
         type: 'custom',
         renderCustom: function (swiper, current, total) {
-            return ('0'+current) + '/' + ('0'+ total); 
+            return ('0' + current) + '/' + ('0' + total);
         }
     },
     navigation: {
@@ -12,9 +12,23 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
     },
 });
 
-var swiper3 = new Swiper(".mySwiper3", {
-    slidesPerView: 3,
+var topNewsSwiper = new Swiper(".topNewsSwiper", {
+    navigation: {
+        nextEl: ".topnews-swiper-button-next",
+        prevEl: ".topnews-swiper-button-prev",
+    },
+    effect: 'coverflow',
+    grabCursor: true,
     centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: '40%',
+        depth: 350,
+        modifier: 1,
+        slideShadows: false,
+    },
+    initialSlide: 1,
 });
 
 var noticeSwiper = new Swiper(".noticeSwiper", {
@@ -22,7 +36,7 @@ var noticeSwiper = new Swiper(".noticeSwiper", {
         el: ".notice-swiper-pagination",
         type: 'custom',
         renderCustom: function (swiper, current, total) {
-            return ('0'+current) + '/' + ('0'+ total); 
+            return ('0' + current) + '/' + ('0' + total);
         }
     },
     navigation: {
@@ -34,7 +48,7 @@ var noticeSwiper = new Swiper(".noticeSwiper", {
 var featureSwiper = new Swiper(".featureSwiper", {
     slidesPerView: 2,
     slidesPerColumn: 2,
-    slidesPerGroup :2,
+    slidesPerGroup: 2,
     spaceBetween: 30,
     navigation: {
         nextEl: ".feature-swiper-button-next",

@@ -1,6 +1,24 @@
 section.news-list {
     position: relative;
-    background-image: url(../../images/swiper_texture.jpg);
+    margin-top: -400px;
+
+    .pine-yellow {
+        position: absolute;
+        right: 0px;
+        top: -15px;
+
+        width: 522px;
+        height: 330px;
+
+        overflow: hidden;
+
+        object {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            right: -10px;
+        }
+    }
 
     .news-background {
         width: 100%;
@@ -109,7 +127,7 @@ section.news-list {
         }
 
         .news-section {
-            padding-bottom: 200px;
+            padding-bottom: 260px;
             .title {
                 color: $white-1;
             }

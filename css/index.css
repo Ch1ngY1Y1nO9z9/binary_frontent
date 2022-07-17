@@ -863,6 +863,9 @@ section.top-news {
   width: 100%;
   height: 100vh;
   margin-top: -100px;
+  padding-bottom: 300px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background-image: url("../../images/swiper_texture.jpg");
   position: relative;
   display: -webkit-box;
@@ -874,14 +877,6 @@ section.top-news {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.top-news .pine-yellow {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 522px;
-  height: 330px;
 }
 
 section.top-news .custom-container {
@@ -969,7 +964,23 @@ section.top-news .custom-container .topNewsSwiper .swiper-slide .news-picture .d
 
 section.news-list {
   position: relative;
-  background-image: url(../../images/swiper_texture.jpg);
+  margin-top: -400px;
+}
+
+section.news-list .pine-yellow {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+  width: 522px;
+  height: 330px;
+  overflow: hidden;
+}
+
+section.news-list .pine-yellow object {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: -10px;
 }
 
 section.news-list .news-background {
@@ -1091,7 +1102,7 @@ section.news-list .custom-container .popular-section .title {
 }
 
 section.news-list .custom-container .news-section {
-  padding-bottom: 200px;
+  padding-bottom: 260px;
 }
 
 section.news-list .custom-container .news-section .title {
@@ -1101,11 +1112,12 @@ section.news-list .custom-container .news-section .title {
 section.follow {
   position: relative;
   padding-bottom: 200px;
-  z-index: 2;
+  background: white;
 }
 
 section.follow .section-title {
   position: relative;
+  z-index: 1;
   margin-bottom: 120px;
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
@@ -1134,13 +1146,14 @@ section.follow .custom-container {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  width: 75%;
-  margin: 0 auto;
+  padding: 0 225px;
+  position: relative;
+  z-index: 1;
 }
 
 section.follow .custom-container .intro {
   position: relative;
-  padding-left: 60px;
+  padding-left: 100px;
 }
 
 section.follow .custom-container .intro .icon {
@@ -1238,12 +1251,14 @@ section.follow .custom-container .intro .notice .buttons .notice-swiper-paginati
   margin: 0 16px;
 }
 
-section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next, section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev {
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next,
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev {
   color: #A4A4A4;
   font-size: 30px;
 }
 
-section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next::after, section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev::after {
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-next::after,
+section.follow .custom-container .intro .notice .buttons .notice-swiper-button-prev::after {
   content: initial;
 }
 
@@ -1253,14 +1268,39 @@ section.follow .custom-container .feature {
 
 section.follow .custom-container .feature .featureSwiper {
   height: 100%;
+  padding-bottom: 200px;
+}
+
+section.follow .custom-container .feature .featureSwiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 45px;
 }
 
 section.follow .custom-container .feature .featureSwiper .swiper-slide .card {
   width: 100%;
   max-width: 280px;
-  -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
-          box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+  height: 315px;
   padding: 20px 30px;
+  -webkit-box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background: white;
+}
+
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card:first-child {
+  margin-top: 0;
+}
+
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card:nth-child(odd) {
+  margin-right: 60px;
+}
+
+section.follow .custom-container .feature .featureSwiper .swiper-slide .card:nth-child(even) {
+  margin-top: 50px;
 }
 
 section.follow .custom-container .feature .featureSwiper .swiper-slide .card .head {
@@ -1403,21 +1443,32 @@ section.follow .custom-container .feature .featureSwiper .swiper-slide .card .ca
   padding: 0 30px;
 }
 
-section.follow .custom-container .feature .swiper-button-prev, section.follow .custom-container .feature .swiper-button-next {
+section.follow .custom-container .feature .swiper-button-prev,
+section.follow .custom-container .feature .swiper-button-next {
   width: initial;
   height: initial;
   color: #ff621f;
   font-size: 40px;
 }
 
-section.follow .custom-container .feature .swiper-button-prev::after, section.follow .custom-container .feature .swiper-button-next::after {
+section.follow .custom-container .feature .swiper-button-prev::after,
+section.follow .custom-container .feature .swiper-button-next::after {
   content: initial;
+}
+
+section.follow .custom-container .feature .swiper-button-prev {
+  left: -35px;
+}
+
+section.follow .custom-container .feature .swiper-button-next {
+  right: -35px;
 }
 
 section.cards {
   position: relative;
   z-index: 1;
   padding-bottom: 250px;
+  background: white;
 }
 
 section.cards::before {
@@ -1437,9 +1488,9 @@ section.cards::before {
 section.cards .dragon-left {
   position: absolute;
   left: 0;
-  top: 30px;
+  bottom: -150px;
   z-index: 1;
-  max-width: 620px;
+  max-width: 850px;
 }
 
 section.cards .dragon-left .cls-1 {
@@ -1453,7 +1504,7 @@ section.cards .dragon-left .cls-2 {
 section.cards .dragon-right {
   position: absolute;
   right: 0;
-  top: -125px;
+  top: -45px;
   z-index: 1;
   max-width: 560px;
 }

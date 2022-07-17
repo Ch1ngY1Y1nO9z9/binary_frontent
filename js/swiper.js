@@ -66,10 +66,7 @@ var noticeSwiper = new Swiper(".noticeSwiper", {
 });
 
 var featureSwiper = new Swiper(".featureSwiper", {
-    slidesPerView: 2,
-    slidesPerColumn: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 30,
+    slidesPerView: 'auto',
     navigation: {
         nextEl: ".feature-swiper-button-next",
         prevEl: ".feature-swiper-button-prev",

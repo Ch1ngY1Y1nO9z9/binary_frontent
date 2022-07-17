@@ -2,6 +2,8 @@ section.top-news {
     width: 100%;
     height: 100vh;
     margin-top: -100px;
+    padding-bottom: 300px;
+    box-sizing: content-box;
 
     background-image: url('../../images/swiper_texture.jpg');
 
@@ -10,15 +12,6 @@ section.top-news {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .pine-yellow {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        width: 522px;
-        height: 330px;
-    }
 
     .custom-container {
         width: 1575px;

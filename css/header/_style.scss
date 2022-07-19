@@ -2,11 +2,11 @@ header {
     background: $white-1;
     padding: 24px 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: 785px) {
         padding: 17px 0;
     }
 
-    @media(max-width: 576px) {
+    @media(max-width: 593px) {
         padding: 10px 0;
     }
 
@@ -21,14 +21,14 @@ header {
             max-width: 1200px;
         }
 
-        @media(max-width: 768px) {
+        @media(max-width: 785px) {
             padding: 0 29px;
-            max-width: 768px;
+            max-width: 785px;
         }
 
-        @media(max-width: 576px) {
-            padding: 0 21px;
-            max-width: 576px;
+        @media(max-width: 593px) {
+            padding: 0 15px;
+            max-width: 593px; 
         }
 
         .header-l {
@@ -39,7 +39,7 @@ header {
                 img {
                     width: 65px;
 
-                    @media(max-width: 576px) {
+                    @media(max-width: 593px) {
                         width: 30px;
                     }
                 }
@@ -48,7 +48,7 @@ header {
                     padding-left: 15px;
                     @include Serif(30px, 117.52%, initial);
 
-                    @media(max-width: 576px) {
+                    @media(max-width: 593px) {
                         padding-left: 7px;
                         font-size: 18px;
                     }
@@ -74,10 +74,10 @@ header {
                     background: $yellow-5;
                 }
 
-                @media(max-width: 576px) {
+                @media(max-width: 593px) {
                     padding: 5px 20px;
                     font-size: 14px;
-                }
+                }   
             }
 
             .account {
@@ -89,7 +89,7 @@ header {
                     color: $yellow-5;
                 } 
 
-                @media(max-width: 576px) {
+                @media(max-width: 593px) {
                     font-size: 20px;
                     padding: 0 24px;
                 }
@@ -106,7 +106,7 @@ header {
                     z-index: 50;
                     cursor: pointer;
 
-                    @media(max-width: 576px) {
+                    @media(max-width: 593px) {
                         width: 22px;
                         height: 20px;
                     }

@@ -17,11 +17,20 @@ section.top-news {
         padding-top: 125px;
     }
 
+    @media(max-width: 785px) {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
     .custom-container {
         width: 100%;
         max-width: 1575px;
         height: 600px;
         position: relative;
+
+        @media(max-width: 785px) {
+            height: 467px;
+        }
 
         .topNewsSwiper {
             width: 100%;
@@ -33,6 +42,11 @@ section.top-news {
                 @media(max-width: 1297px) {
                     left: 10%;
                 }
+
+                @media(max-width: 785px) {
+                    left: 5%;
+                }
+
             }
 
             .topnews-swiper-button-next {
@@ -41,6 +55,11 @@ section.top-news {
                 @media(max-width: 1297px) {
                     right: 10%;
                 }
+
+                @media(max-width: 785px) {
+                    right: 5%;
+                }
+
             }
 
             .swiper-button-prev,.swiper-button-next {
@@ -48,6 +67,10 @@ section.top-news {
                 font-size: 50px;
                 &::after {
                     content: ''
+                }
+
+                @media(max-width: 785px) {
+                    background: $white-1;
                 }
             }
 
@@ -60,6 +83,10 @@ section.top-news {
                 max-width: 900px;
                 opacity: .8;
 
+                @media(max-width: 785px) {
+                    max-width: 700px;
+                }
+
                 .news-picture {
                     display: flex;
                     flex-direction: column;
@@ -67,6 +94,10 @@ section.top-news {
                     width: 100%;
                     height: 100%;
                     padding: 75px 65px;
+
+                    @media(max-width: 785px) {
+                        padding: 75px 50px;
+                    }
 
                     mask: url('../../images/swiper_outline-1.svg') no-repeat center / contain;
                     background: $yellow-5;
@@ -92,7 +123,8 @@ section.top-news {
                     }
 
                     .description {
-                        width: 616px;
+                        width: 100%;
+                        max-width: 616px;
                         padding-top: 16px;
                         @include Sans(700, 18px, 25px, .1em);
                         color: $white-1;

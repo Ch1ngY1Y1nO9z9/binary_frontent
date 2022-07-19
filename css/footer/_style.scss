@@ -2,7 +2,9 @@ footer {
     width: 100%;
     position: relative;
     z-index: 2;
+    padding: 0 30px;
     padding-top: 25px;
+
 
     &::before {
         content: '';
@@ -65,10 +67,19 @@ footer {
 
     .join-us {
         max-width: 1045px;
-        padding: 50px 100px;
+        background: $white-1;
+        padding: 45px 100px 55px;
         @include box-shadow;
+
+        display: flex;
+        margin: 0 auto;
+
         position: relative;
         z-index: 2;
+
+        @media(max-width: 785px) {
+            padding: 27px 50px 93px; 
+        }
 
         .title {
             width: 200px;
@@ -88,6 +99,11 @@ footer {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 5;
+
+            @media(max-width: 785px) {
+                padding-top: 32px;
+                font-weight: 400;
+            }
         }
 
         .join-link {
@@ -102,6 +118,11 @@ footer {
                     background: $yellow-5;
                 }
             }
+
+            @media(max-width: 785px) {
+                right: calc(50% - 160px);
+            }
+    
 
             .outline {
                 width: 100%;
@@ -188,12 +209,5 @@ footer {
         @include Sans(500, 14px, 24px, .1em);
         text-align: center;
         color: $yellow-5;
-    }
-
-    .bottom-line {
-        position: relative;
-        z-index: 2;
-        height: 24px;
-        background: $yellow-5;
     }
 }

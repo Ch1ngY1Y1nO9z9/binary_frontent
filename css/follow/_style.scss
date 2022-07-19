@@ -31,6 +31,10 @@ section.follow {
         position: relative;
         z-index: 1;
 
+        @media(max-width: 785px) {
+            flex-direction: column;
+        }
+
         .swiper-wrapper {
             height: auto;
         }
@@ -45,6 +49,13 @@ section.follow {
             
             @media(max-width: 1297px) {
                 padding-left: 30px;
+            }
+
+            @media(max-width: 785px) {
+                width: 100%;
+                padding-left: 80px;
+                max-width: 645px;
+                margin-bottom: 80px;
             }
 
 
@@ -67,6 +78,10 @@ section.follow {
                         @media(max-width: 1297px) {
                             right: -20px;
                         }
+
+                        @media(max-width: 785px) {
+                            right: 0;
+                        }
                     }
 
                     .title {
@@ -80,6 +95,11 @@ section.follow {
                         @media(max-width: 1297px) {
                             line-height: 65px;
                             padding-bottom: 43px;
+                        }
+
+                        @media(max-width: 785px) {
+                            width: 100%;
+                            max-width: 457px;
                         }
                     }
 
@@ -117,6 +137,10 @@ section.follow {
                     display: flex;
                     align-items: center;
 
+                    @media(max-width: 785px) {
+                        padding-top: 92px;
+                    }
+
                     .intro-swiper-pagination {
                         @include Sans(700, 18px, 19px, .1em);
                         color: $disable-gray;
@@ -141,9 +165,17 @@ section.follow {
             width: 55%;
             position: relative;
 
+            @media(max-width: 785px) {
+                width: 100%;
+            }
+
             .featureSwiper {
                 height: 100%;
                 padding-bottom: 200px;
+
+                @media(max-width: 785px) {
+                    padding-bottom: 150px;
+                }
 
                 .swiper-slide {
                     display: flex;

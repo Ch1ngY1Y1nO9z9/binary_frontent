@@ -51,17 +51,17 @@ var newsSwiper = new Swiper(".newsSwiper", {
     freeMode : true,
 });
 
-var noticeSwiper = new Swiper(".noticeSwiper", {
+var introSwiper = new Swiper(".introSwiper", {
     pagination: {
-        el: ".notice-swiper-pagination",
+        el: ".intro-swiper-pagination",
         type: 'custom',
         renderCustom: function (swiper, current, total) {
             return ('0' + current) + '/' + ('0' + total);
         }
     },
     navigation: {
-        nextEl: ".notice-swiper-button-next",
-        prevEl: ".notice-swiper-button-prev",
+        nextEl: ".intro-swiper-button-next",
+        prevEl: ".intro-swiper-button-prev",
     },
 });
 

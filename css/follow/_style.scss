@@ -1,6 +1,5 @@
 section.follow {
     position: relative;
-    padding-bottom: 200px;
     background: $white-1;
 
     .section-title {
@@ -15,8 +14,8 @@ section.follow {
         &::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: calc(50% - 78px);
+            bottom: -16px;
+            left: calc(50% - 68px);
             width: 136px;
             height: 8px;
             background: $yellow-5;
@@ -26,84 +25,107 @@ section.follow {
     .custom-container {
         display: flex;
         flex-direction: row-reverse;
-        padding: 0 225px;
+        width: 100%;
+        max-width: 1470px;
+        margin: 0 auto;
         position: relative;
         z-index: 1;
 
+        .swiper-wrapper {
+            height: auto;
+        }
+
         .intro {
+            width: 45%;
+            max-width: 663px;
             position: relative;
-            padding-left: 100px;
+            padding-left: 60px;
+            margin-bottom: 200px;
 
-            .icon {
-                font-size: 230px;
-                position: absolute;
-                right: 90px;
-                top: 23%;
-                z-index: 1;
-                color: $icon-gray;
+            
+            @media(max-width: 1297px) {
+                padding-left: 30px;
             }
 
-            .title {
-                @include Serif(48px, 69px, .05em);
-                color: $blue-5;
-                padding-bottom: 60px;
-            }
 
-            .context {
-                @include Sans(400, 24px, 35px, .05em);
-                color: $gray-5;
-                margin-bottom: -35px;
-                position: relative;
-                z-index: 2;
-            }
 
-            .number {
-                @include Sans(900, 150px, 217px, 1);
-                color: $orange-5;
-                padding-bottom: 53px;
-                position: relative;
-                z-index: 2;
+            .introSwiper {
+                width: 100%;
+                margin: initial;
+                padding-top: 35px;
 
-                span {
-                    font-size: 30px;
-                }
-            }
+                .swiper-slide {
 
-            .notice {
-                width: 400px;
-                height: 80px;
-                position: relative;
-                box-sizing: content-box;
-                padding-bottom: 115px;
+                    .icon {
+                        font-size: 230px;
+                        position: absolute;
+                        right: 40px;
+                        bottom: 95px;
+                        z-index: 1;
+                        color: $icon-gray;
 
-                .noticeSwiper {
-                    width: 100%;
-                    height: 100%;
-                    margin: initial;
-                    border: 1px solid $disable-gray;
+                        @media(max-width: 1297px) {
+                            right: -20px;
+                        }
+                    }
 
-                    .swiper-slide {
-                        padding: 16px 25px;
+                    .title {
+                        @include Serif(48px, 69px, .05em);
+                        color: $blue-5;
+                        padding-bottom: 60px;
+
+                        position: relative;
+                        z-index: 2;
+
+                        @media(max-width: 1297px) {
+                            line-height: 65px;
+                            padding-bottom: 43px;
+                        }
+                    }
+
+                    .context {
+                        @include Sans(400, 24px, 35px, .05em);
+                        color: $gray-5;
+                        margin-bottom: -35px;
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    .number {
+                        @include Sans(900, 150px, 217px, 1);
+                        color: $orange-5;
+                        position: relative;
+                        z-index: 2;
+
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .notice {
+                        width: 400px;
+                        height: 80px;
                         @include Sans(400, 14px, 24px, .1em);
                         text-align: center;
+                        border: 1px solid $disable-gray;
                         color: $disable-gray;
+                        padding: 16px 25px;
                     }
                 }
 
                 .buttons {
                     display: flex;
                     align-items: center;
-                    position: absolute;
-                    bottom: 0;
 
-                    .notice-swiper-pagination {
+                    .intro-swiper-pagination {
                         @include Sans(700, 18px, 19px, .1em);
                         color: $disable-gray;
                         margin: 0 16px;
+                        width: auto;
                     }
 
-                    .notice-swiper-button-next,
-                    .notice-swiper-button-prev {
+                    .intro-swiper-button-next,
+                    .intro-swiper-button-prev {
                         color: $disable-gray;
                         font-size: 30px;
 
@@ -112,23 +134,27 @@ section.follow {
                         }
                     }
                 }
-
             }
-
         }
 
         .feature {
+            width: 55%;
             position: relative;
 
             .featureSwiper {
                 height: 100%;
                 padding-bottom: 200px;
 
-
                 .swiper-slide {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
+
                     padding: 0 45px;
+
+                    @media(max-width: 1297px) {
+                        padding: 0 20px;
+                    }
 
                     .card {
                         width: 100%;
@@ -143,11 +169,21 @@ section.follow {
                         &:first-child {
                             margin-top: 0;
                         }
+
                         &:nth-child(odd) {
                             margin-right: 60px;
+
+                            @media(max-width: 1297px) {
+                                margin-right: 40px;
+                            }
                         }
+
                         &:nth-child(even) {
                             margin-top: 50px;
+
+                            @media(max-width: 1297px) {
+                                margin-top: 30px;
+                            }
                         }
 
                         .head {
@@ -264,18 +300,11 @@ section.follow {
                 height: initial;
                 color: $orange-5;
                 font-size: 40px;
+                top: 37%;
 
                 &::after {
                     content: initial;
                 }
-            }
-
-            .swiper-button-prev {
-                left: -35px;
-            }
-
-            .swiper-button-next {
-                right: -35px
             }
         }
     }

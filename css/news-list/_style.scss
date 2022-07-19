@@ -2,6 +2,10 @@ section.news-list {
     position: relative;
     margin-top: -400px;
 
+    @media(max-width: 1297px) {
+        margin-top: -200px;
+    }
+
     .pine-yellow {
         position: absolute;
         right: 0px;
@@ -10,23 +14,36 @@ section.news-list {
         width: 522px;
         height: 330px;
 
-        overflow: hidden;
+        overflow : hidden;
+
+        @media(max-width: 1297px) {
+            top: -80px;
+        }
 
         object {
             width: 100%;
             height: 100%;
             position: relative;
             right: -10px;
+
+            @media(max-width: 1297px) {
+                right: -65%;
+            }
         }
     }
 
     .news-background {
         width: 100%;
-        object-fit: cover;
-        object-position: center;
+        height: 1610px;
+
         position: absolute;
         top: 300px;
         z-index: 1;
+
+        background-image: url('../../images/news_background.svg');
+        background-repeat: no-repeat;
+        background-size: 1920px 1610px;
+        background-position: center;
     }
 
     .custom-container {
@@ -65,8 +82,8 @@ section.news-list {
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: -10px;
-                    left: calc(50% - 78px);
+                    bottom: -16px;
+                    left: calc(50% - 68px);
                     width: 136px;
                     height: 8px;
                     background: $yellow-5;
@@ -115,6 +132,18 @@ section.news-list {
                             white-space: nowrap;
                         }
                     }
+
+                    &:hover {
+                        .link {
+                            .tag {
+                                color: $orange-5;
+                            }
+                        }
+
+                        .description {
+                            color: $orange-5;
+                        }
+                    }
                 }
             }    
         }
@@ -128,8 +157,14 @@ section.news-list {
 
         .news-section {
             padding-bottom: 260px;
+
+            @media(max-width: 1297px) {
+                padding-bottom: 200px;
+            }
+            
             .title {
                 color: $white-1;
+                letter-spacing: .3em;
             }
         }
     }

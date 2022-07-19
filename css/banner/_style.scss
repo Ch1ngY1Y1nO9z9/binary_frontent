@@ -3,6 +3,10 @@
     height: 929px;
     position: relative;
 
+    @media(max-width: 1297px) {
+        height: 620px;
+    }
+
     .banner-outline {
         width: 100%;
         height: 100%;
@@ -38,6 +42,12 @@
             padding: 150px;
             padding-right: 0;
 
+            @media(max-width: 1297px) {
+                padding: 0;
+                padding-left: 40px;
+                padding-top: 50px;
+            }
+
             .swiper-slide {
                 display: flex;
 
@@ -48,6 +58,11 @@
                     .title {
                         @include Serif(72px, 130%, .1em);
                         color: $white-1;
+                        text-shadow: 7px 7px 20px rgba(0, 0, 0, 0.7);
+
+                        @media(max-width: 1297px) {
+                            @include Serif(48px, 117.52%, .1em);
+                        }
                     }
 
                     .banner-link {
@@ -62,6 +77,10 @@
                         color: $white-1;
 
                         @include box-shadow;
+
+                        @media(max-width: 1297px) {
+                            margin-top: 96px;
+                        }
                     }
 
                     .scription {
@@ -347,6 +366,11 @@
             bottom: 0;
             z-index: 2;
 
+            @media(max-width: 1297px) {
+                width: 539px;
+                height: 167px;
+            }
+
             .buttons-outline {
                 width: 100%;
                 height: 100%;
@@ -364,6 +388,10 @@
                 position: absolute;
                 left: calc(50% - 50px);
                 top: calc(50% - 10px);
+
+                @media(max-width: 1297px) {
+                    left: calc(50% - 75px);
+                }
 
 
                 .banner-swiper-button-prev,

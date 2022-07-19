@@ -13,8 +13,13 @@ section.top-news {
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 1297px) {
+        padding-top: 125px;
+    }
+
     .custom-container {
-        width: 1575px;
+        width: 100%;
+        max-width: 1575px;
         height: 600px;
         position: relative;
 
@@ -24,10 +29,18 @@ section.top-news {
 
             .topnews-swiper-button-prev {
                 left: 15%;
+
+                @media(max-width: 1297px) {
+                    left: 10%;
+                }
             }
 
             .topnews-swiper-button-next {
                 right: 15%;
+
+                @media(max-width: 1297px) {
+                    right: 10%;
+                }
             }
 
             .swiper-button-prev,.swiper-button-next {
@@ -43,7 +56,8 @@ section.top-news {
             }
 
             .swiper-slide {
-                width: 900px;
+                width: 100%;
+                max-width: 900px;
                 opacity: .8;
 
                 .news-picture {
@@ -57,13 +71,20 @@ section.top-news {
                     mask: url('../../images/swiper_outline-1.svg') no-repeat center / contain;
                     background: $yellow-5;
 
+
+                    &:hover {
+                        .description {
+                            color: $orange-5;
+                        }
+                    }
+
                     .title {
 
                         span {
                             display: inline-block;
                             background: $orange-5;
-                            padding: 0 29px;
-                            padding-bottom: 10px;
+                            padding: 5px 29px;
+                            padding-bottom: 9px;
     
                             @include Sans(500, 18px, 26px, .1em);
                             color: $white-1;

@@ -2,28 +2,64 @@ footer {
     width: 100%;
     position: relative;
     z-index: 2;
-    background: $blue-5;
-    overflow: hidden;
     padding-top: 25px;
 
-    .tiger-blue {
-        position: absolute;
-        left: -20px;
-        bottom: -155px;
+    &::before {
+        content: '';
         width: 100%;
-        max-width: 657px;
-        fill: $tiger-blue;
+        height: calc(100% + 250px);
+        background-image: url('../../images/footer_block.svg');
+        background-repeat: no-repeat;
+        background-size: 1920px 1341px;
+        background-position: top center;
+        position: absolute;
+        top: -250px;
+        left: 0;
         z-index: 1;
     }
 
-    .tiger-yellow {
-        position: absolute;
-        right: -30px;
-        bottom: -12px;
+    .tiger-blue {
         width: 100%;
         max-width: 657px;
-        fill: $yellow-5;
+        overflow: hidden;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
         z-index: 1;
+
+        object {
+            position: relative;
+            left: -20px;
+            bottom: -155px;
+            fill: $tiger-blue;
+
+            @media(max-width: 1297px) {
+                left: -200px;
+            }
+        }
+    }
+
+    .tiger-yellow {
+        width: 100%;
+        max-width: 657px;
+        overflow: hidden;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+
+        object {
+            position: relative;
+            right: -40px;
+            bottom: -12px;
+            fill: $yellow-5;
+
+            @media(max-width: 1297px) {
+                right: -270px;
+            }
+        }
     }
 
 
@@ -58,7 +94,7 @@ footer {
             width: 320px;
             height: 144px;
             position: absolute;
-            right: 0;
+            right: 60px;
             bottom: -60px;
 
             &:hover {
@@ -123,6 +159,10 @@ footer {
                 @include Sans(700, 18px, 26px, .3em);
                 text-align: center;
                 color: $white-1;
+
+                &:hover {
+                    color: $yellow-5;
+                }
             }
         }
     }
@@ -131,7 +171,7 @@ footer {
         position: relative;
         z-index: 2;
 
-        width:100%;
+        width: 100%;
         padding: 120px 0;
 
         @include Sans(400, 135px, .8, 0);

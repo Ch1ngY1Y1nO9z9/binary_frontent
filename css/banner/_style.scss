@@ -7,14 +7,8 @@
         height: 620px;
     }
 
-    .banner-outline {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        object-fit: contain;
+    @media(max-width: 785px) {
+        height: 900px;
     }
 
     .banner-texture {
@@ -25,31 +19,56 @@
         left: -65px;
         z-index: 1;
         object-fit: contain;
+
+
+        @media(max-width: 785px) {
+            top: -250px;
+            left: 0;
+        }
     }
 
     .custom-container {
         width: 100%;
         height: 100%;
-        padding: 150px 0;
-        padding-top: 100px;
 
         position: relative;
         z-index: 3;
 
         .bannerSwiper {
             width: 100%;
-            height: 100%;
-            padding: 150px;
-            padding-right: 0;
+            height: 929px;
 
             @media(max-width: 1297px) {
-                padding: 0;
-                padding-left: 40px;
-                padding-top: 50px;
+                height: 620px;
+            }
+
+            @media(max-width: 785px) {
+                height: 900px;
             }
 
             .swiper-slide {
+                padding-top: 250px;
+                padding-left: 150px;
                 display: flex;
+
+                background-image: url('../../images/banner_outline.svg');
+                background-size: 1920px 929px;
+                background-position: center;
+
+                @media(max-width: 1297px) {
+                    padding-left: 40px;
+                    padding-top: 170px;
+                    background-size: 1280px 620px;
+                }
+
+                @media(max-width: 785px) {
+                    padding-top: 0;
+                    padding-left: 40px;
+                    padding-bottom: 130px;
+                    background-size: cover;
+
+                    flex-direction: column-reverse;
+                }
 
                 .left {
                     width: 100%;
@@ -101,6 +120,8 @@
                 }
 
                 .right {
+                    width: 100%;
+                    height: 100%;
 
                     .cards {
                         width: 100%;
@@ -263,92 +284,96 @@
                                 .account {
                                     display: flex;
                                     padding: 0 30px;
-                                    padding-top:25px;
+                                    padding-top: 25px;
                                     padding-bottom: 15px;
-    
+
                                     .avatar {
                                         width: 90px;
                                         height: 90px;
                                         border-radius: 50%;
-    
+
                                         background: $avatar-orange;
-    
+
                                         img {
                                             width: 100%;
                                             height: 100%;
                                         }
                                     }
-    
+
                                     .account-detail {
                                         padding: 20px 0;
                                         padding-left: 16px;
                                         flex: 1 1 0%;
+
                                         .name {
                                             @include Sans(700, 18px, 21.15px, 1);
                                             color: $gray-5;
                                         }
+
                                         .skill {
                                             @include Sans(400, 14px, 125%, .1em);
                                             color: $gray-4;
                                             padding-top: 10px;
                                         }
+
                                         .follow-btn {
                                             width: 100%;
                                             border: 1px solid $blue-5;
                                             border-radius: 5px;
                                             padding: 8px 0;
-    
+
                                             @include Sans(400, 14px, 12px, .05em);
-                                            text-align: center; 
+                                            text-align: center;
                                             color: $blue-5;
                                         }
                                     }
                                 }
-    
+
                                 .rate {
-                                     display: flex;
-    
-                                     .total-rate {
+                                    display: flex;
+
+                                    .total-rate {
                                         flex: 1 1 0%;
                                         color: $orange-5;
                                         text-align: center;
                                         position: relative;
-    
+
                                         &:first-child::after {
                                             content: '';
                                             position: absolute;
                                             height: 100%;
                                             border-right: 1px solid $border-gray;
-                                            right:0;
-                                            top:0;
+                                            right: 0;
+                                            top: 0;
                                         }
-    
+
                                         .number {
                                             @include Sans(700, 48px, 117.52%, 1);
                                         }
-    
+
                                         .unit {
                                             @include Sans(700, 30px, 35.26px, 1);
                                         }
-    
+
                                         .total {
                                             width: 100%;
                                             @include Sans(400, 14px, 117.52%, 1);
                                             color: $disable-gray;
                                         }
-    
+
                                         .title {
                                             width: 100%;
                                             padding-top: 16px;
                                             @include Sans(700, 14px, 117.52%, 0.1em);
                                             color: $gray-5;
                                         }
-                                     }
-                                     .border {
+                                    }
+
+                                    .border {
                                         height: 100%;
                                         border-left: 1px solid $border-gray;
                                         padding: 0 30px;
-                                     }
+                                    }
                                 }
                             }
                         }
@@ -357,7 +382,7 @@
             }
         }
 
-        .bottom-left-buttons {
+        .bottom-right-buttons {
             width: 807px;
             height: 250px;
 
@@ -371,6 +396,10 @@
                 height: 167px;
             }
 
+            @media(max-width: 785px) {
+                width: 100%;
+            }
+
             .buttons-outline {
                 width: 100%;
                 height: 100%;
@@ -379,6 +408,15 @@
                 position: absolute;
                 top: 33px;
                 right: 45px;
+
+                @media(max-width: 785px) {
+                    width: 326px;
+                    height: 166px;
+                    
+                    transform: scale(1.2, 2);
+                    right: 45px;
+                    top: 30px;
+                }
             }
 
             .buttons {
@@ -393,6 +431,12 @@
                     left: calc(50% - 75px);
                 }
 
+                @media(max-width: 785px) {
+                    top: auto;
+                    left: calc(50% - 111px);
+                    bottom: -85px;
+                }
+
 
                 .banner-swiper-button-prev,
                 .banner-swiper-button-next {
@@ -400,6 +444,10 @@
                     z-index: 2;
                     font-size: 50px;
                     color: $white-1;
+
+                    @media(max-width: 785px) {
+                        color: $blue-5;
+                    }
                 }
 
                 .banner-swiper-pagination {
@@ -411,6 +459,10 @@
                     @include Sans(700, 18px, 19px, .1em);
                     padding: 0 32px;
                     color: $white-1;
+
+                    @media(max-width: 785px) {
+                        color: $blue-5;
+                    }
                 }
             }
         }

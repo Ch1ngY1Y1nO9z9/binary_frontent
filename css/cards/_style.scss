@@ -8,6 +8,10 @@ section.cards {
         padding-bottom: 380px;
     }   
 
+    @media (max-width: 593px) {
+        padding-bottom: 150px;
+    }   
+
     .dragon-left {
         position: absolute;
         left: 0;
@@ -60,6 +64,11 @@ section.cards {
                 position: relative;
                 z-index: 2;
                 overflow: hidden;
+
+                @media (max-width: 593px) {
+                    width: 344px;
+                    height: 154px;  
+                }
         
                 &:hover {
                     .outline {
@@ -88,10 +97,19 @@ section.cards {
                     color: $white-1;
         
                     transform: rotate(-6deg);
+
+                    @media (max-width: 593px) {
+                        @include Trade(56px, 35px, .1em);
+                        top: 55px;
+                    }
         
                     span {
                         position: relative;
-                        @include Sans(900, 24px, 35px, .1em);
+                        @include Serif(24px, 35px, .1em);
+
+                        @media (max-width: 593px) {
+                            @include Serif(26px, 35px, .1em);
+                        }
         
                         &::before {
                             content: '';
@@ -100,6 +118,11 @@ section.cards {
                             bottom: calc(50% - 2px);
                             width: 80px;
                             border-top: 2px solid $white-1;
+
+                            @media (max-width: 593px) {
+                                width: 48px;
+                                left: -50%;
+                            }
                         }
         
                         &::after {
@@ -109,6 +132,11 @@ section.cards {
                             bottom: calc(50% - 2px);
                             width: 80px;
                             border-top: 2px solid $white-1;
+
+                            @media (max-width: 593px) {
+                                right: -50%;
+                                width: 48px;
+                            }
                         }
                     }
                 }

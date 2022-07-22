@@ -96,7 +96,8 @@ header {
             }
 
             .burger-menu {
-
+                display: flex;
+                
                 button.burger {
                     width: 34px;
                     height: 30px;
@@ -239,32 +240,101 @@ header {
                         height: 100%;
                         background: $blue-5;
 
-                        .menu-botton {
-                            border: 2px $yellow-5 solid;
-                            border-radius: 5px;
-                            padding: 48px 55px;
-                            margin: 10px;
-                            background: rgba(252, 189, 31, 0);
-                            transition: 0.3s;
-                            @include box-shadow;
+                        nav.desktop {
+                            display: flex;
+                            flex: 1 1 0;
+                            flex-direction: column;
+                            justify-content: center;
 
-                            color: $yellow-5;
-                            font-size: 45px;
-
-                            &.active {
-                                background: $yellow-5;
-                                color: $blue-5;
+                            @media(max-width: 785px) {
+                                display: none;
                             }
 
-                            div {
-                                @include Sans(700, 24px, 25px, .05em);
+                            .buttons {
+                                display: flex;
+                                justify-content: center;
+
+                                .menu-botton {
+                                    border: 2px $yellow-5 solid;
+                                    border-radius: 5px;
+                                    padding: 48px 55px;
+                                    margin: 10px;
+                                    background: rgba(252, 189, 31, 0);
+                                    transition: 0.3s;
+                                    @include box-shadow;
+        
+                                    color: $yellow-5;
+                                    font-size: 45px;
+        
+                                    &.active {
+                                        background: $yellow-5;
+                                        color: $blue-5;
+                                    }
+        
+                                    div {
+                                        @include Sans(700, 24px, 25px, .05em);
+                                    }
+                                }
+                            }
+                        }
+
+                        nav.mobile {
+                            display: none;
+                            flex: 1 1 0;
+                            flex-direction: column;
+
+                            @media(max-width: 785px) {
+                                display: flex;
+                                padding: 80px 28px 0;
+                            }
+
+                            .buttons {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                margin: auto;
+                                width: 450px;
+
+                                @media(max-width: 593px) {
+                                    width: 322px;
+                                }
+
+                                .menu-botton {
+                                    border: 2px $yellow-5 solid;
+                                    border-radius: 5px;
+                                    padding: 48px 55px;
+                                    margin-bottom: 20px;
+                                    background: rgba(252, 189, 31, 0);
+                                    transition: 0.3s;
+                                    @include box-shadow;
+        
+                                    color: $yellow-5;
+                                    font-size: 45px;
+
+                                    &:nth-child(even) {
+                                        margin-left: 20px;
+                                    }
+        
+                                    &.active {
+                                        background: $yellow-5;
+                                        color: $blue-5;
+                                    }
+
+                                    @media(max-width: 593px) {
+                                        padding: 28px 23px 26px;
+                                    }
+        
+                                    div {
+                                        @include Sans(700, 24px, 25px, .05em);
+                                    }
+                                }
                             }
                         }
                     }
                 }
 
                 .menu-modal {
-                    width: 0;
+                    width: 0%;
                     height: 100%;
                     background: $blue-3;
                     opacity: 0;
@@ -272,12 +342,27 @@ header {
                     left: 300px;
                     transition: 1s;
 
-                    &.active,
-                    &:hover {
+
+                    @media(max-width: 1297px) {
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                    }
+
+                    &.active {
                         max-width: 732px;
                         width: 40%;
                         opacity: 1;
                         left: 0;
+
+                        @media(max-width: 1297px) {
+                            left: auto;
+                            right: 0;
+                        }
+
+                        @media(max-width: 785px) {
+                            width: 322px;
+                        }
                     }
 
                     .close-btn {
@@ -355,37 +440,59 @@ header {
                         }
                     }
 
-                    .link-list {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin: auto;
+                    .modal-layout {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+                        overflow-x: hidden;
 
-                        width: 75%;
-                        padding-top: 50%;
-
-                        .menu-links {
+                        .link-list {
                             display: flex;
-                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+    
                             width: 460px;
-
-                            .menu-link {
-                                width: 200px;
-                                border: 2px $yellow-5 solid;
-                                border-radius: 5px;
-                                color: $yellow-5;
-                                padding: 15px 50px;
-                                background: rgba(252, 189, 31, 0);
-                                transition: 0.3s;
-                                @include box-shadow;
-                                margin: 15px;
-
-                                @include Sans(700, 24px, 35px, .3em);
-                                text-align: center;
-
-                                &:hover {
-                                    background: $yellow-5;
-                                    color: $blue-5;
+                            padding-top: 30vh;
+    
+    
+                            @media(max-width: 1297px) {
+                                width: 322px;
+                                padding-top: 80px;
+                            }
+    
+                            .menu-links {
+                                display: flex;
+                                flex-wrap: wrap;
+                                width: 100%;
+    
+                                @media(max-width: 1297px) {
+                                    justify-content: center;
+                                }
+    
+                                .menu-link {
+                                    width: 200px;
+                                    border: 2px $yellow-5 solid;
+                                    border-radius: 5px;
+                                    color: $yellow-5;
+                                    padding: 15px 50px;
+                                    background: rgba(252, 189, 31, 0);
+                                    transition: 0.3s;
+                                    @include box-shadow;
+                                    margin: 15px;
+    
+                                    @include Sans(700, 24px, 35px, .3em);
+                                    text-align: center;
+    
+                                    @media(max-width: 1297px) {
+                                        margin: 0;
+                                        margin-bottom: 20px;
+                                    }
+    
+                                    &:hover {
+                                        background: $yellow-5;
+                                        color: $blue-5;
+                                    }
                                 }
                             }
                         }

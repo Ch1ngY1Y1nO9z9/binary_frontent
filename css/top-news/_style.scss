@@ -18,8 +18,11 @@ section.top-news {
     }
 
     @media(max-width: 785px) {
-        margin-top: 0;
         padding-bottom: 0;
+    }
+
+    @media(max-width: 593px) {
+        padding-top: 0;
     }
 
     .custom-container {
@@ -35,6 +38,10 @@ section.top-news {
         .topNewsSwiper {
             width: 100%;
             height: 100%;
+
+            @media(max-width: 593px) {
+                display: none;
+            }
 
             .topnews-swiper-button-prev {
                 left: 15%;

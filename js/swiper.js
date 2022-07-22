@@ -36,9 +36,16 @@ var popularSwiper = new Swiper(".popularSwiper", {
         nextEl: ".popular-swiper-button-next",
         prevEl: ".popular-swiper-button-prev",
     },
-    spaceBetween: 30,
-    slidesPerView: 'auto',
-    freeMode : true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    freeMode: false,
+    breakpoints: {
+        594: {
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+            freeMode: true,
+        },
+    }
 });
 
 var newsSwiper = new Swiper(".newsSwiper", {
@@ -46,9 +53,16 @@ var newsSwiper = new Swiper(".newsSwiper", {
         nextEl: ".news-swiper-button-next",
         prevEl: ".news-swiper-button-prev",
     },
-    spaceBetween: 30,
-    slidesPerView: 'auto',
-    freeMode : true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    freeMode: false,
+    breakpoints: {
+        594: {
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+            freeMode: true,
+        },
+    }
 });
 
 var introSwiper = new Swiper(".introSwiper", {

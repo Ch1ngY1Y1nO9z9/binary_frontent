@@ -11,20 +11,42 @@
         height: 900px;
     }
 
+    @media(max-width: 593px) {
+        height: 529px;
+    }
+
     .banner-texture {
         width: 100%;
-        height: 100%;
+        overflow: hidden;
         position: absolute;
-        top: -20px;
-        left: -65px;
-        z-index: 1;
-        object-fit: contain;
+        top: 0;
+        left: 0;
 
-
-        @media(max-width: 785px) {
-            top: -250px;
-            left: 0;
+        object {
+            width: 1920px;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: -65px;
+            z-index: 1;
+            object-fit: contain;
+    
+            @media(max-width: 1280px) {
+                width: 1280px;
+            }
+    
+            @media(max-width: 785px) {
+                width: 768px;
+                top: -250px;
+                left: 0;
+            }
+    
+            @media(max-width: 593px) {
+                max-width: 375px;
+                top: -160px;
+            }
         }
+
     }
 
     .custom-container {
@@ -36,14 +58,10 @@
 
         .bannerSwiper {
             width: 100%;
-            height: 929px;
+            height: 100%;
 
-            @media(max-width: 1297px) {
-                height: 620px;
-            }
-
-            @media(max-width: 785px) {
-                height: 900px;
+            @media(max-width: 593px) {
+                padding-bottom: 80px;
             }
 
             .swiper-slide {
@@ -70,6 +88,11 @@
                     flex-direction: column-reverse;
                 }
 
+                @media(max-width: 593px) {
+                    padding-left: 15px;
+                    padding-bottom: 20px;
+                }
+
                 .left {
                     width: 100%;
                     max-width: 873px;
@@ -81,6 +104,10 @@
 
                         @media(max-width: 1297px) {
                             @include Serif(48px, 117.52%, .1em);
+                        }
+
+                        @media(max-width: 593px) {
+                            @include Serif(30px, 55px, .1em);
                         }
                     }
 
@@ -99,6 +126,10 @@
 
                         @media(max-width: 1297px) {
                             margin-top: 96px;
+                        }
+
+                        @media(max-width: 593px) {
+                            margin-top: 30px;
                         }
                     }
 
@@ -400,6 +431,10 @@
                 width: 100%;
             }
 
+            @media(max-width: 593px) {
+                height: 76px;
+            }
+
             .buttons-outline {
                 width: 100%;
                 height: 100%;
@@ -412,10 +447,20 @@
                 @media(max-width: 785px) {
                     width: 326px;
                     height: 166px;
-                    
+
                     transform: scale(1.2, 2);
                     right: 45px;
                     top: 30px;
+                }
+
+                @media(max-width: 593px) {
+                    width: 152px;
+                    height: 76px;
+                    
+                    top: auto;
+                    right: 15px;
+                    bottom: 80px;
+                    transform: scale(1.1,1.8);
                 }
             }
 
@@ -437,6 +482,9 @@
                     bottom: -85px;
                 }
 
+                @media(max-width: 593px) {
+                    bottom: -5px;
+                }
 
                 .banner-swiper-button-prev,
                 .banner-swiper-button-next {

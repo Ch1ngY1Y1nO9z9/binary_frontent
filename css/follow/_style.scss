@@ -20,6 +20,11 @@ section.follow {
             height: 8px;
             background: $yellow-5;
         }
+
+        @media(max-width: 593px) {
+            @include Serif(30px, 43px, .05em);
+            margin-bottom: 60px;
+        }
     }
 
     .custom-container {
@@ -53,11 +58,16 @@ section.follow {
 
             @media(max-width: 785px) {
                 width: 100%;
-                padding-left: 80px;
                 max-width: 645px;
+
+                padding-left: 80px;
                 margin-bottom: 80px;
             }
 
+            @media(max-width: 593px) {
+                padding: 0 15px;
+                margin-bottom: 20px;
+            }
 
 
             .introSwiper {
@@ -66,21 +76,28 @@ section.follow {
                 padding-top: 35px;
 
                 .swiper-slide {
+                    overflow: hidden;
 
                     .icon {
                         font-size: 230px;
                         position: absolute;
-                        right: 40px;
+                        left: 335px;
                         bottom: 95px;
                         z-index: 1;
                         color: $icon-gray;
 
                         @media(max-width: 1297px) {
-                            right: -20px;
+                            left: 335px;
                         }
 
                         @media(max-width: 785px) {
                             right: 0;
+                        }
+
+                        @media(max-width: 593px) {
+                            bottom: auto;
+                            top: 0;
+                            left: 160px;
                         }
                     }
 
@@ -94,13 +111,18 @@ section.follow {
 
                         @media(max-width: 1297px) {
                             line-height: 65px;
-                            padding-bottom: 43px;
+                            padding-bottom: 43px; 
                         }
 
                         @media(max-width: 785px) {
                             width: 100%;
                             max-width: 457px;
                         }
+
+                        @media(max-width: 593px) {
+                            @include Serif(30px, 43px, .05em);
+                            text-align: justify;
+                        }            
                     }
 
                     .context {
@@ -109,6 +131,11 @@ section.follow {
                         margin-bottom: -35px;
                         position: relative;
                         z-index: 2;
+
+                        @media(max-width: 593px) {
+                            @include Sans(400, 18px, 25px, .05em);
+                            margin-bottom: 0;
+                        }          
                     }
 
                     .number {
@@ -116,6 +143,10 @@ section.follow {
                         color: $orange-5;
                         position: relative;
                         z-index: 2;
+
+                        @media(max-width: 593px) {
+                            @include Sans(900, 72px, 104px, 1);
+                        }  
 
                         span {
                             font-size: 30px;
@@ -130,6 +161,12 @@ section.follow {
                         border: 1px solid $disable-gray;
                         color: $disable-gray;
                         padding: 16px 25px;
+
+                        @media(max-width: 593px) {
+                            width: 100%;
+                            padding: 17px 20px 10px;
+                            height: auto;
+                        }  
                     }
                 }
 
@@ -140,6 +177,10 @@ section.follow {
                     @media(max-width: 785px) {
                         padding-top: 92px;
                     }
+
+                    @media(max-width: 593px) {
+                        padding: 0 3px;
+                    }  
 
                     .intro-swiper-pagination {
                         @include Sans(700, 18px, 19px, .1em);
@@ -177,6 +218,10 @@ section.follow {
                     padding-bottom: 150px;
                 }
 
+                @media(max-width: 593px) {
+                    padding-bottom: 100px;
+                }
+
                 .swiper-slide {
                     display: flex;
                     flex-wrap: wrap;
@@ -208,6 +253,12 @@ section.follow {
                             @media(max-width: 1297px) {
                                 margin-right: 40px;
                             }
+
+                            @media(max-width: 593px) {
+                                margin-right: 0;
+                                margin-top: 30px;
+                            }  
+        
                         }
 
                         &:nth-child(even) {
@@ -216,6 +267,7 @@ section.follow {
                             @media(max-width: 1297px) {
                                 margin-top: 30px;
                             }
+
                         }
 
                         .head {
@@ -333,6 +385,10 @@ section.follow {
                 color: $orange-5;
                 font-size: 40px;
                 top: 37%;
+
+                @media(max-width: 593px) {
+                    font-size: 30px;
+                }
 
                 &::after {
                     content: initial;

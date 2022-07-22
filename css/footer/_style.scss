@@ -18,6 +18,12 @@ footer {
         top: -250px;
         left: 0;
         z-index: 1;
+
+        @media (max-width: 593px) {
+            background-size: 2338px 1609px;
+            top: -150px;
+            height: calc(100% + 172px);
+        }
     }
 
     .tiger-blue {
@@ -70,6 +76,7 @@ footer {
         background: $white-1;
         padding: 45px 100px 55px;
         @include box-shadow;
+        text-align: center;
 
         display: flex;
         margin: 0 auto;
@@ -78,11 +85,16 @@ footer {
         z-index: 2;
 
         @media(max-width: 785px) {
-            padding: 27px 50px 93px; 
+            padding: 27px 50px 93px;
+        }
+
+        @media(max-width: 593px) {
+            flex-direction: column;
         }
 
         .title {
             width: 200px;
+            margin: 0 auto;
 
             @include Serif(80px, 100px, .1em);
             color: $orange-5;
@@ -109,6 +121,11 @@ footer {
         .join-link {
             width: 320px;
             height: 144px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             position: absolute;
             right: 60px;
             bottom: -60px;
@@ -122,7 +139,11 @@ footer {
             @media(max-width: 785px) {
                 right: calc(50% - 160px);
             }
-    
+
+            @media(max-width: 593px) {
+                bottom: -70px;
+            }
+
 
             .outline {
                 width: 100%;
@@ -149,14 +170,27 @@ footer {
         }
     }
 
-    nav {
+    .footer-links {
+        display: flex;
+        justify-content: center;
+
         padding-top: 200px;
         position: relative;
         z-index: 1;
 
-        .links {
+        @media(max-width: 593px) {
+            padding-top: 150px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link {
             padding: 6px 25px;
             position: relative;
+
+            @media(max-width: 593px) {
+                margin-bottom: 35px;
+            }
 
             &::before {
                 content: '';
@@ -164,7 +198,18 @@ footer {
                 left: 0;
                 top: 0;
                 height: 40px;
-                border: 2px solid $gray-3;
+                border: 1px solid $gray-3;
+            }
+
+            @media(max-width: 593px) {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 40px;
+                    border: 1px solid $gray-3;
+                }
             }
 
             &:last-child::after {
@@ -173,7 +218,7 @@ footer {
                 right: 0;
                 top: 0;
                 height: 40px;
-                border: 2px solid $gray-3;
+                border: 1px solid $gray-3;
             }
 
             a {
@@ -198,6 +243,11 @@ footer {
         @include Sans(400, 135px, .8, 0);
         text-align: center;
         color: $white-1;
+
+        
+        @media (max-width: 593px) {
+            padding: 100px 0;
+        }
     }
 
     .site-rights {

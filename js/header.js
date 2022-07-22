@@ -1,3 +1,4 @@
+htmlBody = document.querySelector('body');
 burger = document.querySelector(".burger");
 menu = document.querySelector('.menu');
 menu_botton = document.querySelectorAll('.menu-botton');
@@ -7,6 +8,7 @@ menu_link_button = document.querySelector('.menu-link-button');
 burger.addEventListener("click", () => {
     burger.classList.toggle("on")
     menu.classList.toggle('on')
+    htmlBody.classList.toggle('overflow-hidden')
 
     if (!burger.classList.contains('on')) {
         removeActive()

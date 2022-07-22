@@ -19,11 +19,16 @@ section.follow {
             width: 136px;
             height: 8px;
             background: $yellow-5;
+
+            @media (max-width: 593px) {
+                width: 100px;  
+                left: calc(50% - 50px);
+            }
         }
 
         @media(max-width: 593px) {
             @include Serif(30px, 43px, .05em);
-            margin-bottom: 60px;
+            margin-bottom: 63px;
         }
     }
 
@@ -75,6 +80,10 @@ section.follow {
                 margin: initial;
                 padding-top: 35px;
 
+                @media(max-width: 593px) {
+                    padding-top: 0;
+                }
+
                 .swiper-slide {
                     overflow: hidden;
 
@@ -97,7 +106,7 @@ section.follow {
                         @media(max-width: 593px) {
                             bottom: auto;
                             top: 0;
-                            left: 160px;
+                            left: 175px;
                         }
                     }
 

@@ -36,7 +36,18 @@ var topNewsSwiper = new Swiper(".topNewsSwiper", {
 var moblieTopNewsSwiper = new Swiper(".moblieTopNewsSwiper", {
     observer: true,
     observeParents: true,
+    effect: 'coverflow',
     grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: '40%',
+        depth: 350,
+        modifier: 1,
+        slideShadows: false,
+    },
+    initialSlide: 1,
     navigation: {
         nextEl: ".topnews-swiper-button-next",
         prevEl: ".topnews-swiper-button-prev",
@@ -53,13 +64,18 @@ var popularSwiper = new Swiper(".popularSwiper", {
     },
     slidesPerView: 1,
     spaceBetween: 0,
-    freeMode: false,
+    freeMode: true,
     breakpoints: {
         594: {
             spaceBetween: 30,
             slidesPerView: 'auto',
             freeMode: true,
         },
+    },
+    on: {
+        resize: function() {
+            this.update();
+        }
     }
 });
 
@@ -70,13 +86,18 @@ var newsSwiper = new Swiper(".newsSwiper", {
     },
     slidesPerView: 1,
     spaceBetween: 0,
-    freeMode: false,
+    freeMode: true,
     breakpoints: {
         594: {
             spaceBetween: 30,
             slidesPerView: 'auto',
             freeMode: true,
         },
+    },
+    on: {
+        resize: function() {
+            this.update();
+        }
     }
 });
 

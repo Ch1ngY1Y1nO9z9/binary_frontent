@@ -26,6 +26,7 @@ menu_botton.forEach(e => {
     e.addEventListener('click', () => {
         if (e.classList.contains('active')) {
             e.classList.remove('active')
+            menu_modal.classList.remove('active');
         } else {
             menu_botton.forEach(e => e.classList.remove('active'))
             e.classList.toggle('active')

@@ -29,7 +29,22 @@ var topNewsSwiper = new Swiper(".topNewsSwiper", {
         slideShadows: false,
     },
     initialSlide: 1,
+    observer: true,
+    observeParents: true,
 });
+
+var moblieTopNewsSwiper = new Swiper(".moblieTopNewsSwiper", {
+    observer: true,
+    observeParents: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".topnews-swiper-button-next",
+        prevEl: ".topnews-swiper-button-prev",
+    }
+});
+
+moblieTopNewsSwiper.controller.control = topNewsSwiper;
+topNewsSwiper.controller.control = moblieTopNewsSwiper;
 
 var popularSwiper = new Swiper(".popularSwiper", {
     navigation: {

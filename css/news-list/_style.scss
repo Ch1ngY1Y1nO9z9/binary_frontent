@@ -10,6 +10,10 @@ section.news-list {
         margin-top: -120px;
     }
 
+    @media(max-width: 593px) {
+        margin-top: -170px;
+    }
+
     .pine-yellow {
         position: absolute;
         right: 0px;

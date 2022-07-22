@@ -648,6 +648,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 
 .banner .banner-texture {
   width: 100%;
+  height: 100%;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -1380,17 +1381,20 @@ section.top-news .custom-container .topNewsSwiper .topnews-swiper-button-next {
   }
 }
 
-section.top-news .custom-container .topNewsSwiper .swiper-button-prev, section.top-news .custom-container .topNewsSwiper .swiper-button-next {
+section.top-news .custom-container .topNewsSwiper .swiper-button-prev,
+section.top-news .custom-container .topNewsSwiper .swiper-button-next {
   color: #ff621f;
   font-size: 50px;
 }
 
-section.top-news .custom-container .topNewsSwiper .swiper-button-prev::after, section.top-news .custom-container .topNewsSwiper .swiper-button-next::after {
+section.top-news .custom-container .topNewsSwiper .swiper-button-prev::after,
+section.top-news .custom-container .topNewsSwiper .swiper-button-next::after {
   content: '';
 }
 
 @media (max-width: 785px) {
-  section.top-news .custom-container .topNewsSwiper .swiper-button-prev, section.top-news .custom-container .topNewsSwiper .swiper-button-next {
+  section.top-news .custom-container .topNewsSwiper .swiper-button-prev,
+  section.top-news .custom-container .topNewsSwiper .swiper-button-next {
     background: white;
   }
 }
@@ -1466,6 +1470,101 @@ section.top-news .custom-container .topNewsSwiper .swiper-slide .news-picture .d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 593px) {
+  section.top-news .custom-container .moblieTopNewsSwiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .topnews-swiper-button-prev {
+  left: 5%;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .topnews-swiper-button-next {
+  right: 5%;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-button-prev,
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-button-next {
+  color: #ff621f;
+  font-size: 50px;
+  background: white;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-button-prev::after,
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-button-next::after {
+  content: '';
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide .link {
+  width: 100%;
+  height: 100%;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide .link .pic {
+  width: 100%;
+  height: 247px;
+  -webkit-mask: url("../../images/swiper_outline-1.svg") no-repeat center/contain;
+          mask: url("../../images/swiper_outline-1.svg") no-repeat center/contain;
+  background: #fcbd1f;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide .link .tag {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 15px;
+  padding: 4px 25px 8px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: white;
+  background: #ff621f;
+  text-align: center;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide .link .description {
+  width: 472px;
+  margin-top: 10px;
+  padding: 0 15px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #393939;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide:hover .link .tag {
+  background: #fcbd1f;
+}
+
+section.top-news .custom-container .moblieTopNewsSwiper .swiper-slide:hover .description {
+  color: #ff621f;
 }
 
 section.news-list {

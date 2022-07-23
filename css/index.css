@@ -20,7 +20,7 @@ header .btt {
   position: fixed;
   right: 78px;
   bottom: 50%;
-  z-index: 100;
+  z-index: 4;
   padding: 8px 24px;
   background: #ff621f;
   color: white;
@@ -680,7 +680,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   height: 100%;
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: -25px;
   left: 0;
 }
 
@@ -695,7 +695,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
      object-fit: contain;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1297px) {
   .banner .banner-texture object {
     width: 1280px;
   }
@@ -1338,7 +1338,7 @@ section.top-news {
 
 @media (max-width: 1297px) {
   section.top-news {
-    padding-top: 125px;
+    padding-top: 175px;
   }
 }
 
@@ -1971,12 +1971,6 @@ section.news-list .custom-container .news-section {
   }
 }
 
-@media (max-width: 785px) {
-  section.news-list .custom-container .news-section {
-    padding-bottom: 150px;
-  }
-}
-
 @media (max-width: 593px) {
   section.news-list .custom-container .news-section {
     padding-bottom: 190px;
@@ -2539,13 +2533,25 @@ section.follow .custom-container .feature .swiper-button-next::after {
 section.cards {
   position: relative;
   z-index: 1;
-  padding-bottom: 250px;
+  padding-bottom: 350px;
   background: white;
+}
+
+@media (max-width: 1297px) {
+  section.cards {
+    padding-bottom: 400px;
+  }
 }
 
 @media (max-width: 976px) {
   section.cards {
     padding-bottom: 380px;
+  }
+}
+
+@media (max-width: 785px) {
+  section.cards {
+    padding-bottom: 300px;
   }
 }
 
@@ -2574,7 +2580,7 @@ section.cards .dragon-left .cls-2 {
 section.cards .dragon-right {
   position: absolute;
   right: 0;
-  top: -45px;
+  top: 40px;
   z-index: 1;
   max-width: 560px;
 }
@@ -2596,6 +2602,12 @@ section.cards .custom-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1297px) {
+  section.cards .custom-container {
+    padding-top: 150px;
+  }
 }
 
 @media (max-width: 976px) {
@@ -2746,6 +2758,13 @@ footer::before {
   top: -250px;
   left: 0;
   z-index: 1;
+}
+
+@media (max-width: 785px) {
+  footer::before {
+    height: calc(100% + 200px);
+    top: -200px;
+  }
 }
 
 @media (max-width: 593px) {
@@ -2935,7 +2954,7 @@ footer .footer-links {
           justify-content: center;
   padding-top: 200px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (max-width: 593px) {

@@ -1,11 +1,19 @@
 section.cards {
     position: relative;
     z-index: 1;
-    padding-bottom: 250px;
+    padding-bottom: 350px;
     background: $white-1;
+
+    @media (max-width: 1297px) {
+        padding-bottom: 400px;
+    }   
 
     @media (max-width: 976px) {
         padding-bottom: 380px;
+    }   
+
+    @media (max-width: 785px) {
+        padding-bottom: 300px;
     }   
 
     @media (max-width: 593px) {
@@ -31,7 +39,7 @@ section.cards {
     .dragon-right {
         position: absolute;
         right: 0;
-        top: -45px;
+        top: 40px;
         z-index: 1;
 
         max-width: 560px;
@@ -48,6 +56,12 @@ section.cards {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        
+        @media (max-width: 1297px) {
+            padding-top: 150px;
+        }   
+
 
         @media (max-width: 976px) {
             padding-top: 0;

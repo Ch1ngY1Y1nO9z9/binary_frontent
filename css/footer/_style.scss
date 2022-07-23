@@ -19,6 +19,11 @@ footer {
         left: 0;
         z-index: 1;
 
+        @media (max-width: 785px) { 
+            height: calc(100% + 200px);
+            top: -200px;
+        }
+
         @media (max-width: 593px) {
             background-size: 2338px 1609px;
             top: -150px;
@@ -176,7 +181,7 @@ footer {
 
         padding-top: 200px;
         position: relative;
-        z-index: 1;
+        z-index: 2;
 
         @media(max-width: 593px) {
             padding-top: 150px;

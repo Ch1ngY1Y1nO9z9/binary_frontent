@@ -87,7 +87,7 @@ footer {
         margin: 0 auto;
 
         position: relative;
-        z-index: 2;
+        z-index: 3;
 
         @media(max-width: 785px) {
             padding: 27px 50px 93px;
@@ -134,8 +134,15 @@ footer {
             position: absolute;
             right: 60px;
             bottom: -60px;
+            z-index: 2;
 
             &:hover {
+                .outline {
+                    background: $yellow-5;
+                }
+            }
+
+            &:hover ~ .join-link-ping {
                 .outline {
                     background: $yellow-5;
                 }
@@ -171,6 +178,48 @@ footer {
                 text-align: center;
                 color: $white-1;
                 transform: rotate(-6deg);
+            }
+        }
+
+        .join-link-ping {
+            width: 320px;
+            height: 144px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: 60px;
+            bottom: -60px;
+            z-index: 1;
+
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+            @keyframes ping {
+                75%, 100% {
+                  transform: scale(1.4);
+                  opacity: 0;
+                }
+              }
+
+            @media(max-width: 785px) {
+                right: calc(50% - 160px);
+            }
+
+            @media(max-width: 593px) {
+                bottom: -70px;
+            }
+
+            .outline {
+                width: 100%;
+                height: 100%;
+                mask: url('../../images/normal_outline.svg') no-repeat center / contain;
+                background: $orange-5;
+                position: absolute;
+                left: 0;
+                top: 0;
+                fill: $orange-5;
             }
         }
     }

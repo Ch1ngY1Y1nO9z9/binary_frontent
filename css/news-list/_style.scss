@@ -52,7 +52,7 @@ section.news-list {
         top: 300px;
         z-index: 1;
 
-        background-image: url('../../images/news_background.svg');
+        background-image: url('./../images/news_background.svg');
         background-repeat: no-repeat;
         background-size: 1920px 1610px;
         background-position: center;
@@ -106,6 +106,7 @@ section.news-list {
             color: $orange-5;
             font-size: 50px;
             background-color: $white-1;
+            border-radius: 50%;
 
             &:hover {
                 color: $yellow-5;

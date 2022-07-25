@@ -62,16 +62,9 @@ var popularSwiper = new Swiper(".popularSwiper", {
         nextEl: ".popular-swiper-button-next",
         prevEl: ".popular-swiper-button-prev",
     },
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
     freeMode: true,
-    breakpoints: {
-        594: {
-            spaceBetween: 30,
-            slidesPerView: 'auto',
-            freeMode: true,
-        },
-    },
     on: {
         resize: function() {
             this.update();
@@ -84,16 +77,9 @@ var newsSwiper = new Swiper(".newsSwiper", {
         nextEl: ".news-swiper-button-next",
         prevEl: ".news-swiper-button-prev",
     },
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
     freeMode: true,
-    breakpoints: {
-        594: {
-            spaceBetween: 30,
-            slidesPerView: 'auto',
-            freeMode: true,
-        },
-    },
     on: {
         resize: function() {
             this.update();

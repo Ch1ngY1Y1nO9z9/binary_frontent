@@ -194,7 +194,7 @@ footer {
             bottom: -60px;
             z-index: 1;
 
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 
             @keyframes ping {
                 75%, 100% {

@@ -1,9 +1,12 @@
-htmlBody = document.querySelector('body');
-burger = document.querySelector(".burger");
-menu = document.querySelector('.menu');
-menu_botton = document.querySelectorAll('.menu-botton');
-menu_modal = document.querySelector('.menu-modal');
-menu_link_button = document.querySelector('.menu-link-button');
+const htmlBody = document.querySelector('body');
+const burger = document.querySelector(".burger");
+const menu = document.querySelector('.menu');
+const menu_botton = document.querySelectorAll('.menu-botton');
+const menu_modal = document.querySelector('.menu-modal');
+const menu_link_button = document.querySelector('.menu-link-button');
+const btt = document.querySelector('.btt');
+
+AOS.init();
 
 burger.addEventListener("click", () => {
     burger.classList.toggle("on")

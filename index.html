@@ -15,7 +15,7 @@
 </head>
 
 <body class="relative">
-    <header>
+    <header id="header">
         <div class="custom-container mx-auto flex">
             <div class="header-l flex-none">
                 <a href="#" class="logo">
@@ -159,9 +159,9 @@
             </div>
         </div>
 
-        <div class="btt">
+        <a href="#header" class="btt">
             <i class="fa-solid fa-arrow-up"></i>
-        </div>
+        </a>
     </header>
 
     <section class="banner">
@@ -391,7 +391,7 @@
         </div>
     </section>
 
-    <section class="top-news">
+    <section data-aos="fade-up" class="top-news">
         <div class="custom-container">
             <div class="swiper topNewsSwiper swiper-h">
                 <div class="swiper-wrapper">
@@ -481,10 +481,10 @@
     </section>
 
     <section class="news-list">
-        <div class="pine-yellow">
+        <div data-aos="fade-left" class="pine-yellow">
             <object data="./images/pine_yellow.svg" type="image/svg+xml"></object>
         </div>
-        <div class="news-background">
+        <div data-aos="fade-up" class="news-background">
 
         </div>
         <!-- <object class="news-background" data="./images/news_background.svg" type="image/svg+xml"></object> -->
@@ -493,7 +493,7 @@
                 <div class="title">
                     熱門下注
                 </div>
-                <div class="swiper popularSwiper swiper-h">
+                <div data-aos="fade-right" class="swiper popularSwiper swiper-h">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" class="link hvr-float">
@@ -540,7 +540,7 @@
                 <div class="title">
                     新聞版
                 </div>
-                <div class="swiper newsSwiper swiper-h">
+                <div data-aos="fade-left" class="swiper newsSwiper swiper-h">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" class="link hvr-float">
@@ -599,7 +599,7 @@
         </div>
     </section>
 
-    <section class="follow">
+    <section data-aos="fade-up" class="follow">
         <div class="section-title">
             跟單投注
         </div>
@@ -920,18 +920,20 @@
     </section>
 
     <section class="cards">
-        <object class="dragon-left" data="./images/dragon_left.svg" type="image/svg+xml"></object>
+        <object data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        class="dragon-left" data="./images/dragon_left.svg" type="image/svg+xml"></object>
 
         <div class="custom-container">
             <div class="cards-list">
-                <div class="card">
+                <div data-aos="fade-up" data-aos-delay="300" class="card">
                     <div class="outline"></div>
                     <div class="detail">
                         10000+<br />
                         <span>累積註冊</span>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="fade-up" data-aos-delay="500" class="card">
                     <div class="outline"></div>
                     <div class="detail">
                         10000+<br />
@@ -940,14 +942,14 @@
                 </div>
             </div>
             <div class="cards-list">
-                <div class="card">
+                <div data-aos="fade-up" data-aos-delay="400" class="card">
                     <div class="outline"></div>
                     <div class="detail">
                         10000+<br />
                         <span>累積註冊</span>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="fade-up" data-aos-delay="600" class="card">
                     <div class="outline"></div>
                     <div class="detail">
                         10000+<br />
@@ -956,7 +958,9 @@
                 </div>
             </div>
         </div>
-        <object class="dragon-right" data="./images/dragon_right.svg" type="image/svg+xml"></object>
+        <object data-aos="fade-left"
+        data-aos-easing="ease-in-sine"
+        class="dragon-right" data="./images/dragon_right.svg" type="image/svg+xml"></object>
     </section>
 
     <footer>
@@ -965,7 +969,7 @@
             <object data="./images/tiger_left.svg" type="image/svg+xml"></object>
         </div>
 
-        <div class="join-us">
+        <div data-aos="zoom-in" class="join-us">
             <div class="title flex-none">
                 加入我們
             </div>
@@ -1015,6 +1019,7 @@
         integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 選單js -->
     <script src="./js/header.js"></script>

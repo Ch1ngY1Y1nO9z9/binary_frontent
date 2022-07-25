@@ -6,8 +6,6 @@ const menu_modal = document.querySelector('.menu-modal');
 const menu_link_button = document.querySelector('.menu-link-button');
 const btt = document.querySelector('.btt');
 
-AOS.init();
-
 burger.addEventListener("click", () => {
     burger.classList.toggle("on")
     menu.classList.toggle('on')

@@ -19,6 +19,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .bottom-line {
     position: relative;
     z-index: 2;

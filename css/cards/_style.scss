@@ -20,38 +20,45 @@ section.cards {
         padding-bottom: 150px;
     }   
 
-    .dragon-left {
+    .flower-middle-left {
+
         position: absolute;
         left: 0;
-        bottom: -150px;
+        bottom: -85px;
         z-index: 1;
-        max-width: 850px;
 
-        .cls-1 {
-            fill: none;
+        @media (max-width: 1297px) {
+            max-width: 520px;
+            bottom: 0;
+            z-index: 2;
         }
 
-        .cls-2 {
-            fill: $yellow-5;
+        @media (max-width: 593px) {
+            max-width: 345px;
         }
     }
 
-    .dragon-right {
+    .flower-middle-right {
         position: absolute;
         right: 0;
-        top: 40px;
+        top: 200px;
         z-index: 1;
 
-        max-width: 560px;
+        @media (max-width: 1297px) {
+            max-width: 375px;
+            top: auto;
+            right: 0;
+            bottom: 0;
+        }
 
-        .cls-1 {
-            fill: $yellow-5;
+        @media (max-width: 593px) {
+            max-width: 239px;
         }
     }
 
     .custom-container {
         width: 100%;
-        padding-top: 220px;
+        // padding-top: 220px;
         margin: 0 auto;
         display: flex;
         justify-content: center;

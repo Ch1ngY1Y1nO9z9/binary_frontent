@@ -41,7 +41,7 @@ section.follow {
         position: relative;
         z-index: 1;
 
-        @media(max-width: 785px) {
+        @media(max-width: 1180px) {
             flex-direction: column;
         }
 
@@ -61,7 +61,7 @@ section.follow {
                 padding-left: 30px;
             }
 
-            @media(max-width: 785px) {
+            @media(max-width: 1180px) {
                 width: 100%;
                 max-width: 645px;
 
@@ -99,7 +99,7 @@ section.follow {
                             left: 335px;
                         }
 
-                        @media(max-width: 785px) {
+                        @media(max-width: 1180px) {
                             right: 0;
                         }
 
@@ -123,7 +123,7 @@ section.follow {
                             padding-bottom: 43px; 
                         }
 
-                        @media(max-width: 785px) {
+                        @media(max-width: 1180px) {
                             width: 100%;
                             max-width: 457px;
                         }
@@ -183,7 +183,7 @@ section.follow {
                     display: flex;
                     align-items: center;
 
-                    @media(max-width: 785px) {
+                    @media(max-width: 1180px) {
                         padding-top: 92px;
                     }
 
@@ -215,7 +215,7 @@ section.follow {
             width: 55%;
             position: relative;
 
-            @media(max-width: 785px) {
+            @media(max-width: 1180px) {
                 width: 100%;
             }
 
@@ -223,7 +223,7 @@ section.follow {
                 height: 100%;
                 padding-bottom: 200px;
 
-                @media(max-width: 785px) {
+                @media(max-width: 1180px) {
                     padding-bottom: 150px;
                 }
 
@@ -263,9 +263,20 @@ section.follow {
                                 margin-right: 40px;
                             }
 
+                            @media(max-width: 1180px) {
+                                margin-right: 100px;
+                            }
+
+                            @media(max-width: 976px) {
+                                margin-right: 40px;
+                            }
+
+                            @media(max-width: 656px) {
+                                margin-top: 30px;
+                            }  
+                            
                             @media(max-width: 593px) {
                                 margin-right: 0;
-                                margin-top: 30px;
                             }  
         
                         }
@@ -277,6 +288,13 @@ section.follow {
                                 margin-top: 30px;
                             }
 
+                            @media(max-width: 1180px) {
+                                margin-right: 100px;
+                            }
+
+                            @media(max-width: 976px) {
+                                margin-right: 0;
+                            }
                         }
 
                         .head {

@@ -2,12 +2,12 @@
 @import './_var';
 
 @import './header/_style';
-@import './banner/_style';
-@import './top-news/_style';
-@import './news-list/_style';
-@import './follow/_style';
-@import './cards/_style';
-@import './footer/_style';
+@import './index/banner/_style';
+@import './index/top-news/_style';
+@import './index/news-list/_style';
+@import './index/follow/_style';
+@import './index/cards/_style';
+@import './index/footer/_style';
 
 // css animate
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');

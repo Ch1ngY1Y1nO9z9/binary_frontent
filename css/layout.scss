@@ -11,7 +11,6 @@ body {
 
 .content {
     width: 100%;
-    height: calc(100vh - 90px);
     position: relative;
 }
 
@@ -25,6 +24,7 @@ body {
 header {
     background: $blue-5;
     padding: 15px 0 10px;
+    margin-bottom: 128px;
 
     @media(max-width: 785px) {
         padding: 17px 0;
@@ -40,10 +40,10 @@ header {
         bottom: 50%;
         z-index: 4;
 
-        padding: 8px 24px;
+        padding: 8px 19px;
         background: $orange-5;
         color: $white-1;
-        font-size: 43px;
+        font-size: 30px;
         
         &:hover {
             background: $yellow-5;
@@ -586,9 +586,9 @@ footer {
     position: relative;
     overflow: hidden;
 
-    .tiger-blue {
-        width: 100%;
-        max-width: 657px;
+    .footer-flowers-left {
+        width: 40%;
+        min-width: 314px;
         overflow: hidden;
 
         position: absolute;
@@ -596,21 +596,19 @@ footer {
         bottom: 0;
         z-index: 1;
 
-        object {
-            position: relative;
-            left: -20px;
-            bottom: -155px;
-            fill: $tiger-blue;
+        @media(max-width: 593px) {
+            z-index: 2;
+        }
 
-            @media(max-width: 1297px) {
-                left: -200px;
-            }
+        object {
+            width: 100%;
+            position: relative;
         }
     }
 
-    .tiger-yellow {
-        width: 100%;
-        max-width: 657px;
+    .footer-flowers-right {
+        width: 40%;
+        min-width: 298px;
         overflow: hidden;
 
         position: absolute;
@@ -619,14 +617,9 @@ footer {
         z-index: 1;
 
         object {
+            width: 100%;
             position: relative;
-            right: -40px;
-            bottom: -12px;
-            fill: $yellow-5;
-
-            @media(max-width: 1297px) {
-                right: -270px;
-            }
+            margin-left: auto;
         }
     }
 

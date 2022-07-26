@@ -737,19 +737,32 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   }
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide {
+.banner .custom-container .bannerSwiper .swiper-slide.info {
   padding-top: 250px;
   padding-left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("./../images/banner_outline.svg");
-  background-size: 1920px 929px;
-  background-position: center;
+  -webkit-mask: url("./../images/banner_outline.svg");
+          mask: url("./../images/banner_outline.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.info:nth-child(1) {
+  background-image: url("./../../images/banner/001-1_m.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.info:nth-child(2) {
+  background-image: url("./../../images/banner/001-2_m.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.info:nth-child(3) {
+  background-image: url("./../../images/banner/001-3_m.jpg");
 }
 
 @media (max-width: 1297px) {
-  .banner .custom-container .bannerSwiper .swiper-slide {
+  .banner .custom-container .bannerSwiper .swiper-slide.info {
     padding-left: 40px;
     padding-top: 170px;
     background-size: 1280px 620px;
@@ -757,7 +770,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 @media (max-width: 785px) {
-  .banner .custom-container .bannerSwiper .swiper-slide {
+  .banner .custom-container .bannerSwiper .swiper-slide.info {
     padding-top: 0;
     padding-left: 40px;
     padding-bottom: 130px;
@@ -770,18 +783,18 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 @media (max-width: 593px) {
-  .banner .custom-container .bannerSwiper .swiper-slide {
+  .banner .custom-container .bannerSwiper .swiper-slide.info {
     padding-left: 15px;
     padding-bottom: 20px;
   }
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left {
   width: 100%;
   max-width: 873px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left .title {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left .title {
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
   font-size: 72px;
@@ -792,7 +805,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 @media (max-width: 1297px) {
-  .banner .custom-container .bannerSwiper .swiper-slide .left .title {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .left .title {
     font-family: 'Noto Serif TC', 'serif';
     font-weight: 900;
     font-size: 48px;
@@ -802,7 +815,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 @media (max-width: 593px) {
-  .banner .custom-container .bannerSwiper .swiper-slide .left .title {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .left .title {
     font-family: 'Noto Serif TC', 'serif';
     font-weight: 900;
     font-size: 30px;
@@ -811,10 +824,10 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   }
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left .banner-link {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
   display: block;
   margin-top: 110px;
-  background: #ff621f;
+  background: white;
   width: 180px;
   text-align: center;
   padding: 15px 0;
@@ -823,24 +836,24 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   font-size: 18px;
   line-height: 19px;
   letter-spacing: 0.1em;
-  color: white;
+  color: #ff621f;
   -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
           box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1297px) {
-  .banner .custom-container .bannerSwiper .swiper-slide .left .banner-link {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
     margin-top: 96px;
   }
 }
 
 @media (max-width: 593px) {
-  .banner .custom-container .bannerSwiper .swiper-slide .left .banner-link {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
     margin-top: 30px;
   }
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left .scription {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left .scription {
   padding-top: 60px;
   padding-bottom: 17px;
   font-family: 'Noto Sans TC', 'sans-serif';
@@ -851,7 +864,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: white;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left .number {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left .number {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 900;
   font-size: 150px;
@@ -860,25 +873,25 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #ff621f;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .left .per {
+.banner .custom-container .bannerSwiper .swiper-slide.info .left .per {
   font-size: 48px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right {
   width: 100%;
   height: 100%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards {
   width: 100%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 {
   max-width: 626px;
   padding-left: 110px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card {
   max-width: 414px;
   height: 120px;
   position: relative;
@@ -893,25 +906,25 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   opacity: .8;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account .avatar {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account .avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: #717171;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account .avatar img {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account .avatar img {
   width: 100%;
   height: 100%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account .account-detail {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account .account-detail {
   padding: 12px;
   padding-right: 5px;
   -webkit-box-flex: 1;
@@ -919,7 +932,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
           flex: 1 1 0%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account .account-detail .name {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account .account-detail .name {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -928,7 +941,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #393939;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .account .account-detail .skill {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .account .account-detail .skill {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 14px;
@@ -939,7 +952,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   padding-bottom: 10px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .profit .number {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .profit .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,7 +964,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #ff621f;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .profit .number .icon {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .profit .number .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,7 +975,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   font-size: 45px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card .profit .number .pre {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card .profit .number .pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,7 +990,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   letter-spacing: 0.05em;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active {
   max-width: 516px;
   height: 170px;
   z-index: 2;
@@ -988,18 +1001,18 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   opacity: 1;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .account .avatar {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .account .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background: #FFAA3B;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .account .account-detail {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .account .account-detail {
   padding: 20px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .account .account-detail .name {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .account .account-detail .name {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 24px;
@@ -1007,7 +1020,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   letter-spacing: 1;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .account .account-detail .skill {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .account .account-detail .skill {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 20px;
@@ -1017,11 +1030,11 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   padding-bottom: 13px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .profit {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .profit {
   padding-left: 15px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-1 .card.active .profit .button {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-1 .card.active .profit .button {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 14px;
@@ -1033,7 +1046,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   border-radius: 5px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,7 +1055,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   margin-top: -82px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card {
   max-width: 300px;
   height: 256px;
   background: white;
@@ -1053,15 +1066,15 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   margin-bottom: 40px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card:nth-child(2) {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:nth-child(2) {
   margin-top: 142px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card:last-child {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:last-child {
   margin-top: -142px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,19 +1083,19 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   padding-bottom: 15px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .avatar {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .avatar {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   background: #FFAA3B;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .avatar img {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .avatar img {
   width: 100%;
   height: 100%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .account-detail {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .account-detail {
   padding: 20px 0;
   padding-left: 16px;
   -webkit-box-flex: 1;
@@ -1090,7 +1103,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
           flex: 1 1 0%;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .account-detail .name {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .account-detail .name {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -1099,7 +1112,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #393939;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .account-detail .skill {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .account-detail .skill {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 14px;
@@ -1109,7 +1122,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   padding-top: 10px;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .account .account-detail .follow-btn {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .account .account-detail .follow-btn {
   width: 100%;
   border: 1px solid #0046ae;
   border-radius: 5px;
@@ -1123,13 +1136,13 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #0046ae;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
@@ -1138,7 +1151,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   position: relative;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate:first-child::after {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate:first-child::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -1147,7 +1160,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   top: 0;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate .number {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate .number {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 48px;
@@ -1155,7 +1168,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   letter-spacing: 1;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate .unit {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate .unit {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 30px;
@@ -1163,7 +1176,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   letter-spacing: 1;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate .total {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate .total {
   width: 100%;
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
@@ -1173,7 +1186,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #A4A4A4;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .total-rate .title {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .total-rate .title {
   width: 100%;
   padding-top: 16px;
   font-family: 'Noto Sans TC', 'sans-serif';
@@ -1184,10 +1197,138 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   color: #393939;
 }
 
-.banner .custom-container .bannerSwiper .swiper-slide .right .cards.type-2 .card .rate .border {
+.banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card .rate .border {
   height: 100%;
   border-left: 1px solid #E9E9E9;
   padding: 0 30px;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression {
+  -webkit-mask: url("./../images/banner_outline.svg") no-repeat center/contain;
+          mask: url("./../images/banner_outline.svg") no-repeat center/contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression .title {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: white;
+  text-align: center;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression .sub-title {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: white;
+  text-align: center;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("./../../images/banner/01_simple.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
+  margin: 0 123px;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.friendly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("./../../images/banner/03_friendly.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
+  margin: 0 123px;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.fair {
+  padding-left: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-image: url("./../../images/banner/02_fair.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.fair .title {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.fair .sub-title {
+  padding: 0 25px;
+  margin: 0 50px;
+  border: 2px solid #C3C3C3;
+  border-top: 0;
+  border-bottom: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-align: left;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.open {
+  padding-left: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-image: url("./../../images/banner/04_open.jpg");
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.open .title {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.banner .custom-container .bannerSwiper .swiper-slide.impression.open .sub-title {
+  padding: 0 25px;
+  margin: 0 50px;
+  border: 2px solid #C3C3C3;
+  border-top: 0;
+  border-bottom: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-align: left;
 }
 
 .banner .custom-container .bottom-right-buttons {

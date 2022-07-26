@@ -9,7 +9,6 @@ body {
 
 .content {
   width: 100%;
-  height: calc(100vh - 90px);
   position: relative;
 }
 
@@ -23,6 +22,7 @@ body {
 header {
   background: #0046ae;
   padding: 15px 0 10px;
+  margin-bottom: 128px;
 }
 
 @media (max-width: 785px) {
@@ -42,10 +42,10 @@ header .btt {
   right: 78px;
   bottom: 50%;
   z-index: 4;
-  padding: 8px 24px;
+  padding: 8px 19px;
   background: #ff621f;
   color: white;
-  font-size: 43px;
+  font-size: 30px;
 }
 
 header .btt:hover {
@@ -709,9 +709,9 @@ footer {
   overflow: hidden;
 }
 
-footer .tiger-blue {
-  width: 100%;
-  max-width: 657px;
+footer .footer-flowers-left {
+  width: 40%;
+  min-width: 314px;
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -719,22 +719,20 @@ footer .tiger-blue {
   z-index: 1;
 }
 
-footer .tiger-blue object {
-  position: relative;
-  left: -20px;
-  bottom: -155px;
-  fill: #004ec2;
-}
-
-@media (max-width: 1297px) {
-  footer .tiger-blue object {
-    left: -200px;
+@media (max-width: 593px) {
+  footer .footer-flowers-left {
+    z-index: 2;
   }
 }
 
-footer .tiger-yellow {
+footer .footer-flowers-left object {
   width: 100%;
-  max-width: 657px;
+  position: relative;
+}
+
+footer .footer-flowers-right {
+  width: 40%;
+  min-width: 298px;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -742,17 +740,10 @@ footer .tiger-yellow {
   z-index: 1;
 }
 
-footer .tiger-yellow object {
+footer .footer-flowers-right object {
+  width: 100%;
   position: relative;
-  right: -40px;
-  bottom: -12px;
-  fill: #fcbd1f;
-}
-
-@media (max-width: 1297px) {
-  footer .tiger-yellow object {
-    right: -270px;
-  }
+  margin-left: auto;
 }
 
 footer .footer-links {

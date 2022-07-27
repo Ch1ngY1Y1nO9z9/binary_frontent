@@ -3370,7 +3370,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 

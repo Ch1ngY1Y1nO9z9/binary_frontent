@@ -743,8 +743,8 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-mask: url("./../images/banner_outline.svg");
-          mask: url("./../images/banner_outline.svg");
+  -webkit-mask: url("./../images/banner_outline.svg") no-repeat center/cover;
+          mask: url("./../images/banner_outline.svg") no-repeat center/cover;
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -785,7 +785,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 @media (max-width: 593px) {
   .banner .custom-container .bannerSwiper .swiper-slide.info {
     padding-left: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 }
 

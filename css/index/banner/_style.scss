@@ -70,7 +70,7 @@
                 padding-left: 150px;
                 display: flex;
 
-                mask: url('./../images/banner_outline.svg');
+                mask: url('./../images/banner_outline.svg') no-repeat center / cover;
 
                 background-position: top left;
                 background-repeat: no-repeat;
@@ -104,7 +104,7 @@
 
                 @media(max-width: 593px) {
                     padding-left: 15px;
-                    padding-bottom: 20px;
+                    padding-bottom: 60px;
                 }
 
                 .left {

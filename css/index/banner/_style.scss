@@ -440,7 +440,7 @@
                 }
 
                 .sub-title {
-                    @include Serif(24px, 24px, .2em);
+                    @include Serif(24px, 32px, .2em);
                     color: $white-1;
                     text-align: center;
                 }

@@ -16,10 +16,15 @@
 
 html {
     scroll-behavior: smooth;
+    @media (max-width: 593px) {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
 }
 
-html,body {
+body {
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .bottom-line {

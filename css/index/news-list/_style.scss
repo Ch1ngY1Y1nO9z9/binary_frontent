@@ -138,6 +138,7 @@ section.news-list {
             font-size: 50px;
             background-color: $white-1;
             border-radius: 50%;
+            top: calc(50% - 22px);
 
             &:hover {
                 color: $yellow-5;
@@ -161,7 +162,7 @@ section.news-list {
                 @include Serif(48px, 69px, .05em);
                 text-align: center;
                 position: relative;
-                margin-bottom: 96px;
+                margin-bottom: 70px;
 
                 @media (max-width: 593px) {
                     @include Serif(30px, 43px, .05em);
@@ -285,7 +286,7 @@ section.news-list {
         }
 
         .news-section {
-            padding-bottom: 260px;
+            padding-bottom: 185px;
 
             @media(max-width: 1297px) {
                 padding-bottom: 200px;

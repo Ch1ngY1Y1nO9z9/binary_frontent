@@ -1,5 +1,5 @@
 @import '../_var';
- 
+
 h1.pagetitle {
     @include Serif(48px, 69px, .05em);
     color: $gray-5;
@@ -84,6 +84,12 @@ section.content {
 
             .swiper-slide.swiper-slide-active {
                 opacity: 1;
+
+                .news-picture {
+                    .mask {
+                        opacity: 1;
+                    }
+                }
             }
 
             .swiper-slide {
@@ -102,7 +108,7 @@ section.content {
                     justify-content: flex-end;
                     width: 100%;
                     height: 100%;
-                    padding: 75px 65px;
+                    padding: 0 57px 40px 43px;
 
                     @media(max-width: 785px) {
                         padding: 75px 50px;
@@ -116,35 +122,93 @@ section.content {
                         transform: scale(1.1);
                         transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
                         transition-duration: 0.5s;
-                        
+
                         .description {
                             color: $orange-5;
                         }
                     }
 
-                    .title {
+                    .mask {
+                        opacity: 0;
 
-                        span {
-                            display: inline-block;
-                            background: $orange-5;
-                            padding: 5px 29px;
-                            padding-bottom: 9px;
+                        background: rgba(0, 0, 0, 0.7);
+                        border-radius: 20px;
+                        padding: 20px 30px;
 
-                            @include Sans(500, 18px, 26px, .1em);
+                        .title {
+                            @include Sans(700, 24px, 30px, .05em);
                             color: $white-1;
+
+                            margin-bottom: 10px;
                         }
-                    }
 
-                    .description {
-                        width: 100%;
-                        max-width: 616px;
-                        padding-top: 16px;
-                        @include Sans(700, 18px, 25px, .1em);
-                        color: $white-1;
+                        .data {
+                            display: flex;
 
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
+                            .left {
+                                flex: 1 1 0;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+
+                                .participate {
+                                    color: $white-1;
+
+                                    i {
+                                        font-size: 14px;
+                                    }
+    
+                                    .number {
+                                        display: inline-block;
+                                        margin-left: 10px;
+                                       @include Sans(400, 14px, 14px, .05em); 
+                                    }
+                                }
+
+                                .bar {
+                                    width: 100%;
+                                    max-width: 560px;
+
+                                    display: flex;
+                                    @include Sans(700, 14px, 16px, .05em);
+                                    color: $white-1;
+
+                                    .green-bar {
+                                        width: 60%;
+                                        background: $green-1;
+                                        border-radius: 20px 0 0 20px;
+                                        padding: 6px 10px 8px;
+                                    }
+
+                                    .red-bar {
+                                        width: 40%;
+                                        background: $red-1;
+                                        border-radius: 0 20px 20px 0;
+                                        text-align: right;
+                                        padding: 6px 10px 8px;
+                                    }
+                                }
+
+                            }
+
+                            .right {
+                                .remain {
+                                    @include Sans(400, 18px, 24px, .05em);
+                                    color: $yellow-5;
+                                    margin-bottom: 10px;
+                                    padding: 0 13px;
+                                }
+
+                                .btn {
+                                    display: block;
+                                    @include Sans(400, 14px, 14px, .1em);
+                                    color: $white-1;
+                                    background: $orange-5;
+                                    padding: 12px 40px 14px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -270,7 +334,7 @@ section.content {
                     .swiper-button-prev {
                         left: 62px;
                     }
-                    
+
                     .swiper-button-next {
                         right: 62px;
                     }
@@ -291,7 +355,7 @@ section.content {
                     .swiper-button-prev {
                         left: 62px;
                     }
-                    
+
                     .swiper-button-next {
                         right: 62px;
                     }
@@ -321,10 +385,10 @@ section.content {
                 justify-content: space-between;
                 position: relative;
                 padding: 60px 126px 0;
-    
+
                 @include Serif(48px, 48px, .2);
                 color: $white-1;
-                
+
                 &::before {
                     content: '';
                     width: 750px;
@@ -333,18 +397,18 @@ section.content {
                     position: absolute;
                     top: 0;
                 }
-    
+
                 span {
                     position: relative;
                     z-index: 2;
                 }
-    
+
                 .more {
                     @include Sans(400, 14px, 14px, .1em);
                     color: $orange-5;
                     border: 1px solid $orange-5;
                     background: $white-1;
-    
+
                     padding: 12px 45px 14px;
 
                     &:hover {
@@ -361,51 +425,58 @@ section.content {
 
                 .newsSwiper {
                     padding: 60px 0;
-    
+
                     .swiper-slide {
                         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-    
+
                         .link {
                             width: 100%;
                             height: 100%;
-    
+
                             .pic {
                                 width: 100%;
                                 height: 260px;
                                 background: $gray-4;
                             }
-    
+
                             .description {
                                 padding: 20px;
                                 background: $white-1;
-    
+
                                 .tag {
                                     @include Sans(400, 14px, 14px, .05em);
                                     color: $orange-5;
                                     margin-bottom: 10px;
                                 }
-    
+
                                 .content {
                                     @include Sans(700, 18px, 25px, .05em);
                                     color: $gray-5;
                                     text-align: justify;
-    
+
                                     padding-bottom: 30px;
                                 }
-    
+
                                 .time {
                                     @include Sans(400, 14px, 14px, .05em);
+                                    color: $gray-4;
                                 }
                             }
                         }
                     }
                 }
-                .swiper-button-prev,.swiper-button-next {
+
+                .swiper-button-prev,
+                .swiper-button-next {
                     color: $orange-5;
                     font-size: 50px;
-    
+
                     &::after {
                         content: initial;
+                    }
+
+                    &:hover {
+                        color: $yellow-5;
                     }
                 }
             }
@@ -413,5 +484,5 @@ section.content {
 
     }
 
-    
+
 }

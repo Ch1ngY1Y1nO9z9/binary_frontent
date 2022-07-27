@@ -203,6 +203,10 @@ section.follow {
                         color: $disable-gray;
                         font-size: 30px;
 
+                        &:hover {
+                            color: $yellow-5;
+                        }
+
                         &::after {
                             content: initial;
                         }
@@ -298,6 +302,7 @@ section.follow {
                         }
 
                         .head {
+                            padding-bottom: 8px;
                             @include Sans(700, 18px, 112.7%, .05em);
                             color: $blue-5;
                         }
@@ -350,6 +355,10 @@ section.follow {
                                         @include Sans(400, 14px, 12px, .05em);
                                         text-align: center;
                                         color: $blue-5;
+
+                                        &:hover {
+                                            background: $yellow-5;
+                                        }
                                     }
                                 }
                             }
@@ -419,6 +428,10 @@ section.follow {
 
                 &::after {
                     content: initial;
+                }
+
+                &:hover {
+                    color: $yellow-5;
                 }
             }
         }

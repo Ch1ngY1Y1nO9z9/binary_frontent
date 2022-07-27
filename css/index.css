@@ -1204,8 +1204,8 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression {
-  -webkit-mask: url("./../images/banner_outline.svg") no-repeat center/contain;
-          mask: url("./../images/banner_outline.svg") no-repeat center/contain;
+  -webkit-mask: url("./../images/banner_outline.svg") no-repeat center/cover;
+          mask: url("./../images/banner_outline.svg") no-repeat center/cover;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;

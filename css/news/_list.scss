@@ -1,0 +1,234 @@
+.topnews {
+    .custom-container {
+        width: 100%;
+        max-width: 1274px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 50px;
+
+        .newsSwiper {
+
+            .swiper-slide {
+
+                .link {
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        .description {
+                            .content {
+                                color: $orange-5;
+                            }
+                        }
+                    }
+
+                    .pic {
+                        width: 100%;
+                        height: 260px;
+                        background: $gray-4;
+                    }
+
+                    .description {
+                        padding: 20px;
+                        background: $white-1;
+
+                        .tag {
+                            @include Sans(400, 14px, 14px, .05em);
+                            color: $orange-5;
+                            margin-bottom: 10px;
+                        }
+
+                        .content {
+                            @include Sans(700, 18px, 25px, .05em);
+                            color: $gray-5;
+                            text-align: justify;
+
+                            padding-bottom: 30px;
+                        }
+
+                        .time {
+                            @include Sans(400, 14px, 14px, .05em);
+                            color: $gray-4;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $orange-5;
+            font-size: 50px;
+
+            &::after {
+                content: initial;
+            }
+
+            &:hover {
+                color: $yellow-5;
+            }
+        }
+
+        .swiper-button-prev {
+            left: -63px;
+        }
+
+        .swiper-button-next {
+            right: -63px;
+        }
+    }
+}
+
+.catalog {
+    .custom-container {
+        width: 100%;
+        max-width: 1274px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 150px;
+        padding-bottom: 200px;
+
+        .options {
+            display: flex;
+            justify-content: center;
+
+            .btn {
+                @include Sans(400, 14px, 14px, .1em);
+                color: $gray-5;
+                background: $gray-2;
+                border-radius: 5px;
+
+                padding: 13px 30px;
+                margin-left: 15px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:hover,&.active {
+                    background: $orange-5;
+                    color: $white-1;
+                }
+            }
+        }
+
+        .list {
+            padding-top: 100px;
+
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+
+                .card {
+                    display: flex;
+
+                    width: 50%;
+                    max-width: 624px;
+
+                    margin-bottom: 24px;
+                    padding: 20px;
+    
+                    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    
+                    &:nth-child(even) {
+                        margin-right: 0;
+                    }
+    
+                    .left {
+                        width: 100%;
+                        max-width: 250px;
+                        background: $gray-4;
+                    }
+    
+                    .right {
+                        padding-left: 20px;
+                        
+                        .tags {
+                            display: flex;
+    
+                            .tag {
+                                @include Sans(400, 14px, 20px, .1em);
+                                color: $white-1;
+                                margin-right: 10px;
+                                padding: 2px 25px 3px;
+        
+                                &.tag-o {
+                                    background: $orange-5;
+                                }
+        
+                                &.tag-g {
+                                    background: $green-1;
+                                }
+                            }
+    
+                            .icon {
+                                margin-left: auto;
+                                font-size: 25px;
+                                color: $orange-5;
+                            }
+                        }
+    
+                        .title {
+                            @include Sans(400, 14px, 14px, .05em);
+                            color: $orange-5;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                        }
+    
+                        .scription {
+                            @include Sans(700, 18px, 25px, .05em);
+                            color: $gray-5;
+                            text-align: justify;
+                            padding-bottom: 30px;
+                        }
+    
+                        .time {
+                            @include Sans(400, 14px, 14px, .05em);
+                            color: $disable-gray;
+                        }
+                    }
+                }
+            }
+
+            .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px;
+
+                @include Sans(700, 18px, 26px, .05em);
+                color: $gray-5;
+
+                .prev-arrow,.next-arrow {
+                    font-size: 15px;
+                }
+
+                .pages {
+                    display: flex;
+                    a {
+                        display: block;
+                        padding: 10px 20px 14px;
+                        border-radius: 5px;
+
+                        &:hover,&.active {
+                            background: $orange-5;
+                            color: $white-1;
+                        }
+                    }
+                }
+
+                .prev-arrow {
+                    position: relative;
+                    right: 21px;
+                }
+
+                .next-arrow {
+                    position: relative;
+                    left: 21px;
+                }
+            }
+        }
+    }
+}

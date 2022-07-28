@@ -1,7 +1,7 @@
-var topNewsSwiper = new Swiper(".topNewsSwiper", {
+var recommendSwiper = new Swiper(".recommendSwiper", {
     navigation: {
-        nextEl: ".topnews-swiper-button-next",
-        prevEl: ".topnews-swiper-button-prev",
+        nextEl: ".recommend-swiper-button-next",
+        prevEl: ".recommend-swiper-button-prev",
     },
     effect: 'coverflow',
     grabCursor: true,
@@ -19,6 +19,7 @@ var topNewsSwiper = new Swiper(".topNewsSwiper", {
     observeParents: true,
 });
 
+// index
 var entertainment = new Swiper(".entertainment .newsSwiper", {
     navigation: {
         nextEl: ".entertainment-swiper-button-next",
@@ -81,3 +82,15 @@ var cryptocurrency = new Swiper(".cryptocurrency .newsSwiper", {
     slidesPerView: 3,
     spaceBetween: 24
 });
+
+//list
+var topNewsSwiper = new Swiper(".topnews .newsSwiper", {
+    navigation: {
+        nextEl: ".topnews-swiper-button-next",
+        prevEl: ".topnews-swiper-button-prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 24
+});
+
+//content

@@ -94,3 +94,11 @@ var topNewsSwiper = new Swiper(".topnews .newsSwiper", {
 });
 
 //content
+var interestsSwiper = new Swiper(".interests .interestsSwiper", {
+    navigation: {
+        nextEl: ".interests-swiper-button-next",
+        prevEl: ".interests-swiper-button-prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 24
+});

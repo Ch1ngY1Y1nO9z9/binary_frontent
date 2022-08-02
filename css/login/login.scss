@@ -1,0 +1,211 @@
+@import '../_var';
+
+header {
+    background: $white-1;
+
+    .custom-container {
+        .header-l {
+            .logo {
+                .site-name {
+                    color: $gray-5;
+                }
+            }
+        }
+
+        .header-r {
+            .account {
+                color: $blue-5;
+            }
+
+            .burger-menu {
+                button.burger.burger-style {
+                    &::before {
+                        background: $blue-5;
+                    }
+
+                    &::after {
+                        background: $blue-5;
+                    }
+
+                    span {
+                        &::before {
+                            background: $blue-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+h1.pagetitle {
+    @include Serif(48px, 69px, .05em);
+    color: $gray-5;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section.content {
+    width: 100%;
+    box-sizing: content-box;
+
+    position: relative;
+    z-index: 3;
+
+    .custom-container {
+        width: 100%;
+        max-width: 624px;
+        margin: auto;
+
+        .card {
+            position: relative;
+            z-index: 2;
+            padding: 50px 112px;
+            background: $white-1;
+            border-radius: 20px;
+
+            @include normal-shadow;
+
+            .input-row {
+                color: $gray-5;
+                margin-bottom: 30px;
+
+                label.input-label {
+                    display: block;
+                    @include Sans(700, 14px, 14px, .05em);
+                    margin-bottom: 10px;
+
+                    &[for=vertify_code]+.input-col {
+                        display: flex;
+
+                        input#vertify_code.input-control {
+                            flex: 1 1 0;
+    
+                            &~span {
+                                display: inline-block;
+                                margin-left: 15px;
+                                @include Sans(700, 14px, 14px, .1em);
+                                color: $orange-5;
+                                padding: 12px 37px 14px;
+                                border: 1px solid $orange-5;
+                                background: $white-1;
+    
+                                &:hover {
+                                    background: $orange-5;
+                                    color: $white-1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .input-col {
+                    display: flex;
+                    align-items: center;
+
+                    input.input-control {
+                        width: 100%;
+                        border: 1px solid $gray-4;
+                        border-radius: 5px;
+                        background: $white-1;
+                        padding: 9px 10px;
+
+                        @include Sans(400, 14px, 14px, initial);
+                        color: $gray-5;
+
+                        &::placeholder {
+                            color: $gray-3;
+                        }
+                    }
+
+                    .checkbox-mask {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: 1px solid $gray-4;
+
+                        &+label.input-label {
+                            @include Sans(400, 14px, 14px, initial);
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &+.msg {
+                        display: none;
+                        @include Sans(400, 14px, 14px, initial);
+        
+                        margin-top: 5px;
+                        color: $red-1;
+                    }
+
+                    &.error+.msg {
+                        display: block;
+                    }
+
+                    &.error {
+                        .checkbox-mask {
+                            border: 1px solid $red-1;
+                        }
+                    }
+                }
+            }
+
+            .submit {
+                display: flex;
+                justify-content: center;
+                padding: 30px 0;
+
+                button {
+                    @include Sans(700, 14px, 14px, .1em);
+                    color: $white-1;
+                    background: $orange-5;
+                    padding: 12px 60px 14px;
+
+                    &:hover {
+                        background: $yellow-5;
+                    }
+                }
+
+                &.error {
+                    padding-bottom: 0;
+                }
+
+                &+.msg {
+                    display: none;
+                    @include Sans(400, 14px, 14px, initial);
+                    text-align: center;
+    
+                    margin-top: 5px;
+                    color: $red-1;
+                }
+
+                &.error+.msg {
+                    display: block;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .links {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+
+                @include Sans(400, 14px, 14px, .05em);
+                color: $gray-4;
+
+                .link {
+                    &:nth-child(even) {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./_login";
+@import "./_register";
+@import "./_forgot";

@@ -138,9 +138,10 @@
 
             .card {
                 padding: 32px 30px 28px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
                 border-radius: 20px;
                 background: $white-1;
+
+                @include normal-shadow;
 
                 .data {
                     display: flex;
@@ -350,9 +351,10 @@
 
         .card {
             padding: 30px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             background: $white-1;
+
+            @include normal-shadow;
 
             .data {
                 .title {
@@ -491,7 +493,7 @@
             padding: 30px 0;
 
             .swiper-slide {
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                @include normal-shadow;
 
                 &:hover{
                     .link {

@@ -1,0 +1,388 @@
+header {
+  background: white;
+}
+
+header .custom-container .header-l .logo .site-name {
+  color: #393939;
+}
+
+header .custom-container .header-r .account {
+  color: #0046ae;
+}
+
+header .custom-container .header-r .burger-menu button.burger.burger-style::before {
+  background: #0046ae;
+}
+
+header .custom-container .header-r .burger-menu button.burger.burger-style::after {
+  background: #0046ae;
+}
+
+header .custom-container .header-r .burger-menu button.burger.burger-style span::before {
+  background: #0046ae;
+}
+
+h1.pagetitle {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  letter-spacing: 0.05em;
+  color: #393939;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+section.content {
+  width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  z-index: 3;
+}
+
+section.content .custom-container {
+  width: 100%;
+  max-width: 624px;
+  margin: auto;
+}
+
+section.content .custom-container .card {
+  position: relative;
+  z-index: 2;
+  padding: 50px 112px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+section.content .custom-container .card .input-row {
+  color: #393939;
+  margin-bottom: 30px;
+}
+
+section.content .custom-container .card .input-row label.input-label {
+  display: block;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span {
+  display: inline-block;
+  margin-left: 15px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #ff621f;
+  padding: 12px 37px 14px;
+  border: 1px solid #ff621f;
+  background: white;
+}
+
+section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span:hover {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container .card .input-row .input-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.content .custom-container .card .input-row .input-col input.input-control {
+  width: 100%;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  background: white;
+  padding: 9px 10px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: #393939;
+}
+
+section.content .custom-container .card .input-row .input-col input.input-control::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+
+section.content .custom-container .card .input-row .input-col input.input-control:-ms-input-placeholder {
+  color: #c3c3c3;
+}
+
+section.content .custom-container .card .input-row .input-col input.input-control::-ms-input-placeholder {
+  color: #c3c3c3;
+}
+
+section.content .custom-container .card .input-row .input-col input.input-control::placeholder {
+  color: #c3c3c3;
+}
+
+section.content .custom-container .card .input-row .input-col .checkbox-mask {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+}
+
+section.content .custom-container .card .input-row .input-col .checkbox-mask + label.input-label {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+section.content .custom-container .card .input-row .input-col + .msg {
+  display: none;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  margin-top: 5px;
+  color: #eb3634;
+}
+
+section.content .custom-container .card .input-row .input-col.error + .msg {
+  display: block;
+}
+
+section.content .custom-container .card .input-row .input-col.error .checkbox-mask {
+  border: 1px solid #eb3634;
+}
+
+section.content .custom-container .card .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+}
+
+section.content .custom-container .card .submit button {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: white;
+  background: #ff621f;
+  padding: 12px 60px 14px;
+}
+
+section.content .custom-container .card .submit button:hover {
+  background: #fcbd1f;
+}
+
+section.content .custom-container .card .submit.error {
+  padding-bottom: 0;
+}
+
+section.content .custom-container .card .submit + .msg {
+  display: none;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  text-align: center;
+  margin-top: 5px;
+  color: #eb3634;
+}
+
+section.content .custom-container .card .submit.error + .msg {
+  display: block;
+  padding-bottom: 30px;
+}
+
+section.content .custom-container .card .links {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #888888;
+}
+
+section.content .custom-container .card .links .link:nth-child(even) {
+  margin-left: 15px;
+}
+
+section.content .custom-container div.card.success .icon {
+  color: #2cbd03;
+  font-size: 50px;
+  text-align: center;
+}
+
+section.content .custom-container div.card.success .confirm {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #393939;
+}
+
+section.content .custom-container div.card.success .check {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+section.content .custom-container div.card.success .check .text {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #393939;
+}
+
+section.content .custom-container div.card.success .check .text span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff621f;
+}
+
+section.content .custom-container div.card.success .links .link {
+  display: inline-block;
+  border: 1px solid #ff621f;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #ff621f;
+  padding: 12px 45px 14px;
+  background: white;
+  text-decoration: none;
+}
+
+section.content .custom-container div.card.success .links .link:hover {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container div.card.success .links .link:last-child {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container div.card.success .links .link:last-child:hover {
+  background: #fcbd1f;
+  border: 1px solid #fcbd1f;
+}
+
+section.content .custom-container div.card.getpassword .icon {
+  color: #0046ae;
+  font-size: 50px;
+  text-align: center;
+}
+
+section.content .custom-container div.card.getpassword .confirm {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #393939;
+}
+
+section.content .custom-container div.card.getpassword .check {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+section.content .custom-container div.card.getpassword .check .text {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #393939;
+  margin-bottom: 10px;
+}
+
+section.content .custom-container div.card.getpassword .check .mail {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #393939;
+}
+
+section.content .custom-container div.card.getpassword .return {
+  text-align: center;
+}
+
+section.content .custom-container div.card.getpassword .return a {
+  display: inline-block;
+  border: 1px solid #ff621f;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #ff621f;
+  padding: 12px 45px 14px;
+  background: white;
+}
+
+section.content .custom-container div.card.getpassword .return a:hover {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container div.card.getpassword .links .link {
+  color: #ff621f;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=login.css.map */

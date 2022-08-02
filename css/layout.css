@@ -39,8 +39,8 @@ header {
 
 header .btt {
   position: fixed;
-  right: 78px;
-  bottom: 50%;
+  right: 30px;
+  bottom: 96px;
   z-index: 4;
   padding: 8px 19px;
   background: #ff621f;
@@ -50,20 +50,6 @@ header .btt {
 
 header .btt:hover {
   background: #fcbd1f;
-}
-
-@media (max-width: 785px) {
-  header .btt {
-    right: 42px;
-    bottom: 60px;
-  }
-}
-
-@media (max-width: 593px) {
-  header .btt {
-    right: 30px;
-    bottom: 96px;
-  }
 }
 
 header .custom-container {
@@ -849,5 +835,405 @@ footer .site-rights {
   letter-spacing: 0.1em;
   text-align: center;
   color: #fcbd1f;
+}
+
+footer#sp {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0 30px;
+  padding-top: 25px;
+  background: #0046ae;
+  overflow: visible;
+}
+
+footer#sp::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/footer_block.svg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1341px;
+  background-position: top center;
+  position: absolute;
+  top: -250px;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 785px) {
+  footer#sp::before {
+    top: -200px;
+  }
+}
+
+@media (max-width: 593px) {
+  footer#sp::before {
+    background-size: 2338px 1609px;
+    top: -150px;
+  }
+}
+
+footer#sp .footer-flowers-left {
+  width: 40%;
+  min-width: 314px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width: 593px) {
+  footer#sp .footer-flowers-left {
+    z-index: 2;
+  }
+}
+
+footer#sp .footer-flowers-left object {
+  width: 100%;
+  position: relative;
+}
+
+footer#sp .footer-flowers-right {
+  width: 40%;
+  min-width: 298px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+footer#sp .footer-flowers-right object {
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+}
+
+footer#sp .join-us {
+  max-width: 1045px;
+  background: white;
+  padding: 45px 100px 55px;
+  -webkit-box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 785px) {
+  footer#sp .join-us {
+    padding: 27px 50px 93px;
+  }
+}
+
+@media (max-width: 593px) {
+  footer#sp .join-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer#sp .join-us .title {
+  width: 200px;
+  margin-right: 50px;
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 100px;
+  letter-spacing: 0.1em;
+  color: #ff621f;
+}
+
+@media (max-width: 593px) {
+  footer#sp .join-us .title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+footer#sp .join-us .content {
+  padding-top: 50px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  color: #393939;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+@media (max-width: 785px) {
+  footer#sp .join-us .content {
+    padding-top: 32px;
+    font-weight: 400;
+  }
+}
+
+footer#sp .join-us .join-link {
+  width: 320px;
+  height: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 60px;
+  bottom: -60px;
+  z-index: 2;
+}
+
+footer#sp .join-us .join-link:hover .outline {
+  background: #fcbd1f;
+}
+
+footer#sp .join-us .join-link:hover ~ .join-link-ping .outline {
+  background: #fcbd1f;
+}
+
+@media (max-width: 785px) {
+  footer#sp .join-us .join-link {
+    right: calc(50% - 160px);
+  }
+}
+
+@media (max-width: 593px) {
+  footer#sp .join-us .join-link {
+    bottom: -70px;
+  }
+}
+
+footer#sp .join-us .join-link .outline {
+  width: 100%;
+  height: 100%;
+  -webkit-mask: url("../../images/normal_outline.svg") no-repeat center/contain;
+          mask: url("../../images/normal_outline.svg") no-repeat center/contain;
+  background: #ff621f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: #ff621f;
+}
+
+footer#sp .join-us .join-link a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50px;
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: white;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+footer#sp .join-us .join-link-ping {
+  width: 320px;
+  height: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 60px;
+  bottom: -60px;
+  z-index: 1;
+  -webkit-animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes ping {
+  75%, 100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 785px) {
+  footer#sp .join-us .join-link-ping {
+    right: calc(50% - 160px);
+  }
+}
+
+@media (max-width: 593px) {
+  footer#sp .join-us .join-link-ping {
+    bottom: -70px;
+  }
+}
+
+footer#sp .join-us .join-link-ping .outline {
+  width: 100%;
+  height: 100%;
+  -webkit-mask: url("../../images/normal_outline.svg") no-repeat center/contain;
+          mask: url("../../images/normal_outline.svg") no-repeat center/contain;
+  background: #ff621f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: #ff621f;
+}
+
+footer#sp .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 593px) {
+  footer#sp .footer-links {
+    padding-top: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer#sp .footer-links .link {
+  padding: 6px 25px;
+  position: relative;
+}
+
+@media (max-width: 593px) {
+  footer#sp .footer-links .link {
+    margin-bottom: 35px;
+  }
+}
+
+footer#sp .footer-links .link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  border: 1px solid #c3c3c3;
+}
+
+@media (max-width: 593px) {
+  footer#sp .footer-links .link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    border: 1px solid #c3c3c3;
+  }
+}
+
+footer#sp .footer-links .link:last-child::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  border: 1px solid #c3c3c3;
+}
+
+footer#sp .footer-links .link a {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: white;
+}
+
+footer#sp .footer-links .link a:hover {
+  color: #fcbd1f;
+}
+
+footer#sp .logo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 120px 0;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 135px;
+  line-height: 0.8;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 593px) {
+  footer#sp .logo {
+    padding: 100px 0;
+  }
+}
+
+footer#sp .site-rights {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 22px;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fcbd1f;
+}
+
+@media (max-width: 785px) {
+  footer#sp .site-rights span {
+    display: block;
+  }
+}
+
+@media (max-width: 785px) {
+  footer#sp .site-rights {
+    padding-bottom: 126px;
+  }
+}
+
+@media (max-width: 593px) {
+  footer#sp .site-rights {
+    padding-bottom: 373px;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

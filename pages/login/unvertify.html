@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="stylesheet" href="../../css/login/login.css">
 </head>
- 
+
 <body class="relative">
     <header id="header">
         <div class="custom-container mx-auto flex">
@@ -157,45 +157,29 @@
             </div>
         </div>
 
-        <div class="fixed-buttons">
-            <a href="#header" class="btt">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </div>
+        <a href="#header" class="btt">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </header>
 
     <h1 class="pagetitle">
-        歡迎回來
+        會員登入
     </h1>
 
     <section class="content">
         <div class="custom-container">
-            <form class="card" action="" method="" enctype="multipart/form-data">
-                <div class="icon">
-                    <img src="" alt="">
+            <div class="card unvertify">
+                <div class="icon failed">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
                 </div>
-                <div class="input-row">
-                    <label for="email" class="input-label">Email</label>
-                    <div class="input-col">
-                        <input id="email" type="email" name="email" class="input-control" placeholder="請輸入註冊的Email">
-                    </div>
-                    <span class="msg"></span>
-                </div>
-                <div class="input-row">
-                    <label for="password" class="input-label">密碼</label>
-                    <div class="input-col">
-                        <input id="password" type="password" name="password" class="input-control" placeholder="請輸入密碼">
-                    </div>
-                    <span class="msg"></span>
-                </div>
-                <div class="submit">
-                    <button type="submit">登入</button>
+                <div class="confirm">
+                    您的帳號還未驗證，請確認Email中的驗證信，或重新寄發驗證信。
                 </div>
                 <div class="links">
-                    <a href="#" class="link">忘記密碼?</a>
-                    <a href="#" class="link">註冊會員</a>
+                    <a href="#" class="link">返回首頁</a>
+                    <a href="#" class="link">會員登入</a>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 

@@ -37,18 +37,112 @@ header {
   }
 }
 
-header .btt {
+header .fixed-buttons {
   position: fixed;
   right: 30px;
   bottom: 96px;
   z-index: 4;
+  width: 60px;
+}
+
+header .fixed-buttons .quick_link {
+  position: relative;
+  z-index: 2;
+  display: block;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: white;
+  background: #0046ae;
+  padding: 5px;
+  cursor: pointer;
+}
+
+header .fixed-buttons .quick_link:nth-child(even) {
+  margin: 5px 0;
+}
+
+header .fixed-buttons .quick_link:hover {
+  background: #ff621f;
+}
+
+header .fixed-buttons .quick_link:hover .btn-list {
+  display: block;
+  opacity: 1;
+  top: -190px;
+}
+
+header .fixed-buttons .quick_link .menu-btn {
+  padding: 7px 9px;
+  border: 1px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+header .fixed-buttons .quick_link .menu-btn .icon {
+  font-size: 20px;
+}
+
+header .fixed-buttons .quick_link .menu-btn .title {
+  display: block;
+}
+
+header .fixed-buttons .quick_link .btn-list {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #393939;
+  padding: 5px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .fixed-buttons .quick_link .btn-list a {
+  display: block;
+  padding: 10px 0 12px;
+  font-weight: 400;
+}
+
+header .fixed-buttons .quick_link .btn-list a:nth-child(even) {
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+header .fixed-buttons .quick_link .btn-list a .number {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+header .fixed-buttons a.quick_link {
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+}
+
+header .fixed-buttons .btt {
+  display: block;
   padding: 8px 19px;
   background: #ff621f;
   color: white;
   font-size: 30px;
+  position: relative;
+  z-index: 2;
 }
 
-header .btt:hover {
+header .fixed-buttons .btt:hover {
   background: #fcbd1f;
 }
 

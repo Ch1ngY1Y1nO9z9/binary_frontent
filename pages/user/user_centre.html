@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>layout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/login/login.css">
+    <link rel="stylesheet" href="../../css/user/centre.css">
 </head>
- 
+
 <body class="relative">
     <header id="header">
         <div class="custom-container mx-auto flex">
             <div class="header-l flex-none">
                 <a href="#" class="logo">
-                    <img src="../../images/logo.svg" alt="logo">
+                    <img src="../../images/layout_logo.svg" alt="logo">
                     <span class="site-name">皇冠交易所</span>
                 </a>
             </div>
             <div class="header-r shrink">
+                <div class="search">
+                    <input type="text" class="search" placeholder="搜尋" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="point">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="number">
+                        5,699
+                    </div>
+                </div>
+                <div class="notify">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
                 <button class="account">
                     <i class="fa-solid fa-user"></i>
                 </button>
@@ -158,6 +171,39 @@
         </div>
 
         <div class="fixed-buttons">
+            <div class="quick_link">
+                <div class="menu-btn">
+                    <div class="icon">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+                    <div class="title">注單</div>
+                </div>
+                <div class="btn-list">
+                    <a href="#">
+                        <div class="number">
+                            5
+                        </div>
+                        搓合中
+                    </a>
+                    <a href="#">
+                        <div class="number">
+                            8
+                        </div>
+                        已成交
+                    </a>
+                    <a href="#">
+                        <div class="number">
+                            99+
+                        </div>
+                        未成交
+                    </a>
+                </div>
+            </div>
+            </a>
+            <a href="#" class="quick_link">
+                客服中心
+            </a>
             <a href="#header" class="btt">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
@@ -165,41 +211,102 @@
     </header>
 
     <h1 class="pagetitle">
-        歡迎回來
+        會員中心
     </h1>
 
     <section class="content">
-        <div class="custom-container">
-            <form class="card" action="" method="" enctype="multipart/form-data">
-                <div class="icon">
-                    <img src="" alt="">
-                </div>
-                <div class="input-row">
-                    <label for="email" class="input-label">Email</label>
-                    <div class="input-col">
-                        <input id="email" type="email" name="email" class="input-control" placeholder="請輸入註冊的Email">
+        <div class="centre">
+            <div class="custom-container">
+                <div class="activity">
+                    <div class="block">
+                        <div class="title">
+                            好友推廣
+                        </div>
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
                     </div>
-                    <span class="msg"></span>
-                </div>
-                <div class="input-row">
-                    <label for="password" class="input-label">密碼</label>
-                    <div class="input-col">
-                        <input id="password" type="password" name="password" class="input-control" placeholder="請輸入密碼">
+                    <div class="block">
+                        <div class="title">
+                            我的活動
+                        </div>
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
                     </div>
-                    <span class="msg"></span>
                 </div>
-                <div class="submit">
-                    <button type="submit">登入</button>
+
+                <div class="menu-list">
+                    <div class="menu">
+                        <div class="title">
+                            <span class="icon"></span>帳戶設定
+                        </div>
+                        <div class="link">
+                            <a href="">個人檔案</a>
+                        </div>
+                        <div class="link">
+                            <a href="">個人戰績</a>
+                        </div>
+                        <div class="link">
+                            <a href="">修改密碼</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title">
+                            <span class="icon"></span>我的錢包
+                        </div>
+                        <div class="link">
+                            <a href="">錢包紀錄</a>
+                        </div>
+                        <div class="link">
+                            <a href="">錢包加值</a>
+                        </div>
+                        <div class="link">
+                            <a href="">轉帳</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title">
+                            <span class="icon"></span>我的注單
+                        </div>
+                        <div class="link">
+                            <a href="">注單追蹤</a>
+                        </div>
+                        <div class="link">
+                            <a href="">會員跟單列表</a>
+                        </div>
+                        <div class="link">
+                            <a href="">定期定額列表</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title">
+                            <span class="icon"></span>收藏清單
+                        </div>
+                        <div class="link">
+                            <a href="">新聞收藏</a>
+                        </div>
+                        <div class="link">
+                            <a href="">遊戲收藏</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title">
+                            <span class="icon"></span>推薦績效
+                        </div>
+                        <div class="link">
+                            <a href="">返佣列表</a>
+                        </div>
+                        <div class="link">
+                            <a href="">我的好友</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="links">
-                    <a href="#" class="link">忘記密碼?</a>
-                    <a href="#" class="link">註冊會員</a>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
-    <footer id="sp">
+    <footer>
         <div data-aos-anchor-placement="center-bottom" data-aos="fade-up-right" class="footer-flowers-left">
             <object data="../../images/flowers/index_footer_left.png" type="image/png"></object>
         </div>
@@ -235,9 +342,11 @@
     <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
         integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- 選單js -->
     <script src="../../js/header.js?v=7/27"></script>
+
 </body>
 
 </html>

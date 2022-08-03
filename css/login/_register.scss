@@ -1,8 +1,13 @@
 section.content {
     .custom-container {
-        div.card.success {
-            .icon {
+        div.card.register {
+            .icon.success {
                 color: $green-1;
+                font-size: 50px;
+                text-align: center;
+            }
+            .icon.vertify {
+                color: $blue-5;
                 font-size: 50px;
                 text-align: center;
             }
@@ -49,7 +54,7 @@ section.content {
                         color: $white-1; 
                     }
 
-                    &:last-child {
+                    &:nth-child(even) {
                         background: $orange-5;
                         color: $white-1;
                         

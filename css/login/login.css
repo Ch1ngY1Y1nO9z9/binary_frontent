@@ -246,13 +246,68 @@ section.content .custom-container .card .links .link:nth-child(even) {
   margin-left: 15px;
 }
 
-section.content .custom-container div.card.success .icon {
+section.content .custom-container div.card.unvertify .icon.failed {
+  color: #eb3634;
+  font-size: 50px;
+  text-align: center;
+}
+
+section.content .custom-container div.card.unvertify .confirm {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #393939;
+  padding-bottom: 30px;
+}
+
+section.content .custom-container div.card.unvertify .links .link {
+  display: inline-block;
+  border: 1px solid #ff621f;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #ff621f;
+  padding: 12px 45px 14px;
+  background: white;
+  text-decoration: none;
+}
+
+section.content .custom-container div.card.unvertify .links .link:hover {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container div.card.unvertify .links .link:nth-child(even) {
+  background: #ff621f;
+  color: white;
+}
+
+section.content .custom-container div.card.unvertify .links .link:nth-child(even):hover {
+  background: #fcbd1f;
+  border: 1px solid #fcbd1f;
+}
+
+section.content .custom-container div.card.register .icon.success {
   color: #2cbd03;
   font-size: 50px;
   text-align: center;
 }
 
-section.content .custom-container div.card.success .confirm {
+section.content .custom-container div.card.register .icon.vertify {
+  color: #0046ae;
+  font-size: 50px;
+  text-align: center;
+}
+
+section.content .custom-container div.card.register .confirm {
   width: 100%;
   max-width: 250px;
   margin: auto;
@@ -265,13 +320,13 @@ section.content .custom-container div.card.success .confirm {
   color: #393939;
 }
 
-section.content .custom-container div.card.success .check {
+section.content .custom-container div.card.register .check {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
 
-section.content .custom-container div.card.success .check .text {
+section.content .custom-container div.card.register .check .text {
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 400;
   font-size: 14px;
@@ -280,13 +335,13 @@ section.content .custom-container div.card.success .check .text {
   color: #393939;
 }
 
-section.content .custom-container div.card.success .check .text span {
+section.content .custom-container div.card.register .check .text span {
   font-size: 18px;
   font-weight: 700;
   color: #ff621f;
 }
 
-section.content .custom-container div.card.success .links .link {
+section.content .custom-container div.card.register .links .link {
   display: inline-block;
   border: 1px solid #ff621f;
   font-family: 'Noto Sans TC', 'sans-serif';
@@ -300,17 +355,17 @@ section.content .custom-container div.card.success .links .link {
   text-decoration: none;
 }
 
-section.content .custom-container div.card.success .links .link:hover {
+section.content .custom-container div.card.register .links .link:hover {
   background: #ff621f;
   color: white;
 }
 
-section.content .custom-container div.card.success .links .link:last-child {
+section.content .custom-container div.card.register .links .link:nth-child(even) {
   background: #ff621f;
   color: white;
 }
 
-section.content .custom-container div.card.success .links .link:last-child:hover {
+section.content .custom-container div.card.register .links .link:nth-child(even):hover {
   background: #fcbd1f;
   border: 1px solid #fcbd1f;
 }

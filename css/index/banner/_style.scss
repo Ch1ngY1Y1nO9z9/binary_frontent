@@ -20,7 +20,7 @@
         height: 100%;
         overflow: hidden;
         position: absolute;
-        top: -25px;
+        top: 0;
         left: 0;
 
         object {
@@ -636,7 +636,7 @@
                     justify-content: center;
 
                     background-image: url('./../../images/banner/01_simple.jpg');
-                    
+
                     @media (max-width: 785px) {
                         flex-direction: column;
                         background-position: center;

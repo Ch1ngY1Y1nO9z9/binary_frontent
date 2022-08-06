@@ -668,7 +668,7 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   height: 100%;
   overflow: hidden;
   position: absolute;
-  top: -25px;
+  top: 0;
   left: 0;
 }
 

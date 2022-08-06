@@ -831,12 +831,12 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
-  display: block;
+  display: inline-block;
   margin-top: 110px;
   background: #ff621f;
-  width: 180px;
   text-align: center;
-  padding: 15px 0;
+  padding: 14px 51px 17px;
+  word-break: keep-all;
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -853,9 +853,17 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   }
 }
 
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
+    width: 150px;
+    margin-top: 30px;
+    padding: 8px 36px 14px;
+  }
+}
+
 @media (max-width: 593px) {
   .banner .custom-container .bannerSwiper .swiper-slide.info .left .banner-link {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -1237,7 +1245,6 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -82px;
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card {
@@ -1257,6 +1264,19 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   }
 }
 
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card {
+    display: none;
+  }
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:first-child {
+    display: block;
+    margin: auto;
+  }
+}
+
 .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:nth-child(even) {
   position: relative;
   margin-right: 0;
@@ -1266,6 +1286,12 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
 @media (max-width: 1297px) {
   .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:nth-child(even) {
     top: 95px;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.info .right .cards.type-2 .card:nth-child(3) {
+    margin-bottom: 80px;
   }
 }
 
@@ -1417,10 +1443,18 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   font-family: 'Noto Serif TC', 'serif';
   font-weight: 900;
   font-size: 150px;
-  line-height: 1;
+  line-height: 150px;
   letter-spacing: 0.1em;
   color: white;
   text-align: center;
+  word-break: keep-all;
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression .title {
+    font-size: 100px;
+    line-height: 100px;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression .sub-title {
@@ -1431,6 +1465,13 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   letter-spacing: 0.2em;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression .sub-title {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression.simple {
@@ -1446,8 +1487,56 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   background-image: url("./../../images/banner/01_simple.jpg");
 }
 
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .title {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .title {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
 .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
   margin: 0 123px;
+}
+
+@media (max-width: 1470px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.simple .sub-title {
+    margin: 20px 0;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly {
@@ -1463,8 +1552,56 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   background-image: url("./../../images/banner/03_friendly.jpg");
 }
 
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .title {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .title {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
 .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
   margin: 0 123px;
+}
+
+@media (max-width: 1470px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.friendly .sub-title {
+    margin: 20px 0;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression.fair {
@@ -1479,6 +1616,22 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
       -ms-flex-pack: left;
           justify-content: left;
   background-image: url("./../../images/banner/02_fair.jpg");
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.fair {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.fair {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: 80%;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression.fair .title {
@@ -1500,6 +1653,13 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   text-align: left;
 }
 
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.fair .sub-title {
+    padding: 0 15px;
+    margin: 0 25px;
+  }
+}
+
 .banner .custom-container .bannerSwiper .swiper-slide.impression.open {
   padding-left: 350px;
   display: -webkit-box;
@@ -1512,6 +1672,22 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
       -ms-flex-pack: left;
           justify-content: left;
   background-image: url("./../../images/banner/04_open.jpg");
+}
+
+@media (max-width: 1297px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.open {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.open {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: 80%;
+  }
 }
 
 .banner .custom-container .bannerSwiper .swiper-slide.impression.open .title {
@@ -1531,6 +1707,13 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
           writing-mode: vertical-lr;
   text-orientation: mixed;
   text-align: left;
+}
+
+@media (max-width: 593px) {
+  .banner .custom-container .bannerSwiper .swiper-slide.impression.open .sub-title {
+    padding: 0 15px;
+    margin: 0 25px;
+  }
 }
 
 .banner .custom-container .bottom-right-buttons {

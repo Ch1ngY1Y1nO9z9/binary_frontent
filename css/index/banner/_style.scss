@@ -138,12 +138,12 @@
                     }
 
                     .banner-link {
-                        display: block;
+                        display: inline-block;
                         margin-top: 110px;
                         background: $orange-5;
-                        width: 180px;
                         text-align: center;
-                        padding: 15px 0;
+                        padding: 14px 51px 17px;
+                        word-break: keep-all;
 
                         @include Sans(700, 18px, 19px, .1em);
                         color: $white-1;
@@ -154,8 +154,14 @@
                             margin-top: 96px;
                         }
 
-                        @media(max-width: 593px) {
+                        @media(max-width: 785px) {
+                            width: 150px;
                             margin-top: 30px;
+                            padding: 8px 36px 14px;
+                        }
+
+                        @media(max-width: 593px) {
+                            margin-top: 20px;
                         }
 
                         &:hover {
@@ -445,7 +451,6 @@
                         &.type-2 {
                             display: flex;
                             flex-wrap: wrap;
-                            margin-top: -82px;
 
                             .card {
                                 max-width: 300px;
@@ -461,6 +466,17 @@
                                     margin-bottom: 43px;
                                 }
 
+                                @media (max-width: 593px) {
+                                    display: none;
+                                }
+
+                                &:first-child {
+                                    @media (max-width: 593px) {
+                                        display: block;
+                                        margin: auto;
+                                    }
+                                }
+
                                 &:nth-child(even) {
                                     position: relative;
                                     margin-right: 0;
@@ -468,6 +484,12 @@
 
                                     @media (max-width: 1297px) {
                                         top: 95px;
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    @media (max-width: 785px) {
+                                        margin-bottom: 80px;
                                     }
                                 }
 
@@ -586,15 +608,26 @@
                 background-size: cover;
 
                 .title {
-                    @include Serif(150px, 1, .1em);
+                    @include Serif(150px, 150px, .1em);
                     color: $white-1;
                     text-align: center;
+                    word-break: keep-all;
+
+                    @media (max-width: 593px) {
+                        font-size: 100px;
+                        line-height: 100px;
+                    }
                 }
 
                 .sub-title {
                     @include Serif(24px, 32px, .2em);
                     color: $white-1;
                     text-align: center;
+
+                    @media (max-width: 593px) {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                    }
                 }
 
                 &.simple {
@@ -603,9 +636,42 @@
                     justify-content: center;
 
                     background-image: url('./../../images/banner/01_simple.jpg');
+                    
+                    @media (max-width: 785px) {
+                        flex-direction: column;
+                        background-position: center;
+                    }
+
+                    .title {
+                        @media (max-width: 1297px) {
+                            font-size: 100px;
+                            line-height: 100px;
+                        }
+
+                        @media (max-width: 593px) {
+                            font-size: 72px;
+                            line-height: 72px;
+                        }
+                    }
 
                     .sub-title {
                         margin: 0 123px;
+
+                        @media (max-width: 1470px) {
+                            margin: 0 auto;
+                        }
+
+                        @media (max-width: 1297px) {
+                            margin: 0 50px;
+                        }
+
+                        @media (max-width: 785px) {
+                            margin: 30px 0;
+                        }
+
+                        @media (max-width: 593px) {
+                            margin: 20px 0;
+                        }
                     }
                 }
 
@@ -616,8 +682,41 @@
 
                     background-image: url('./../../images/banner/03_friendly.jpg');
 
+                    @media (max-width: 785px) {
+                        flex-direction: column;
+                        background-position: center;
+                    }
+
+                    .title {
+                        @media (max-width: 1297px) {
+                            font-size: 100px;
+                            line-height: 100px;
+                        }
+
+                        @media (max-width: 593px) {
+                            font-size: 72px;
+                            line-height: 72px;
+                        }
+                    }
+
                     .sub-title {
                         margin: 0 123px;
+
+                        @media (max-width: 1470px) {
+                            margin: 0 auto;
+                        }
+
+                        @media (max-width: 1297px) {
+                            margin: 0 50px;
+                        }
+
+                        @media (max-width: 785px) {
+                            margin: 30px 0;
+                        }
+
+                        @media (max-width: 593px) {
+                            margin: 20px 0;
+                        }
                     }
                 }
 
@@ -627,6 +726,16 @@
                     align-items: center;
                     justify-content: left;
                     background-image: url('./../../images/banner/02_fair.jpg');
+
+                    @media (max-width: 1297px) {
+                        padding-left: 150px;
+                    }
+
+                    @media (max-width: 785px) {
+                        padding-left: 0;
+                        justify-content: center;
+                        background-position: 80%;
+                    }
 
                     .title {
                         writing-mode: vertical-lr;
@@ -641,6 +750,11 @@
                         writing-mode: vertical-lr;
                         text-orientation: mixed;
                         text-align: left;
+
+                        @media (max-width: 593px) {
+                            padding: 0 15px;
+                            margin: 0 25px;
+                        }
                     }
                 }
 
@@ -652,6 +766,15 @@
 
                     background-image: url('./../../images/banner/04_open.jpg');
 
+                    @media (max-width: 1297px) {
+                        padding-left: 150px;
+                    }
+
+                    @media (max-width: 785px) {
+                        padding-left: 0;
+                        justify-content: center;
+                        background-position: 80%;
+                    }
 
                     .title {
                         writing-mode: vertical-lr;
@@ -666,6 +789,11 @@
                         writing-mode: vertical-lr;
                         text-orientation: mixed;
                         text-align: left;
+
+                        @media (max-width: 593px) {
+                            padding: 0 15px;
+                            margin: 0 25px;
+                        }
                     }
                 }
             }

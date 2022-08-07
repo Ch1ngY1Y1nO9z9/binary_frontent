@@ -41,7 +41,7 @@ $yellow-4: rgba(253, 210, 86, 1); //FDD256
 $yellow-5: rgba(252, 189, 31, 1); //FCBD1F
 
 $gray-1: rgba(245, 245, 245, 1); //F5F5F5
-$gray-2: rgba(235, 235, 235, 1); //EBEBEB
+$gray-2: rgba(235, 235, 235, 1); //FCBD1F
 $gray-3: rgba(195, 195, 195, 1); //C3C3C3
 $gray-4: rgba(136, 136, 136, 1); //888888
 $gray-5: rgba(57, 57, 57, 1); //393939
@@ -58,6 +58,7 @@ $icon-gray: #F0F0F0;
 $avatar-gray: #717171;
 $border-gray: #E9E9E9;
 $avatar-orange: #FFAA3B;
+$hr-gray: #EBEBEB;
 
 @mixin bg-gardient-blue {
     background: linear-gradient($blue-5, #00CAE7);

@@ -119,7 +119,7 @@ section.content {
                         display: flex;
                         flex: 1 1 0;
                         color: $gray-5;
-                        
+
                         height: 40px;
 
                         .input-date {
@@ -192,11 +192,13 @@ section.content {
                     &:nth-child(odd) {
                         background: $white-1;
                     }
+
                     .col {
                         flex: 1 1 0;
                         display: flex;
-                        
-                        .left,.right {
+
+                        .left,
+                        .right {
                             text-align: center;
                             flex: 1 1 0;
 
@@ -206,7 +208,7 @@ section.content {
                             }
 
                             .point.add {
-                                color: $red-1; 
+                                color: $red-1;
                             }
 
                             .point.minus {
@@ -221,6 +223,226 @@ section.content {
                 @include pagination;
                 padding-top: 60px;
             }
+        }
+    }
+
+    .purchase {
+        .custom-container {
+            width: 100%;
+            max-width: 624px;
+            position: relative;
+            margin: auto;
+            padding-bottom: 150px;
+
+            form {
+                width: 100%;
+                @include normal-shadow;
+                border-radius: 20px;
+                padding: 50px 112px;
+
+                .input-row {
+                    color: $gray-5;
+                    margin-bottom: 30px;
+
+                    label.input-label {
+                        display: block;
+                        @include Sans(700, 14px, 14px, .05em);
+                        margin-bottom: 10px;
+
+                        .link {
+                            color: $gray-4;
+                            font-weight: 400;
+                            letter-spacing: initial;
+
+                            text-decoration: underline;
+                        }
+
+                        &[for=vertify_code]+.input-col {
+                            display: flex;
+
+                            input#vertify_code.input-control {
+                                flex: 1 1 0;
+
+                                &~span {
+                                    display: inline-block;
+                                    margin-left: 15px;
+                                    @include Sans(700, 14px, 14px, .1em);
+                                    color: $orange-5;
+                                    padding: 12px 37px 14px;
+                                    border: 1px solid $orange-5;
+                                    background: $white-1;
+
+                                    &:hover {
+                                        background: $orange-5;
+                                        color: $white-1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .input-col {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+
+                        input.input-control,
+                        select.input-control {
+                            width: 100%;
+                            border: 1px solid $gray-4;
+                            border-radius: 5px;
+                            background: $white-1;
+                            padding: 9px 10px;
+
+                            @include Sans(400, 14px, 14px, initial);
+                            color: $gray-5;
+
+                            &::placeholder {
+                                color: $gray-3;
+                            }
+
+                            &:disabled {
+                                background: $gray-2;
+                                color: $gray-5;
+                            }
+                        }
+
+                        .checkbox-mask {
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 5px;
+                            border: 1px solid $gray-4;
+
+                            &+label.input-label {
+                                @include Sans(400, 14px, 14px, initial);
+                                display: inline-block;
+                                margin-left: 10px;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        &+.msg {
+                            display: none;
+                            @include Sans(400, 14px, 14px, initial);
+
+                            margin-top: 5px;
+                            color: $red-1;
+                        }
+
+                        &.error+.msg {
+                            display: block;
+                        }
+
+                        &.error {
+                            .checkbox-mask {
+                                border: 1px solid $red-1;
+                            }
+                        }
+
+                        span.icon {
+                            position: absolute;
+                            right: 10px;
+                        }
+                    }
+
+                    label[for=files].input-label {
+                        .upload-img {
+                            width: 160px;
+                            height: 90px;
+                            margin-top: 10px;
+                            background: $hr-gray;
+                            border-radius: 5px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            color: $gray-4;
+                            font-size: 50px;
+                        }
+                    }
+                }
+
+                .cal {
+                    display: flex;
+                    padding: 30px;
+                    border: 1px solid $gray-4;
+                    border-radius: 5px;
+                    margin-bottom: 30px;
+
+                    .left {
+                        @include Sans(700, 18px, 22px, .05em);
+                        padding-right: 40px;
+
+                        .icon {
+                            color: $yellow-5;
+                            margin: 15px 0;
+                        }
+                    }
+
+                    .right {
+                        flex: 1 1 0;
+                        @include Sans(700, 18px, 18px, initial);
+
+                        .spend,
+                        .buy {
+                            display: flex;
+                            line-height: 14px;
+
+                            .title {
+                                display: inline-block;
+                                margin-right: 15px;
+                                @include Sans(400, 14px, 14px, initial);
+                                color: $gray-4;
+                            }
+                        }
+
+                        .spend {
+                            padding-bottom: 25px;
+                        }
+
+                        hr {
+                            margin-bottom: 25px;
+                            border-color: $hr-gray;
+                        }
+                    }
+                }
+
+                .submit {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+
+                    button {
+                        @include Sans(700, 14px, 14px, .1em);
+                        padding: 12px 60px 14px;
+
+                        @include btn-orange;
+                    }
+
+                    &.error {
+                        padding-bottom: 0;
+                    }
+
+                    &+.msg {
+                        display: none;
+                        @include Sans(400, 14px, 14px, initial);
+                        text-align: center;
+
+                        margin-top: 5px;
+                        color: $red-1;
+                    }
+
+                    &.error+.msg {
+                        display: block;
+                        padding-bottom: 30px;
+                    }
+                }
+
+            }
+
+
         }
     }
 }

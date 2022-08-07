@@ -677,6 +677,7 @@ section.content {
 .catalog .custom-container .options .btn:hover, .catalog .custom-container .options .btn.active {
   background: #ff621f;
   color: white;
+  border-color: #ff621f;
 }
 
 .catalog .custom-container .list {
@@ -793,6 +794,7 @@ section.content {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 100px;
+  margin: 0 auto;
   font-family: 'Noto Sans TC', 'sans-serif';
   font-weight: 700;
   font-size: 18px;
@@ -801,7 +803,8 @@ section.content {
   color: #393939;
 }
 
-.catalog .custom-container .list .pagination .prev-arrow, .catalog .custom-container .list .pagination .next-arrow {
+.catalog .custom-container .list .pagination .prev-arrow,
+.catalog .custom-container .list .pagination .next-arrow {
   font-size: 15px;
 }
 
@@ -820,6 +823,7 @@ section.content {
 .catalog .custom-container .list .pagination .pages a:hover, .catalog .custom-container .list .pagination .pages a.active {
   background: #ff621f;
   color: white;
+  border-color: #ff621f;
 }
 
 .catalog .custom-container .list .pagination .prev-arrow {

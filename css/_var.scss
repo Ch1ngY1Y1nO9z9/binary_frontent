@@ -14,7 +14,7 @@
     letter-spacing: $spacing;
 }
 
-@mixin Serif($size, $height, $spacing){
+@mixin Serif($size, $height, $spacing) {
     font-family: 'Noto Serif TC', 'serif';
     font-weight: 900;
     font-size: $size;
@@ -75,4 +75,116 @@ $avatar-orange: #FFAA3B;
 
 @mixin normal-shadow {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@mixin hover-orange {
+    background: $orange-5;
+    color: $white-1;
+    border-color: $orange-5;
+}
+
+@mixin hover-yellow {
+    background: $yellow-5;
+    color: $white-1;
+    border-color: $yellow-5;
+}
+
+@mixin btn-orange {
+    background: $orange-5;
+    color: $white-1;
+    border: 1px solid $orange-5;
+
+    &:hover {
+        @include hover-yellow
+    }
+}
+
+@mixin btn-gray {
+    background: $white-1;
+    color: $gray-4;
+    border: 1px solid $gray-4;
+
+    &:hover {
+        @include hover-orange;
+    }
+}
+
+@mixin btn-orange-outline {
+    background: $white-1;
+    color: $orange-5;
+    border: 1px solid $orange-5;
+
+    &:hover {
+        @include hover-orange;
+    }
+}
+
+@mixin btn-options {
+    @include Sans(400, 14px, 14px, .1em);
+    color: $gray-5;
+    background: $gray-2;
+    border-radius: 5px;
+
+    padding: 13px 30px;
+    margin-left: 15px;
+}
+
+@mixin options {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+        @include btn-options;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover,
+        &.active {
+            @include hover-orange;
+        }
+    }
+}
+
+@mixin pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    @include Sans(700, 18px, 26px, .05em);
+    color: $gray-5;
+
+    .prev-arrow,
+    .next-arrow {
+        font-size: 15px;
+    }
+
+    .pages {
+        display: flex;
+
+        a {
+            display: block;
+            padding: 10px 20px 14px;
+            border-radius: 5px;
+
+            &:hover,
+            &.active {
+                @include hover-orange;
+            }
+        }
+    }
+
+    .prev-arrow {
+        position: relative;
+        right: 21px;
+    }
+
+    .next-arrow {
+        position: relative;
+        left: 21px;
+    }
+
 }

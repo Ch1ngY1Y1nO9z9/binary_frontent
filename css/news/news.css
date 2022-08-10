@@ -783,59 +783,6 @@ section.content {
   color: #A4A4A4;
 }
 
-.catalog .custom-container .list .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 100px;
-  margin: 0 auto;
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #393939;
-}
-
-.catalog .custom-container .list .pagination .prev-arrow,
-.catalog .custom-container .list .pagination .next-arrow {
-  font-size: 15px;
-}
-
-.catalog .custom-container .list .pagination .pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog .custom-container .list .pagination .pages a {
-  display: block;
-  padding: 10px 20px 14px;
-  border-radius: 5px;
-}
-
-.catalog .custom-container .list .pagination .pages a:hover, .catalog .custom-container .list .pagination .pages a.active {
-  background: #ff621f;
-  color: white;
-  border-color: #ff621f;
-}
-
-.catalog .custom-container .list .pagination .prev-arrow {
-  position: relative;
-  right: 21px;
-}
-
-.catalog .custom-container .list .pagination .next-arrow {
-  position: relative;
-  left: 21px;
-}
-
 .article {
   padding-bottom: 200px;
 }

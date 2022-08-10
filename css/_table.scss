@@ -1,0 +1,211 @@
+.result-table {
+    .row {
+        display: flex;
+        @include Sans(400, 14px, 14px, .05em);
+        color: $gray-5;
+
+        .col {
+            flex: 1 1 0;
+            padding-left: 20px;
+
+            &:last-child {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .row.header {
+        padding-bottom: 20px;
+    }
+
+    .row.body {
+        padding-top: 22px;
+        padding-bottom: 19px;
+
+        &:nth-child(even) {
+            background: $gray-1;
+        }
+
+        &:nth-child(odd) {
+            background: $white-1;
+        }
+
+        .col {
+            flex: 1 1 0;
+            display: flex;
+
+            .left,
+            .right {
+                text-align: center;
+                flex: 1 1 0;
+
+                .title {
+                    margin-bottom: 5px;
+                    color: $gray-4;
+                }
+
+                .point.add {
+                    color: $red-1;
+                }
+
+                .point.minus {
+                    color: $green-1;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                padding: 8px 0;
+                font-weight: 700;
+            
+                &.reservation {
+                    background: $green-1;
+                    color: $white-1;
+                }
+
+                &.cancel {
+                    background: $white-1;
+                    color: $red-1;
+                    border: 1px solid $red-1;
+                }
+            }
+        }
+    }
+}
+
+.trading-table {
+    width: 100%;
+    @include Sans(400, 14px, 14px, .05em);
+    color: $gray-5;
+    text-align: left;
+
+    th {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+    tbody tr {
+        &:nth-child(odd) {
+            background: $gray-1;
+        }
+
+        &:nth-child(even) {
+            background: $white-1;
+        }
+    }
+
+    tbody tr td {
+        padding: 22px 0 19px 20px;
+    }
+
+    th,td {
+        &:last-child {
+            width: 335px;
+            padding-right: 20px;
+        }
+
+        .left,
+        .right {
+            text-align: center;
+            flex: 1 1 0;
+
+            .title {
+                margin-bottom: 5px;
+                color: $gray-4;
+            }
+
+            .point.add {
+                color: $red-1;
+            }
+
+            .point.minus {
+                color: $green-1;
+            }
+        }
+
+        form {
+            display: flex;
+        }
+
+        .btn {
+            padding: 8px 0;
+            font-weight: 700;
+        
+            &.reservation {
+                background: $green-1;
+                color: $white-1;
+            }
+
+            &.cancel {
+                background: $white-1;
+                color: $red-1;
+                border: 1px solid $red-1;
+            }
+
+            &.confirm {
+                background: $blue-5;
+                color: $white-1;
+                border: 1px solid $blue-5;
+                line-height: .1em;
+                padding: 8px 20px;
+                margin-left: 15px;
+            }
+
+            &.disabled {
+                background: $gray-3; 
+                border: 1px solid $gray-3;
+                cursor: not-allowed;
+            }
+        }
+
+        .select-col {
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            select {
+                width: 100%;
+                border: 1px solid $gray-4;
+                border-radius: 5px;
+                background: $white-1;
+                padding: 3px 10px;
+
+                @include Sans(400, 14px, 14px, initial);
+                color: $gray-5;
+
+                &::placeholder {
+                    color: $gray-3;
+                }
+
+                &:disabled {
+                    background: $gray-2;
+                    color: $gray-5;
+                }
+
+                option {
+                    padding: 3px 10px;
+                }
+            }
+        }
+
+
+        &.icon {
+            color: $blue-5;
+            font-size: 17px;
+
+            .comment {
+                cursor: pointer;
+            }
+        }
+
+        &.status-g {
+            color: $green-1;
+        }
+    }
+}
+
+.pagination {
+    @include pagination;
+    padding-top: 60px;
+}

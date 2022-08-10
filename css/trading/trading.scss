@@ -1,12 +1,14 @@
 @import '../_var';
 
+
+@import "./_index";
+
 .wallets {
-    display: flex;
     width: 100%;
-    max-width: 500px;
+    max-width: 250px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 10px 0;
+    padding: 21px 0;
     background: $blue-5;
     border-radius: 10px;
 
@@ -44,11 +46,8 @@
     }
 }
 
-@import './_purse';
 
-// 表單共用部分
 @import '../_form';
 @import '../_table';
 
-@import './_purchase';
-@import './_transfer';
+@import "./_list";

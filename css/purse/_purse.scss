@@ -1,0 +1,83 @@
+section.content {
+    .purse {
+        .custom-container {
+            width: 100%;
+            max-width: 1056px;
+            position: relative;
+            margin: auto;
+            padding-bottom: 180px;
+
+            .catalog { 
+                margin-bottom: 50px;
+
+                .options {
+                    @include options;
+                    margin-bottom: 30px;
+                }
+
+                .filter {
+                    display: flex;
+
+                    .btn {
+                        @include btn-options;
+
+                        &:hover,
+                        &.active {
+                            background: $yellow-5;
+                            color: $gray-5;
+                            font-weight: 700;
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .datetimepicker {
+                        display: flex;
+                        flex: 1 1 0;
+                        color: $gray-5;
+
+                        height: 40px;
+
+                        .input-date {
+                            flex: 1 1 0;
+                            margin: 0 15px;
+                            position: relative;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: 1px solid $gray-3;
+                                border-radius: 5px;
+                                padding: 0 10px;
+                                color: $gray-5;
+                            }
+
+                            .datepicker-toggle-button {
+                                top: 12px;
+                            }
+
+                            svg {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+
+                        span {
+                            @include Sans(400, 18px, 26px, initial);
+                        }
+
+
+                        .submit-btn {
+                            @include btn-gray;
+                            padding: 0 45px;
+                            color: $gray-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

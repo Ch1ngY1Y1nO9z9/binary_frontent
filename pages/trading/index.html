@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>purchase</title>
+    <title>layout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/purse/purse.css">
+    <link rel="stylesheet" href="../../css/trading/trading.css">
 </head>
 
 <body class="relative">
@@ -212,195 +212,174 @@
         </div>
     </header>
 
-    <h1 class="pagetitle cp">
+    <h1 class="pagetitle">
         <div class="title">
-            <div class="subtitle">
-                我的錢包
-            </div>
-            錢包加值
+            交易中心
         </div>
-        <a href="#" class="return-btn">
-            返回會員中心
-        </a>
     </h1>
 
     <section class="content">
-        <div class="purchase">
+        <div class="trading">
             <div class="custom-container">
-                <!-- <form class="card" action="" method="post"> 
-                    <div class="input-row">
-                        <label for="chain" class="input-label">鏈</label>
-                        <div class="input-col">
-                            <select name="chain" id="chain" class="input-control">
-                                <option value="">TRC20</option>
-                                <option value="">ERC20</option>
-                            </select>
-                            <div class="arrow">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="text" class="input-label">官方收幣地址</label>
-                        <div class="input-col">
-                            <input type="text" class="input-control" disabled value="AABB12345666">
-                            <span class="icon">
-                                <i class="fa-solid fa-copy"></i>
-                            </span>
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="address" class="input-label">會員發幣地址<a class="link float-right" href="">常用地址</a></label>
+                <div class="trading-header">
+                    <div class="title">
+                        <span class="icon">
 
-                        <div class="input-col">
-                            <input id="address" type="text" name="address" class="input-control" placeholder="請輸入發幣地址">
-                        </div>
-                        <span class="msg"></span>
+                        </span>
+                        交易列表
                     </div>
-                    <div class="input-row">
-                        <label for="currency" class="input-label">存入金額(USDT)</label>
-                        <div class="input-col">
-                            <input id="currency" type="number" name="currency" class="input-control" placeholder="請輸入入金的金額 (USDT)">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="txid" class="input-label">TXID</label>
-                        <div class="input-col">
-                            <input id="txid" type="text" name="txid" class="input-control" placeholder="請輸入發幣地址">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="cal">
-                        <div class="left">
-                            <div class="currency">
-                                U幣
-                            </div>
-                            <div class="icon">
-                                <i class="fa-solid fa-arrow-up-arrow-down"></i>
-                            </div>
-                            <div class="point">
-                                點數
-                            </div>
-                        </div> 
-                        <div class="right">
-                            <div class="spend">
-                                <span class="title">花費</span>
-                                1,000
-                            </div>
-                            <hr>
-                            <div class="buy">
-                                <span class="title">買入</span>
-                                1,000,000
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <label for="files" class="input-label">交易明細截圖上傳
-                            <div class="upload-img">
-                                +
-                            </div>
-                        </label>
-                        <div class="input-col">
-                            <input id="files" type="file" name="files" class="input-control hidden">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="submit">
-                        <button type="submit">下一步</button>
-                    </div>
-                </form> -->
-
-                <div class="succes result-msg">
-                    <div class="icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <div class="msg-detail">
-                        <div class="title">加值成功</div>
-                        <div class="text">您可以在會員功能中找到該操作紀錄</div>
+                    <div class="buttons">
+                        <a href="" class="btn">我的交易</a>
+                        <a href="" class="btn">點數交易</a>
                     </div>
                 </div>
 
-                <!-- <div class="failed result-msg">
-                    <div class="icon">
-                        <i class="fa-solid fa-circle-xmark"></i>
+                <div class="result-table">
+                    <div class="row header">
+                        <div class="col">交易編號</div>
+                        <div class="col">會員帳號</div>
+                        <div class="col">點數</div>
+                        <div class="col">鏈</div>
+                        <div class="col">金額(USDT)</div>
+                        <div class="col">預定</div>
                     </div>
-                    <div class="msg-detail">
-                        <div class="title">加值失敗</div>
-                        <div class="text">請確認資訊後，重新操作。</div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
+                        </div>
                     </div>
-                </div> -->
-
-                <div class="card">
-                    <h2 class="title">加值確認</h2>
-                    <p class="text">
-                        請確認您輸入的資訊是否有誤，平台於確認收到款項後，自動將點數匯入您的投注錢包中。
-                    </p>
-                    <div class="list">
-                        <div class="row">
-                            <div class="col">鍊</div>
-                            <div class="col">TRC、ERC</div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn cancel">
+                                取消預定
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col">官方收幣地址</div>
-                            <div class="col">AABB12345666</div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">100,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col">會員發幣地址</div>
-                            <div class="col">CBA987654321</div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col"></div>
+                        <div class="col">TRC</div>
+                        <div class="col">100,000,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-                        <div class="row point">
-                            <div class="left">
-                                <div class="col">入金金額 (USDT)</div>
-                                <div class="col">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-arrow-up-arrow-down"></i>
-                                    </span>
-                                    買入點數
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="col">
-                                    1,000
-                                </div>
-                                <div class="col">100,000</div>
-                            </div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col">TXID</div>
-                            <div class="col">DEF987654321</div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-                        <div class="row pic">
-                            <div class="col">交易明細截圖</div>
-                            <div class="picture">
-                                <img src="" alt="">
-                            </div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">100,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-                        <div class="submit">
-                            <form action="" method="">
-                                <button type="submit">確認加值</button>
-                            </form>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">500</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
-
-                        <div class="return-link">
-                            若資訊有誤, 請返回&nbsp<a href="#" class="link">上一頁</a>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row body">
+                        <div class="col">123456789012345</div>
+                        <div class="col">123456789012345</div>
+                        <div class="col">999,999,999</div>
+                        <div class="col">TRC</div>
+                        <div class="col">1,000</div>
+                        <div class="col">
+                            <button class="btn reservation">
+                                我要預訂
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="card">
-                    <p class="text">
-                        這裡會需要放一些告知用戶失敗的原因嗎
-                    </p>
-                    <div class="links">
-                        <a href="#" class="link">返回首頁</a>
-                        <a href="#" class="link">會員中心</a>
+                <div class="pagination">
+                    <button class="prev-arrow">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="pages">
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">...</a>
+                        <a href="#">13</a>
                     </div>
-                </div> -->
+                    <button class="next-arrow">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 

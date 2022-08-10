@@ -104,6 +104,7 @@ $hr-gray: #EBEBEB;
     background: $white-1;
     color: $gray-4;
     border: 1px solid $gray-4;
+    border-radius: 5px;
 
     &:hover {
         @include hover-orange;

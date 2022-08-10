@@ -1,12 +1,120 @@
-.wallets {
+section.content .trading .custom-container {
+  width: 100%;
+  max-width: 1056px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 180px;
+}
+
+section.content .trading .custom-container .trading-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+section.content .trading .custom-container .trading-header .title {
+  font-family: 'Noto Serif TC', 'serif';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #393939;
+}
+
+section.content .trading .custom-container .trading-header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+
+section.content .trading .custom-container .trading-header .buttons .btn {
+  background: #ff621f;
+  color: white;
+  border: 1px solid #ff621f;
+  padding: 12px 45px 14px;
+  margin-left: 15px;
+}
+
+section.content .trading .custom-container .trading-header .buttons .btn:hover {
+  background: #fcbd1f;
+  color: white;
+  border-color: #fcbd1f;
+}
+
+section.content .trading .custom-container .trading-header .buttons .btn:first-child {
+  margin-left: 0;
+}
+
+section.content .trading .custom-container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+  margin: 0 auto;
+  font-family: 'Noto Sans TC', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #393939;
+  padding-top: 60px;
+}
+
+section.content .trading .custom-container .pagination .prev-arrow,
+section.content .trading .custom-container .pagination .next-arrow {
+  font-size: 15px;
+}
+
+section.content .trading .custom-container .pagination .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.content .trading .custom-container .pagination .pages a {
+  display: block;
+  padding: 10px 20px 14px;
+  border-radius: 5px;
+}
+
+section.content .trading .custom-container .pagination .pages a:hover, section.content .trading .custom-container .pagination .pages a.active {
+  background: #ff621f;
+  color: white;
+  border-color: #ff621f;
+}
+
+section.content .trading .custom-container .pagination .prev-arrow {
+  position: relative;
+  right: 21px;
+}
+
+section.content .trading .custom-container .pagination .next-arrow {
+  position: relative;
+  left: 21px;
+}
+
+.wallets {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 10px 0;
+  padding: 21px 0;
   background: #0046ae;
   border-radius: 10px;
   color: white;
@@ -52,141 +160,6 @@
           flex: 1 1 0;
   padding: 11px 0;
   border-left: 1px solid #3378ce;
-}
-
-section.content .purse .custom-container {
-  width: 100%;
-  max-width: 1056px;
-  position: relative;
-  margin: auto;
-  padding-bottom: 180px;
-}
-
-section.content .purse .custom-container .catalog {
-  margin-bottom: 50px;
-}
-
-section.content .purse .custom-container .catalog .options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px;
-}
-
-section.content .purse .custom-container .catalog .options .btn {
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #393939;
-  background: #ebebeb;
-  border-radius: 5px;
-  padding: 13px 30px;
-  margin-left: 15px;
-}
-
-section.content .purse .custom-container .catalog .options .btn:first-child {
-  margin-left: 0;
-}
-
-section.content .purse .custom-container .catalog .options .btn:hover, section.content .purse .custom-container .catalog .options .btn.active {
-  background: #ff621f;
-  color: white;
-  border-color: #ff621f;
-}
-
-section.content .purse .custom-container .catalog .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section.content .purse .custom-container .catalog .filter .btn {
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #393939;
-  background: #ebebeb;
-  border-radius: 5px;
-  padding: 13px 30px;
-  margin-left: 15px;
-}
-
-section.content .purse .custom-container .catalog .filter .btn:hover, section.content .purse .custom-container .catalog .filter .btn.active {
-  background: #fcbd1f;
-  color: #393939;
-  font-weight: 700;
-}
-
-section.content .purse .custom-container .catalog .filter .btn:first-child {
-  margin-left: 0;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  color: #393939;
-  height: 40px;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .input-date {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  margin: 0 15px;
-  position: relative;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .input-date input {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #c3c3c3;
-  border-radius: 5px;
-  padding: 0 10px;
-  color: #393939;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .input-date .datepicker-toggle-button {
-  top: 12px;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .input-date svg {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker span {
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: initial;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .submit-btn {
-  background: white;
-  color: #888888;
-  border: 1px solid #888888;
-  border-radius: 5px;
-  padding: 0 45px;
-  color: #888888;
-}
-
-section.content .purse .custom-container .catalog .filter .datetimepicker .submit-btn:hover {
-  background: #ff621f;
-  color: white;
-  border-color: #ff621f;
 }
 
 .custom-container {
@@ -965,119 +938,51 @@ section.content .purse .custom-container .catalog .filter .datetimepicker .submi
   left: 21px;
 }
 
-section.content .purchase .custom-container .card .cal {
+section.content .trading-list .custom-container {
+  width: 100%;
+  max-width: 1056px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 180px;
+}
+
+section.content .trading-list .custom-container .tab {
+  margin-bottom: 50px;
+}
+
+section.content .trading-list .custom-container .tab .options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.content .trading-list .custom-container .tab .options .btn {
+  background: white;
+  color: #888888;
   border: 1px solid #888888;
   border-radius: 5px;
-  margin-bottom: 30px;
+  padding: 7px 28px;
+  margin-left: 15px;
 }
 
-section.content .purchase .custom-container .card .cal .left {
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
-  padding-right: 40px;
-}
-
-section.content .purchase .custom-container .card .cal .left .icon {
-  color: #fcbd1f;
-  margin: 15px 0;
-  text-align: center;
-}
-
-section.content .purchase .custom-container .card .cal .right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: initial;
-}
-
-section.content .purchase .custom-container .card .cal .right .spend,
-section.content .purchase .custom-container .card .cal .right .buy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 14px;
-}
-
-section.content .purchase .custom-container .card .cal .right .spend .title,
-section.content .purchase .custom-container .card .cal .right .buy .title {
-  display: inline-block;
-  margin-right: 15px;
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: initial;
-  color: #888888;
-}
-
-section.content .purchase .custom-container .card .cal .right .spend {
-  padding-bottom: 25px;
-}
-
-section.content .purchase .custom-container .card .cal .right hr {
-  margin-bottom: 25px;
-  border-color: #EBEBEB;
-}
-
-section.content .transfer .custom-container .card .verification {
-  margin-top: 50px;
-}
-
-section.content .transfer .custom-container .card .verification .input-row {
-  margin-bottom: 15px;
-}
-
-section.content .transfer .custom-container .card .verification .input-row .input-control {
-  max-width: 100px;
-}
-
-section.content .transfer .custom-container .card .verification .input-row .captcha-code {
-  width: 160px;
-  padding: 15px 32px;
+section.content .trading-list .custom-container .tab .options .btn:hover {
+  background: #ff621f;
   color: white;
-  background: #888888;
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  margin: 0 10px;
+  border-color: #ff621f;
 }
 
-section.content .transfer .custom-container .card .verification .input-row .reset-icon {
-  font-size: 18px;
-  color: #393939;
-  cursor: pointer;
+section.content .trading-list .custom-container .tab .options .btn.active {
+  background: #ff621f;
+  color: white;
+  border: 1px solid #ff621f;
 }
 
-section.content .transfer .custom-container .card .transfer_notify {
-  font-family: 'Noto Sans TC', 'sans-serif';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  color: #393939;
-  margin-bottom: 30px;
+section.content .trading-list .custom-container .tab .options .btn.active:hover {
+  background: #fcbd1f;
+  color: white;
+  border-color: #fcbd1f;
 }
-
-section.content .transfer .custom-container .card .transfer_notify .time {
-  color: #eb3634;
-  font-weight: 700;
-}
-
-section.content .transfer .custom-container .card .return-link {
-  padding-top: 50px;
-}
-/*# sourceMappingURL=purse.css.map */
+/*# sourceMappingURL=trading.css.map */

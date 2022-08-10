@@ -1,0 +1,30 @@
+section.content {
+    .trading-list {
+        .custom-container {
+            width: 100%;
+            max-width: 1056px;
+            position: relative;
+            margin: auto;
+            padding-bottom: 180px;
+
+            .tab {
+                margin-bottom: 50px;
+                
+                .options {
+                    display: flex;
+                    justify-content: center;
+
+                    .btn {
+                        @include btn-gray;
+                        padding: 7px 28px;
+                        margin-left: 15px;
+
+                        &.active {
+                            @include btn-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

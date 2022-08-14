@@ -1,11 +1,20 @@
+@import '../_var';
+
+@import '../_board';
+@import '../_table';
+@import '../_options';
+@import '../_form';
+
 section.content {
-    .purse {
+    .track {
         .custom-container {
             width: 100%;
             max-width: 1056px;
             position: relative;
             margin: auto;
-            padding-bottom: 180px;
+            padding-bottom: 200px;
         }
     }
 }
+
+@import './edit';

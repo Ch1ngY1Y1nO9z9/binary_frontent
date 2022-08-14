@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout</title>
+    <title>mystack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/trading/trading.css">
+    <link rel="stylesheet" href="../../css/mystack/mystack.css">
 </head>
 
 <body class="relative">
@@ -215,22 +215,62 @@
     <h1 class="pagetitle cp">
         <div class="title">
             <div class="subtitle">
-                交易中心
+                我的注單
             </div>
-            我的交易
+            注單追蹤
         </div>
         <a href="#" class="return-btn">
-            返回交易中心
+            返回會員中心
         </a>
     </h1>
 
     <section class="content">
-        <div class="trading-list">
+        <div class="track">
             <div class="custom-container">
-                <div class="tab">
+                <div class="catalog">
                     <div class="options">
-                        <button class="btn active">買點</button>
-                        <button class="btn">賣點</button>
+                        <button class="btn btn-o active">全部</button>
+                        <button class="btn btn-o">搓合中</button>
+                        <button class="btn btn-o">已成交</button>
+                        <button class="btn btn-o">已結算</button>
+                        <button class="btn btn-o">未成交</button>
+                    </div>
+                    <div class="filter">
+                        <button class="btn">本週</button>
+                        <button class="btn">上週</button>
+                        <button class="btn">昨日</button>
+                        <button class="btn active">今日</button>
+                        <div class="datetimepicker">
+                            <div class="input-date">
+                                <div class="datepicker relative form-floating h-full" data-mdb-toggle-button="false">
+                                    <input type="text" class="form-control block w-full transition ease-in-out" />
+                                    <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <span>至</span>
+                            <div class="input-date">
+                                <div class="datepicker relative form-floating h-full" data-mdb-toggle-button="false">
+                                    <input type="text" class="form-control block w-full transition ease-in-out" />
+                                    <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="submit-btn" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                搜尋
+                            </button>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <button class="btn btn-b active">全部</button>
+                        <button class="btn btn-b">體育</button>
+                        <button class="btn btn-b">新聞</button>
+                        <button class="btn btn-b">政治</button>
+                        <button class="btn btn-b">金融</button>
+                        <button class="btn btn-b">彩票</button>
                     </div>
                 </div>
 
@@ -238,440 +278,310 @@
                     <thead>
                         <tr>
                             <th>
-                                交易編號
+                                狀態
                             </th>
                             <th>
-                                會員帳號
+                                遊戲名稱
                             </th>
                             <th>
-                                販售點數
+                                下注內容
                             </th>
                             <th>
-                                鏈
+                                下注時間
                             </th>
                             <th>
-                                金額 (USDT)
+                                下注金額
                             </th>
                             <th>
-                                對話
+                                更新時間
                             </th>
                             <th>
-                                對方狀態
+                                搓合金額
                             </th>
-                            <th class="form-section">
-                                我的狀態
+                            <th>
+                                操作
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                123456789012345
+                                搓合中
                             </td>
                             <td>
-                                123456789012345
+                                一二三四五六七八...
+                            </td>
+                            <td>
+                                一二三四五六七八九十一二三四五...
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
                                 999,999,999
                             </td>
                             <td>
-                                TRC
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
                                 999,999,999
                             </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
-                            </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button data-event="modal" type="button" class="btn confirm">確認</button>
-                                </form>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                搓合中
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                6,000
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button data-event="modal" type="button" class="btn confirm">確認</button>
-                                </form>
+                                0
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                已成交
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                6,000
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button data-event="modal" type="button" class="btn confirm">確認</button>
-                                </form>
+                                11
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                搓合中
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                20
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm disabled">確認</button>
-                                </form>
+                                20
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                已結算
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
                                 999,999,999
                             </td>
                             <td>
-                                TRC
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                0
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                未成交
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
+                            </td>
+                            <td>
+                                6,000
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
                                 999,999,999
                             </td>
                             <td>
-                                TRC
-                            </td>
-                            <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
-                            </td>
-                            <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                已結算
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                6,000
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                0
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                搓合中
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                500
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                500
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                已成交
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
                             </td>
                             <td>
-                                999,999,999
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                TRC
+                                6,000
                             </td>
                             <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                6,000
+                            </td>
+                            <td>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                123456789012345
+                                未成交
                             </td>
                             <td>
-                                123456789012345
+                                苗栗縣長參選人預測
+                            </td>
+                            <td class="keepall">
+                                您認為徐志榮會參選2022苗栗縣長...
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
+                            </td>
+                            <td>
+                                6,000
+                            </td>
+                            <td>
+                                2022/04/25<br />
+                                12:04:00
                             </td>
                             <td>
                                 999,999,999
                             </td>
                             <td>
-                                TRC
-                            </td>
-                            <td>
-                                999,999,999
-                            </td>
-                            <td class="icon">
-                                <div class="comment" data-event="modal">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                </div>
-                            </td>
-                            <td class="status-g">
-                                交易中
-                            </td>
-                            <td>
-                                <form action="">
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">交易取消</option>
-                                            <option value="">交易成功</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-col">
-                                        <select name="" id="">
-                                            <option value="">取消原因</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-event="modal" class="btn confirm">確認</button>
-                                </form>
+                                <a href="" class="link">前往盤口</a>
                             </td>
                         </tr>
                     </tbody>
@@ -738,10 +648,6 @@
 
     <!-- 選單js -->
     <script src="../../js/header.js?v=7/27"></script>
-
-
-    <!-- modal js -->
-    <script src="../../js/modal.js?v=7/27"></script>
 
 </body>
 

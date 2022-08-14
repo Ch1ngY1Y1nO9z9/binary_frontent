@@ -1,53 +1,7 @@
 @import '../_var';
-
-
-@import "./_index";
-
-.wallets {
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 21px 0;
-    background: $blue-5;
-    border-radius: 10px;
-
-    color: $white-1;
-    text-align: center;
-
-    .title {
-        @include Sans(700, 14px, 14px, .05em);
-        margin-bottom: 21px;
-
-        .icon {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background: $white-1;
-            margin-right: 10px;
-        }
-    }
-
-
-    .point {
-        @include Sans(700, 24px, 22px, initial);
-    }
-
-    .left {
-        flex: 1 1 0;
-        padding: 11px 0;
-        border-right: 1px solid $blue-4;
-    }
-
-    .right {
-        flex: 1 1 0;
-        padding: 11px 0;
-        border-left: 1px solid $blue-4;
-    }
-}
-
-
+@import '../_board';
 @import '../_form';
 @import '../_table';
 
+@import "./_index";
 @import "./_list";

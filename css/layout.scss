@@ -225,7 +225,7 @@ header {
                 font-size: 30px;
                 color: $white-1;
 
-                &:hover {
+                &:hover,&.active {
                     color: $yellow-5;
                 }
             }
@@ -653,6 +653,244 @@ header {
     }
 }
 
+.h-notify-list.active {
+    right: 0;
+}
+
+.h-notify-list {
+    width: 500px;
+    height: 980px;
+    position: absolute;
+    z-index: 5;
+    top: 90px;
+    right: -500px;
+    transition: .75s ease-in-out;
+
+
+    background: $white-1;
+    @include normal-shadow;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    .notify-center {
+        padding-bottom: 30px;
+
+        .title {
+            @include Serif(24px, 24px, .05em);
+            color: $blue-5;
+            margin-bottom: 20px;
+        }
+
+        .event-notify,
+        .stake-notify,
+        .system-notify {
+            display: flex;
+            padding: 20px;
+            border: 2px solid $gray-2;
+            border-radius: 10px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .left{
+                .msg-title {
+                    display: flex;
+                    @include Sans(700, 18px, 18px, .05em);
+                    color: $gray-5;
+                    margin-bottom: 15px;
+    
+                    .number {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 12px;
+                        width: 20px;
+                        height: 20px;
+                        background: $red-1;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $white-1;
+                        border-radius: 50%;
+                    }
+                }
+
+                .text {
+                    @include Sans(400, 14px, 14px, .05em);
+                    color: $gray-5;
+
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+
+                button {
+                    color: $blue-5;
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+    }
+
+    .trade-center-notify {
+        .title {
+            @include Serif(18px, 18px, .05em);
+            color: $blue-5;
+            margin-bottom: 20px;
+        }
+
+        .notify-list {
+            .note {
+                display: flex;
+                padding: 20px;
+                border: 2px solid $gray-2;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                
+                .left {
+                    padding-right: 20px;
+
+                    .pic {
+                        width: 95px;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        background: $gray-3;
+                    }
+                }
+
+                .right {
+                    @include Sans(400, 14px, 14px, .05em);
+                    color: $gray-5;
+
+                    .msg-title {
+                        @include Sans(700, 18px, 18px, .05em);
+                        margin-bottom: 15px;
+                    }
+
+                    .text {
+                        margin-bottom: 10px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+
+                    .time {
+                        color: $gray-4;
+                    }
+                }
+            }
+        }
+    }
+
+    .notify-detail.active {
+        left: 0;
+    }
+
+    .notify-detail {
+        width: 100%;
+        height: 100%;
+        background: $white-1;
+        padding: 20px;
+        border: 10px;
+        @include normal-shadow;
+
+        position: absolute;
+        left: 100%;
+        top: 0;
+        z-index: 6;
+        
+        transition: .75s ease-in;
+
+        .title {
+            @include Serif(24px, 24px, .05em);
+            color: $blue-5;
+            margin-bottom: 20px;
+
+            button {
+                @include Sans(400, 14px, 14px, .05em);
+                color: $blue-5;
+                margin-left: 30px;
+                text-decoration: underline;
+            }
+        }
+
+        .detail-list {
+            .detail {
+                display: flex;
+                padding: 20px;
+                border: 2px solid $gray-2;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                
+                .left {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 20px;
+
+                    .pic {
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        background: $gray-3;
+                        border-radius: 50%;
+                    }
+                }
+
+                .mid {
+                    flex: 1 1 0;
+                    @include Sans(400, 14px, 14px, .05em);
+                    color: $gray-4;
+
+                    .event-name {
+                        margin-bottom: 5px;
+                    }
+
+                    .event-title {
+                        font-weight: 700;
+                        color: $gray-5;
+                        margin-bottom: 10px;
+
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%
+                    }
+
+                    .unread.icon {
+                        background: $orange-5;
+                    }
+                }
+            }
+        }
+    }
+}
+
 h1.pagetitle {
     @include Serif(48px, 69px, .05em);
     color: $gray-5;
@@ -857,7 +1095,7 @@ h1.pagetitle.cp {
                         }
 
                         &+.left {
-                            .comment{
+                            .comment {
                                 .i {
                                     opacity: 0;
                                 }
@@ -893,7 +1131,7 @@ h1.pagetitle.cp {
                                 color: $white-1;
                                 background: $blue-5;
                                 border-radius: 10px 10px 0 10px;
-                            
+
                                 max-width: 240px;
                             }
 
@@ -904,7 +1142,7 @@ h1.pagetitle.cp {
                         }
 
                         &+.right {
-                            .comment{
+                            .comment {
                                 .i {
                                     opacity: 0;
                                 }
@@ -924,7 +1162,7 @@ h1.pagetitle.cp {
                             position: relative;
 
                             &::before {
-                                content:'';
+                                content: '';
                                 width: 100px;
                                 border-top: 1px solid $gray-3;
                                 position: absolute;
@@ -933,7 +1171,7 @@ h1.pagetitle.cp {
                             }
 
                             &::after {
-                                content:'';
+                                content: '';
                                 width: 100px;
                                 border-top: 1px solid $gray-3;
                                 position: absolute;
@@ -943,7 +1181,7 @@ h1.pagetitle.cp {
                         }
                     }
                 }
-                
+
                 .quick_command {
                     padding-top: 20px;
                     overflow-x: auto;
@@ -982,7 +1220,7 @@ h1.pagetitle.cp {
                 .input-col {
                     flex: 1 1 0;
                     margin: 0 21px;
-                    
+
                     input.input-control {
                         width: 100%;
                         padding: 13px 11px;

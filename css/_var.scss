@@ -84,6 +84,12 @@ $hr-gray: #EBEBEB;
     border-color: $orange-5;
 }
 
+@mixin hover-blue {
+    background: $blue-5;
+    color: $white-1;
+    border-color: $blue-5;
+}
+
 @mixin hover-yellow {
     background: $yellow-5;
     color: $white-1;
@@ -129,27 +135,10 @@ $hr-gray: #EBEBEB;
 
     padding: 13px 30px;
     margin-left: 15px;
+    margin-bottom: 15px;
 }
 
-@mixin options {
-    display: flex;
-    justify-content: center;
-
-    .btn {
-        @include btn-options;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:hover,
-        &.active {
-            @include hover-orange;
-        }
-    }
-}
-
-@mixin pagination {
+@mixin pagination { 
     display: flex;
     justify-content: center;
     align-items: center;

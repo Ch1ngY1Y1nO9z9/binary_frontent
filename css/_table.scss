@@ -133,6 +133,7 @@
         }
 
         form {
+            width: 100%;
             display: flex;
             align-items: center;
         }
@@ -166,6 +167,21 @@
                 background: $gray-3; 
                 border: 1px solid $gray-3;
                 cursor: not-allowed;
+            }
+
+            &.delete.outline-btn {
+                color: $red-1;
+                border: 1px solid $red-1;
+                padding: 8px 20px;
+                margin-left: 30px;
+            }
+
+            &.cancel.outline-btn {
+                background: transparent;
+                color: $blue-5;
+                border: 1px solid $blue-5;
+                padding: 8px 20px;
+                margin-left: 30px;
             }
         }
 
@@ -206,6 +222,11 @@
 
             &:nth-child(even) {
                 margin: 0 30px;
+            }
+
+            &.disable {
+                color: $gray-3;
+                cursor: not-allowed;
             }
         }
 

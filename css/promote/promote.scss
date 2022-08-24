@@ -1,0 +1,25 @@
+@import '../_var';
+
+@import '../_board';
+@import '../_table';
+@import '../_options';
+@import '../_form';
+
+.promo-list-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+
+    h3 {
+        @include Serif(30px, 30px, .05em);
+        color: $gray-5;
+    }
+
+    .btn {
+        @include Sans(700, 14px, 14px, .1em);
+        @include btn-orange;
+        padding: 12px 30px 14px;
+    }
+}
+
+@import './_notify_cards';

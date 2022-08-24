@@ -1,0 +1,23 @@
+@import '../_var';
+@import '../_board';
+@import '../_form';
+@import '../_options';
+@import '../_table';
+@import '../_tab';
+
+@import './_friends';
+
+.commission {
+    .max-830 {
+        max-width: 830px;
+    }
+
+    .max-750 {
+        max-width: 750px;
+        padding-bottom: 0;
+    }
+
+    .max-624 {
+        max-width: 644px;
+    }
+}

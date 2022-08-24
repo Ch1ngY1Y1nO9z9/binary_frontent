@@ -1,0 +1,43 @@
+.custom-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 150px;
+
+    &.c-1620 {
+        max-width: 1620px;
+    }
+    
+    &.c-1575 {
+        max-width: 1575px;
+    }
+    
+    &.c-1470 {
+        max-width: 1470px;
+    }
+
+    &.c-1274 {
+        max-width: 1274px;
+    }
+    
+    &.c-1272 {
+        max-width: 1272px;
+    }
+
+    &.c-1056 {
+        max-width: 1056px;
+    }
+    
+    &.c-954 {
+        max-width: 954px;
+    }
+    
+    &.c-624 {
+        max-width: 624px;
+    }
+
+    &.c-450 {
+        max-width: 450px;
+    }
+    
+}

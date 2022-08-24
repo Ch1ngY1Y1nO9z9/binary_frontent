@@ -1,0 +1,349 @@
+.stake-list {
+    display: flex;
+    position: relative;
+
+    .list {
+        flex: 1 1 0%;
+
+        .tournament {
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .header {
+                @include Sans(700, 18px, 18px, .05em);
+                color: $white-1;
+                background: $blue-5;
+                padding: 10px 15px 12px;
+                border-radius: 5px;
+            }
+
+            .catalog-btns {
+                padding: 20px;
+
+                .btn {
+                    display: inline-block;
+                    @include btn-options;
+                    margin-bottom: 0;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:hover,
+                    &.active {
+                        @include hover-orange;
+                    }
+
+                    .icon {
+                        font-size: 14px;
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .detail {
+                table.trading-table {
+                    width: 100%;
+
+                    thead {
+                        @include Sans(700, 14px, 14px, .05em);
+                        color: $gray-5;
+
+                        tr {
+                            th {
+                                padding: 13px 13px 13px 15px;
+                                background: $yellow-5;
+
+
+                                &:first-child {
+                                    text-align: left;
+                                    border-radius: 5px 0 0 5px;
+                                    width: 100%;
+                                }
+
+                                &:last-child {
+                                    border-radius: 0 5px 5px 0;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        @include Sans(700, 14px, 14px, .05em);
+                        color: $gray-5;
+
+                        .text-g {
+                            color: $green-1;
+                        }
+
+                        .text-b {
+                            color: $blue-5;
+                        }
+
+                        .text-r {
+                            color: $red-1;
+                        }
+
+                        .text-time {
+                            color: $gray-4;
+                        }
+
+                        tr {
+                            border-top: 2px solid $gray-2;
+
+                            &:first-child {
+                                border-top: 0;
+                            }
+
+                            td {
+                                padding: 10px 2.5px;
+
+                                &:last-child {
+                                    padding-right: 13px;
+                                }
+
+                                &:first-child {
+                                    padding-left: 15px;
+                                }
+
+                                .team {
+                                    margin-top: 10px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+
+                        .data {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 5px;
+
+                            @include Sans(400, 14px, 14px, initial);
+                            color: $gray-5;
+
+                            &.auto-width {
+                                width: auto;
+                            }
+
+                            &.orange-bg {
+                                background: $orange-5;
+                                color: $white-1;
+                                border-color: $orange-5;
+                            }
+
+                            &.gray-bg {
+                                background: $gray-1;
+                            }
+                        }
+
+                        .icon {
+                            color: $gray-3;
+                            font-size: 30px;
+                        }
+
+                        .data-outline {
+                            border: 1px solid $gray-4;
+
+                            &.orange-outline {
+                                border-color: $orange-5;
+                            }
+                        }
+
+                        .point {
+                            display: flex;
+
+                            div {
+                                padding: 0 7.5px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        width: 300px;
+        height: min-content;
+        max-height: 900px;
+        margin-left: 10px;
+        background: $blue-5;
+        padding: 0 5px;
+        border-radius: 5px;
+
+        .header {
+            display: flex;
+            align-items: center;
+            @include Sans(700, 18px, 18px, .05em);
+            color: $white-1;
+            padding: 11px 10px;
+
+            .name {
+                .number {
+                    display: inline-block;
+                    background: $orange-5;
+                    padding: 2px 12px 4px;
+                    margin-left: 10px;
+                    border-radius: 5px;
+                }
+            }
+
+            .delete {
+                cursor: pointer;
+                margin-left: auto;
+                @include Sans(400, 14px, 14px, .1em);
+
+                &:hover {
+                    color: $orange-5;
+                }
+
+                .icon {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .stake-cards {
+            overflow: auto;
+            max-height: 747px;
+
+            .stake-card {
+                margin-top: 5px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                .error-msg {
+                    display: none;
+                    color: $white-1;
+                    @include Sans(700, 14px, 14px, .05em);
+                    padding: 7px 10px 9px;
+                }
+
+                &.error {
+                    background: $red-1;
+                    border-radius: 5px;
+
+                    .error-msg {
+                        display: block;
+                    }
+                }
+
+                .card-body {
+                    background: $white-1;
+                    padding: 15px 0;
+                    position: relative;
+                    border-radius: 5px;
+
+                    @include Sans(400, 14px, 14px, .05em);
+                    color: $gray-5;
+
+                    .delete {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        font-size: 18px;
+                        color: $gray-4;
+                    }
+
+                    .top {
+                        padding: 0 10px;
+
+                        .contest {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .mid {
+                        background: $yellow-5;
+                        padding: 8px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-weight: 700;
+                        margin-top: 15px;
+                    }
+
+                    .bottom {
+                        margin-top: 10px;
+
+                        .stake-status {
+                            padding: 0 10px;
+
+                            .name {
+                                font-weight: 700;
+                            }
+
+                            .points {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .predict {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 5px;
+                            margin-top: 15px;
+                            
+                            input.input-control,.point {
+                                width: calc(50% - 5px);
+                                padding: 9px 10px;
+                                color: $gray-4;
+                                border: 1px solid $gray-4;
+                                border-radius: 5px;
+                            }
+
+                            .point {
+                                background: $gray-2;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .total {
+            padding: 20px 15px;
+
+            .total-point {
+                @include Sans(700, 14px, 14px, .05em);
+                color: $white-1;
+                margin-top: 15px;
+    
+                display: flex;
+                justify-content: space-between;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+
+        .gotostake {
+            display: block;
+            color: $white-1;
+            background: $orange-5;
+            border-radius: 5px;
+            text-align: center;
+            padding: 13px 0;
+            margin: 0 -5px;
+        }
+    }
+}
+
+.pagination {
+    @include pagination;
+    padding-top: 100px;
+}

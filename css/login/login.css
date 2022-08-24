@@ -1,146 +1,112 @@
 header {
-  background: white;
+  background: rgb(255, 255, 255);
 }
-
 header .custom-container .header-l .logo .site-name {
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
 header .custom-container .header-r .account {
-  color: #0046ae;
+  color: rgb(0, 70, 174);
 }
-
 header .custom-container .header-r .burger-menu button.burger.burger-style::before {
-  background: #0046ae;
+  background: rgb(0, 70, 174);
 }
-
 header .custom-container .header-r .burger-menu button.burger.burger-style::after {
-  background: #0046ae;
+  background: rgb(0, 70, 174);
 }
-
 header .custom-container .header-r .burger-menu button.burger.burger-style span::before {
-  background: #0046ae;
+  background: rgb(0, 70, 174);
 }
 
 section.content {
   width: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   position: relative;
   z-index: 3;
 }
-
 section.content .custom-container {
   width: 100%;
   max-width: 624px;
   margin: auto;
 }
-
-section.content .custom-container .card {
+section.content .custom-container .form-card {
   position: relative;
   z-index: 2;
   padding: 50px 112px;
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
-section.content .custom-container .card .input-row {
-  color: #393939;
+section.content .custom-container .form-card .input-row {
+  color: rgb(57, 57, 57);
   margin-bottom: 30px;
 }
-
-section.content .custom-container .card .input-row label.input-label {
+section.content .custom-container .form-card .input-row label.input-label {
   display: block;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
   margin-bottom: 10px;
 }
-
-section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col {
   display: flex;
 }
-
-section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control {
+  flex: 1 1 0;
 }
-
-section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span {
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span {
   display: inline-block;
   margin-left: 15px;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  color: #ff621f;
+  color: rgb(255, 98, 31);
   padding: 12px 37px 14px;
-  border: 1px solid #ff621f;
-  background: white;
+  border: 1px solid rgb(255, 98, 31);
+  background: rgb(255, 255, 255);
 }
-
-section.content .custom-container .card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span:hover {
-  background: #ff621f;
-  color: white;
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
-section.content .custom-container .card .input-row .input-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
+section.content .custom-container .form-card .input-row .input-col {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-section.content .custom-container .card .input-row .input-col input.input-control {
+section.content .custom-container .form-card .input-row .input-col input.input-control {
   width: 100%;
-  border: 1px solid #888888;
+  border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 9px 10px;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: initial;
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
-section.content .custom-container .card .input-row .input-col input.input-control::-webkit-input-placeholder {
-  color: #c3c3c3;
+section.content .custom-container .form-card .input-row .input-col input.input-control::-moz-placeholder {
+  color: rgb(195, 195, 195);
 }
-
-section.content .custom-container .card .input-row .input-col input.input-control:-ms-input-placeholder {
-  color: #c3c3c3;
+section.content .custom-container .form-card .input-row .input-col input.input-control:-ms-input-placeholder {
+  color: rgb(195, 195, 195);
 }
-
-section.content .custom-container .card .input-row .input-col input.input-control::-ms-input-placeholder {
-  color: #c3c3c3;
+section.content .custom-container .form-card .input-row .input-col input.input-control::placeholder {
+  color: rgb(195, 195, 195);
 }
-
-section.content .custom-container .card .input-row .input-col input.input-control::placeholder {
-  color: #c3c3c3;
-}
-
-section.content .custom-container .card .input-row .input-col .checkbox-mask {
+section.content .custom-container .form-card .input-row .input-col .checkbox-mask {
   display: inline-block;
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  border: 1px solid #888888;
+  border: 1px solid rgb(136, 136, 136);
 }
-
-section.content .custom-container .card .input-row .input-col .checkbox-mask + label.input-label {
-  font-family: 'Noto Sans TC', 'sans-serif';
+section.content .custom-container .form-card .input-row .input-col .checkbox-mask + label.input-label {
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -149,284 +115,242 @@ section.content .custom-container .card .input-row .input-col .checkbox-mask + l
   margin-left: 10px;
   margin-bottom: 0;
 }
-
-section.content .custom-container .card .input-row .input-col + .msg {
+section.content .custom-container .form-card .input-row .input-col + .msg {
   display: none;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: initial;
   margin-top: 5px;
-  color: #eb3634;
+  color: rgb(235, 54, 52);
 }
-
-section.content .custom-container .card .input-row .input-col.error + .msg {
+section.content .custom-container .form-card .input-row .input-col.error + .msg {
   display: block;
 }
-
-section.content .custom-container .card .input-row .input-col.error .checkbox-mask {
-  border: 1px solid #eb3634;
+section.content .custom-container .form-card .input-row .input-col.error .checkbox-mask {
+  border: 1px solid rgb(235, 54, 52);
 }
-
-section.content .custom-container .card .submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
+section.content .custom-container .form-card .submit {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 30px 0;
 }
-
-section.content .custom-container .card .submit button {
-  font-family: 'Noto Sans TC', 'sans-serif';
+section.content .custom-container .form-card .submit button {
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  color: white;
-  background: #ff621f;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 98, 31);
   padding: 12px 60px 14px;
 }
-
-section.content .custom-container .card .submit button:hover {
-  background: #fcbd1f;
+section.content .custom-container .form-card .submit button:hover {
+  background: rgb(252, 189, 31);
 }
-
-section.content .custom-container .card .submit.error {
+section.content .custom-container .form-card .submit.error {
   padding-bottom: 0;
 }
-
-section.content .custom-container .card .submit + .msg {
+section.content .custom-container .form-card .submit + .msg {
   display: none;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: initial;
   text-align: center;
   margin-top: 5px;
-  color: #eb3634;
+  color: rgb(235, 54, 52);
 }
-
-section.content .custom-container .card .submit.error + .msg {
+section.content .custom-container .form-card .submit.error + .msg {
   display: block;
   padding-bottom: 30px;
 }
-
-section.content .custom-container .card .links {
+section.content .custom-container .form-card .links {
   padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  justify-content: center;
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: #888888;
+  color: rgb(136, 136, 136);
 }
-
-section.content .custom-container .card .links .link:nth-child(even) {
+section.content .custom-container .form-card .links .link:nth-child(even) {
   margin-left: 15px;
 }
 
 section.content .custom-container div.card.unvertify .icon.failed {
-  color: #eb3634;
+  color: rgb(235, 54, 52);
   font-size: 50px;
   text-align: center;
 }
-
 section.content .custom-container div.card.unvertify .confirm {
   width: 100%;
   max-width: 250px;
   margin: auto;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-align: center;
-  color: #393939;
+  color: rgb(57, 57, 57);
   padding-bottom: 30px;
 }
-
 section.content .custom-container div.card.unvertify .links .link {
   display: inline-block;
-  border: 1px solid #ff621f;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  color: #ff621f;
+  color: rgb(255, 98, 31);
   padding: 12px 45px 14px;
-  background: white;
+  background: rgb(255, 255, 255);
   text-decoration: none;
 }
-
 section.content .custom-container div.card.unvertify .links .link:hover {
-  background: #ff621f;
-  color: white;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.unvertify .links .link:nth-child(even) {
-  background: #ff621f;
-  color: white;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.unvertify .links .link:nth-child(even):hover {
-  background: #fcbd1f;
-  border: 1px solid #fcbd1f;
+  background: rgb(252, 189, 31);
+  border: 1px solid rgb(252, 189, 31);
 }
 
 section.content .custom-container div.card.register .icon.success {
-  color: #2cbd03;
+  color: rgb(44, 189, 3);
   font-size: 50px;
   text-align: center;
 }
-
 section.content .custom-container div.card.register .icon.vertify {
-  color: #0046ae;
+  color: rgb(0, 70, 174);
   font-size: 50px;
   text-align: center;
 }
-
 section.content .custom-container div.card.register .confirm {
   width: 100%;
   max-width: 250px;
   margin: auto;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-align: center;
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
 section.content .custom-container div.card.register .check {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 section.content .custom-container div.card.register .check .text {
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
 section.content .custom-container div.card.register .check .text span {
   font-size: 18px;
   font-weight: 700;
-  color: #ff621f;
+  color: rgb(255, 98, 31);
 }
-
 section.content .custom-container div.card.register .links .link {
   display: inline-block;
-  border: 1px solid #ff621f;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  color: #ff621f;
+  color: rgb(255, 98, 31);
   padding: 12px 45px 14px;
-  background: white;
+  background: rgb(255, 255, 255);
   text-decoration: none;
 }
-
 section.content .custom-container div.card.register .links .link:hover {
-  background: #ff621f;
-  color: white;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.register .links .link:nth-child(even) {
-  background: #ff621f;
-  color: white;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.register .links .link:nth-child(even):hover {
-  background: #fcbd1f;
-  border: 1px solid #fcbd1f;
+  background: rgb(252, 189, 31);
+  border: 1px solid rgb(252, 189, 31);
 }
 
 section.content .custom-container div.card.getpassword .icon {
-  color: #0046ae;
+  color: rgb(0, 70, 174);
   font-size: 50px;
   text-align: center;
 }
-
 section.content .custom-container div.card.getpassword .confirm {
   width: 100%;
   max-width: 250px;
   margin: auto;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
   text-align: center;
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
 section.content .custom-container div.card.getpassword .check {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 section.content .custom-container div.card.getpassword .check .text {
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: #393939;
+  color: rgb(57, 57, 57);
   margin-bottom: 10px;
 }
-
 section.content .custom-container div.card.getpassword .check .mail {
-  font-family: 'Noto Sans TC', 'sans-serif';
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  color: #393939;
+  color: rgb(57, 57, 57);
 }
-
 section.content .custom-container div.card.getpassword .return {
   text-align: center;
 }
-
 section.content .custom-container div.card.getpassword .return a {
   display: inline-block;
-  border: 1px solid #ff621f;
-  font-family: 'Noto Sans TC', 'sans-serif';
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  color: #ff621f;
+  color: rgb(255, 98, 31);
   padding: 12px 45px 14px;
-  background: white;
+  background: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.getpassword .return a:hover {
-  background: #ff621f;
-  color: white;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
 }
-
 section.content .custom-container div.card.getpassword .links .link {
-  color: #ff621f;
+  color: rgb(255, 98, 31);
   text-decoration: underline;
-}
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

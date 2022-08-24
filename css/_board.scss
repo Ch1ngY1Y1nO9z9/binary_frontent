@@ -126,4 +126,32 @@
             }
         }
     }
+
+    &.commission_detail {
+        display: flex;
+        max-width: 750px;
+        padding: 10px 0; 
+
+        .left,.mid,.right {
+            flex: 1 1 0%;
+            text-align: center;
+            padding: 12px 0;
+
+            .title {
+                @include Sans(700, 14px, 14px, .05em);
+                color: $white-1;
+                margin-bottom: 20px;
+            }
+
+            .point {
+                @include Sans(700, 24px, 22px, initial);
+                color: $white-1;
+            }
+        }
+
+        .mid {
+            border-left: 2px solid $blue-4;
+            border-right: 2px solid $blue-4;
+        }
+    }
 }

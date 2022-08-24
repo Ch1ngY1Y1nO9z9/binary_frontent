@@ -1,0 +1,588 @@
+.options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.options .btn {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(57, 57, 57);
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 13px 22px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.options .btn:first-child {
+  margin-left: 0;
+}
+.options .btn.btn-o:hover, .options .btn.btn-o.active {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+.options .btn.btn-b:hover, .options .btn.btn-b.active {
+  background: rgb(0, 70, 174);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 70, 174);
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 30px;
+}
+.filter .btn {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(57, 57, 57);
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 13px 22px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.filter .btn:hover, .filter .btn.active {
+  background: rgb(252, 189, 31);
+  color: rgb(57, 57, 57);
+  font-weight: 700;
+}
+.filter .btn:first-child {
+  margin-left: 0;
+}
+.filter .datetimepicker {
+  display: flex;
+  flex: 1 1 0;
+  color: rgb(57, 57, 57);
+  height: 40px;
+}
+.filter .datetimepicker .input-date {
+  flex: 1 1 0;
+  margin: 0 15px;
+  position: relative;
+}
+.filter .datetimepicker .input-date input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 5px;
+  padding: 0 10px;
+  color: rgb(57, 57, 57);
+}
+.filter .datetimepicker .input-date .datepicker-toggle-button {
+  top: 12px;
+}
+.filter .datetimepicker .input-date svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.filter .datetimepicker span {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: initial;
+}
+.filter .datetimepicker .submit-btn {
+  background: rgb(255, 255, 255);
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  padding: 0 45px;
+  color: rgb(136, 136, 136);
+}
+.filter .datetimepicker .submit-btn:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+.filter .input-col {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.filter .input-col select.input-control {
+  width: 100%;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  background: transparent;
+  padding: 9px 10px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(57, 57, 57);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.filter .input-col select.input-control + .arrow {
+  position: absolute;
+  right: 10px;
+  z-index: -1;
+}
+.filter .input-col select.input-control::-moz-placeholder {
+  color: rgb(195, 195, 195);
+}
+.filter .input-col select.input-control:-ms-input-placeholder {
+  color: rgb(195, 195, 195);
+}
+.filter .input-col select.input-control::placeholder {
+  color: rgb(195, 195, 195);
+}
+.filter .input-col select.input-control:disabled {
+  background: rgb(235, 235, 235);
+  color: rgb(57, 57, 57);
+}
+.filter .input-col select.input-control {
+  padding: 12px 10px;
+}
+.filter .input-col select.input-control option {
+  padding: 12px 10px;
+}
+.filter .input-col .checkbox-mask {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(136, 136, 136);
+}
+.filter .input-col .checkbox-mask + label.input-label {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.filter .input-col .point_number {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: initial;
+  color: rgb(255, 98, 31);
+}
+.filter .input-col.error ~ .msg {
+  display: block;
+}
+.filter .input-col.error .checkbox-mask {
+  border: 1px solid rgb(235, 54, 52);
+}
+.filter .input-col span.icon {
+  position: absolute;
+  right: 10px;
+}
+
+.stake-catalog {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.stake-catalog span.item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 70, 174);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-left: 20px;
+}
+.stake-catalog span.item:first-child {
+  margin-left: 0;
+}
+.stake-catalog span.item div {
+  max-width: 60px;
+}
+.stake-catalog span.item span.number {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  background: rgb(255, 98, 31);
+  padding: 2px 8px 4px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.stake-list {
+  display: flex;
+  position: relative;
+}
+.stake-list .list {
+  flex: 1 1 0%;
+}
+.stake-list .list .tournament {
+  margin-top: 40px;
+}
+.stake-list .list .tournament:first-child {
+  margin-top: 0;
+}
+.stake-list .list .tournament .header {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 70, 174);
+  padding: 10px 15px 12px;
+  border-radius: 5px;
+}
+.stake-list .list .tournament .catalog-btns {
+  padding: 20px;
+}
+.stake-list .list .tournament .catalog-btns .btn {
+  display: inline-block;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(57, 57, 57);
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 13px 22px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-bottom: 0;
+}
+.stake-list .list .tournament .catalog-btns .btn:first-child {
+  margin-left: 0;
+}
+.stake-list .list .tournament .catalog-btns .btn:hover, .stake-list .list .tournament .catalog-btns .btn.active {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+.stake-list .list .tournament .catalog-btns .btn .icon {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.stake-list .list .tournament .detail table.trading-table {
+  width: 100%;
+}
+.stake-list .list .tournament .detail table.trading-table thead {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+.stake-list .list .tournament .detail table.trading-table thead tr th {
+  padding: 13px 13px 13px 15px;
+  background: rgb(252, 189, 31);
+}
+.stake-list .list .tournament .detail table.trading-table thead tr th:first-child {
+  text-align: left;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+}
+.stake-list .list .tournament .detail table.trading-table thead tr th:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.stake-list .list .tournament .detail table.trading-table tbody {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .text-g {
+  color: rgb(44, 189, 3);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .text-b {
+  color: rgb(0, 70, 174);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .text-r {
+  color: rgb(235, 54, 52);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .text-time {
+  color: rgb(136, 136, 136);
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr {
+  border-top: 2px solid rgb(235, 235, 235);
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr:first-child {
+  border-top: 0;
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr td {
+  padding: 10px 2.5px;
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr td:last-child {
+  padding-right: 13px;
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr td:first-child {
+  padding-left: 15px;
+}
+.stake-list .list .tournament .detail table.trading-table tbody tr td .team {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(57, 57, 57);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data.auto-width {
+  width: auto;
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data.orange-bg {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data.gray-bg {
+  background: rgb(245, 245, 245);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .icon {
+  color: rgb(195, 195, 195);
+  font-size: 30px;
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data-outline {
+  border: 1px solid rgb(136, 136, 136);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .data-outline.orange-outline {
+  border-color: rgb(255, 98, 31);
+}
+.stake-list .list .tournament .detail table.trading-table tbody .point {
+  display: flex;
+}
+.stake-list .list .tournament .detail table.trading-table tbody .point div {
+  padding: 0 7.5px;
+  margin-bottom: 10px;
+}
+.stake-list .sidebar {
+  width: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  max-height: 900px;
+  margin-left: 10px;
+  background: rgb(0, 70, 174);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.stake-list .sidebar .header {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(255, 255, 255);
+  padding: 11px 10px;
+}
+.stake-list .sidebar .header .name .number {
+  display: inline-block;
+  background: rgb(255, 98, 31);
+  padding: 2px 12px 4px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.stake-list .sidebar .header .delete {
+  cursor: pointer;
+  margin-left: auto;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+.stake-list .sidebar .header .delete:hover {
+  color: rgb(255, 98, 31);
+}
+.stake-list .sidebar .header .delete .icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+.stake-list .sidebar .stake-cards {
+  overflow: auto;
+  max-height: 747px;
+}
+.stake-list .sidebar .stake-cards .stake-card {
+  margin-top: 5px;
+}
+.stake-list .sidebar .stake-cards .stake-card:first-child {
+  margin-top: 0;
+}
+.stake-list .sidebar .stake-cards .stake-card .error-msg {
+  display: none;
+  color: rgb(255, 255, 255);
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  padding: 7px 10px 9px;
+}
+.stake-list .sidebar .stake-cards .stake-card.error {
+  background: rgb(235, 54, 52);
+  border-radius: 5px;
+}
+.stake-list .sidebar .stake-cards .stake-card.error .error-msg {
+  display: block;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body {
+  background: rgb(255, 255, 255);
+  padding: 15px 0;
+  position: relative;
+  border-radius: 5px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: rgb(136, 136, 136);
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .top {
+  padding: 0 10px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .top .contest {
+  margin-top: 10px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .mid {
+  background: rgb(252, 189, 31);
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom {
+  margin-top: 10px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .stake-status {
+  padding: 0 10px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .stake-status .name {
+  font-weight: 700;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .stake-status .points {
+  margin-top: 10px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .predict {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-top: 15px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .predict input.input-control, .stake-list .sidebar .stake-cards .stake-card .card-body .bottom .predict .point {
+  width: calc(50% - 5px);
+  padding: 9px 10px;
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+}
+.stake-list .sidebar .stake-cards .stake-card .card-body .bottom .predict .point {
+  background: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+}
+.stake-list .sidebar .total {
+  padding: 20px 15px;
+}
+.stake-list .sidebar .total .total-point {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.stake-list .sidebar .total .total-point:first-child {
+  margin-top: 0;
+}
+.stake-list .sidebar .gotostake {
+  display: block;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 98, 31);
+  border-radius: 5px;
+  text-align: center;
+  padding: 13px 0;
+  margin: 0 -5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin: 0 auto;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+  padding-top: 100px;
+}
+.pagination .prev-arrow,
+.pagination .next-arrow {
+  font-size: 15px;
+}
+.pagination .pages {
+  display: flex;
+}
+.pagination .pages a {
+  display: block;
+  padding: 10px 20px 14px;
+  border-radius: 5px;
+}
+.pagination .pages a:hover, .pagination .pages a.active {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+.pagination .prev-arrow {
+  position: relative;
+  right: 21px;
+}
+.pagination .next-arrow {
+  position: relative;
+  left: 21px;
+}/*# sourceMappingURL=stake.css.map */

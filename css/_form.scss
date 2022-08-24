@@ -47,7 +47,7 @@
 
     .input-row {
         color: $gray-5;
-        margin-bottom: 30px;
+        margin-top: 30px;
 
         label.input-label {
             display: block;
@@ -91,6 +91,11 @@
             align-items: center;
             position: relative;
 
+            &.show-point {
+                @include Sans(700, 24px, 20px, initial);
+                color: $orange-5;
+            }
+
             input.input-control,
             select.input-control {
                 width: 100%;
@@ -102,10 +107,10 @@
                 @include Sans(400, 14px, 14px, initial);
                 color: $gray-5;
 
-                appearance:none;
-                -moz-appearance:none;
-                -webkit-appearance:none;
-                
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+
                 &+.arrow {
                     position: absolute;
                     right: 10px;
@@ -164,6 +169,35 @@
                 position: absolute;
                 right: 10px;
             }
+
+            .input-date {
+                flex: 1 1 0;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid $gray-3;
+                    border-radius: 5px;
+                    padding: 9px 10px;
+                    color: $gray-5;
+                }
+
+                .datepicker-toggle-button {
+                    top: 12px;
+                }
+
+                svg {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+            .to {
+                @include Sans(400, 18px, 40px, initial);
+                margin: 0 11px;
+            }
         }
 
         .msg {
@@ -201,7 +235,7 @@
     .submit {
         display: flex;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 50px;
 
         button,
         a {
@@ -232,7 +266,7 @@
 
     .return-link {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 50px;
 
         @include Sans(400, 14px, 14px, .05em);
         color: $gray-4;
@@ -253,6 +287,7 @@
     .links {
         display: flex;
         justify-content: center;
+        padding-top: 50px;
 
         @include Sans(400, 14px, 14px, .05em);
 
@@ -267,6 +302,17 @@
                 @include btn-orange;
             }
         }
+
+        .return {
+            color: $gray-4;
+        }
+    }
+
+    .submit-notice {
+        @include Sans(400, 14px, 14px, .05em);
+        color: $gray-5;
+        text-align: center;
+        margin-top: 20px;
     }
 
     h2.title {
@@ -281,6 +327,58 @@
         color: $gray-5;
         margin-bottom: 50px;
         text-align: center;
+    }
+
+    .account_pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 35px;
+        background: $orange-4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        .upload-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 12px;
+            color: $white-1;
+            background: $blue-5;
+            display: flex;
+            cursor: pointer;
+
+            svg {
+                margin: auto;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        &.edit {
+            margin-bottom: 10px;
+        }
+
+        &.error+.pic_notify {
+            display: block;
+        }
+    }
+
+    .pic_notify {
+        display: none;
+        text-align: center;
+        @include Sans(400, 14px, 14px, .05em);
+        color: $red-1;
+        margin-bottom: 25px;
     }
 
     .list {
@@ -301,6 +399,10 @@
 
                 &:nth-child(even) {
                     font-weight: 700;
+                }
+
+                &.text-o {
+                    color: $orange-5;
                 }
 
                 .icon {
@@ -345,6 +447,184 @@
 
             &+.submit {
                 padding-top: 50px;
+            }
+
+            &.account_cards {
+                display: block;
+                border-bottom: 0;
+
+                .card {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $gray-3;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                    @include Sans(700, 14px, 16.45px, initial);
+
+                    .pic {
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background: $orange-4;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .name {
+                        margin-left: 10px;
+                    }
+
+                    .point {
+                        display: inline-block;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .account-setting.list {
+        max-width: initial;
+
+
+        .row {
+            justify-content: flex-start;
+
+            .col {
+                &:first-child {
+                    width: 80px;
+                    padding-right: 20px;
+                }
+            }
+
+            a {
+                @include Sans(400, 14px, 14px, .05em);
+                display: inline-block;
+                margin-left: auto;
+                color: $blue-5;
+                text-decoration: underline;
+            }
+        }
+
+
+        &.edit {
+            .row {
+                padding: 20px 0;
+
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+
+                &.input-control {
+                    padding: 7px 0;
+                }
+
+                &.password-confirm {
+                    padding-top: 50px;
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+
+                .col {
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .input-col {
+                    flex: 1 1 0%;
+                    display: flex;
+                    align-items: center;
+
+                    position: relative;
+                    margin-left: 5px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    input,
+                    select {
+                        flex: 1 1 0;
+                        border: 1px solid $gray-4;
+                        border-radius: 5px;
+                        background: transparent;
+                        padding: 9px 10px;
+
+                        @include Sans(700, 14px, 14px, initial);
+                        color: $gray-5;
+
+                        appearance: none;
+                        -moz-appearance: none;
+                        -webkit-appearance: none;
+
+
+                        &+.arrow {
+                            position: absolute;
+                            right: 10px;
+                            z-index: -1;
+                        }
+
+                        &::placeholder {
+                            color: $gray-3;
+                        }
+
+                        &:disabled {
+                            background: $gray-2;
+                            color: $gray-5;
+                        }
+
+                        &[type=radio] {
+                            display: none;
+                        }
+                    }
+
+                    select {
+                        padding: 12px 10px;
+                        font-weight: 400;
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 30px;
+                        @include Sans(400, 14px, 18px, .05em);
+                        color: $gray-5;
+
+                        .checkbox {
+                            width: 20px;
+                            height: 20px;
+                            border: 1px solid $gray-4;
+                            border-radius: 5px;
+                            margin-right: 10px;
+
+                            svg {
+                                color: $orange-5;
+                                font-size: 20px;
+                                display: none;
+                            }
+
+                            &.selected {
+                                border: 0;
+
+                                svg {
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

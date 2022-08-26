@@ -136,26 +136,8 @@ header {
 
 
     .custom-container {
-        width: 100%;
-        padding: 0 150px;
-        max-width: 1620px;
-        margin: auto;
-
-        @media(max-width: 1297px) {
-            padding: 0 40px;
-            max-width: 1200px;
-        }
-
-        @media(max-width: 785px) {
-            padding: 0 29px;
-            max-width: 785px;
-        }
-
-        @media(max-width: 593px) {
-            padding: 0 15px;
-            max-width: 593px;
-        }
-
+        padding-bottom: 0;
+        
         .header-l {
             .logo {
                 display: flex;

@@ -5,12 +5,6 @@ section.content {
   position: relative;
 }
 
-.recommend .custom-container {
-  width: 100%;
-  max-width: 1575px;
-  margin: 0 auto;
-  position: relative;
-}
 .recommend .custom-container .recommendSwiper {
   width: 100%;
   height: 600px;
@@ -292,20 +286,8 @@ section.content {
   padding-right: 78px;
   padding-bottom: 100px;
 }
-.news_list:nth-child(odd) .title:before {
-  left: 0;
-}
-.news_list:nth-child(odd) .news-list .swiper-button-prev {
-  left: 62px;
-}
-.news_list:nth-child(odd) .news-list .swiper-button-next {
-  right: 62px;
-}
-.news_list:nth-child(even) .title {
-  flex-direction: row-reverse;
-}
 .news_list:nth-child(even) .title:before {
-  right: 0;
+  left: 0;
 }
 .news_list:nth-child(even) .news-list .swiper-button-prev {
   left: 62px;
@@ -313,20 +295,26 @@ section.content {
 .news_list:nth-child(even) .news-list .swiper-button-next {
   right: 62px;
 }
+.news_list:nth-child(odd) .title {
+  flex-direction: row-reverse;
+}
+.news_list:nth-child(odd) .title:before {
+  right: 0;
+}
+.news_list:nth-child(odd) .news-list .swiper-button-prev {
+  left: 62px;
+}
+.news_list:nth-child(odd) .news-list .swiper-button-next {
+  right: 62px;
+}
 .news_list:nth-child(3n+2) .title::before {
-  background-color: rgb(255, 98, 31);
-}
-.news_list:nth-child(3n+1) .title::before {
-  background-color: rgb(0, 70, 174);
-}
-.news_list:nth-child(3n) .title::before {
   background-color: rgb(252, 189, 31);
 }
-.news_list .custom-container {
-  width: 100%;
-  max-width: 1575px;
-  margin: 0 auto;
-  position: relative;
+.news_list:nth-child(3n+1) .title::before {
+  background-color: rgb(255, 98, 31);
+}
+.news_list:nth-child(3n) .title::before {
+  background-color: rgb(0, 70, 174);
 }
 .news_list .custom-container .title {
   display: flex;
@@ -434,10 +422,6 @@ section.content {
 }
 
 .topnews .custom-container {
-  width: 100%;
-  max-width: 1274px;
-  margin: 0 auto;
-  position: relative;
   padding-top: 50px;
 }
 .topnews .custom-container .newsSwiper .swiper-slide .link {
@@ -504,10 +488,6 @@ section.content {
 }
 
 .catalog .custom-container {
-  width: 100%;
-  max-width: 1274px;
-  margin: 0 auto;
-  position: relative;
   padding-top: 150px;
   padding-bottom: 200px;
 }
@@ -596,12 +576,6 @@ section.content {
 
 .article {
   padding-bottom: 200px;
-}
-.article .custom-container {
-  width: 100%;
-  max-width: 1056px;
-  position: relative;
-  margin: auto;
 }
 .article .custom-container .section-title {
   font-family: "Noto Serif TC", "serif";
@@ -701,12 +675,6 @@ section.content {
 }
 .stake-cards .predict {
   padding-bottom: 50px;
-}
-.stake-cards .predict .custom-container {
-  width: 100%;
-  max-width: 1056px;
-  position: relative;
-  margin: auto;
 }
 .stake-cards .predict .custom-container .top {
   display: flex;
@@ -915,12 +883,6 @@ section.content {
 .stake {
   padding-bottom: 100px;
 }
-.stake .custom-container {
-  width: 100%;
-  max-width: 1056px;
-  position: relative;
-  margin: auto;
-}
 .stake .custom-container .top {
   padding-bottom: 30px;
 }
@@ -1046,11 +1008,6 @@ section.content {
 }
 
 .interests .custom-container {
-  width: 100%;
-  max-width: 1274px;
-  margin: 0 auto;
-  margin: auto;
-  position: relative;
   padding-top: 50px;
 }
 .interests .custom-container .section-title {
@@ -1205,12 +1162,6 @@ section.content {
 .related {
   padding-top: 70px;
   padding-bottom: 200px;
-}
-.related .custom-container {
-  width: 100%;
-  max-width: 1056px;
-  position: relative;
-  margin: auto;
 }
 .related .custom-container .section-title {
   font-family: "Noto Serif TC", "serif";

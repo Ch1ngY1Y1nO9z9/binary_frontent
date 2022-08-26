@@ -153,13 +153,55 @@
   border-left: 2px solid rgb(51, 120, 206);
   border-right: 2px solid rgb(51, 120, 206);
 }
-
-.custom-container {
+.board.contest-detail {
   width: 100%;
   max-width: 624px;
-  position: relative;
   margin: auto;
-  padding-bottom: 150px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(255, 255, 255);
+}
+.board.contest-detail .title {
+  font-weight: 400;
+}
+.board.contest-detail .datetime {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-top: 15px;
+  border-top: 2px solid rgb(51, 120, 206);
+  color: rgb(252, 189, 31);
+}
+.board.contest-detail .icons {
+  display: flex;
+}
+.board.contest-detail .icons .icon {
+  display: inline-block;
+  margin-left: 20px;
+}
+.board.contest-detail .icons .icon .color-card {
+  width: 10px;
+  height: 14px;
+}
+.board.contest-detail .icons .icon .color-card.yellow {
+  background: rgb(252, 189, 31);
+}
+.board.contest-detail .icons .icon .color-card.red {
+  background: rgb(235, 54, 52);
+}
+.board.contest-detail .teams {
+  border-top: 2px solid rgb(51, 120, 206);
+}
+.board.contest-detail .teams .team {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .result-msg {
@@ -506,6 +548,9 @@
   text-align: center;
   margin-top: 20px;
 }
+.form-card .submit-notice.warning {
+  color: rgb(235, 54, 52);
+}
 .form-card h2.title {
   color: rgb(0, 70, 174);
   font-family: "Noto Serif TC", "serif";
@@ -671,6 +716,9 @@
   display: inline-block;
   margin-left: auto;
 }
+.form-card .list .order-card {
+  padding-top: 30px;
+}
 .form-card .account-setting.list {
   max-width: initial;
 }
@@ -797,6 +845,35 @@
   display: block;
   width: 20px;
   height: 20px;
+}
+.form-card .order-cards.list .row {
+  border-bottom: 0;
+}
+.form-card .order-cards.list .order-card {
+  padding-top: 30px;
+  border-top: 2px solid rgb(136, 136, 136);
+}
+.form-card .order-cards.list .order-card .row {
+  border-bottom: 2px solid rgb(235, 235, 235);
+}
+.form-card .order-cards.list .order-card .row.header {
+  border-bottom: 0;
+}
+.form-card .order-cards.list .order-card .row.header + .row {
+  padding-top: 0;
+}
+.form-card .order-cards.list .order-card .row.header .col {
+  margin-bottom: 10px;
+}
+.form-card .order-cards.list .order-card .row.header .col .icon {
+  color: rgb(57, 57, 57);
+}
+.form-card .order-cards.list .order-card .row.header .col .delete-btn {
+  font-size: 18px;
+  color: rgb(136, 136, 136);
+}
+.form-card .order-cards.list .order-card .row:last-child {
+  border-bottom: 0;
 }
 
 .options {

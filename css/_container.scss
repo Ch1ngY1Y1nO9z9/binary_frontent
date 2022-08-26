@@ -6,10 +6,33 @@
 
     &.c-1620 {
         max-width: 1620px;
+
+        @media(max-width: 1297px) {
+            padding: 0 40px;
+            max-width: 1200px;
+        }
+
+        @media(max-width: 785px) {
+            padding: 0 29px;
+            max-width: 785px;
+        }
+
+        @media(max-width: 593px) {
+            padding: 0 15px;
+            max-width: 593px;
+        }
     }
     
     &.c-1575 {
         max-width: 1575px;
+
+        @media(max-width: 785px) {
+            height: 467px;
+        }
+
+        @media(max-width: 593px) {
+            height: auto;
+        }
     }
     
     &.c-1470 {

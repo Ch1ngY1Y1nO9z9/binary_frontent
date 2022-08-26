@@ -29,14 +29,6 @@
   border-color: rgb(252, 189, 31);
 }
 
-.custom-container {
-  width: 100%;
-  max-width: 624px;
-  position: relative;
-  margin: auto;
-  padding-bottom: 150px;
-}
-
 .result-msg {
   display: flex;
   justify-content: center;
@@ -381,6 +373,9 @@
   text-align: center;
   margin-top: 20px;
 }
+.form-card .submit-notice.warning {
+  color: rgb(235, 54, 52);
+}
 .form-card h2.title {
   color: rgb(0, 70, 174);
   font-family: "Noto Serif TC", "serif";
@@ -546,6 +541,9 @@
   display: inline-block;
   margin-left: auto;
 }
+.form-card .list .order-card {
+  padding-top: 30px;
+}
 .form-card .account-setting.list {
   max-width: initial;
 }
@@ -672,4 +670,33 @@
   display: block;
   width: 20px;
   height: 20px;
+}
+.form-card .order-cards.list .row {
+  border-bottom: 0;
+}
+.form-card .order-cards.list .order-card {
+  padding-top: 30px;
+  border-top: 2px solid rgb(136, 136, 136);
+}
+.form-card .order-cards.list .order-card .row {
+  border-bottom: 2px solid rgb(235, 235, 235);
+}
+.form-card .order-cards.list .order-card .row.header {
+  border-bottom: 0;
+}
+.form-card .order-cards.list .order-card .row.header + .row {
+  padding-top: 0;
+}
+.form-card .order-cards.list .order-card .row.header .col {
+  margin-bottom: 10px;
+}
+.form-card .order-cards.list .order-card .row.header .col .icon {
+  color: rgb(57, 57, 57);
+}
+.form-card .order-cards.list .order-card .row.header .col .delete-btn {
+  font-size: 18px;
+  color: rgb(136, 136, 136);
+}
+.form-card .order-cards.list .order-card .row:last-child {
+  border-bottom: 0;
 }/*# sourceMappingURL=account.css.map */

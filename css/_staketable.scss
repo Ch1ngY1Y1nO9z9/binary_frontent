@@ -1,11 +1,10 @@
 .stake-list {
     display: flex;
-    position: relative;
 
     .list {
         flex: 1 1 0%;
 
-        .tournament {
+        .tournament,.geographical {
             margin-top: 40px;
 
             &:first-child {
@@ -22,6 +21,7 @@
 
             .catalog-btns {
                 padding: 20px;
+                padding-bottom: 10px;
 
                 .btn {
                     display: inline-block;
@@ -46,8 +46,43 @@
             }
 
             .detail {
+                .locations {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 9px 15px;
+                    margin-top: 15px;
+
+                    @include Sans(400, 18px, 18px, .05em);
+                    color: $gray-5;
+                    border-bottom: 2px solid $gray-2;
+
+                    &:first-child {
+                        border-top: 2px solid $gray-2;
+                    }
+
+                    &:hover {
+                        background: $gray-1;
+
+                        .name {
+                            color: $orange-5;
+                        }
+                    }
+
+                    .number {
+                        display: inline-block;
+                        padding: 8px 12px;
+                        border-radius: 5px;
+                        background: $gray-2;
+                    }
+                }
+
                 table.trading-table {
                     width: 100%;
+
+                    &:first-child {
+                        margin-top: 10px;
+                    }
 
                     thead {
                         @include Sans(700, 14px, 14px, .05em);
@@ -101,6 +136,7 @@
 
                             td {
                                 padding: 10px 2.5px;
+                                position: relative;
 
                                 &:last-child {
                                     padding-right: 13px;
@@ -129,29 +165,66 @@
                             color: $gray-5;
 
                             &.auto-width {
-                                width: auto;
+                                width: 100%;
                             }
 
-                            &.orange-bg {
+                            &.selected {
                                 background: $orange-5;
                                 color: $white-1;
                                 border-color: $orange-5;
                             }
 
-                            &.gray-bg {
+                            &.disabled {
                                 background: $gray-1;
+                                color: $gray-3;
+                                font-size: 30px;
+                                cursor: not-allowed;
+                            }
+
+                            &.function-button {
+                                background: $gray-1;
+
+                                &:hover {
+                                    @include hover-orange;
+                                }
+
+                                &.active+.expandList {
+                                    display:block;
+                                }
                             }
                         }
 
-                        .icon {
-                            color: $gray-3;
-                            font-size: 30px;
+                        .expandList {
+                            display: none;
+                            position: absolute;
+                            right: calc(100% - 3px);
+                            top: calc(-100% + 10px);
+                            z-index: 3;
+                            padding: 10px 5px;
+                            border-radius: 5px;
+                            background: $white-1;
+                            @include normal-shadow;
+
+                            .options-btns {
+                                display: flex;
+                                margin-top: 10px;
+                                
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+
+                                .data {
+                                    &:first-child {
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
                         }
 
                         .data-outline {
                             border: 1px solid $gray-4;
 
-                            &.orange-outline {
+                            &:hover {
                                 border-color: $orange-5;
                             }
                         }
@@ -168,6 +241,184 @@
                 }
             }
         }
+
+        .contest-stake {
+
+            .detail-catalog {
+                .btn {
+                    @include btn-options;
+                    padding: 13px 30px;
+                    margin-bottom: 0;
+                    margin-left: 15px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:hover,&.active {
+                        @include hover-orange;
+                    }
+                }
+            }
+
+            .precaution {
+                @include Sans(400, 14px, 14px, .05em);
+                color: $red-1;
+                padding-top: 15px;
+            }
+
+            .detail {
+                padding-top: 15px;
+
+                .contest-type {
+                
+                    &:nth-child(odd) {
+                        .header {
+                            background: $yellow-5;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        .header {
+                            background: $yellow-3;
+                        }
+                    }
+
+                    .header {
+                        display: flex;
+                        justify-content: space-between;
+
+                        @include Sans(700, 14px, 14px, .05em);
+                        color: $gray-5;
+
+                        padding: 13px 15px;
+                        border-radius: 5px;
+
+                        .name {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .stake-detail {
+                        padding: 20px 15px 30px;
+
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+
+                            color: $gray-5;
+
+                            .total {
+                                @include Sans(700, 18px, 18px, .05em);
+                            }
+
+                            .viewer {
+                                display: flex;
+                                align-items: center;
+                                @include Sans(400, 14px, 14px, .05em);
+
+                                span.icon {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .teams-name {
+                            display: flex;
+
+                            @include Sans(700, 14px, 14px, .05em);
+                            color: $gray-5;
+
+                            div {
+                                flex: 1 1 0%;
+                                padding: 13px 0;
+                                text-align: center;
+                                margin-left: 15px;
+                                background: $gray-2;
+                                border-radius: 5px;
+
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+
+                        .row {
+                            display: flex;
+                            border-bottom: 2px solid $gray-2;
+                            padding: 20px 0;
+
+                            &:last-child {
+                                border-bottom: 0;
+                                padding-bottom: 0;
+                            }
+
+                            .col {
+                                flex: 1 1 0%;
+                                padding-left: 15px;
+
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                        
+                        .buttons {
+                            display: flex;
+
+                            .stake-btn {
+                                flex: 1 1 0%;
+                                margin-left: 10px;
+
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+
+                                button {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 15px 18px;
+                                    margin-bottom: 5px;
+
+                                    border: 1px solid $gray-4;
+                                    border-radius: 5px;
+
+                                    @include Sans(400, 14px, 14px, .05em);
+                                    color: $gray-5;
+
+                                    .number {
+                                        color: $orange-5;
+                                    }
+
+                                    &.selected,&:hover {
+                                        @include hover-orange;
+
+                                        .number {
+                                            color: $white-1;
+                                        }
+                                    }
+                                }
+
+                                .m {
+                                    @include Sans(400, 14px, 14px, .05em);
+
+                                    span.icon {
+                                        display: inline-block;
+                                        margin-right: 10px;
+
+                                        font-size: 14px;
+                                        color: $gray-4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .sidebar {
@@ -178,6 +429,8 @@
         background: $blue-5;
         padding: 0 5px;
         border-radius: 5px;
+        position: sticky;
+        top: 5px;
 
         .header {
             display: flex;
@@ -214,7 +467,7 @@
 
         .stake-cards {
             overflow: auto;
-            max-height: 747px;
+            max-height: 721px;
 
             .stake-card {
                 margin-top: 5px;
@@ -340,6 +593,31 @@
             padding: 13px 0;
             margin: 0 -5px;
         }
+    }
+}
+
+.warning-board {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 0 33px;
+
+    margin: auto;
+    margin-top: 70px;
+
+    background: $gray-1;
+    text-align: center;
+    border-radius: 20px;
+
+    .icon {
+        font-size: 30px;
+        color: $red-1;
+
+        margin-bottom: 21px;
+    }
+
+    p {
+        @include Sans(400, 14px, 14px, .05em);
+        color: $gray-5;
     }
 }
 

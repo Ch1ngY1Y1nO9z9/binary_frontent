@@ -1,11 +1,6 @@
 .recommend {
     .custom-container {
-        width: 100%;
-        max-width: 1575px;
-        margin: 0 auto;
-
-        position: relative;
-
+        // max-width: 1575px;
 
         .recommendSwiper {
             width: 100%;
@@ -309,7 +304,7 @@
     padding-right: 78px;
     padding-bottom: 100px;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         .title {
             &:before {
                 left: 0;
@@ -327,7 +322,7 @@
         }
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
         .title {
             flex-direction: row-reverse;
 
@@ -350,28 +345,24 @@
 
     &:nth-child(3n+2) {
         .title::before {
-            background-color: $orange-5;
+            background-color: $yellow-5;
         }
     }
 
     &:nth-child(3n+1) {
         .title::before {
-            background-color: $blue-5;
+            background-color: $orange-5;
         }
     }
 
     &:nth-child(3n) {
         .title::before {
-            background-color: $yellow-5;
+            background-color: $blue-5;
         }
     }
 
     .custom-container {
-        width: 100%;
-        max-width: 1575px;
-        margin: 0 auto;
-
-        position: relative;
+        // max-width: 1575px;
 
         .title {
             display: flex;

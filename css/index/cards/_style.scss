@@ -57,12 +57,10 @@ section.cards {
     }
 
     .custom-container {
-        width: 100%;
-        // padding-top: 220px;
-        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0;
 
         
         @media (max-width: 1297px) {

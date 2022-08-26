@@ -2,6 +2,68 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css");
 @import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+.custom-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 150px;
+}
+.custom-container.c-1620 {
+  max-width: 1620px;
+}
+@media (max-width: 1297px) {
+  .custom-container.c-1620 {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
+}
+@media (max-width: 785px) {
+  .custom-container.c-1620 {
+    padding: 0 29px;
+    max-width: 785px;
+  }
+}
+@media (max-width: 593px) {
+  .custom-container.c-1620 {
+    padding: 0 15px;
+    max-width: 593px;
+  }
+}
+.custom-container.c-1575 {
+  max-width: 1575px;
+}
+@media (max-width: 785px) {
+  .custom-container.c-1575 {
+    height: 467px;
+  }
+}
+@media (max-width: 593px) {
+  .custom-container.c-1575 {
+    height: auto;
+  }
+}
+.custom-container.c-1470 {
+  max-width: 1470px;
+}
+.custom-container.c-1274 {
+  max-width: 1274px;
+}
+.custom-container.c-1272 {
+  max-width: 1272px;
+}
+.custom-container.c-1056 {
+  max-width: 1056px;
+}
+.custom-container.c-954 {
+  max-width: 954px;
+}
+.custom-container.c-624 {
+  max-width: 624px;
+}
+.custom-container.c-450 {
+  max-width: 450px;
+}
+
 header {
   background: rgb(255, 255, 255);
   padding: 24px 0;
@@ -30,28 +92,7 @@ header .btt:hover {
   background: rgb(252, 189, 31);
 }
 header .custom-container {
-  width: 100%;
-  padding: 0 150px;
-  max-width: 1620px;
-  margin: auto;
-}
-@media (max-width: 1297px) {
-  header .custom-container {
-    padding: 0 40px;
-    max-width: 1200px;
-  }
-}
-@media (max-width: 785px) {
-  header .custom-container {
-    padding: 0 29px;
-    max-width: 785px;
-  }
-}
-@media (max-width: 593px) {
-  header .custom-container {
-    padding: 0 15px;
-    max-width: 593px;
-  }
+  padding-bottom: 0;
 }
 header .custom-container .header-l .logo {
   display: flex;
@@ -528,8 +569,8 @@ header .custom-container .header-r .burger-menu .menu-modal .modal-layout .link-
   }
 }
 .banner .custom-container {
-  width: 100%;
   height: 100%;
+  padding-bottom: 0;
   position: relative;
   z-index: 3;
 }
@@ -1478,10 +1519,8 @@ section.top-news {
   }
 }
 section.top-news .custom-container {
-  width: 100%;
-  max-width: 1575px;
   height: 600px;
-  position: relative;
+  padding-bottom: 0;
 }
 @media (max-width: 785px) {
   section.top-news .custom-container {
@@ -1799,8 +1838,6 @@ section.news-list .news-background {
   }
 }
 section.news-list .custom-container {
-  width: 100%;
-  position: relative;
   z-index: 2;
 }
 section.news-list .custom-container .swiper-wrapper {
@@ -2093,10 +2130,6 @@ section.follow .section-title::after {
 section.follow .custom-container {
   display: flex;
   flex-direction: row-reverse;
-  width: 100%;
-  max-width: 1470px;
-  margin: 0 auto;
-  position: relative;
   z-index: 1;
 }
 @media (max-width: 1180px) {
@@ -2602,11 +2635,10 @@ section.cards .flower-middle-right {
   }
 }
 section.cards .custom-container {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0;
 }
 @media (max-width: 1297px) {
   section.cards .custom-container {

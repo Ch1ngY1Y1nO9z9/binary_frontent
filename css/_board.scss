@@ -154,4 +154,64 @@
             border-right: 2px solid $blue-4;
         }
     }
+
+    &.contest-detail {
+        width: 100%;
+        max-width: 624px;
+        margin: auto;
+        margin-bottom: 50px;
+
+        padding: 20px;
+        border-radius: 20px;
+
+        @include Sans(700, 14px, 14px, .05em);
+        color: $white-1;
+
+        .title {
+            font-weight: 400;
+        }
+
+        .datetime {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 15px 0;
+            margin-top: 15px;
+            border-top: 2px solid $blue-4;
+            color: $yellow-5;
+        }
+
+        .icons {
+            display: flex;
+
+            .icon {
+                display: inline-block;
+                margin-left: 20px;
+
+                .color-card {
+                    width: 10px;
+                    height: 14px;
+                
+                    &.yellow {
+                        background: $yellow-5;
+                    }
+                    
+                    &.red {
+                        background: $red-1;
+                    }
+                }
+
+            }
+        }
+
+        .teams {
+            border-top: 2px solid $blue-4;
+            
+            .team {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 15px;
+            }
+        }
+    }
 }

@@ -28,10 +28,9 @@ section.top-news {
     }
 
     .custom-container {
-        width: 100%;
-        max-width: 1575px;
+        // max-width: 1575px;
         height: 600px;
-        position: relative;
+        padding-bottom: 0;
 
         @media(max-width: 785px) {
             height: 467px;

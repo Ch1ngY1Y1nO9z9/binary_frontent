@@ -23,11 +23,6 @@ section.content {
   position: relative;
   z-index: 3;
 }
-section.content .custom-container {
-  width: 100%;
-  max-width: 624px;
-  margin: auto;
-}
 section.content .custom-container .form-card {
   position: relative;
   z-index: 2;

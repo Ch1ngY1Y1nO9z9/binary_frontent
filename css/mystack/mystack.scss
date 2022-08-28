@@ -8,10 +8,10 @@
 section.content {
     .track {
         .custom-container {
-            // max-width: 1056px;
             padding-bottom: 200px;
         }
     }
 }
 
+@import "../cardLeftLayout";
 @import './edit';

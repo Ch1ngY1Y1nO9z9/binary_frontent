@@ -1,0 +1,22 @@
+@import '../_var';
+
+section.content {
+    width: 100%;
+    box-sizing: content-box;
+
+    background-image: url('./../images/swiper_texture.jpg');
+
+    position: relative;
+}
+
+@import "../cardLeftLayout";
+@import "./resultcards";
+@import '../_table';
+@import '../_options';
+@import "../_modal";
+@import "../_form";
+
+@import "./_index";
+@import "./_list";
+@import "./_content";
+@import "./_setting";

@@ -147,6 +147,29 @@ const chat_modal = (
     </div>`
 )
 
+const follow_modal = (
+    `<div class="modal">
+        <div class="mask">
+            <div class="follow-modal">
+                <div class="close-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="footer">
+                    <div class="links">
+                        <button type="button" class="link">
+                            每筆<br/>
+                            固定金額
+                        </button>
+                        <button type="button" class="link">
+                            每筆<br/>
+                            比例金額
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
+)
 
 // 基礎確認框modal
 btns.forEach(btn => {
@@ -155,7 +178,9 @@ btns.forEach(btn => {
             // 插入modal
             if(btn.classList.contains('comment')){
                 content_section.insertAdjacentHTML('afterEnd', chat_modal)
-            }else{
+            }else if (btn.classList.contains('follow')){
+                content_section.insertAdjacentHTML('afterEnd', follow_modal)
+            }else {
                 content_section.insertAdjacentHTML('afterEnd', confirm_modal)
             }
             

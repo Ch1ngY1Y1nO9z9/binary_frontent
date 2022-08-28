@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/mystack/mystack.css">
+    <link rel="stylesheet" href="../../css/results/results.css">
 </head>
 
 <body class="relative">
@@ -215,9 +215,9 @@
     <h1 class="pagetitle cp">
         <div class="title">
             <div class="subtitle">
-                我的注單
+                會員戰績風雲榜
             </div>
-            會員跟單列表
+            投注明細
         </div>
         <a href="#" class="return-btn">
             返回會員中心
@@ -225,9 +225,8 @@
     </h1>
 
     <section class="content">
-        <div class="track">
+        <div class="result">
             <div class="custom-container c-1056">
-
                 <div class="card-left-layout">
                     <div class="account-card">
                         <div class="account">
@@ -260,40 +259,264 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <form class="form-card" action="">
-                        <div class="input-row">
-                            <label for="chain" class="input-label">跟單類型</label>
-                            <div class="input-col">
-                                <select name="chain" id="chain" class="input-control">
-                                    <option value="">每筆固定金額</option>
-                                </select>
-                                <div class="arrow">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </div>
-                            </div>
-                            <span class="msg"></span>
-                        </div>
-                        <div class="input-row">
-                            <label for="point" class="input-label">金額(點)</label>
-                            <div class="input-col">
-                                <input id="point" type="number" name="point" class="input-control" placeholder="請輸入金額(點)">
-                            </div>
-                            <span class="msg"></span>
-                        </div>
-                        <div class="input-row">
-                            <label for="password" class="input-label">錢包密碼</label>
-                            <div class="input-col">
-                                <input id="password" type="password" name="password" class="input-control" placeholder="請輸入錢包密碼">
-                            </div>
-                            <span class="msg"></span>
-                        </div>
 
-                        <div class="links">
-                            <a href="#" class="link">取消</a>
-                            <button type="submit" class="link">修改</button>
+                        <button type="button" data-event="modal" class="btn follow">
+                            跟單
+                        </button>
+                    </div>
+                    <div class="table">
+                        <table class="trading-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        編號
+                                    </th>
+                                    <th>
+                                        下注時間
+                                    </th>
+                                    <th>
+                                        遊戲名稱
+                                    </th>
+                                    <th>
+                                        下注內容
+                                    </th>
+                                    <th>
+                                        下注金額(點)
+                                    </th>
+                                    <th>
+                                        結果
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        一二三四五六七八...
+                                    </td>
+                                    <td>
+                                        一二三四五六七八九十一二三四五...
+                                    </td>
+                                    <td>
+                                        999,999,999
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        20
+                                    </td>
+                                    <td class="status-g">
+                                        輸
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        5
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        999,999,999
+                                    </td>
+                                    <td class="status-g">
+                                        輸
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        7
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        500
+                                    </td>
+                                    <td class="status-g">
+                                        輸
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        9
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-g">
+                                        輸
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        10
+                                    </td>
+                                    <td>
+                                        2022/04/25 <br />
+                                        12:04:00
+                                    </td>
+                                    <td>
+                                        苗栗縣長參選人預測
+                                    </td>
+                                    <td>
+                                        您認為徐志榮會參選2022苗栗縣長...
+                                    </td>
+                                    <td>
+                                        6,000
+                                    </td>
+                                    <td class="status-r">
+                                        贏
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <button class="prev-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <div class="pages">
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">...</a>
+                                <a href="#">13</a>
+                            </div>
+                            <button class="next-arrow">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,6 +565,10 @@
 
     <!-- 選單js -->
     <script src="../../js/header.js?v=7/27"></script>
+
+    <!-- modal js -->
+    <script src="../../js/modal.js?v=7/27"></script>
+
 
 </body>
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/mystack/mystack.css">
+    <link rel="stylesheet" href="../../css/results/results.css">
 </head>
 
 <body class="relative">
@@ -215,9 +215,9 @@
     <h1 class="pagetitle cp">
         <div class="title">
             <div class="subtitle">
-                我的注單
+                會員戰績風雲榜
             </div>
-            會員跟單列表
+            投注明細
         </div>
         <a href="#" class="return-btn">
             返回會員中心
@@ -225,9 +225,8 @@
     </h1>
 
     <section class="content">
-        <div class="track">
+        <div class="result">
             <div class="custom-container c-1056">
-
                 <div class="card-left-layout">
                     <div class="account-card">
                         <div class="account">
@@ -261,12 +260,13 @@
                             </div>
                         </div>
                     </div>
-                    <form class="form-card" action="">
+                    <!-- <form class="form-card" action="">
                         <div class="input-row">
                             <label for="chain" class="input-label">跟單類型</label>
                             <div class="input-col">
                                 <select name="chain" id="chain" class="input-control">
                                     <option value="">每筆固定金額</option>
+                                    <option value="">每筆比例金額</option>
                                 </select>
                                 <div class="arrow">
                                     <i class="fa-solid fa-chevron-down"></i>
@@ -282,6 +282,22 @@
                             <span class="msg"></span>
                         </div>
                         <div class="input-row">
+                            <label for="chain" class="input-label">跟單場數</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="" selected>5</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
                             <label for="password" class="input-label">錢包密碼</label>
                             <div class="input-col">
                                 <input id="password" type="password" name="password" class="input-control" placeholder="請輸入錢包密碼">
@@ -291,7 +307,65 @@
 
                         <div class="links">
                             <a href="#" class="link">取消</a>
-                            <button type="submit" class="link">修改</button>
+                            <button type="submit" class="link">確定跟單</button>
+                        </div>
+                    </form> -->
+
+                    <form class="form-card" action="">
+                        <div class="input-row">
+                            <label for="chain" class="input-label">跟單類型</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">每筆固定金額</option>
+                                    <option value="" selected>每筆比例金額</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></s pan>
+                        </div>
+                        <div class="input-row">
+                            <label for="point" class="input-label">每筆比例</label>
+                            <div class="input-col">
+                                <input id="point" type="number" name="point" class="input-control" placeholder="請輸入每筆比例" value="50%">
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="point" class="input-label">單筆最高金額上限(點)</label>
+                            <div class="input-col">
+                                <input id="point" type="number" name="point" class="input-control" placeholder="請輸入單筆最高金額上限(點)" value="100,000">
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="chain" class="input-label">跟單場數</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="" selected>5</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="password" class="input-label">錢包密碼</label>
+                            <div class="input-col">
+                                <input id="password" type="password" name="password" class="input-control" placeholder="請輸入錢包密碼">
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="links">
+                            <a href="#" class="link">取消</a>
+                            <button type="submit" class="link">確定跟單</button>
                         </div>
                     </form>
                 </div>

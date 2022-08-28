@@ -501,10 +501,59 @@
   color: rgb(255, 255, 255);
   border-color: rgb(255, 98, 31);
 }
+.options .btn.btn-y:hover, .options .btn.btn-y.active {
+  background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
+  color: rgb(57, 57, 57);
+}
 .options .btn.btn-b:hover, .options .btn.btn-b.active {
   background: rgb(0, 70, 174);
   color: rgb(255, 255, 255);
   border-color: rgb(0, 70, 174);
+}
+.options .sort {
+  width: 200px;
+  position: relative;
+  margin-left: 15px;
+}
+.options .sort select.input-control {
+  width: 100%;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  background: transparent;
+  padding: 12px 10px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(57, 57, 57);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.options .sort select.input-control + .arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: -1;
+}
+.options .sort select.input-control::-moz-placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control:-ms-input-placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control::placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control:disabled {
+  background: rgb(235, 235, 235);
+  color: rgb(57, 57, 57);
+}
+.options .sort select.input-control option {
+  padding: 12px 10px;
 }
 
 .filter {
@@ -1378,13 +1427,10 @@ section.content .track .custom-container {
   padding-bottom: 200px;
 }
 
-section.content .track .custom-container {
-  padding-bottom: 200px;
-}
-section.content .track .custom-container .edit {
+.card-left-layout {
   display: flex;
 }
-section.content .track .custom-container .edit .account-card {
+.card-left-layout .account-card {
   max-width: 300px;
   background: rgb(255, 255, 255);
   width: 100%;
@@ -1393,30 +1439,31 @@ section.content .track .custom-container .edit .account-card {
   margin-right: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 25px;
+  margin-top: 10px;
 }
-section.content .track .custom-container .edit .account-card .account {
+.card-left-layout .account-card .account {
   display: flex;
   align-items: center;
   position: relative;
   bottom: 35px;
   margin-bottom: -35px;
 }
-section.content .track .custom-container .edit .account-card .account .avatar {
+.card-left-layout .account-card .account .avatar {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   background: rgb(255, 178, 120);
 }
-section.content .track .custom-container .edit .account-card .account .avatar img {
+.card-left-layout .account-card .account .avatar img {
   width: 100%;
   height: 100%;
 }
-section.content .track .custom-container .edit .account-card .account .account-detail {
+.card-left-layout .account-card .account .account-detail {
   padding: 0;
   padding-left: 15px;
   flex: 1 1 0%;
 }
-section.content .track .custom-container .edit .account-card .account .account-detail .name {
+.card-left-layout .account-card .account .account-detail .name {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
@@ -1424,16 +1471,16 @@ section.content .track .custom-container .edit .account-card .account .account-d
   letter-spacing: 1;
   color: rgb(57, 57, 57);
 }
-section.content .track .custom-container .edit .account-card .rate {
+.card-left-layout .account-card .rate {
   display: flex;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate {
+.card-left-layout .account-card .rate .total-rate {
   flex: 1 1 0%;
   color: rgb(57, 57, 57);
   text-align: center;
   position: relative;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate:first-child::after {
+.card-left-layout .account-card .rate .total-rate:first-child::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -1441,21 +1488,21 @@ section.content .track .custom-container .edit .account-card .rate .total-rate:f
   right: 0;
   top: 0;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate .wins {
+.card-left-layout .account-card .rate .total-rate .wins {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 900;
   font-size: 48px;
   line-height: 117.52%;
   letter-spacing: 1;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate .per {
+.card-left-layout .account-card .rate .total-rate .per {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 900;
   font-size: 18px;
   line-height: 21.15px;
   letter-spacing: 1;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate .total {
+.card-left-layout .account-card .rate .total-rate .total {
   width: 100%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
@@ -1464,7 +1511,7 @@ section.content .track .custom-container .edit .account-card .rate .total-rate .
   letter-spacing: 1;
   color: #A4A4A4;
 }
-section.content .track .custom-container .edit .account-card .rate .total-rate .title {
+.card-left-layout .account-card .rate .total-rate .title {
   width: 100%;
   padding-top: 16px;
   font-family: "Noto Sans TC", "sans-serif";
@@ -1474,10 +1521,25 @@ section.content .track .custom-container .edit .account-card .rate .total-rate .
   letter-spacing: 0.1em;
   color: rgb(57, 57, 57);
 }
-section.content .track .custom-container .edit .account-card .rate .border {
+.card-left-layout .account-card .rate .border {
   height: 100%;
   border-left: 1px solid #E9E9E9;
   padding: 0 30px;
+}
+.card-left-layout .account-card .btn {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+.card-left-layout .account-card .btn.follow {
+  background: rgb(0, 70, 174);
+  color: rgb(255, 255, 255);
+}
+
+section.content .track .custom-container {
+  padding-bottom: 200px;
 }
 section.content .track .custom-container .form-edit {
   flex: 1 1 0%;

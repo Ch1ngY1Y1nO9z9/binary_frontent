@@ -117,6 +117,16 @@ $hr-gray: #EBEBEB;
     }
 }
 
+@mixin btn-blue {
+    background: $blue-5;
+    color: $white-1;
+    border: 1px solid $blue-5;
+
+    &:hover {
+        @include hover-orange
+    }
+}
+
 @mixin btn-orange-outline {
     background: $white-1;
     color: $orange-5;

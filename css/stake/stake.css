@@ -25,10 +25,59 @@
   color: rgb(255, 255, 255);
   border-color: rgb(255, 98, 31);
 }
+.options .btn.btn-y:hover, .options .btn.btn-y.active {
+  background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
+  color: rgb(57, 57, 57);
+}
 .options .btn.btn-b:hover, .options .btn.btn-b.active {
   background: rgb(0, 70, 174);
   color: rgb(255, 255, 255);
   border-color: rgb(0, 70, 174);
+}
+.options .sort {
+  width: 200px;
+  position: relative;
+  margin-left: 15px;
+}
+.options .sort select.input-control {
+  width: 100%;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  background: transparent;
+  padding: 12px 10px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(57, 57, 57);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.options .sort select.input-control + .arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: -1;
+}
+.options .sort select.input-control::-moz-placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control:-ms-input-placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control::placeholder {
+  color: rgb(195, 195, 195);
+}
+.options .sort select.input-control:disabled {
+  background: rgb(235, 235, 235);
+  color: rgb(57, 57, 57);
+}
+.options .sort select.input-control option {
+  padding: 12px 10px;
 }
 
 .filter {

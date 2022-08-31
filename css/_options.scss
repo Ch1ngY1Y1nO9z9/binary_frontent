@@ -1,3 +1,10 @@
+h3.subtitle {
+    @include Serif(18px, 18px, .05em);
+    color: $gray-5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .options {
     display: flex;
     justify-content: center;

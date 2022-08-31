@@ -876,6 +876,17 @@
   border-bottom: 0;
 }
 
+h3.subtitle {
+  font-family: "Noto Serif TC", "serif";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .options {
   display: flex;
   justify-content: center;
@@ -1298,8 +1309,8 @@
   background: rgb(0, 70, 174);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 70, 174);
-  line-height: 0.1em;
-  padding: 8px 20px;
+  letter-spacing: 0.1em;
+  width: 70px;
   margin-left: 15px;
 }
 .trading-table th .btn.disabled, .trading-table td .btn.disabled {
@@ -1430,28 +1441,28 @@
   display: flex;
   justify-content: center;
 }
-.tab .tab-options .btn {
-  background: rgb(255, 255, 255);
-  color: rgb(136, 136, 136);
-  border: 1px solid rgb(136, 136, 136);
+.tab .tab-options .btn-options {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(57, 57, 57);
+  background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 7px 28px;
+  padding: 13px 22px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 13px 30px;
   margin-left: 15px;
 }
-.tab .tab-options .btn:hover {
+.tab .tab-options .btn-options:first-child {
+  margin-left: 0;
+}
+.tab .tab-options .btn-options:hover, .tab .tab-options .btn-options.active {
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border-color: rgb(255, 98, 31);
-}
-.tab .tab-options .btn.active {
-  background: rgb(255, 98, 31);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 98, 31);
-}
-.tab .tab-options .btn.active:hover {
-  background: rgb(252, 189, 31);
-  color: rgb(255, 255, 255);
-  border-color: rgb(252, 189, 31);
 }
 
 .friends-cards {

@@ -5,13 +5,27 @@
         display: flex;
         justify-content: center;
 
-        .btn {
-            @include btn-gray;
-            padding: 7px 28px;
+        // .btn {
+        //     @include btn-gray;
+        //     padding: 7px 28px;
+        //     margin-left: 15px;
+            
+        //     &:hover,&.active {
+        //         @include hover-orange;
+        //     }
+        // }
+
+        .btn-options {
+            @include btn-options;
+            padding: 13px 30px;
             margin-left: 15px;
 
-            &.active {
-                @include btn-orange;
+            &:first-child{
+                margin-left: 0;
+            }
+
+            &:hover,&.active {
+                @include hover-orange;
             }
         }
     }

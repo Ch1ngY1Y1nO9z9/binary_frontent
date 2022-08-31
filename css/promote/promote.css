@@ -349,8 +349,8 @@
   background: rgb(0, 70, 174);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 70, 174);
-  line-height: 0.1em;
-  padding: 8px 20px;
+  letter-spacing: 0.1em;
+  width: 70px;
   margin-left: 15px;
 }
 .trading-table th .btn.disabled, .trading-table td .btn.disabled {
@@ -472,6 +472,17 @@
 .pagination .next-arrow {
   position: relative;
   left: 21px;
+}
+
+h3.subtitle {
+  font-family: "Noto Serif TC", "serif";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .options {

@@ -1,8 +1,6 @@
 section.content {
   width: 100%;
   box-sizing: content-box;
-  background-image: url("./../images/swiper_texture.jpg");
-  position: relative;
 }
 
 .recommend .custom-container .recommendSwiper {
@@ -282,41 +280,41 @@ section.content {
   color: rgb(255, 98, 31);
 }
 
-.news_list {
+.swiper-section {
   padding-right: 78px;
   padding-bottom: 100px;
 }
-.news_list:nth-child(even) .title:before {
+.swiper-section:nth-child(even) .title:before {
   left: 0;
 }
-.news_list:nth-child(even) .news-list .swiper-button-prev {
+.swiper-section:nth-child(even) .news-swiper .swiper-button-prev {
   left: 62px;
 }
-.news_list:nth-child(even) .news-list .swiper-button-next {
+.swiper-section:nth-child(even) .news-swiper .swiper-button-next {
   right: 62px;
 }
-.news_list:nth-child(odd) .title {
+.swiper-section:nth-child(odd) .title {
   flex-direction: row-reverse;
 }
-.news_list:nth-child(odd) .title:before {
+.swiper-section:nth-child(odd) .title:before {
   right: 0;
 }
-.news_list:nth-child(odd) .news-list .swiper-button-prev {
+.swiper-section:nth-child(odd) .news-swiper .swiper-button-prev {
   left: 62px;
 }
-.news_list:nth-child(odd) .news-list .swiper-button-next {
+.swiper-section:nth-child(odd) .news-swiper .swiper-button-next {
   right: 62px;
 }
-.news_list:nth-child(3n+2) .title::before {
+.swiper-section:nth-child(3n+2) .title::before {
   background-color: rgb(252, 189, 31);
 }
-.news_list:nth-child(3n+1) .title::before {
+.swiper-section:nth-child(3n+1) .title::before {
   background-color: rgb(255, 98, 31);
 }
-.news_list:nth-child(3n) .title::before {
+.swiper-section:nth-child(3n) .title::before {
   background-color: rgb(0, 70, 174);
 }
-.news_list .custom-container .title {
+.swiper-section .custom-container .title {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -328,18 +326,18 @@ section.content {
   letter-spacing: 0.2;
   color: rgb(255, 255, 255);
 }
-.news_list .custom-container .title::before {
+.swiper-section .custom-container .title::before {
   content: "";
   width: 750px;
   height: 300px;
   position: absolute;
   top: 0;
 }
-.news_list .custom-container .title span {
+.swiper-section .custom-container .title span {
   position: relative;
   z-index: 2;
 }
-.news_list .custom-container .title .more {
+.swiper-section .custom-container .title .more {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -350,37 +348,37 @@ section.content {
   background: rgb(255, 255, 255);
   padding: 12px 45px 14px;
 }
-.news_list .custom-container .title .more:hover {
+.swiper-section .custom-container .title .more:hover {
   color: rgb(255, 255, 255);
   background: rgb(255, 98, 31);
 }
-.news_list .custom-container .news-list {
+.swiper-section .custom-container .news-swiper {
   position: relative;
   padding: 0 126px;
 }
-.news_list .custom-container .news-list .newsSwiper {
+.swiper-section .custom-container .news-swiper .newsSwiper {
   padding: 60px 0;
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link {
   width: 100%;
   height: 100%;
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link:hover .description .content {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link:hover .description .content {
   color: rgb(255, 98, 31);
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link .pic {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link .pic {
   width: 100%;
   height: 260px;
   background: rgb(136, 136, 136);
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link .description {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link .description {
   padding: 20px;
   background: rgb(255, 255, 255);
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link .description .tag {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link .description .tag {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -389,7 +387,7 @@ section.content {
   color: rgb(255, 98, 31);
   margin-bottom: 10px;
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link .description .content {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link .description .content {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
@@ -399,7 +397,7 @@ section.content {
   text-align: justify;
   padding-bottom: 30px;
 }
-.news_list .custom-container .news-list .newsSwiper .swiper-slide .link .description .time {
+.swiper-section .custom-container .news-swiper .newsSwiper .swiper-slide .link .description .time {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -407,17 +405,17 @@ section.content {
   letter-spacing: 0.05em;
   color: rgb(136, 136, 136);
 }
-.news_list .custom-container .news-list .swiper-button-prev,
-.news_list .custom-container .news-list .swiper-button-next {
+.swiper-section .custom-container .news-swiper .swiper-button-prev,
+.swiper-section .custom-container .news-swiper .swiper-button-next {
   color: rgb(255, 98, 31);
   font-size: 50px;
 }
-.news_list .custom-container .news-list .swiper-button-prev::after,
-.news_list .custom-container .news-list .swiper-button-next::after {
+.swiper-section .custom-container .news-swiper .swiper-button-prev::after,
+.swiper-section .custom-container .news-swiper .swiper-button-next::after {
   content: initial;
 }
-.news_list .custom-container .news-list .swiper-button-prev:hover,
-.news_list .custom-container .news-list .swiper-button-next:hover {
+.swiper-section .custom-container .news-swiper .swiper-button-prev:hover,
+.swiper-section .custom-container .news-swiper .swiper-button-next:hover {
   color: rgb(252, 189, 31);
 }
 
@@ -487,18 +485,18 @@ section.content {
   right: -63px;
 }
 
-.catalog .custom-container {
+.catalog-section .custom-container {
   padding-top: 150px;
   padding-bottom: 200px;
 }
-.catalog .custom-container .list .cards {
+.catalog-section .custom-container .news-list .cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 70px;
   padding-bottom: 40px;
 }
-.catalog .custom-container .list .cards .card {
+.catalog-section .custom-container .news-list .cards .card {
   display: flex;
   width: 50%;
   max-width: 624px;
@@ -506,22 +504,22 @@ section.content {
   padding: 20px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
-.catalog .custom-container .list .cards .card:nth-child(even) {
+.catalog-section .custom-container .news-list .cards .card:nth-child(even) {
   margin-right: 0;
 }
-.catalog .custom-container .list .cards .card .left {
+.catalog-section .custom-container .news-list .cards .card .left {
   width: 100%;
   max-width: 250px;
   background: rgb(136, 136, 136);
 }
-.catalog .custom-container .list .cards .card .right {
+.catalog-section .custom-container .news-list .cards .card .right {
   padding-left: 20px;
 }
-.catalog .custom-container .list .cards .card .right .tags {
+.catalog-section .custom-container .news-list .cards .card .right .tags {
   display: flex;
   position: relative;
 }
-.catalog .custom-container .list .cards .card .right .tags .tag {
+.catalog-section .custom-container .news-list .cards .card .right .tags .tag {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -531,13 +529,13 @@ section.content {
   margin-right: 10px;
   padding: 2px 25px 3px;
 }
-.catalog .custom-container .list .cards .card .right .tags .tag.tag-o {
+.catalog-section .custom-container .news-list .cards .card .right .tags .tag.tag-o {
   background: rgb(255, 98, 31);
 }
-.catalog .custom-container .list .cards .card .right .tags .tag.tag-g {
+.catalog-section .custom-container .news-list .cards .card .right .tags .tag.tag-g {
   background: rgb(44, 189, 3);
 }
-.catalog .custom-container .list .cards .card .right .tags .icon {
+.catalog-section .custom-container .news-list .cards .card .right .tags .icon {
   position: absolute;
   right: 20px;
   top: 0;
@@ -545,7 +543,7 @@ section.content {
   font-size: 25px;
   color: rgb(255, 98, 31);
 }
-.catalog .custom-container .list .cards .card .right .title {
+.catalog-section .custom-container .news-list .cards .card .right .title {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -555,7 +553,7 @@ section.content {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.catalog .custom-container .list .cards .card .right .scription {
+.catalog-section .custom-container .news-list .cards .card .right .scription {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
@@ -565,7 +563,7 @@ section.content {
   text-align: justify;
   padding-bottom: 30px;
 }
-.catalog .custom-container .list .cards .card .right .time {
+.catalog-section .custom-container .news-list .cards .card .right .time {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -1348,8 +1346,8 @@ section.content {
   background: rgb(0, 70, 174);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 70, 174);
-  line-height: 0.1em;
-  padding: 8px 20px;
+  letter-spacing: 0.1em;
+  width: 70px;
   margin-left: 15px;
 }
 .trading-table th .btn.disabled, .trading-table td .btn.disabled {
@@ -1471,6 +1469,17 @@ section.content {
 .pagination .next-arrow {
   position: relative;
   left: 21px;
+}
+
+h3.subtitle {
+  font-family: "Noto Serif TC", "serif";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .options {

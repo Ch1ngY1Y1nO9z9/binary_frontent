@@ -68,13 +68,6 @@
   color: rgb(255, 255, 255);
   padding: 11px 10px;
 }
-.sidebar .header .name .number {
-  display: inline-block;
-  background: rgb(255, 98, 31);
-  padding: 2px 12px 4px;
-  margin-left: 10px;
-  border-radius: 5px;
-}
 .sidebar .header .delete {
   cursor: pointer;
   margin-left: auto;
@@ -91,9 +84,36 @@
   display: inline-block;
   margin-right: 5px;
 }
+.sidebar .stake-catalog {
+  margin-bottom: 10px;
+}
+.sidebar .stake-catalog button {
+  width: 68.75px;
+  height: 30px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  background: rgb(255, 255, 255);
+  color: rgb(255, 98, 31);
+  border-radius: 5px;
+}
+.sidebar .stake-catalog button span.icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(57, 57, 57);
+}
+.sidebar .stake-catalog button.active, .sidebar .stake-catalog button:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+}
+.sidebar .stake-catalog button.active span.icon, .sidebar .stake-catalog button:hover span.icon {
+  color: rgb(255, 255, 255);
+}
 .sidebar .stake-cards {
   overflow: auto;
-  max-height: 721px;
+  height: 721px;
 }
 .sidebar .stake-cards .stake-card {
   margin-top: 5px;
@@ -181,6 +201,37 @@
   display: flex;
   align-items: center;
 }
+.sidebar .stake-cards .stake-card .card-body .bottom .lottery-order {
+  padding: 0 10px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+.sidebar .stake-cards .stake-card .card-body .bottom .lottery-order .type {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(255, 98, 31);
+}
+.sidebar .stake-cards .stake-card .card-body .bottom .lottery-order .detail {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.sidebar .stake-cards .stake-card .card-body .bottom .lottery-order .require-point {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 2px solid rgb(235, 235, 235);
+}
+.sidebar .stake-cards .stake-card .card-body .bottom .lottery-order .require-point a {
+  color: rgb(0, 70, 174);
+  text-decoration: underline;
+}
 .sidebar .total {
   padding: 20px 15px;
 }
@@ -200,12 +251,17 @@
 }
 .sidebar .gotostake {
   display: block;
-  color: rgb(255, 255, 255);
-  background: rgb(255, 98, 31);
-  border-radius: 5px;
-  text-align: center;
   padding: 13px 0;
   margin: 0 -5px;
+  background: rgb(255, 98, 31);
+  border-radius: 5px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .warning-board {
@@ -380,6 +436,9 @@
 .lottery .lottery-list {
   display: flex;
 }
+.lottery .lottery-list .list {
+  width: 100%;
+}
 .lottery .lottery-list .list .tab {
   margin-bottom: 15px;
 }
@@ -389,6 +448,7 @@
   flex-wrap: wrap;
   max-width: 710px;
   margin: auto;
+  margin-bottom: 35px;
 }
 .lottery .lottery-list .list .lottery-catalog .lottery-logo {
   display: flex;
@@ -437,7 +497,6 @@
 .lottery .lottery-list .list .results .result-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .lottery .lottery-list .list .results .result-list .result {
   width: 516px;

@@ -34,15 +34,6 @@
         color: $white-1;
         padding: 11px 10px;
 
-        .name {
-            .number {
-                display: inline-block;
-                background: $orange-5;
-                padding: 2px 12px 4px;
-                margin-left: 10px;
-                border-radius: 5px;
-            }
-        }
 
         .delete {
             cursor: pointer;
@@ -60,9 +51,37 @@
         }
     }
 
+    .stake-catalog {
+        margin-bottom: 10px;
+
+        button {
+            width: 68.75px;
+            height: 30px;
+            @include Sans(700, 14px, 14px, initial);
+            background: $white-1;
+            color: $orange-5;
+            border-radius: 5px;
+
+            span.icon {
+                display: inline-block;
+                margin-right: 10px;
+                color: $gray-5;
+            }
+
+            &.active,&:hover {
+                background: $orange-5;
+                color: $white-1;
+
+                span.icon {
+                    color: $white-1;
+                }
+            }
+        }
+    }
+
     .stake-cards {
         overflow: auto;
-        max-height: 721px;
+        height: 721px;
 
         .stake-card {
             margin-top: 5px;
@@ -156,6 +175,35 @@
                             align-items: center;
                         }
                     }
+
+                    .lottery-order {
+                        padding: 0 10px;
+                        @include Sans(400, 14px, 14px, .05em);
+                        color: $gray-5;
+
+                        .type {
+                            @include Sans(700, 14px, 14px, .05em);
+                            color: $orange-5;
+                        }
+
+                        .detail {
+                            margin-top: 10px;
+                            margin-bottom: 15px;
+                        }
+
+                        .require-point {
+                            display: flex;
+                            justify-content: space-between;
+
+                            padding-top: 10px;
+                            border-top: 2px solid $gray-2;
+                            
+                            a {
+                                color: $blue-5;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -181,12 +229,15 @@
 
     .gotostake {
         display: block;
-        color: $white-1;
-        background: $orange-5;
-        border-radius: 5px;
-        text-align: center;
         padding: 13px 0;
         margin: 0 -5px;
+
+        background: $orange-5;
+        border-radius: 5px;
+
+        @include Sans(700, 14px, 14px, .1em);
+        color: $white-1;
+        text-align: center;
     }
 }
 

@@ -177,12 +177,149 @@ section.content .custom-container .form-card .links .link:nth-child(even) {
   margin-left: 15px;
 }
 
-section.content .custom-container div.card.unvertify .icon.failed {
+section.content .custom-container .form-card .login-logo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+}
+
+section.content .custom-container div.form-card.register .icon.success {
+  color: rgb(44, 189, 3);
+  font-size: 50px;
+  text-align: center;
+}
+section.content .custom-container div.form-card.register .icon.vertify {
+  color: rgb(0, 70, 174);
+  font-size: 50px;
+  text-align: center;
+}
+section.content .custom-container div.form-card.register .confirm {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgb(57, 57, 57);
+}
+section.content .custom-container div.form-card.register .check {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+section.content .custom-container div.form-card.register .check .text {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+section.content .custom-container div.form-card.register .check .text span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 98, 31);
+}
+section.content .custom-container div.form-card.register .links .link {
+  display: inline-block;
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(255, 98, 31);
+  padding: 12px 45px 14px;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
+section.content .custom-container div.form-card.register .links .link:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+}
+section.content .custom-container div.form-card.register .links .link:nth-child(even) {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+}
+section.content .custom-container div.form-card.register .links .link:nth-child(even):hover {
+  background: rgb(252, 189, 31);
+  border: 1px solid rgb(252, 189, 31);
+}
+
+section.content .custom-container div.form-card.getpassword .icon {
+  color: rgb(0, 70, 174);
+  font-size: 50px;
+  text-align: center;
+}
+section.content .custom-container div.form-card.getpassword .confirm {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgb(57, 57, 57);
+}
+section.content .custom-container div.form-card.getpassword .check {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+section.content .custom-container div.form-card.getpassword .check .text {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+  margin-bottom: 10px;
+}
+section.content .custom-container div.form-card.getpassword .check .mail {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+section.content .custom-container div.form-card.getpassword .return {
+  text-align: center;
+}
+section.content .custom-container div.form-card.getpassword .return a {
+  display: inline-block;
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: rgb(255, 98, 31);
+  padding: 12px 45px 14px;
+  background: rgb(255, 255, 255);
+}
+section.content .custom-container div.form-card.getpassword .return a:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+}
+section.content .custom-container div.form-card.getpassword .links .link {
+  color: rgb(255, 98, 31);
+  text-decoration: underline;
+}
+
+section.content .custom-container div.form-card.unvertify .icon.failed {
   color: rgb(235, 54, 52);
   font-size: 50px;
   text-align: center;
 }
-section.content .custom-container div.card.unvertify .confirm {
+section.content .custom-container div.form-card.unvertify .confirm {
   width: 100%;
   max-width: 250px;
   margin: auto;
@@ -195,7 +332,7 @@ section.content .custom-container div.card.unvertify .confirm {
   color: rgb(57, 57, 57);
   padding-bottom: 30px;
 }
-section.content .custom-container div.card.unvertify .links .link {
+section.content .custom-container div.form-card.unvertify .links .link {
   display: inline-block;
   border: 1px solid rgb(255, 98, 31);
   font-family: "Noto Sans TC", "sans-serif";
@@ -208,144 +345,15 @@ section.content .custom-container div.card.unvertify .links .link {
   background: rgb(255, 255, 255);
   text-decoration: none;
 }
-section.content .custom-container div.card.unvertify .links .link:hover {
+section.content .custom-container div.form-card.unvertify .links .link:hover {
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
 }
-section.content .custom-container div.card.unvertify .links .link:nth-child(even) {
+section.content .custom-container div.form-card.unvertify .links .link:nth-child(even) {
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
 }
-section.content .custom-container div.card.unvertify .links .link:nth-child(even):hover {
+section.content .custom-container div.form-card.unvertify .links .link:nth-child(even):hover {
   background: rgb(252, 189, 31);
   border: 1px solid rgb(252, 189, 31);
-}
-
-section.content .custom-container div.card.register .icon.success {
-  color: rgb(44, 189, 3);
-  font-size: 50px;
-  text-align: center;
-}
-section.content .custom-container div.card.register .icon.vertify {
-  color: rgb(0, 70, 174);
-  font-size: 50px;
-  text-align: center;
-}
-section.content .custom-container div.card.register .confirm {
-  width: 100%;
-  max-width: 250px;
-  margin: auto;
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: rgb(57, 57, 57);
-}
-section.content .custom-container div.card.register .check {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-section.content .custom-container div.card.register .check .text {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  color: rgb(57, 57, 57);
-}
-section.content .custom-container div.card.register .check .text span {
-  font-size: 18px;
-  font-weight: 700;
-  color: rgb(255, 98, 31);
-}
-section.content .custom-container div.card.register .links .link {
-  display: inline-block;
-  border: 1px solid rgb(255, 98, 31);
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: rgb(255, 98, 31);
-  padding: 12px 45px 14px;
-  background: rgb(255, 255, 255);
-  text-decoration: none;
-}
-section.content .custom-container div.card.register .links .link:hover {
-  background: rgb(255, 98, 31);
-  color: rgb(255, 255, 255);
-}
-section.content .custom-container div.card.register .links .link:nth-child(even) {
-  background: rgb(255, 98, 31);
-  color: rgb(255, 255, 255);
-}
-section.content .custom-container div.card.register .links .link:nth-child(even):hover {
-  background: rgb(252, 189, 31);
-  border: 1px solid rgb(252, 189, 31);
-}
-
-section.content .custom-container div.card.getpassword .icon {
-  color: rgb(0, 70, 174);
-  font-size: 50px;
-  text-align: center;
-}
-section.content .custom-container div.card.getpassword .confirm {
-  width: 100%;
-  max-width: 250px;
-  margin: auto;
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: rgb(57, 57, 57);
-}
-section.content .custom-container div.card.getpassword .check {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-section.content .custom-container div.card.getpassword .check .text {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  color: rgb(57, 57, 57);
-  margin-bottom: 10px;
-}
-section.content .custom-container div.card.getpassword .check .mail {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  color: rgb(57, 57, 57);
-}
-section.content .custom-container div.card.getpassword .return {
-  text-align: center;
-}
-section.content .custom-container div.card.getpassword .return a {
-  display: inline-block;
-  border: 1px solid rgb(255, 98, 31);
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: rgb(255, 98, 31);
-  padding: 12px 45px 14px;
-  background: rgb(255, 255, 255);
-}
-section.content .custom-container div.card.getpassword .return a:hover {
-  background: rgb(255, 98, 31);
-  color: rgb(255, 255, 255);
-}
-section.content .custom-container div.card.getpassword .links .link {
-  color: rgb(255, 98, 31);
-  text-decoration: underline;
 }/*# sourceMappingURL=login.css.map */

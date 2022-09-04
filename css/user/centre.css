@@ -1,6 +1,3 @@
-section.content .centre .custom-container {
-  padding-bottom: 180px;
-}
 section.content .centre .custom-container .activity {
   display: flex;
   margin-bottom: 50px;
@@ -11,7 +8,7 @@ section.content .centre .custom-container .activity .block {
 section.content .centre .custom-container .activity .block:nth-child(odd) {
   margin-right: 12px;
 }
-section.content .centre .custom-container .activity .block:nth-child(odd) {
+section.content .centre .custom-container .activity .block:nth-child(even) {
   margin-left: 12px;
 }
 section.content .centre .custom-container .activity .block .title {
@@ -62,7 +59,7 @@ section.content .centre .custom-container .menu-list .menu .title .icon {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-right: 15px;
 }
 section.content .centre .custom-container .menu-list .menu .link {
@@ -78,12 +75,15 @@ section.content .centre .custom-container .menu-list .menu .link {
 section.content .centre .custom-container .menu-list .menu .link:last-child {
   border-bottom: 2px solid rgb(235, 235, 235);
 }
+section.content .centre .custom-container .menu-list .menu .link a:hover {
+  color: rgb(255, 98, 31);
+}
 section.content .centre .custom-container .menu-list .menu:nth-child(odd) .title {
   background: rgb(0, 70, 174);
 }
 section.content .centre .custom-container .menu-list .menu:nth-child(even) .title {
   background: rgb(252, 189, 31);
 }
-section.content .centre .custom-container .menu-list .menu:first-child .title {
+section.content .centre .custom-container .menu-list .menu:first-child .title, section.content .centre .custom-container .menu-list .menu:last-child .title {
   background: rgb(255, 98, 31);
 }/*# sourceMappingURL=centre.css.map */

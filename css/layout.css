@@ -3,7 +3,12 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+.custom-container.p-150 {
   padding-bottom: 150px;
+}
+.custom-container.p-200 {
+  padding-bottom: 200px;
 }
 .custom-container.c-1620 {
   max-width: 1620px;
@@ -53,6 +58,9 @@
 }
 .custom-container.c-954 {
   max-width: 954px;
+}
+.custom-container.c-840 {
+  max-width: 840px;
 }
 .custom-container.c-624 {
   max-width: 624px;
@@ -880,15 +888,33 @@ h1.pagetitle {
   color: rgb(57, 57, 57);
   text-align: center;
   margin-bottom: 70px;
+  position: relative;
+}
+h1.pagetitle::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 127px);
+  bottom: 27px;
+  z-index: -1;
+  width: 90px;
+  height: 70px;
+  background-image: url("../images/content-page/title-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 h1.pagetitle.cp {
   display: flex;
   justify-content: space-between;
+  text-align: left;
   width: 100%;
   max-width: 1056px;
   margin: 0 auto;
   margin-bottom: 70px;
+}
+h1.pagetitle.cp::before {
+  content: initial;
 }
 h1.pagetitle.cp .title {
   padding-left: 25px;
@@ -899,6 +925,19 @@ h1.pagetitle.cp .title {
   letter-spacing: 0.05em;
   color: rgb(57, 57, 57);
   padding-bottom: 2px;
+}
+h1.pagetitle.cp .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  z-index: -1;
+  width: 90px;
+  height: 70px;
+  background-image: url("../images/content-page/title-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 h1.pagetitle.cp .title .subtitle {
   font-family: "Noto Serif TC", "serif";
@@ -914,14 +953,15 @@ h1.pagetitle.cp .return-btn {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 30px 14px;
+  text-align: center;
+  padding: 12px 0 14px;
   display: inline-block;
+  width: 150px;
   height: 40px;
   align-self: flex-end;
   background: rgb(255, 255, 255);
   color: rgb(136, 136, 136);
   border: 1px solid rgb(136, 136, 136);
-  border-radius: 5px;
 }
 h1.pagetitle.cp .return-btn:hover {
   background: rgb(255, 98, 31);

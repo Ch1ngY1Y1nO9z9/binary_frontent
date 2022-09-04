@@ -147,7 +147,7 @@
                 color: $orange-5;
             }
 
-            &.error~.msg {
+            &.error~.msg,&.error+.msg {
                 display: block;
             }
 
@@ -284,8 +284,10 @@
         @include Sans(400, 14px, 14px, .05em);
 
         .link {
+            width: 150px;
             @include Sans(700, 14px, 14px, .1em);
-            padding: 12px 60px 14px;
+            text-align: center;
+            padding: 12px 0;
 
             @include btn-orange-outline;
 
@@ -501,6 +503,8 @@
                 &:first-child {
                     width: 80px;
                     padding-right: 20px;
+                    display: flex;
+                    align-items: center;
                 }
             }
 
@@ -516,8 +520,8 @@
 
         &.edit {
             .row {
+                flex-wrap: wrap;
                 padding: 20px 0;
-
 
                 &:first-child {
                     padding-top: 0;
@@ -532,6 +536,14 @@
                     padding-top: 50px;
                     padding-bottom: 0;
                     border-bottom: 0;
+
+                    .input-col {
+                        input {
+                            &::placeholder {
+                                font-weight: 400;
+                            }
+                        }
+                    }
                 }
 
                 .col {
@@ -623,6 +635,19 @@
                                 }
                             }
                         }
+                    }
+                }
+
+                span.msg {
+                    width: 100%;
+                }
+
+                .notice {
+                    margin-left: auto;
+
+                    a{
+                        @include Sans(400, 14px, 14px, .05em);
+                        color: $gray-4;
                     }
                 }
             }

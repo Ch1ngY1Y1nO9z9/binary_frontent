@@ -1,0 +1,12 @@
+span.class {
+    display: inline-block;
+    width: 85px;
+    padding: 5px 0;
+    margin-left: 15px;
+    
+    @include Sans(700, 14px, 14px, initial);
+    color: $white-1;
+    text-align: center;
+
+    background: linear-gradient(94.94deg, #ACF0FA 0%, #00C9E4 35.94%);
+}

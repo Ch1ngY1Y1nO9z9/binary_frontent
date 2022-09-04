@@ -1,42 +1,5 @@
 @import '../_var';
-
-header {
-    background: $white-1;
-
-    .custom-container {
-        .header-l {
-            .logo {
-                .site-name {
-                    color: $gray-5;
-                }
-            }
-        }
-
-        .header-r {
-            .account {
-                color: $blue-5;
-            }
-
-            .burger-menu {
-                button.burger.burger-style {
-                    &::before {
-                        background: $blue-5;
-                    }
-
-                    &::after {
-                        background: $blue-5;
-                    }
-
-                    span {
-                        &::before {
-                            background: $blue-5;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+@import '../_headerWhite';
 
 section.content {
     width: 100%;
@@ -200,3 +163,4 @@ section.content {
 @import "./_login";
 @import "./_register";
 @import "./_forgot";
+@import "./_unvertify";

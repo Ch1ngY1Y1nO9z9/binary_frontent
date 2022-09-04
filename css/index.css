@@ -6,7 +6,12 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+.custom-container.p-150 {
   padding-bottom: 150px;
+}
+.custom-container.p-200 {
+  padding-bottom: 200px;
 }
 .custom-container.c-1620 {
   max-width: 1620px;
@@ -56,6 +61,9 @@
 }
 .custom-container.c-954 {
   max-width: 954px;
+}
+.custom-container.c-840 {
+  max-width: 840px;
 }
 .custom-container.c-624 {
   max-width: 624px;

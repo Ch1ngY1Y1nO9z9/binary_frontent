@@ -104,4 +104,38 @@
             }
         }
     }
+
+    .board-card {
+        width: 204px;
+        height: 292px;
+        background: $blue-5;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include Sans(700, 24px, 24px, initial);
+        color: $white-1;
+
+        .board-detail {
+            margin-bottom: 20px;
+
+            .board-card-title {
+                @include Sans(700, 14px, 14px, .1em);
+                margin-bottom: 5px;
+            }
+            
+        }
+    }
+
+    .chart {
+        margin-left: 30px;
+        padding: 50px;
+        flex: 1 1 0%;
+        height:  529px;
+        @include normal-shadow;
+
+        canvas {
+            width: 100%;
+            padding-top: 10px;
+        }
+    }
 }

@@ -3,6 +3,10 @@ section.content {
   box-sizing: content-box;
 }
 
+h1.pagetitle {
+  margin-bottom: 30px;
+}
+
 .recommend .custom-container .recommendSwiper {
   width: 100%;
   height: 600px;
@@ -132,6 +136,7 @@ section.content {
 }
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .left .participate {
   color: rgb(255, 255, 255);
+  margin-bottom: 10px;
 }
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .left .participate i {
   font-size: 14px;
@@ -169,6 +174,11 @@ section.content {
   text-align: right;
   padding: 6px 10px 8px;
 }
+.recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .right .remain {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
@@ -179,7 +189,11 @@ section.content {
   margin-bottom: 10px;
   padding: 0 13px;
 }
+.recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .right .remain span.date {
+  font-size: 14px;
+}
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .right .btn {
+  width: 150px;
   display: block;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
@@ -187,8 +201,9 @@ section.content {
   line-height: 14px;
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255);
+  text-align: center;
   background: rgb(255, 98, 31);
-  padding: 12px 40px 14px;
+  padding: 12px 14px;
 }
 .recommend .custom-container .moblieRecommendSwiper {
   display: none;
@@ -282,7 +297,7 @@ section.content {
 
 .swiper-section {
   padding-right: 78px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 .swiper-section:nth-child(even) .title:before {
   left: 0;
@@ -313,6 +328,9 @@ section.content {
 }
 .swiper-section:nth-child(3n) .title::before {
   background-color: rgb(0, 70, 174);
+}
+.swiper-section:last-child {
+  padding-bottom: 140px;
 }
 .swiper-section .custom-container .title {
   display: flex;
@@ -485,16 +503,12 @@ section.content {
   right: -63px;
 }
 
-.catalog-section .custom-container {
-  padding-top: 150px;
-  padding-bottom: 200px;
-}
 .catalog-section .custom-container .news-list .cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 16px;
 }
 .catalog-section .custom-container .news-list .cards .card {
   display: flex;
@@ -609,29 +623,34 @@ section.content {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: rgb(136, 136, 136);
   background: rgb(255, 255, 255);
-  border: 1px solid rgb(235, 235, 235);
-  padding: 12px 24px 14px;
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(136, 136, 136);
+  width: 100px;
+  padding: 12px 0;
   margin-right: 15px;
-}
-.article .custom-container .detail .right .buttons .btn .icon {
-  font-size: 12px;
 }
 .article .custom-container .detail .right .buttons .btn:hover {
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 98, 31);
+  border-color: rgb(255, 98, 31);
+}
+.article .custom-container .detail .right .buttons .btn .icon {
+  font-size: 12px;
 }
 .article .custom-container .detail .right .buttons .btn:last-child {
+  width: 150px;
+  margin-right: 0;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
-  padding: 12px 45px 14px;
   border: 1px solid rgb(255, 98, 31);
+  text-align: center;
+  padding: 12px 0;
 }
 .article .custom-container .detail .right .buttons .btn:last-child:hover {
   background: rgb(252, 189, 31);
-  border: 1px solid rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
 }
 .article .custom-container .content .news-picture {
   width: 100%;
@@ -688,12 +707,15 @@ section.content {
   letter-spacing: 0.1em;
 }
 .stake-cards .predict .custom-container .top .btn {
+  width: 150px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 45px 14px;
+  text-align: center;
+  padding: 12px 0;
+  border: 1px solid rgb(255, 255, 255);
 }
 .stake-cards .predict .custom-container .card {
   padding: 32px 30px 28px;
@@ -770,26 +792,31 @@ section.content {
   letter-spacing: 0.05em;
   color: rgb(255, 98, 31);
 }
+.stake-cards .predict .custom-container .card .data .right .detail .times .remain span.date {
+  font-size: 14px;
+}
 .stake-cards .predict .custom-container .card .data .right .detail .btns {
   display: flex;
   padding-top: 7px;
 }
 .stake-cards .predict .custom-container .card .data .right .detail .btns .btn {
+  width: 100px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: rgb(136, 136, 136);
-  background: rgb(255, 255, 255);
-  border: 1px solid rgb(136, 136, 136);
-  padding: 12px 27px 14px;
+  text-align: center;
+  padding: 12px 0;
   margin-left: 15px;
+  background: rgb(255, 255, 255);
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(136, 136, 136);
 }
 .stake-cards .predict .custom-container .card .data .right .detail .btns .btn:hover {
-  color: rgb(255, 255, 255);
   background: rgb(255, 98, 31);
-  border: 1px solid rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
 }
 .stake-cards .predict .custom-container .card .poll {
   padding-top: 30px;
@@ -988,6 +1015,9 @@ section.content {
   color: rgb(57, 57, 57);
   margin-top: 20px;
 }
+.stake .custom-container .card .data .result .profit .number {
+  font-weight: 400;
+}
 .stake .custom-container .card .data .result .text {
   font-size: 14px;
 }
@@ -996,13 +1026,23 @@ section.content {
 }
 .stake .custom-container .card .data .result .btn {
   display: inline-block;
-  padding: 12px 60px 14px;
-  color: rgb(255, 255, 255);
+  width: 150px;
   background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 98, 31);
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 12px 0;
   margin-top: 30px;
 }
 .stake .custom-container .card .data .result .btn:hover {
   background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
 }
 
 .interests .custom-container {
@@ -1117,25 +1157,30 @@ section.content {
   border-bottom: 2px solid rgb(235, 235, 235);
 }
 .interests .custom-container .interestsSwiper .swiper-slide .link .description .bars .bar-left {
+  position: absolute;
   background: rgb(44, 189, 3);
   padding: 6px 10px 8px;
   border-radius: 50px 0 0 50px;
 }
 .interests .custom-container .interestsSwiper .swiper-slide .link .description .bars .bar-right {
+  width: 100%;
   text-align: right;
   background: rgb(235, 54, 52);
   padding: 6px 10px 8px;
-  border-radius: 0 50px 50px 0;
+  border-radius: 50px;
 }
 .interests .custom-container .interestsSwiper .swiper-slide .link .description .remain {
   margin-top: 20px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.05em;
   color: rgb(255, 98, 31);
   text-align: center;
+}
+.interests .custom-container .interestsSwiper .swiper-slide .link .description .remain span.date {
+  font-size: 14px;
 }
 .interests .custom-container .swiper-button-prev,
 .interests .custom-container .swiper-button-next {
@@ -1157,9 +1202,8 @@ section.content {
   right: -63px;
 }
 
-.related {
+.related .custom-container {
   padding-top: 70px;
-  padding-bottom: 200px;
 }
 .related .custom-container .section-title {
   font-family: "Noto Serif TC", "serif";
@@ -1497,7 +1541,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -1577,7 +1622,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -1627,9 +1673,9 @@ h3.subtitle {
   background: rgb(255, 255, 255);
   color: rgb(136, 136, 136);
   border: 1px solid rgb(136, 136, 136);
-  border-radius: 5px;
   padding: 0 45px;
   color: rgb(136, 136, 136);
+  border-radius: 5px;
 }
 .filter .datetimepicker .submit-btn:hover {
   background: rgb(255, 98, 31);

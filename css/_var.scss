@@ -115,7 +115,6 @@ $logo-purple: #911F89;
     background: $white-1;
     color: $gray-4;
     border: 1px solid $gray-4;
-    border-radius: 5px;
 
     &:hover {
         @include hover-orange;
@@ -148,7 +147,8 @@ $logo-purple: #911F89;
     background: $gray-2;
     border-radius: 5px;
 
-    padding: 13px 22px;
+    width: 90px;
+    padding: 13px 0;
     margin-left: 15px;
     margin-bottom: 15px;
 }

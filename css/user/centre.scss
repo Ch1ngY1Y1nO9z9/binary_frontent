@@ -10,8 +10,6 @@
 section.content {
     .centre {
         .custom-container {
-            // max-width: 1056px;
-            padding-bottom: 180px;
 
             .activity {
                 display: flex;
@@ -23,7 +21,7 @@ section.content {
                     &:nth-child(odd) {
                         margin-right: 12px;
                     }
-                    &:nth-child(odd) {
+                    &:nth-child(even) {
                         margin-left: 12px;
                     }
 
@@ -73,7 +71,7 @@ section.content {
                             display: inline-block;
                             width: 18px;
                             height: 18px;
-                            background: $white-1;
+                            color: $white-1;
                             margin-right: 15px;
                         }
                     }
@@ -86,6 +84,10 @@ section.content {
 
                         &:last-child {
                             border-bottom: 2px solid $gray-2;
+                        }
+
+                        a:hover {
+                            color: $orange-5;
                         }
                     }
 
@@ -101,7 +103,7 @@ section.content {
                         }
                     }
 
-                    &:first-child {
+                    &:first-child,&:last-child {
                         .title{
                             background: $orange-5;
                         }

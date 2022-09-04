@@ -24,7 +24,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -104,7 +105,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -154,9 +156,9 @@ h3.subtitle {
   background: rgb(255, 255, 255);
   color: rgb(136, 136, 136);
   border: 1px solid rgb(136, 136, 136);
-  border-radius: 5px;
   padding: 0 45px;
   color: rgb(136, 136, 136);
+  border-radius: 5px;
 }
 .filter .datetimepicker .submit-btn:hover {
   background: rgb(255, 98, 31);
@@ -529,7 +531,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
   margin-bottom: 0;
@@ -724,7 +727,8 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  padding: 13px 22px;
+  width: 90px;
+  padding: 13px 0;
   margin-left: 15px;
   margin-bottom: 15px;
   padding: 13px 30px;
@@ -1272,7 +1276,7 @@ h3.subtitle {
   letter-spacing: initial;
   color: rgb(255, 98, 31);
 }
-.form-card .input-row .input-col.error ~ .msg {
+.form-card .input-row .input-col.error ~ .msg, .form-card .input-row .input-col.error + .msg {
   display: block;
 }
 .form-card .input-row .input-col.error .checkbox-mask {
@@ -1420,12 +1424,14 @@ h3.subtitle {
   letter-spacing: 0.05em;
 }
 .form-card .links .link {
+  width: 150px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 60px 14px;
+  text-align: center;
+  padding: 12px 0;
   background: rgb(255, 255, 255);
   color: rgb(255, 98, 31);
   border: 1px solid rgb(255, 98, 31);
@@ -1639,6 +1645,8 @@ h3.subtitle {
 .form-card .account-setting.list .row .col:first-child {
   width: 80px;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
 }
 .form-card .account-setting.list .row a {
   font-family: "Noto Sans TC", "sans-serif";
@@ -1652,6 +1660,7 @@ h3.subtitle {
   text-decoration: underline;
 }
 .form-card .account-setting.list.edit .row {
+  flex-wrap: wrap;
   padding: 20px 0;
 }
 .form-card .account-setting.list.edit .row:first-child {
@@ -1664,6 +1673,15 @@ h3.subtitle {
   padding-top: 50px;
   padding-bottom: 0;
   border-bottom: 0;
+}
+.form-card .account-setting.list.edit .row.password-confirm .input-col input::-moz-placeholder {
+  font-weight: 400;
+}
+.form-card .account-setting.list.edit .row.password-confirm .input-col input:-ms-input-placeholder {
+  font-weight: 400;
+}
+.form-card .account-setting.list.edit .row.password-confirm .input-col input::placeholder {
+  font-weight: 400;
 }
 .form-card .account-setting.list.edit .row .col {
   margin-bottom: 0;
@@ -1756,6 +1774,20 @@ h3.subtitle {
   display: block;
   width: 20px;
   height: 20px;
+}
+.form-card .account-setting.list.edit .row span.msg {
+  width: 100%;
+}
+.form-card .account-setting.list.edit .row .notice {
+  margin-left: auto;
+}
+.form-card .account-setting.list.edit .row .notice a {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgb(136, 136, 136);
 }
 .form-card .order-cards.list .row {
   border-bottom: 0;

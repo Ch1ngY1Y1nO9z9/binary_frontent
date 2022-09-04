@@ -2,7 +2,14 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 150px;
+
+    &.p-150 {
+        padding-bottom: 150px;
+    }
+
+    &.p-200 {
+        padding-bottom: 200px;
+    }
 
     &.c-1620 {
         max-width: 1620px;
@@ -53,6 +60,10 @@
     
     &.c-954 {
         max-width: 954px;
+    }
+
+    &.c-840 {
+        max-width: 840px;
     }
     
     &.c-624 {

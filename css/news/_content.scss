@@ -30,33 +30,22 @@
 
                     .btn {
                         @include Sans(700, 14px, 14px, .05em);
-                        color: $gray-4;
-                        background: $white-1;
-                        border: 1px solid $gray-2;
 
-                        padding: 12px 24px 14px;
+                        @include btn-gray;
+                        width: 100px;
+                        padding: 12px 0;
                         margin-right: 15px;
 
                         .icon {
                             font-size: 12px;
                         }
 
-                        &:hover {
-                            background: $orange-5;
-                            color: $white-1;
-                            border: 1px solid $orange-5;
-                        }
-
                         &:last-child {
-                            background: $orange-5;
-                            color: $white-1;
-                            padding: 12px 45px 14px;
-                            border: 1px solid $orange-5;
-
-                            &:hover {
-                                background: $yellow-5;
-                                border: 1px solid $yellow-5;
-                            }
+                            width: 150px;
+                            margin-right: 0;
+                            @include btn-orange;
+                            text-align: center;
+                            padding: 12px 0;
                         }
                     }
                 }
@@ -125,8 +114,11 @@
                 }
 
                 .btn {
+                    width: 150px;
                     @include Sans(700, 14px, 14px, .1em);
-                    padding: 12px 45px 14px;
+                    text-align: center;
+                    padding: 12px 0;
+                    border: 1px solid $white-1;
                 }
             }
 
@@ -194,6 +186,10 @@
                                 .remain {
                                     @include Sans(700, 18px, 18px, .05em);
                                     color: $orange-5;
+
+                                    span.date {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
 
@@ -202,19 +198,15 @@
                                 padding-top: 7px;
 
                                 .btn {
+                                    width: 100px;
+
                                     @include Sans(700, 14px, 14px, .05em);
-                                    color: $gray-4;
-                                    background: $white-1;
-                                    border: 1px solid $gray-4;
-
-                                    padding: 12px 27px 14px;
+                                    text-align: center;
+                                    
+                                    padding: 12px 0;
                                     margin-left: 15px;
-
-                                    &:hover {
-                                        color: $white-1;
-                                        background: $orange-5;
-                                        border: 1px solid $orange-5;
-                                    }
+                                    
+                                    @include btn-gray;
                                 }
                             }
 
@@ -431,6 +423,10 @@
                         justify-content: flex-end;
                         color: $gray-5;
                         margin-top: 20px;
+                        
+                        .number {
+                            font-weight: 400;
+                        }
                     }
 
                     .text {
@@ -443,14 +439,14 @@
 
                     .btn {
                         display: inline-block;
-                        padding: 12px 60px 14px;
-                        color: $white-1;
-                        background: $orange-5;
+                        
+                        width: 150px;
+                        @include btn-orange;
+                        @include Sans(700, 14px, 14px, .1em);
+                        text-align: center;
+                        padding: 12px 0;
                         margin-top: 30px;
 
-                        &:hover {
-                            background: $yellow-5;
-                        }
                     }
 
                 }
@@ -570,24 +566,30 @@
                             border-bottom: 2px solid $gray-2;
 
                             .bar-left {
+                                position: absolute;
                                 background: $green-1;
                                 padding: 6px 10px 8px;
                                 border-radius: 50px 0 0 50px;
                             }
 
                             .bar-right {
+                                width: 100%;
                                 text-align: right;
                                 background: $red-1;
                                 padding: 6px 10px 8px;
-                                border-radius: 0 50px 50px 0;
+                                border-radius: 50px;
                             }
                         }
 
                         .remain {
                             margin-top: 20px;
-                            @include Sans(700, 24px, 18px, .05em);
+                            @include Sans(700, 18px, 18px, .05em);
                             color: $orange-5;
                             text-align: center;
+                                
+                            span.date {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -619,11 +621,8 @@
 }
 
 .related {
-    padding-top: 70px;
-    padding-bottom: 200px;
-
     .custom-container {
-        // max-width: 1056px;
+        padding-top: 70px;
 
         .section-title {
             @include Serif(30px, 43px, .05em);

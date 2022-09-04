@@ -17,7 +17,9 @@
 
         .btn-options {
             @include btn-options;
-            padding: 13px 30px;
+            width: 120px;
+            text-align: center;
+            padding: 13px 0;
             margin-left: 15px;
 
             &:first-child{

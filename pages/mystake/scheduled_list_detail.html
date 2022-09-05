@@ -226,20 +226,22 @@
 
     <section class="content">
         <div class="track">
-            <div class="custom-container c-1056">
+            <div class="custom-container c-1056 p-200">
                 <div class="board stake_detail">
                     <div class="left">
                         <div class="col">
                             <div class="type">
-                                <div>開始日期:&nbsp;</div>
-                                <div>會員帳號:&nbsp;</div>
-                                <div>跟單類型:&nbsp;</div>
-                                <div>每筆點數:&nbsp;</div>
+                                <div>開始日期：</div>
+                                <div>跟單標的：</div>
+                                <div>漲跌選擇：</div>
+                                <div>週期選擇：</div>
+                                <div>每筆點數：</div>
                             </div>
                             <div class="res">
                                 <div>2022/04/25</div>
-                                <div>123456789012345</div>
-                                <div>固定跟單</div>
+                                <div>台積電收盤</div>
+                                <div>上漲</div>
+                                <div>2週</div>
                                 <div>1,000</div>
                             </div>
                         </div>
@@ -263,10 +265,10 @@
                 <div class="catalog">
                     <div class="options">
                         <button class="btn btn-o active">全部</button>
-                        <button class="btn btn-o">搓合中</button>
-                        <button class="btn btn-o">已成交</button>
                         <button class="btn btn-o">已結算</button>
-                        <button class="btn btn-o">未成交</button>
+                        <button class="btn btn-o">未結算</button>
+                        <button class="btn btn-o">已取消</button>
+                        <button class="btn btn-o">搓合中</button>
                     </div>
                 </div>
 
@@ -275,6 +277,9 @@
                         <tr>
                             <th>
                                 狀態
+                            </th>
+                            <th>
+                                單號
                             </th>
                             <th>
                                 遊戲名稱
@@ -289,14 +294,11 @@
                                 下注金額
                             </th>
                             <th>
-                                更新時間
-                            </th>
-                            <th>
                                 搓合金額
                             </th>
-                            <th>
+                            <!-- <th>
                                 操作
-                            </th>
+                            </th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -305,17 +307,13 @@
                                 搓合中
                             </td>
                             <td>
-                                一二三四五六七八...
+                                1234567890
                             </td>
                             <td>
-                                一二三四五六七八九十一二三四五...
+                                一二三四五六七八九十...
                             </td>
                             <td>
-                                2022/04/25<br />
-                                12:04:00
-                            </td>
-                            <td>
-                                999,999,999
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -325,18 +323,24 @@
                                 999,999,999
                             </td>
                             <td>
+                                999,999,999
+                            </td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 搓合中
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -346,25 +350,24 @@
                                 6,000
                             </td>
                             <td>
-                                2022/04/25<br />
-                                12:04:00
-                            </td>
-                            <td>
                                 0
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 已成交
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -373,26 +376,29 @@
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 11
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 搓合中
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -401,26 +407,29 @@
                             <td>
                                 20
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 20
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 已結算
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -429,26 +438,29 @@
                             <td>
                                 999,999,999
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 0
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 未成交
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -457,26 +469,29 @@
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 999,999,999
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 已結算
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -485,26 +500,29 @@
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 0
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 搓合中
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -513,26 +531,29 @@
                             <td>
                                 500
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 500
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 已成交
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -541,26 +562,29 @@
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                         <tr>
                             <td>
                                 未成交
                             </td>
                             <td>
-                                苗栗縣長參選人預測
+                                1234567890
+                            </td>
+                            <td>
+                                一二三四五六七八九十...
                             </td>
                             <td class="keepall">
-                                您認為徐志榮會參選2022苗栗縣長...
+                                一二三四五六七...
                             </td>
                             <td>
                                 2022/04/25<br />
@@ -569,16 +593,16 @@
                             <td>
                                 6,000
                             </td>
-                            <td>
+                            <!-- <td>
                                 2022/04/25<br />
                                 12:04:00
-                            </td>
+                            </td> -->
                             <td>
                                 999,999,999
                             </td>
-                            <td>
+                            <!-- <td>
                                 <a href="" class="link">前往盤口</a>
-                            </td>
+                            </td> -->
                         </tr>
                     </tbody>
                 </table>

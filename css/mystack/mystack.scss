@@ -4,14 +4,7 @@
 @import '../_table';
 @import '../_options';
 @import '../_form';
-
-section.content {
-    .track {
-        .custom-container {
-            padding-bottom: 200px;
-        }
-    }
-}
+@import '../_class';
 
 @import "../_detailPageLayout";
 @import './edit';

@@ -139,7 +139,8 @@ section.content .custom-container .form-card .submit button {
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255);
   background: rgb(255, 98, 31);
-  padding: 12px 60px 14px;
+  width: 150px;
+  padding: 12px 0 14px;
 }
 section.content .custom-container .form-card .submit button:hover {
   background: rgb(252, 189, 31);
@@ -234,7 +235,9 @@ section.content .custom-container div.form-card.register .links .link {
   line-height: 14px;
   letter-spacing: 0.1em;
   color: rgb(255, 98, 31);
-  padding: 12px 45px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -302,7 +305,8 @@ section.content .custom-container div.form-card.getpassword .return a {
   line-height: 14px;
   letter-spacing: 0.1em;
   color: rgb(255, 98, 31);
-  padding: 12px 45px 14px;
+  width: 150px;
+  padding: 12px 0 14px;
   background: rgb(255, 255, 255);
 }
 section.content .custom-container div.form-card.getpassword .return a:hover {
@@ -341,7 +345,9 @@ section.content .custom-container div.form-card.unvertify .links .link {
   line-height: 14px;
   letter-spacing: 0.1em;
   color: rgb(255, 98, 31);
-  padding: 12px 45px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 255, 255);
   text-decoration: none;
 }

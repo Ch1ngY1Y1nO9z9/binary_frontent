@@ -39,8 +39,10 @@
                     align-items: center;
 
                     .link {
+                        width: 150px;
+                        padding: 7px;
+                        text-align: center;
                         @include btn-orange-outline;
-                        padding: 11px 58px 13px;
 
                         &:nth-child(even) {
                             @include btn-orange;
@@ -128,6 +130,7 @@
                         .title {
                             @include Sans(400, 14px, 14px, .05em);
                             color: $gray-4;
+                            margin-bottom: 5px;
                         }
 
                         .name {
@@ -198,6 +201,7 @@
                         }
 
                         &+.left {
+                            
                             .comment {
                                 .i {
                                     opacity: 0;
@@ -326,7 +330,7 @@
 
                     input.input-control {
                         width: 100%;
-                        padding: 13px 11px;
+                        padding: 7px 11px;
                         color: $gray-5;
                         border: 1px solid $gray-4;
                         border-radius: 5px;

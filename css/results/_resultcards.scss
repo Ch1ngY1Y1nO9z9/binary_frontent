@@ -8,11 +8,11 @@
 
     .account {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         position: relative;
         // 保留15的間距
         margin-bottom: -30px;
-        bottom: 45px;
+        bottom: 55px;
 
         .pic {
             width: 90px;
@@ -22,9 +22,14 @@
         }
 
         .name {
+            flex: 1 1 0%;
             @include Sans(700, 18px, 18px, initial);
             color: $gray-5;
             margin-left: 15px;
+
+            span.class {
+                margin-left: 0;
+            }
         }
     }
 

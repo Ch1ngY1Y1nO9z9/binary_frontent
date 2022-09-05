@@ -8,5 +8,15 @@ span.class {
     color: $white-1;
     text-align: center;
 
-    background: linear-gradient(94.94deg, #ACF0FA 0%, #00C9E4 35.94%);
+    &.normal {
+        background: linear-gradient(94.94deg, #ACF0FA 0%, #00C9E4 35.94%);
+    }
+
+    &.platinum {
+        background: linear-gradient(94.94deg, #FFE0DA 0%, #FF8A71 35.94%);
+    }
+
+    &.golden {
+        background: linear-gradient(94.94deg, #FFE8C5 0%, #FFAC2F 35.94%);
+    }
 }

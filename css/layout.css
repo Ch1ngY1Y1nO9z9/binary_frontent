@@ -969,6 +969,49 @@ h1.pagetitle.cp .return-btn:hover {
   border-color: rgb(255, 98, 31);
 }
 
+.icon-title {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-title h3 {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Serif TC", "serif";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: rgb(57, 57, 57);
+}
+.icon-title h3 span.icon {
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+}
+.icon-title h3 span.icon img {
+  width: auto;
+  height: 100%;
+  fill: rgb(57, 57, 57);
+}
+.icon-title .btn {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 98, 31);
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
+}
+.icon-title .btn:hover {
+  background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
+}
+
 footer {
   width: 100%;
   padding-top: 50px;

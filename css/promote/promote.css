@@ -63,7 +63,7 @@
   padding: 20px 30px;
 }
 .board.stake_detail .left {
-  flex: 1 1 0;
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -85,6 +85,7 @@
   font-weight: 700;
 }
 .board.stake_detail .right {
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -500,8 +501,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -581,8 +581,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -811,6 +810,7 @@ h3.subtitle {
   margin-bottom: 10px;
 }
 .form-card .input-row label.input-label .link {
+  display: inline-block;
   color: rgb(136, 136, 136);
   font-weight: 400;
   letter-spacing: initial;
@@ -1002,7 +1002,9 @@ h3.subtitle {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1048,7 +1050,9 @@ h3.subtitle {
 }
 .form-card .return-link .link.btn {
   text-decoration: none;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1212,6 +1216,9 @@ h3.subtitle {
   color: rgb(252, 189, 31);
   font-size: 14px;
   margin-right: 10px;
+}
+.form-card .list .row .col.multi-col {
+  line-height: 20px;
 }
 .form-card .list .row .left {
   text-align: left;
@@ -1464,34 +1471,8 @@ h3.subtitle {
   border-bottom: 0;
 }
 
-.promo-list-title {
-  display: flex;
-  justify-content: space-between;
+.promote-header {
   padding-bottom: 25px;
-}
-.promo-list-title h3 {
-  font-family: "Noto Serif TC", "serif";
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: rgb(57, 57, 57);
-}
-.promo-list-title .btn {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  background: rgb(255, 98, 31);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 98, 31);
-  padding: 12px 30px 14px;
-}
-.promo-list-title .btn:hover {
-  background: rgb(252, 189, 31);
-  color: rgb(255, 255, 255);
-  border-color: rgb(252, 189, 31);
 }
 
 .promote .swiper-title {

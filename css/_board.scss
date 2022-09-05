@@ -60,7 +60,7 @@
         padding: 20px 30px;
     
         .left {
-            flex: 1 1 0;
+            width: 50%;
             @include Sans(400, 14px, 14px, .05em);
             padding: 10px 0;
             border-right: 1px solid $blue-4;
@@ -84,6 +84,7 @@
         }
     
         .right {
+            width: 50%;
             @include Sans(400, 14px, 14px, .1em);
             padding: 10px 0 10px 30px;
             border-left: 1px solid $blue-4;

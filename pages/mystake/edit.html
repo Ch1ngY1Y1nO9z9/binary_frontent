@@ -217,7 +217,7 @@
             <div class="subtitle">
                 我的注單
             </div>
-            會員跟單列表
+            編輯跟單
         </div>
         <a href="#" class="return-btn">
             返回會員中心
@@ -226,7 +226,7 @@
 
     <section class="content">
         <div class="track">
-            <div class="custom-container c-1056">
+            <div class="custom-container c-1056 p-200">
 
                 <div class="card-left-layout">
                     <div class="account-card">
@@ -235,7 +235,8 @@
                                 <img src="" alt="account avatar">
                             </div>
                             <div class="account-detail">
-                                <div class="name">Gatsby556</div>
+                                <span class="class normal">菁英公爵</span>
+                                <div class="name">Gatsbyapple556</div>
                             </div>
                         </div>
                         <div class="rate">
@@ -261,6 +262,7 @@
                             </div>
                         </div>
                     </div>
+
                     <form class="form-card" action="">
                         <div class="input-row">
                             <label for="chain" class="input-label">跟單類型</label>
@@ -282,7 +284,23 @@
                             <span class="msg"></span>
                         </div>
                         <div class="input-row">
-                            <label for="password" class="input-label">錢包密碼</label>
+                            <label for="chain" class="input-label">跟單場數</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="" selected>5</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></span>
+                        </div> 
+                        <div class="input-row">
+                            <label for="password" class="input-label">錢包密碼 <a class="link float-right" href="">忘記密碼?</a></label>
                             <div class="input-col">
                                 <input id="password" type="password" name="password" class="input-control" placeholder="請輸入錢包密碼">
                             </div>

@@ -226,8 +226,8 @@
 
     <section class="content">
         <div class="transfer">
-            <div class="custom-container c-624">
-                <div class="board wallets all">
+            <div class="custom-container c-624 p-200">
+                <!-- <div class="board wallets all">
                     <div class="left">
                         <div class="title">
                             <span class="icon"></span>投注錢包 (點)
@@ -253,6 +253,9 @@
                                 <option value="">投注錢包</option>
                                 <option value="">出金錢包</option>
                             </select>
+                            <div class="arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
                         </div>
                         <span class="msg"></span>
                     </div>
@@ -273,7 +276,7 @@
                         <span class="msg"></span>
                     </div>
                     <div class="input-row">
-                        <label for="txid" class="input-label">錢包密碼</label>
+                        <label for="password" class="input-label">錢包密碼 <a class="link float-right" href="">忘記密碼?</a></label>
                         <div class="input-col">
                             <input id="txid" type="password" name="txid" class="input-control" placeholder="請輸入錢包密碼">
                         </div>
@@ -283,7 +286,7 @@
                     <div class="submit"> 
                         <button type="submit">下一步</button>
                     </div>
-                </form> 
+                </form>  -->
 
                 <!-- <div class="succes result-msg">
                     <div class="icon">
@@ -332,10 +335,14 @@
                             </div>
                             <div class="sms">
                                 <div class="input-row">
-                                    <label for="txid" class="input-label">簡訊驗證碼</label>
+                                    <label for="txid" class="input-label">簡訊驗證碼(6碼)</label>
                                     <div class="input-col">
                                         <input id="txid" type="password" name="txid" class="input-control"
                                             placeholder="123456">
+
+                                            <button class="verification-btn">
+                                                發送驗證碼
+                                            </button>
                                     </div>
                                     <span class="msg"></span>
                                 </div>
@@ -356,7 +363,7 @@
                         </div>
                 </form> -->
 
-                <!-- <div class="form-card">
+                <div class="form-card">
                     <h2 class="title">轉帳明細</h2>
                     <div class="list">
                         <div class="row">
@@ -381,10 +388,10 @@
                         </div>
 
                         <div class="return-link">
-                            <a href="" class="link btn">下一步</a>
+                            <a href="" class="link btn">返回會員中心</a>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>

@@ -1,7 +1,7 @@
 section.content {
     .transfer {
         .custom-container {
-            .card {
+            .form-card {
                 .verification {
                     margin-top: 50px;
 
@@ -28,6 +28,13 @@ section.content {
                             color: $gray-5;
                             cursor: pointer;
                         }
+
+                        .verification-btn {
+                            margin-left: 15px;
+                            @include btn-orange-outline;
+                            flex: 1 1 0%;
+                            height: 40px;
+                        }
                     }
                     
                 }
@@ -35,7 +42,6 @@ section.content {
                 .transfer_notify {
                     @include Sans(400, 14px, 20px, .05em);
                     color: $gray-5;
-                    margin-bottom: 30px;
 
                     .time {
                         color: $red-1;

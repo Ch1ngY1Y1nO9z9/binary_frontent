@@ -47,6 +47,7 @@
             margin-bottom: 10px;
 
             .link {
+                display: inline-block;
                 color: $gray-4;
                 font-weight: 400;
                 letter-spacing: initial;
@@ -232,7 +233,9 @@
         button,
         a {
             @include Sans(700, 14px, 14px, .1em);
-            padding: 12px 60px 14px;
+            width: 150px;
+            text-align: center;
+            padding: 12px 0 14px;
 
             @include btn-orange;
         }
@@ -271,7 +274,9 @@
 
         .link.btn {
             text-decoration: none;
-            padding: 12px 60px 14px;
+            width: 150px;
+            text-align: center;
+            padding: 12px 0 14px;
             @include btn-orange;
         }
     }
@@ -408,6 +413,10 @@
                     color: $yellow-5;
                     font-size: 14px;
                     margin-right: 10px;
+                }
+
+                &.multi-col {
+                    line-height: 20px;
                 }
             }
 

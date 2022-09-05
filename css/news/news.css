@@ -1541,8 +1541,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -1622,8 +1621,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }

@@ -21,9 +21,9 @@ section.content {
 }
 .card-left-layout .account-card .account {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
-  bottom: 35px;
+  bottom: 60px;
   margin-bottom: -35px;
 }
 .card-left-layout .account-card .account .avatar {
@@ -40,6 +40,9 @@ section.content {
   padding: 0;
   padding-left: 15px;
   flex: 1 1 0%;
+}
+.card-left-layout .account-card .account .account-detail span.class {
+  margin-left: 0;
 }
 .card-left-layout .account-card .account .account-detail .name {
   font-family: "Noto Sans TC", "sans-serif";
@@ -161,10 +164,10 @@ section.content {
 }
 .result-card .account {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   margin-bottom: -30px;
-  bottom: 45px;
+  bottom: 55px;
 }
 .result-card .account .pic {
   width: 90px;
@@ -173,6 +176,7 @@ section.content {
   border-radius: 50%;
 }
 .result-card .account .name {
+  flex: 1 1 0%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
@@ -180,6 +184,9 @@ section.content {
   letter-spacing: initial;
   color: rgb(57, 57, 57);
   margin-left: 15px;
+}
+.result-card .account .name span.class {
+  margin-left: 0;
 }
 .result-card .rate {
   display: flex;
@@ -574,8 +581,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -655,8 +661,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -876,10 +881,12 @@ h3.subtitle {
   align-items: center;
 }
 .modal .mask .confirm-modal .footer .links .link {
+  width: 150px;
+  padding: 7px;
+  text-align: center;
   background: rgb(255, 255, 255);
   color: rgb(255, 98, 31);
   border: 1px solid rgb(255, 98, 31);
-  padding: 11px 58px 13px;
 }
 .modal .mask .confirm-modal .footer .links .link:hover {
   background: rgb(255, 98, 31);
@@ -977,6 +984,7 @@ h3.subtitle {
   line-height: 14px;
   letter-spacing: 0.05em;
   color: rgb(136, 136, 136);
+  margin-bottom: 5px;
 }
 .modal .mask .chat-modal .header .user .detail .name {
   font-family: "Noto Sans TC", "sans-serif";
@@ -1167,7 +1175,7 @@ h3.subtitle {
 }
 .modal .mask .chat-modal .footer .input-col input.input-control {
   width: 100%;
-  padding: 13px 11px;
+  padding: 7px 11px;
   color: rgb(57, 57, 57);
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
@@ -1232,6 +1240,7 @@ h3.subtitle {
   margin-bottom: 10px;
 }
 .form-card .input-row label.input-label .link {
+  display: inline-block;
   color: rgb(136, 136, 136);
   font-weight: 400;
   letter-spacing: initial;
@@ -1423,7 +1432,9 @@ h3.subtitle {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1469,7 +1480,9 @@ h3.subtitle {
 }
 .form-card .return-link .link.btn {
   text-decoration: none;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1633,6 +1646,9 @@ h3.subtitle {
   color: rgb(252, 189, 31);
   font-size: 14px;
   margin-right: 10px;
+}
+.form-card .list .row .col.multi-col {
+  line-height: 20px;
 }
 .form-card .list .row .left {
   text-align: left;
@@ -1885,6 +1901,29 @@ h3.subtitle {
   border-bottom: 0;
 }
 
+span.class {
+  display: inline-block;
+  width: 85px;
+  padding: 5px 0;
+  margin-left: 15px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+span.class.normal {
+  background: linear-gradient(94.94deg, #ACF0FA 0%, #00C9E4 35.94%);
+}
+span.class.platinum {
+  background: linear-gradient(94.94deg, #FFE0DA 0%, #FF8A71 35.94%);
+}
+span.class.golden {
+  background: linear-gradient(94.94deg, #FFE8C5 0%, #FFAC2F 35.94%);
+}
+
 .section-list {
   padding-right: 78px;
   padding-bottom: 100px;
@@ -1974,21 +2013,18 @@ h3.subtitle {
   margin-top: 26px;
 }
 .list .result-card {
-  margin-top: 24px;
+  margin-top: 35px;
 }
 
 .result .card-left-layout .account-card {
   margin-right: 22px;
-  height: 275px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 .result .card-left-layout .trading-table {
   margin-top: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.result .card-left-layout .account-card {
-  margin-right: 22px;
-  height: 210px;
 }/*# sourceMappingURL=results.css.map */

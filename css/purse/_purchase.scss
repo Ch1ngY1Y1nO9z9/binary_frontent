@@ -1,14 +1,13 @@
 section.content {
     .purchase {
         .custom-container {
-            .card {
+            .form-card {
 
                 .cal {
                     display: flex;
                     padding: 30px;
                     border: 1px solid $gray-4;
                     border-radius: 5px;
-                    margin-bottom: 30px;
 
                     .left {
                         @include Sans(700, 18px, 22px, .05em);
@@ -24,6 +23,7 @@ section.content {
                     .right {
                         flex: 1 1 0;
                         @include Sans(700, 18px, 18px, initial);
+                        padding-top: 8px;
 
                         .spend,
                         .buy {
@@ -47,6 +47,11 @@ section.content {
                             border-color: $hr-gray;
                         }
                     }
+                }
+
+
+                .links {
+                    padding-top: 0;
                 }
             }
         }

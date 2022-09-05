@@ -116,7 +116,8 @@ section.content {
                     @include Sans(700, 14px, 14px, .1em);
                     color: $white-1;
                     background: $orange-5;
-                    padding: 12px 60px 14px;
+                    width: 150px;
+                    padding: 12px 0 14px;
 
                     &:hover {
                         background: $yellow-5;

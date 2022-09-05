@@ -45,6 +45,7 @@
   margin-bottom: 10px;
 }
 .form-card .input-row label.input-label .link {
+  display: inline-block;
   color: rgb(136, 136, 136);
   font-weight: 400;
   letter-spacing: initial;
@@ -236,7 +237,9 @@
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -282,7 +285,9 @@
 }
 .form-card .return-link .link.btn {
   text-decoration: none;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -446,6 +451,9 @@
   color: rgb(252, 189, 31);
   font-size: 14px;
   margin-right: 10px;
+}
+.form-card .list .row .col.multi-col {
+  line-height: 20px;
 }
 .form-card .list .row .left {
   text-align: left;
@@ -994,8 +1002,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -1075,8 +1082,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -1323,7 +1329,7 @@ h3.subtitle {
   padding: 20px 30px;
 }
 .board.stake_detail .left {
-  flex: 1 1 0;
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -1345,6 +1351,7 @@ h3.subtitle {
   font-weight: 700;
 }
 .board.stake_detail .right {
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -1464,18 +1471,13 @@ h3.subtitle {
   padding-top: 15px;
 }
 
-section.content .purse .custom-container {
-  padding-bottom: 180px;
-}
-
-section.content .purchase .custom-container .card .cal {
+section.content .purchase .custom-container .form-card .cal {
   display: flex;
   padding: 30px;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
-  margin-bottom: 30px;
 }
-section.content .purchase .custom-container .card .cal .left {
+section.content .purchase .custom-container .form-card .cal .left {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
@@ -1483,26 +1485,27 @@ section.content .purchase .custom-container .card .cal .left {
   letter-spacing: 0.05em;
   padding-right: 40px;
 }
-section.content .purchase .custom-container .card .cal .left .icon {
+section.content .purchase .custom-container .form-card .cal .left .icon {
   color: rgb(252, 189, 31);
   margin: 15px 0;
   text-align: center;
 }
-section.content .purchase .custom-container .card .cal .right {
+section.content .purchase .custom-container .form-card .cal .right {
   flex: 1 1 0;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: initial;
+  padding-top: 8px;
 }
-section.content .purchase .custom-container .card .cal .right .spend,
-section.content .purchase .custom-container .card .cal .right .buy {
+section.content .purchase .custom-container .form-card .cal .right .spend,
+section.content .purchase .custom-container .form-card .cal .right .buy {
   display: flex;
   line-height: 14px;
 }
-section.content .purchase .custom-container .card .cal .right .spend .title,
-section.content .purchase .custom-container .card .cal .right .buy .title {
+section.content .purchase .custom-container .form-card .cal .right .spend .title,
+section.content .purchase .custom-container .form-card .cal .right .buy .title {
   display: inline-block;
   margin-right: 15px;
   font-family: "Noto Sans TC", "sans-serif";
@@ -1512,24 +1515,27 @@ section.content .purchase .custom-container .card .cal .right .buy .title {
   letter-spacing: initial;
   color: rgb(136, 136, 136);
 }
-section.content .purchase .custom-container .card .cal .right .spend {
+section.content .purchase .custom-container .form-card .cal .right .spend {
   padding-bottom: 25px;
 }
-section.content .purchase .custom-container .card .cal .right hr {
+section.content .purchase .custom-container .form-card .cal .right hr {
   margin-bottom: 25px;
   border-color: #EBEBEB;
 }
+section.content .purchase .custom-container .form-card .links {
+  padding-top: 0;
+}
 
-section.content .transfer .custom-container .card .verification {
+section.content .transfer .custom-container .form-card .verification {
   margin-top: 50px;
 }
-section.content .transfer .custom-container .card .verification .input-row {
+section.content .transfer .custom-container .form-card .verification .input-row {
   margin-bottom: 15px;
 }
-section.content .transfer .custom-container .card .verification .input-row .input-control {
+section.content .transfer .custom-container .form-card .verification .input-row .input-control {
   max-width: 100px;
 }
-section.content .transfer .custom-container .card .verification .input-row .captcha-code {
+section.content .transfer .custom-container .form-card .verification .input-row .captcha-code {
   width: 160px;
   padding: 15px 32px;
   color: rgb(255, 255, 255);
@@ -1542,24 +1548,36 @@ section.content .transfer .custom-container .card .verification .input-row .capt
   text-align: center;
   margin: 0 10px;
 }
-section.content .transfer .custom-container .card .verification .input-row .reset-icon {
+section.content .transfer .custom-container .form-card .verification .input-row .reset-icon {
   font-size: 18px;
   color: rgb(57, 57, 57);
   cursor: pointer;
 }
-section.content .transfer .custom-container .card .transfer_notify {
+section.content .transfer .custom-container .form-card .verification .input-row .verification-btn {
+  margin-left: 15px;
+  background: rgb(255, 255, 255);
+  color: rgb(255, 98, 31);
+  border: 1px solid rgb(255, 98, 31);
+  flex: 1 1 0%;
+  height: 40px;
+}
+section.content .transfer .custom-container .form-card .verification .input-row .verification-btn:hover {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 98, 31);
+}
+section.content .transfer .custom-container .form-card .transfer_notify {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
   color: rgb(57, 57, 57);
-  margin-bottom: 30px;
 }
-section.content .transfer .custom-container .card .transfer_notify .time {
+section.content .transfer .custom-container .form-card .transfer_notify .time {
   color: rgb(235, 54, 52);
   font-weight: 700;
 }
-section.content .transfer .custom-container .card .return-link {
+section.content .transfer .custom-container .form-card .return-link {
   padding-top: 50px;
 }/*# sourceMappingURL=purse.css.map */

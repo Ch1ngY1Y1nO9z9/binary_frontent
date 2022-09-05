@@ -14,9 +14,9 @@
 
         .account {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             position: relative;
-            bottom: 35px;
+            bottom: 60px;
             margin-bottom: -35px;
 
             .avatar {
@@ -36,6 +36,10 @@
                 padding: 0;
                 padding-left: 15px;
                 flex: 1 1 0%;
+
+                span.class {
+                    margin-left: 0;
+                }
 
                 .name {
                     @include Sans(700, 18px, 18px, 1);

@@ -1,10 +1,15 @@
 section.content {
     .track {
         .custom-container {
-            padding-bottom: 200px;
 
             .form-edit {
                 flex: 1 1 0%;
+            }
+
+            .account-detail {
+                span.class {
+                    margin-left: 0;
+                }
             }
         }
     }

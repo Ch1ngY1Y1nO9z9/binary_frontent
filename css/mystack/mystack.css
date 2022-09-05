@@ -63,7 +63,7 @@
   padding: 20px 30px;
 }
 .board.stake_detail .left {
-  flex: 1 1 0;
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -85,6 +85,7 @@
   font-weight: 700;
 }
 .board.stake_detail .right {
+  width: 50%;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   font-size: 14px;
@@ -500,8 +501,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -581,8 +581,7 @@ h3.subtitle {
   color: rgb(57, 57, 57);
   background: rgb(235, 235, 235);
   border-radius: 5px;
-  width: 90px;
-  padding: 13px 0;
+  padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -811,6 +810,7 @@ h3.subtitle {
   margin-bottom: 10px;
 }
 .form-card .input-row label.input-label .link {
+  display: inline-block;
   color: rgb(136, 136, 136);
   font-weight: 400;
   letter-spacing: initial;
@@ -1002,7 +1002,9 @@ h3.subtitle {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1em;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1048,7 +1050,9 @@ h3.subtitle {
 }
 .form-card .return-link .link.btn {
   text-decoration: none;
-  padding: 12px 60px 14px;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0 14px;
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 98, 31);
@@ -1212,6 +1216,9 @@ h3.subtitle {
   color: rgb(252, 189, 31);
   font-size: 14px;
   margin-right: 10px;
+}
+.form-card .list .row .col.multi-col {
+  line-height: 20px;
 }
 .form-card .list .row .left {
   text-align: left;
@@ -1464,8 +1471,27 @@ h3.subtitle {
   border-bottom: 0;
 }
 
-section.content .track .custom-container {
-  padding-bottom: 200px;
+span.class {
+  display: inline-block;
+  width: 85px;
+  padding: 5px 0;
+  margin-left: 15px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+span.class.normal {
+  background: linear-gradient(94.94deg, #ACF0FA 0%, #00C9E4 35.94%);
+}
+span.class.platinum {
+  background: linear-gradient(94.94deg, #FFE0DA 0%, #FF8A71 35.94%);
+}
+span.class.golden {
+  background: linear-gradient(94.94deg, #FFE8C5 0%, #FFAC2F 35.94%);
 }
 
 .card-left-layout {
@@ -1484,9 +1510,9 @@ section.content .track .custom-container {
 }
 .card-left-layout .account-card .account {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
-  bottom: 35px;
+  bottom: 60px;
   margin-bottom: -35px;
 }
 .card-left-layout .account-card .account .avatar {
@@ -1503,6 +1529,9 @@ section.content .track .custom-container {
   padding: 0;
   padding-left: 15px;
   flex: 1 1 0%;
+}
+.card-left-layout .account-card .account .account-detail span.class {
+  margin-left: 0;
 }
 .card-left-layout .account-card .account .account-detail .name {
   font-family: "Noto Sans TC", "sans-serif";
@@ -1614,9 +1643,9 @@ section.content .track .custom-container {
   padding-top: 10px;
 }
 
-section.content .track .custom-container {
-  padding-bottom: 200px;
-}
 section.content .track .custom-container .form-edit {
   flex: 1 1 0%;
+}
+section.content .track .custom-container .account-detail span.class {
+  margin-left: 0;
 }/*# sourceMappingURL=mystack.css.map */

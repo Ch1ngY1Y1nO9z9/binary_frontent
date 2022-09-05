@@ -89,10 +89,12 @@ h3.subtitle {
 
 .filter {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     .btn {
         @include btn-options;
+        padding: 13px 0;
+        width: 74px;
 
         &:hover,
         &.active {
@@ -108,14 +110,13 @@ h3.subtitle {
 
     .datetimepicker {
         display: flex;
-        flex: 1 1 0;
         color: $gray-5;
+        margin-left: 15px;
 
         height: 40px;
 
         .input-date {
-            flex: 1 1 0;
-            margin: 0 15px;
+            width: 250px;
             position: relative;
 
             input {
@@ -140,19 +141,21 @@ h3.subtitle {
 
         span {
             @include Sans(400, 18px, 40px, initial);
+            display: inline-block;
+            margin: 0 10px;
         }
 
 
         .submit-btn {
             @include btn-gray;
-            padding: 0 45px;
+            width: 100px;
             color: $gray-4;
-            border-radius: 5px;
+            margin-left: 15px;
         }
     }
 
     .input-col {
-        flex: 1 1 0%;
+        width: 200px;
         display: flex;
         align-items: center;
         position: relative;

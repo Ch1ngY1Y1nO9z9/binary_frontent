@@ -90,7 +90,10 @@
                 border: 1px solid $orange-5;
                 background: $white-1;
 
-                padding: 12px 45px 14px;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                padding: 12px 0;
 
                 &:hover {
                     color: $white-1;
@@ -196,18 +199,23 @@
                                 color: $white-1;
                                 padding-bottom: 30px;
                                 border-bottom: 2px solid $gray-2;
+                                
+                                position: relative;
     
                                 .bar-left {
+                                    position: absolute;
+                                    left: 0;
                                     background: $green-1;
                                     padding: 6px 10px 8px;
                                     border-radius: 50px 0 0 50px;
                                 }
     
                                 .bar-right {
+                                    width: 100%;
                                     text-align: right;
                                     background: $red-1;
                                     padding: 6px 10px 8px;
-                                    border-radius: 0 50px 50px 0;
+                                    border-radius: 50px;
                                 }
                             }
     

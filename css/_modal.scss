@@ -78,6 +78,7 @@
                     align-items: center;
 
                     .link {
+                        text-align: center;
                         @include Sans(700, 24px, 30px, initial);
                         @include btn-blue; 
                         padding: 45px 27px;

@@ -131,23 +131,6 @@
 .form-card .input-row .input-col select.input-control option {
   padding: 12px 10px;
 }
-.form-card .input-row .input-col .checkbox-mask {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid rgb(136, 136, 136);
-}
-.form-card .input-row .input-col .checkbox-mask + label.input-label {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: initial;
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 0;
-}
 .form-card .input-row .input-col .point_number {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
@@ -679,6 +662,11 @@
 .form-card .order-cards.list .row {
   border-bottom: 0;
 }
+.form-card .order-cards.list .input-row {
+  margin-top: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
 .form-card .order-cards.list .order-card {
   padding-top: 30px;
   border-top: 2px solid rgb(136, 136, 136);
@@ -704,6 +692,42 @@
 }
 .form-card .order-cards.list .order-card .row:last-child {
   border-bottom: 0;
+}
+.form-card .order-cards.list .order-card .row .col .copy-icon {
+  color: rgb(57, 57, 57);
+}
+.form-card .reservation-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.form-card .reservation-btns .btn {
+  width: 150px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+}
+.form-card .reservation-btns .btn.contact {
+  background: rgb(0, 70, 174);
+}
+.form-card .reservation-btns .btn.confirm {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 98, 31);
+}
+.form-card .reservation-btns .btn.confirm:hover {
+  background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
+}
+.form-card .reservation-btns .btn:first-child {
+  margin-left: 0;
 }
 
 .result-table .row {
@@ -1071,7 +1095,7 @@ h3.subtitle {
 
 .filter {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .filter .btn {
   font-family: "Noto Sans TC", "sans-serif";
@@ -1085,6 +1109,8 @@ h3.subtitle {
   padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
+  padding: 13px 0;
+  width: 74px;
 }
 .filter .btn:hover, .filter .btn.active {
   background: rgb(252, 189, 31);
@@ -1096,13 +1122,12 @@ h3.subtitle {
 }
 .filter .datetimepicker {
   display: flex;
-  flex: 1 1 0;
   color: rgb(57, 57, 57);
+  margin-left: 15px;
   height: 40px;
 }
 .filter .datetimepicker .input-date {
-  flex: 1 1 0;
-  margin: 0 15px;
+  width: 250px;
   position: relative;
 }
 .filter .datetimepicker .input-date input {
@@ -1127,14 +1152,16 @@ h3.subtitle {
   font-size: 18px;
   line-height: 40px;
   letter-spacing: initial;
+  display: inline-block;
+  margin: 0 10px;
 }
 .filter .datetimepicker .submit-btn {
   background: rgb(255, 255, 255);
   color: rgb(136, 136, 136);
   border: 1px solid rgb(136, 136, 136);
-  padding: 0 45px;
+  width: 100px;
   color: rgb(136, 136, 136);
-  border-radius: 5px;
+  margin-left: 15px;
 }
 .filter .datetimepicker .submit-btn:hover {
   background: rgb(255, 98, 31);
@@ -1142,7 +1169,7 @@ h3.subtitle {
   border-color: rgb(255, 98, 31);
 }
 .filter .input-col {
-  flex: 1 1 0%;
+  width: 200px;
   display: flex;
   align-items: center;
   position: relative;
@@ -1277,7 +1304,7 @@ h3.subtitle {
 }
 .board.wallets .title {
   font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.05em;
@@ -1565,6 +1592,9 @@ section.content .transfer .custom-container .form-card .verification .input-row 
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
   border-color: rgb(255, 98, 31);
+}
+section.content .transfer .custom-container .form-card .verification .sms .input-control {
+  max-width: 135px;
 }
 section.content .transfer .custom-container .form-card .transfer_notify {
   font-family: "Noto Sans TC", "sans-serif";

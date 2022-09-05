@@ -62,6 +62,9 @@
 .custom-container.c-840 {
   max-width: 840px;
 }
+.custom-container.c-644 {
+  max-width: 644px;
+}
 .custom-container.c-624 {
   max-width: 624px;
 }
@@ -168,6 +171,9 @@ header .fixed-buttons .quick_link .btn-list a {
 header .fixed-buttons .quick_link .btn-list a:nth-child(even) {
   border-top: 1px solid rgb(136, 136, 136);
   border-bottom: 1px solid rgb(136, 136, 136);
+}
+header .fixed-buttons .quick_link .btn-list a:hover {
+  color: rgb(252, 189, 31);
 }
 header .fixed-buttons .quick_link .btn-list a .number {
   font-family: "Noto Sans TC", "sans-serif";
@@ -415,6 +421,7 @@ header .custom-container .header-r .burger-menu .menu .main-menu nav.desktop .bu
   justify-content: center;
 }
 header .custom-container .header-r .burger-menu .menu .main-menu nav.desktop .buttons .menu-botton {
+  text-align: center;
   border: 2px rgb(252, 189, 31) solid;
   border-radius: 5px;
   padding: 48px 55px;
@@ -460,6 +467,7 @@ header .custom-container .header-r .burger-menu .menu .main-menu nav.mobile .but
   }
 }
 header .custom-container .header-r .burger-menu .menu .main-menu nav.mobile .buttons .menu-botton {
+  text-align: center;
   border: 2px rgb(252, 189, 31) solid;
   border-radius: 5px;
   padding: 48px 55px;

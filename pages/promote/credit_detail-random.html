@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transfer</title>
+    <title>promote</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/purse/purse.css">
+    <link rel="stylesheet" href="../../css/promote/promote.css">
 </head>
 
 <body class="relative">
     <header id="header">
         <div class="custom-container c-1620 flex">
             <div class="header-l flex-none">
-                <a href="#" class="logo">
+                <a href="../../index.html" class="logo">
                     <img src="../../images/layout_logo.svg" alt="logo">
                     <span class="site-name">皇冠交易所</span>
                 </a>
@@ -215,180 +215,70 @@
     <h1 class="pagetitle cp">
         <div class="title">
             <div class="subtitle">
-                我的錢包
+                會員中心
             </div>
-            轉帳
+            發放點數詳情
         </div>
-        <a href="#" class="return-btn">
-            返回會員中心
+        <a href="./list.html" class="return-btn">
+            返回好友推廣
         </a>
     </h1>
 
     <section class="content">
-        <div class="transfer">
+        <div class="promote">
             <div class="custom-container c-624 p-200">
-                <!-- <div class="board wallets all">
-                    <div class="left">
-                        <div class="title">
-                            <span class="icon"></span>投注錢包 (點)
-                        </div>
-                        <div class="point">
-                            662,062,066
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="title">
-                            <span class="icon"></span>出金錢包 (點)
-                        </div>
-                        <div class="point">
-                            200
-                        </div>
-                    </div>
-                </div>
-                <form class="form-card" action="" method="post">
-                    <div class="input-row">
-                        <label for="purse" class="input-label">轉出錢包</label>
-                        <div class="input-col">
-                            <select name="purse" id="purse" class="input-control">
-                                <option value="">投注錢包</option>
-                                <option value="">出金錢包</option>
-                            </select>
-                            <div class="arrow">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="address" class="input-label">轉入會員帳號</label>
-
-                        <div class="input-col">
-                            <input id="address" type="text" name="address" class="input-control" placeholder="請輸入帳號">
-                        </div>
-                        <span class="notice">提醒：僅可以入金錢包→入金錢包、出金錢包→出金錢包。</span>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="point" class="input-label">轉帳點數</label>
-                        <div class="input-col">
-                            <input id="point" type="number" name="point" class="input-control" placeholder="請輸入轉帳點數">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="password" class="input-label">錢包密碼 <a class="link float-right" href="">忘記密碼?</a></label>
-                        <div class="input-col">
-                            <input id="txid" type="password" name="txid" class="input-control" placeholder="請輸入錢包密碼">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-
-                    <div class="submit"> 
-                        <button type="submit">下一步</button>
-                    </div>
-                </form>  -->
-
-                <!-- <div class="succes result-msg">
-                    <div class="icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <div class="msg-detail">
-                        <div class="title">轉帳成功</div>
-                        <div class="text">您可以在會員功能中找到該操作紀錄</div>
-                    </div>
-                </div> -->
-
-                <!-- <form class="form-card" action="">
-                    <h2 class="title">轉帳確認</h2>
-                    <p class="text">
-                        請確認您輸入的資訊是否有誤，並輸入驗證碼進行轉帳。
-                    </p>
-                    <div class="list">
-                        <div class="row">
-                            <div class="col">轉出錢包</div>
-                            <div class="col">投注錢包</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">轉入會員帳號</div>
-                            <div class="col">ABC1234567489</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">轉帳點數</div>
-                            <div class="col">100,000</div>
-                        </div>
-                        <div class="verification">
-                            <div class="captcha">
-                                <div class="input-row">
-                                    <label for="txid" class="input-label">驗證碼</label>
-                                    <div class="input-col">
-                                        <input id="txid" type="password" name="txid" class="input-control"
-                                            placeholder="123456">
-                                        <div class="captcha-code">
-                                            1234
-                                        </div>
-                                        <div class="reset-icon">
-                                            <i class="fa-solid fa-arrow-rotate-right"></i>
-                                        </div>
-                                    </div>
-                                    <span class="msg"></span>
-                                </div>
-                            </div>
-                            <div class="sms">
-                                <div class="input-row">
-                                    <label for="txid" class="input-label">簡訊驗證碼(6碼)</label>
-                                    <div class="input-col">
-                                        <input id="txid" type="password" name="txid" class="input-control"
-                                            placeholder="123456">
-
-                                            <button class="verification-btn">
-                                                發送驗證碼
-                                            </button>
-                                    </div>
-                                    <span class="msg"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transfer_notify">
-                            為確保交易安全，請於<span class="time">2022/07/20 17:56</span>前完成交易，逾時將視同取消該筆交易。
-                        </div>
-
-                        <div class="submit">
-                            <form action="" method="">
-                                <button type="submit">確認轉帳</button>
-                            </form>
-                        </div>
-
-                        <div class="return-link">
-                            若資訊有誤, 請返回&nbsp<a href="#" class="link">上一頁</a>
-                        </div>
-                </form> -->
-
                 <div class="form-card">
-                    <h2 class="title">轉帳明細</h2>
                     <div class="list">
                         <div class="row">
-                            <div class="col">單號</div>
-                            <div class="col">123456789012345</div>
+                            <div class="col">推廣類型</div>
+                            <div class="col">隨機紅包</div>
                         </div>
                         <div class="row">
-                            <div class="col">訂單時間</div>
-                            <div class="col">2022/07/20 17:56</div>
+                            <div class="col">時間</div>
+                            <div class="col multi-col">
+                                2022/07/20  17:56 (開始)<br/>
+                                2022/07/20  17:56 (結束)
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col">轉出錢包</div>
-                            <div class="col">ABC123456789</div>
+                            <div class="col">發放總點數</div>
+                            <div class="col">1,000</div>
                         </div>
                         <div class="row">
-                            <div class="col">轉出會員帳號</div>
-                            <div class="col">ABC1234567489</div>
+                            <div class="col">搶到紅包人數</div>
+                            <div class="col">2/5</div>
                         </div>
                         <div class="row">
-                            <div class="col">轉帳點數</div>
-                            <div class="col">100,000</div>
+                            <div class="col">剩餘點數</div>
+                            <div class="col text-o">800</div>
+                        </div>
+                        <div class="row account_cards">
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    Gatsby556
+                                </div>
+                                <span class="point">
+                                    100 點
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    applegood6
+                                </div>
+                                <span class="point">
+                                    100 點
+                                </span>
+                            </div>
                         </div>
 
                         <div class="return-link">
-                            <a href="" class="link btn">返回會員中心</a>
+                            <a href="./list.html" class="link btn">返回上一頁</a>
                         </div>
                     </div>
                 </div>

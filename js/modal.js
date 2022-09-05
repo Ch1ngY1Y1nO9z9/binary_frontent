@@ -156,14 +156,14 @@ const follow_modal = (
                 </div>
                 <div class="footer">
                     <div class="links">
-                        <button type="button" class="link">
+                        <a href="./setting-regular.html" class="link">
                             每筆<br/>
                             固定金額
-                        </button>
-                        <button type="button" class="link">
+                        </a>
+                        <a href="./setting-persentage.html" class="link">
                             每筆<br/>
                             比例金額
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -104,6 +104,10 @@ header {
                         border-bottom: 1px solid $gray-4;
                     }
 
+                    &:hover {
+                        color: $yellow-5;
+                    }
+
                     .number {
                         @include Sans(700, 18px, 16px, .05em);
                         margin-bottom: 8px;
@@ -389,6 +393,7 @@ header {
                                 justify-content: center;
 
                                 .menu-botton {
+                                    text-align: center;
                                     border: 2px $yellow-5 solid;
                                     border-radius: 5px;
                                     padding: 48px 55px;
@@ -434,6 +439,7 @@ header {
                                 }
 
                                 .menu-botton {
+                                    text-align: center;
                                     border: 2px $yellow-5 solid;
                                     border-radius: 5px;
                                     padding: 48px 55px;

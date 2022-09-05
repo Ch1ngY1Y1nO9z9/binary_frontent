@@ -2,7 +2,7 @@ section.content {
     .transfer {
         .custom-container {
             .form-card {
-                .verification {
+                .verification { 
                     margin-top: 50px;
 
                     .input-row {
@@ -34,6 +34,12 @@ section.content {
                             @include btn-orange-outline;
                             flex: 1 1 0%;
                             height: 40px;
+                        }
+                    }
+
+                    .sms {
+                        .input-control {
+                            max-width: 135px;
                         }
                     }
                     

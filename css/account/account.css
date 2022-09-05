@@ -167,23 +167,6 @@
 .form-card .input-row .input-col select.input-control option {
   padding: 12px 10px;
 }
-.form-card .input-row .input-col .checkbox-mask {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid rgb(136, 136, 136);
-}
-.form-card .input-row .input-col .checkbox-mask + label.input-label {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: initial;
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 0;
-}
 .form-card .input-row .input-col .point_number {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
@@ -715,6 +698,11 @@
 .form-card .order-cards.list .row {
   border-bottom: 0;
 }
+.form-card .order-cards.list .input-row {
+  margin-top: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
 .form-card .order-cards.list .order-card {
   padding-top: 30px;
   border-top: 2px solid rgb(136, 136, 136);
@@ -740,6 +728,42 @@
 }
 .form-card .order-cards.list .order-card .row:last-child {
   border-bottom: 0;
+}
+.form-card .order-cards.list .order-card .row .col .copy-icon {
+  color: rgb(57, 57, 57);
+}
+.form-card .reservation-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.form-card .reservation-btns .btn {
+  width: 150px;
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+}
+.form-card .reservation-btns .btn.contact {
+  background: rgb(0, 70, 174);
+}
+.form-card .reservation-btns .btn.confirm {
+  background: rgb(255, 98, 31);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 98, 31);
+}
+.form-card .reservation-btns .btn.confirm:hover {
+  background: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
+  border-color: rgb(252, 189, 31);
+}
+.form-card .reservation-btns .btn:first-child {
+  margin-left: 0;
 }
 
 span.class {

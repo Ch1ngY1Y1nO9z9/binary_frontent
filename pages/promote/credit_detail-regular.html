@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trading</title>
+    <title>promote</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/trading/trading.css">
+    <link rel="stylesheet" href="../../css/promote/promote.css">
 </head>
 
 <body class="relative">
     <header id="header">
         <div class="custom-container c-1620 flex">
             <div class="header-l flex-none">
-                <a href="#" class="logo">
+                <a href="../../index.html" class="logo">
                     <img src="../../images/layout_logo.svg" alt="logo">
                     <span class="site-name">皇冠交易所</span>
                 </a>
@@ -211,141 +211,104 @@
             </a>
         </div>
     </header>
-    
-
 
     <h1 class="pagetitle cp">
         <div class="title">
             <div class="subtitle">
-                交易中心
+                會員中心
             </div>
-            點數交易
+            發放點數詳情
         </div>
-        <a href="#" class="return-btn">
-            返回交易中心
+        <a href="./list.html" class="return-btn">
+            返回好友推廣
         </a>
     </h1>
 
     <section class="content">
-        <div class="transfer">
-            <div class="custom-container c-624">
-                <div class="board wallets single">
-                    <div class="title">
-                        <span class="icon"></span>出金錢包 (點)
-                    </div>
-                    <div class="point">
-                        200
-                    </div>
-                </div>
-                <form class="form-card" action="" method="post">
-                    <div class="input-row">
-                        <label for="point" class="input-label">販售點數</label>
-                        <div class="input-col">
-                            <input id="point" type="number" name="point" class="input-control" placeholder="所要販售的點數">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-                    <div class="input-row">
-                        <label for="address" class="input-label">實際扣款(點) <span class="ml-1 notice">*販賣點數 x 1.02 (2%手續費)</span></label>
-
-                        <div class="input-col">
-                            <div class="point_number">1,020</div>
-                        </div>
-
-                    </div>
-                    <div class="input-row">
-                        <label for="point" class="input-label">參考U數(USDT)</label>
-                        <div class="input-col">
-                            <div class="point_number">10</div>
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <label for="price" class="input-label">實賣金額(USDT)</label>
-                        <div class="input-col">
-                            <input id="price" type="number" name="price" class="input-control" placeholder="請輸入金額(USDT)">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-
-                    <div class="input-row">
-                        <label for="chain" class="input-label">鏈</label>
-                        <div class="input-col">
-                            <select name="chain" id="chain" class="input-control">
-                                <option value="">TRC20</option>
-                                <option value="">ERC20</option>
-                            </select>
-                            <div class="arrow">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-
-                    <div class="input-row">
-                        <label for="address" class="input-label">收款地址</label>
-                        <div class="input-col">
-                            <input id="address" type="text" name="address" class="input-control" placeholder="請輸入收款地址">
-                        </div>
-                        <span class="msg"></span>
-                    </div>
-
-                    <div class="submit">
-                        <button type="submit">下一步</button>
-                    </div>
-                </form>
-
-                <!-- <div class="succes result-msg">
-                    <div class="icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <div class="msg-detail">
-                        <div class="title">上架成功</div>
-                        <div class="text">您可以在交易中心找到該操作紀錄</div>
-                    </div>
-                </div> -->
-
-                <!-- <form class="form-card" action="">
-                    <h2 class="title">交易確認</h2>
+        <div class="promote">
+            <div class="custom-container c-624 p-200">
+                <div class="form-card">
                     <div class="list">
                         <div class="row">
-                            <div class="col">販售點數</div>
-                            <div class="col">1,000</div>
+                            <div class="col">推廣類型</div>
+                            <div class="col">固定金額</div>
                         </div>
                         <div class="row">
-                            <div class="col">實際扣款(點)</div>
-                            <div class="col">1,020</div>
+                            <div class="col">時間</div>
+                            <div class="col">
+                                2022/07/20 17:56 (開始)<br />
+                                2022/07/20 17:56 (結束)
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col">參考U數(USDT)</div>
+                            <div class="col">發放總點數</div>
+                            <div class="col">200</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">每筆發放點數</div>
                             <div class="col">10</div>
                         </div>
                         <div class="row">
-                            <div class="col">實賣金額(USDT)</div>
-                            <div class="col">10</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">鏈</div>
-                            <div class="col">TRC</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">收款地址</div>
-                            <div class="col">AABB12345666</div>
+                            <div class="col">兌換人數</div>
+                            <div class="col">4/20</div>
                         </div>
 
-                        <div class="submit">
-                            <form action="" method="">
-                                <button type="submit">確認上架</button>
-                            </form>
+                        <div class="row">
+                            <div class="col">剩餘點數</div>
+                            <div class="col text-o">160</div>
+                        </div>
+                        <div class="row account_cards">
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    Gatsby556
+                                </div>
+                                <span class="point">
+                                    10 點
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    applegood6
+                                </div>
+                                <span class="point">
+                                    10 點
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    qwe12345789
+                                </div>
+                                <span class="point">
+                                    10 點
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="pic">
+                                    <img src="" alt="avatar">
+                                </div>
+                                <div class="name">
+                                    99688abccc12333
+                                </div>
+                                <span class="point">
+                                    10 點
+                                </span>
+                            </div>
                         </div>
 
                         <div class="return-link">
-                            <a href="" class="link btn">返回首頁</a>
+                            <a href="./list.html" class="link btn">返回上一頁</a>
                         </div>
-
-                        <div class="return-link">
-                            若資訊有誤, 請返回&nbsp<a href="#" class="link">上一頁</a>
-                        </div>
-                </form> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>

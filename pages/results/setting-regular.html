@@ -5,26 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>results</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
     <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/login/login.css">
+    <link rel="stylesheet" href="../../css/results/results.css">
 </head>
 
 <body class="relative">
     <header id="header">
         <div class="custom-container c-1620 flex">
             <div class="header-l flex-none">
-                <a href="#" class="logo">
-                    <img src="../../images/logo.svg" alt="logo">
+                <a href="../../index.html" class="logo">
+                    <img src="../../images/layout_logo.svg" alt="logo">
                     <span class="site-name">皇冠交易所</span>
                 </a>
             </div>
             <div class="header-r shrink">
+                <div class="search">
+                    <input type="text" class="search" placeholder="搜尋" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="point">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="number">
+                        5,699
+                    </div>
+                </div>
+                <div class="notify">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
                 <button class="account">
                     <i class="fa-solid fa-user"></i>
                 </button>
@@ -158,124 +173,150 @@
         </div>
 
         <div class="fixed-buttons">
+            <div class="quick_link">
+                <div class="menu-btn">
+                    <div class="icon">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+                    <div class="title">注單</div>
+                </div>
+                <div class="btn-list">
+                    <a href="#">
+                        <div class="number">
+                            5
+                        </div>
+                        搓合中
+                    </a>
+                    <a href="#">
+                        <div class="number">
+                            8
+                        </div>
+                        已成交
+                    </a>
+                    <a href="#">
+                        <div class="number">
+                            99+
+                        </div>
+                        未成交
+                    </a>
+                </div>
+            </div>
+            </a>
+            <a href="#" class="quick_link">
+                客服中心
+            </a>
             <a href="#header" class="btt">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </div>
     </header>
 
-    <h1 class="pagetitle">
-        註冊會員
+    <h1 class="pagetitle cp">
+        <div class="title">
+            <div class="subtitle">
+                會員戰績風雲榜
+            </div>
+            投注明細
+        </div>
+        <a href="./list.html" class="return-btn">
+            返回會員中心
+        </a>
     </h1>
 
     <section class="content">
-        <div class="custom-container c-624">
-            <form class="form-card" action="" method="" enctype="multipart/form-data">
-                <div class="input-row">
-                    <label for="user_name" class="input-label">用戶名稱*</label>
-                    <div class="input-col">
-                        <input id="user_name" name="user_name" type="text" class="input-control" placeholder="輸入用戶名稱">
+        <div class="result">
+            <div class="custom-container c-954 p-200">
+                <div class="card-left-layout">
+                    <div class="account-card">
+                        <div class="account">
+                            <div class="avatar">
+                                <img src="" alt="account avatar">
+                            </div>
+                            <div class="account-detail">
+                                <span class="class normal">菁英公爵</span>
+                                <div class="name">Gatsby556</div>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <div class="total-rate">
+                                <span class="wins">66<span class="per">%</span></span>
+                                <br />
+                                <div class="total">
+                                    333/500
+                                </div>
+                                <div class="title">
+                                    總勝率
+                                </div>
+                            </div>
+                            <div class="total-rate">
+                                <span class="wins">75<span class="per">%</span></span>
+                                <br />
+                                <div class="total">
+                                    66/100
+                                </div>
+                                <div class="title">
+                                    近百場勝率
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <span class="msg">該用戶名稱已被其他人使用</span>
-                </div>
-                <div class="input-row">
-                    <label for="email" class="input-label">Email*</label>
-                    <div class="input-col">
-                        <input id="email" name="email" type="email" class="input-control" placeholder="輸入Email">
-                    </div>
-                    <span class="msg">請輸入正確的Email格式，如：12345@gmail.com</span>
-                </div>
-                <div class="input-row">
-                    <label for="password" class="input-label">密碼*</label>
-                    <div class="input-col">
-                        <input id="password" type="password" name="password" class="input-control" placeholder="請輸入密碼">
-                    </div>
-                    <span class="msg"></span>
-                </div>
-                <div class="input-row">
-                    <label for="comfirm_password" class="input-label">確認密碼*</label>
-                    <div class="input-col">
-                        <input id="comfirm_password" name="comfirm_password" type="password" class="input-control" placeholder="確認密碼">
-                    </div>
-                    <span class="msg">密碼不符</span>
-                </div>
-                <div class="input-row">
-                    <label for="mobile" class="input-label">手機號碼*</label>
-                    <div class="input-col">
-                        <input id="mobile" name="mobile" type="text" class="input-control" placeholder="輸入手機號碼">
-                    </div>
-                    <span class="msg">請確認手機號碼是否正確</span>
-                </div>
-                <div class="input-row">
-                    <label for="vertify_code" class="input-label">簡訊驗證碼*(6碼) </label>
-                    <div class="input-col">
-                        <input id="vertify_code" name="vertify_code" type="text" class="input-control" placeholder="輸入驗證碼">
-                        <span>發送驗證碼</span>
-                    </div>
+                    <form class="form-card" action="./list.html" method="get">
+                        <div class="input-row">
+                            <label for="chain" class="input-label">跟單類型</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">每筆固定金額</option>
+                                    <option value="">每筆比例金額</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="point" class="input-label">金額(點)</label>
+                            <div class="input-col">
+                                <input id="point" type="number" name="point" class="input-control" placeholder="請輸入金額(點)">
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="chain" class="input-label">跟單場數</label>
+                            <div class="input-col">
+                                <select name="chain" id="chain" class="input-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="" selected>5</option>
+                                </select>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <span class="msg"></span>
+                        </div>
+                        <div class="input-row">
+                            <label for="password" class="input-label">錢包密碼 <a class="link float-right" href="../login/forgotpassword.html">忘記密碼?</a></label>
+                            <div class="input-col">
+                                <input id="password" type="password" name="password" class="input-control" placeholder="請輸入錢包密碼">
+                            </div>
+                            <span class="msg"></span>
+                        </div>
 
-                    <span class="msg">輸入的驗證碼有誤，請確認後再次輸入或重新發送驗證碼</span>
+                        <div class="links">
+                            <a href="./content.html" class="link">取消</a>
+                            <button type="submit" class="link">確定跟單</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="input-row">
-                    <label for="invite_code" class="input-label">邀請碼</label>
-                    <div class="input-col">
-                        <input id="invite_code" name="invite_code" type="text" class="input-control" placeholder="若您無邀請碼, 請略過此處">
-                    </div>
-                    <span class="msg">此邀請碼不存在，請確認後再次輸入</span>
-                </div>
-                <div class="input-row">
-                    <div class="input-col">
-                        <input id="terms" name="terms" type="hidden" class="input-control" placeholder="輸入驗證碼">
-                        <div class="checkbox-mask"></div>
-                        <label for="terms" class="input-label">我已仔細閱讀 <a href="">＜XXXX規章＞</a></label>
-                    </div>
-                </div>
-                <div class="submit">
-                    <button type="submit">送出</button>
-                </div>
-                <span class="msg">您輸入有誤或未完整填寫，請確認後再次送出。</span>
-                <div class="links">
-                    <a href="#" class="link">返回會員登入</a>
-                </div>
-            </form>
-
-            <!-- <div class="form-card register">
-                <div class="icon success">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div class="confirm">
-                    歡迎您的加入，快來與我們一起玩吧！
-                </div>
-                <div class="check">
-                    <div class="text">
-                        <span>3</span> 秒後將自動返回會員登入頁面...
-                    </div>
-                </div>
-                <div class="links">
-                    <a href="#" class="link">返回首頁</a>
-                    <a href="#" class="link">會員登入</a>
-                </div>
-            </div> -->
-
-            <!-- <div class="form-card register">
-                <div class="icon vertify">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="confirm">
-                    已寄發驗證信到您的Email中，請透過網址來進行會員驗證。
-                </div>
-                <div class="check">
-                    <div class="text">
-                        驗證信有效時間為30分鐘
-                    </div>
-                </div>
-                <div class="links">
-                    <a href="#" class="link">返回首頁</a>
-                </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
-    <footer id="sp">
+    <footer>
         <div data-aos-anchor-placement="center-bottom" data-aos="fade-up-right" class="footer-flowers-left">
             <object data="../../images/flowers/index_footer_left.png" type="image/png"></object>
         </div>
@@ -311,9 +352,14 @@
     <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
         integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- datetimepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     <!-- 選單js -->
     <script src="../../js/header.js?v=7/27"></script>
+
 </body>
 
 </html>

@@ -50,7 +50,7 @@ section.content .custom-container .form-card .input-row label.input-label[for=ve
 section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control {
   flex: 1 1 0;
 }
-section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span {
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ button {
   display: inline-block;
   margin-left: 15px;
   font-family: "Noto Sans TC", "sans-serif";
@@ -63,13 +63,38 @@ section.content .custom-container .form-card .input-row label.input-label[for=ve
   border: 1px solid rgb(255, 98, 31);
   background: rgb(255, 255, 255);
 }
-section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ span:hover {
+section.content .custom-container .form-card .input-row label.input-label[for=vertify_code] + .input-col input#vertify_code.input-control ~ button:hover {
   background: rgb(255, 98, 31);
   color: rgb(255, 255, 255);
 }
 section.content .custom-container .form-card .input-row .input-col {
   display: flex;
   align-items: center;
+}
+section.content .custom-container .form-card .input-row .input-col label.terms-label {
+  font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: initial;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+section.content .custom-container .form-card .input-row .input-col label.terms-label .checkbox-mask {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(136, 136, 136);
+  margin-right: 10px;
+}
+section.content .custom-container .form-card .input-row .input-col label.terms-label .checkbox-mask.clicked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 70, 174);
 }
 section.content .custom-container .form-card .input-row .input-col input.input-control {
   width: 100%;
@@ -92,23 +117,6 @@ section.content .custom-container .form-card .input-row .input-col input.input-c
 }
 section.content .custom-container .form-card .input-row .input-col input.input-control::placeholder {
   color: rgb(195, 195, 195);
-}
-section.content .custom-container .form-card .input-row .input-col .checkbox-mask {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid rgb(136, 136, 136);
-}
-section.content .custom-container .form-card .input-row .input-col .checkbox-mask + label.input-label {
-  font-family: "Noto Sans TC", "sans-serif";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: initial;
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 0;
 }
 section.content .custom-container .form-card .input-row .input-col + .msg {
   display: none;

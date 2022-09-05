@@ -128,21 +128,6 @@
                 }
             }
 
-            .checkbox-mask {
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                border-radius: 5px;
-                border: 1px solid $gray-4;
-
-                &+label.input-label {
-                    @include Sans(400, 14px, 14px, initial);
-                    display: inline-block;
-                    margin-left: 10px;
-                    margin-bottom: 0;
-                }
-            }
-
             .point_number {
                 @include Sans(700, 24px, 24px, initial);
                 color: $orange-5;
@@ -668,6 +653,12 @@
             border-bottom: 0;
         }
 
+        .input-row {
+            margin-top: 0;
+            padding: 15px 0;
+            border-bottom:  1px solid $gray-2;
+        }
+
         .order-card {
             padding-top: 30px;
             border-top: 2px solid $gray-4;
@@ -699,8 +690,40 @@
                 &:last-child {
                     border-bottom: 0;
                 }
+
+                .col {
+                    .copy-icon {
+                        color: $gray-5;
+                    }
+                }
             }
         }
     }
 
+    .reservation-btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+
+        .btn {
+            width: 150px;
+            @include Sans(700, 14px, 14px, .1em);
+            text-align: center;
+            padding: 12px;
+            color: $white-1;
+            margin-left: 15px;
+
+            &.contact {
+                background: $blue-5;
+            }
+
+            &.confirm {
+                @include btn-orange;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
 }

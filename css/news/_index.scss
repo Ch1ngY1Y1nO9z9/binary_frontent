@@ -155,18 +155,20 @@ h1.pagetitle {
                                     display: flex;
                                     @include Sans(700, 14px, 16px, .05em);
                                     color: $white-1;
+                                    position: relative;
 
                                     .green-bar {
-                                        width: 60%;
+                                        position: absolute;
+                                        left: 0;
                                         background: $green-1;
                                         border-radius: 20px 0 0 20px;
                                         padding: 6px 10px 8px;
                                     }
 
                                     .red-bar {
-                                        width: 40%;
+                                        width: 100%;
                                         background: $red-1;
-                                        border-radius: 0 20px 20px 0;
+                                        border-radius: 20px;
                                         text-align: right;
                                         padding: 6px 10px 8px;
                                     }
@@ -410,7 +412,10 @@ h1.pagetitle {
                 border: 1px solid $orange-5;
                 background: $white-1;
 
-                padding: 12px 45px 14px;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                padding: 12px 0;
 
                 &:hover {
                     color: $white-1;

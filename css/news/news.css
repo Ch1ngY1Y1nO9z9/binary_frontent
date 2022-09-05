@@ -160,17 +160,19 @@ h1.pagetitle {
   line-height: 16px;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
+  position: relative;
 }
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .left .bar .green-bar {
-  width: 60%;
+  position: absolute;
+  left: 0;
   background: rgb(44, 189, 3);
   border-radius: 20px 0 0 20px;
   padding: 6px 10px 8px;
 }
 .recommend .custom-container .recommendSwiper .swiper-slide .news-picture .mask .data .left .bar .red-bar {
-  width: 40%;
+  width: 100%;
   background: rgb(235, 54, 52);
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px;
   text-align: right;
   padding: 6px 10px 8px;
 }
@@ -364,7 +366,10 @@ h1.pagetitle {
   color: rgb(255, 98, 31);
   border: 1px solid rgb(255, 98, 31);
   background: rgb(255, 255, 255);
-  padding: 12px 45px 14px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding: 12px 0;
 }
 .swiper-section .custom-container .title .more:hover {
   color: rgb(255, 255, 255);
@@ -1610,7 +1615,7 @@ h3.subtitle {
 
 .filter {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .filter .btn {
   font-family: "Noto Sans TC", "sans-serif";
@@ -1624,6 +1629,8 @@ h3.subtitle {
   padding: 13px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
+  padding: 13px 0;
+  width: 74px;
 }
 .filter .btn:hover, .filter .btn.active {
   background: rgb(252, 189, 31);
@@ -1635,13 +1642,12 @@ h3.subtitle {
 }
 .filter .datetimepicker {
   display: flex;
-  flex: 1 1 0;
   color: rgb(57, 57, 57);
+  margin-left: 15px;
   height: 40px;
 }
 .filter .datetimepicker .input-date {
-  flex: 1 1 0;
-  margin: 0 15px;
+  width: 250px;
   position: relative;
 }
 .filter .datetimepicker .input-date input {
@@ -1666,14 +1672,16 @@ h3.subtitle {
   font-size: 18px;
   line-height: 40px;
   letter-spacing: initial;
+  display: inline-block;
+  margin: 0 10px;
 }
 .filter .datetimepicker .submit-btn {
   background: rgb(255, 255, 255);
   color: rgb(136, 136, 136);
   border: 1px solid rgb(136, 136, 136);
-  padding: 0 45px;
+  width: 100px;
   color: rgb(136, 136, 136);
-  border-radius: 5px;
+  margin-left: 15px;
 }
 .filter .datetimepicker .submit-btn:hover {
   background: rgb(255, 98, 31);
@@ -1681,7 +1689,7 @@ h3.subtitle {
   border-color: rgb(255, 98, 31);
 }
 .filter .input-col {
-  flex: 1 1 0%;
+  width: 200px;
   display: flex;
   align-items: center;
   position: relative;

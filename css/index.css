@@ -65,6 +65,9 @@
 .custom-container.c-840 {
   max-width: 840px;
 }
+.custom-container.c-644 {
+  max-width: 644px;
+}
 .custom-container.c-624 {
   max-width: 624px;
 }
@@ -296,6 +299,7 @@ header .custom-container .header-r .burger-menu .menu .main-menu nav.desktop .bu
   justify-content: center;
 }
 header .custom-container .header-r .burger-menu .menu .main-menu nav.desktop .buttons .menu-botton {
+  text-align: center;
   border: 2px rgb(252, 189, 31) solid;
   border-radius: 5px;
   padding: 48px 55px;
@@ -341,6 +345,7 @@ header .custom-container .header-r .burger-menu .menu .main-menu nav.mobile .but
   }
 }
 header .custom-container .header-r .burger-menu .menu .main-menu nav.mobile .buttons .menu-botton {
+  text-align: center;
   border: 2px rgb(252, 189, 31) solid;
   border-radius: 5px;
   padding: 48px 55px;
@@ -2486,6 +2491,7 @@ section.follow .custom-container .feature .featureSwiper .swiper-slide .card .ca
   padding-bottom: 13px;
 }
 section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .follow-btn {
+  display: inline-block;
   width: 100%;
   border: 1px solid rgb(0, 70, 174);
   border-radius: 5px;
@@ -2499,6 +2505,8 @@ section.follow .custom-container .feature .featureSwiper .swiper-slide .card .ca
   color: rgb(0, 70, 174);
 }
 section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .account .account-detail .follow-btn:hover {
+  border-color: rgb(252, 189, 31);
+  color: rgb(255, 255, 255);
   background: rgb(252, 189, 31);
 }
 section.follow .custom-container .feature .featureSwiper .swiper-slide .card .card-body .rate {
